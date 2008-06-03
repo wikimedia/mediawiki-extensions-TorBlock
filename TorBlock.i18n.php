@@ -11,8 +11,9 @@ $messages = array();
  * @author Andrew Garrett
  */
 $messages['en'] = array(
-	'torblock-desc' => 'Allows Tor exit nodes to be blocked from editing a wiki',
-	'torblock-blocked' => 'Your IP address, <tt>$1</tt>, has been automatically identified as a tor exit node. Editing through tor is blocked to prevent abuse.'
+	'torblock-desc'    => 'Allows tor exit nodes to be blocked from editing a wiki',
+	'torblock-blocked' => 'Your IP address, <tt>$1</tt>, has been automatically identified as a tor exit node.
+Editing through tor is blocked to prevent abuse.'
 );
 
 /** German (Deutsch)
