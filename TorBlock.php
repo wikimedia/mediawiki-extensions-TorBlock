@@ -142,7 +142,9 @@ class TorBlock {
 			$nodes = array_unique( array_merge( $nodes, self::getExitList( $ip ) ) );
 		}
 		
-		#die(print_r( $nodes , true));
+		global $wgMemc;
+		
+		$wgMemc->set( 'mw-tor-exit-nodes', $nodes, 1800 ); // Store for half an hour.
 		
 		return $nodes;
 	}
