@@ -23,3 +23,12 @@ $messages['de'] = array(
 	'torblock-desc'    => 'Ermöglicht die Schreibsperre im Wiki für Tor-Ausgangsknoten',
 	'torblock-blocked' => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.'
 );
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'torblock-desc'    => 'Maakt bewerken onmogelijk voor tor exitnodes',
+	'torblock-blocked' => 'Uw IP-adres, <tt>$1</tt>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
+);
+
