@@ -120,7 +120,7 @@ class TorBlock {
 		if (self::isExitNode() && $user->mBlock && !$user->mBlock->mUser) {
 			wfDebug( "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
-			$user->mBlockedBy = 0;
+			$user->mBlockedby = 0;
 		}
 
 		return true;

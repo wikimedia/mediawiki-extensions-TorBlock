@@ -31,6 +31,7 @@ $wgAutoloadClasses[ 'TorBlock' ] = "$dir/TorBlock.class.php";
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlock::onGetUserPermissionsErrorsExpensive';
 $wgHooks['AbortAutoblock'][] = 'TorBlock::onAbortAutoblock';
 $wgHooks['GetAutoPromoteGroups'][] = 'TorBlock::onGetAutoPromoteGroups';
+$wgHooks['GetBlockedStatus'][] = 'TorBlock::onGetBlockedStatus';
 
 /**
  * Permission keys that bypass Tor blocks.
