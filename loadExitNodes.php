@@ -1,6 +1,6 @@
 <?php
 /*
- * Updates the tor exit node list in 
+ * Updates the tor exit node list in
  */
 
 require_once ( getenv('MW_INSTALL_PATH') !== false
