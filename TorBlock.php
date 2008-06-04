@@ -36,7 +36,10 @@ $wgHooks['GetAutoPromoteGroups'][] = 'TorBlock::onGetAutoPromoteGroups';
  * Permission keys that bypass Tor blocks.
  * Array of permission keys.
  */
-$wgTorBypassPermissions = array( 'user', /*'autoconfirmed', 'proxyunbannable'*/ );
+$wgTorBypassPermissions = array( 'torunblocked', /*'autoconfirmed', 'proxyunbannable'*/ );
+$wgAvailableRights[] = 'torunblocked';
+
+$wgGroupPermissions['user']['torunblocked'] = true;
 
 /**
  * Whether to load Tor blocks if they aren't stored in memcached.
