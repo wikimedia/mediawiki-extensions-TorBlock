@@ -21,8 +21,9 @@ Editing through tor is blocked to prevent abuse.',
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'torblock-desc'    => 'Ermöglicht die Schreibsperre im Wiki für Tor-Ausgangsknoten',
-	'torblock-blocked' => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.'
+	'torblock-desc'      => 'Ermöglicht die Schreibsperre im Wiki für Tor-Ausgangsknoten',
+	'torblock-blocked'   => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
+	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 );
 
 /** Finnish (Suomi)
