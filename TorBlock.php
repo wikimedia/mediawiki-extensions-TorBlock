@@ -50,12 +50,6 @@ $wgGroupPermissions['user']['torunblocked'] = true;
 $wgTorLoadNodes = true;
 
 /**
- * What IPs people can access your site with.
- * Needed for checking against exit policies.
- */
-$wgTorIPs = array();
-
-/**
  * Actions tor users are allowed to do.
  * E.g. to allow account creation, add createaccount.
  */
@@ -73,3 +67,8 @@ $wgTorAutoConfirmCount = 0;
  * (i.e. all IPs which can be used to access the site.
  */
 $wgTorIPs = array( '208.80.152.2' );
+
+/**
+ * Disable existing blocks of Tor nodes
+ */
+$wgTorDisableAdminBlocks = true;

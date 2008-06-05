@@ -117,7 +117,8 @@ class TorBlock {
 	}
 
 	public static function onGetBlockedStatus( &$user ) {
-		if (self::isExitNode() && $user->mBlock && !$user->mBlock->mUser) {
+		global $wgTorDisableAdminBlocks;
+		if ($wgTorDisableAdminBlocks && self::isExitNode() && $user->mBlock && !$user->mBlock->mUser) {
 			wfDebug( "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
 			$user->mBlockedby = 0;
