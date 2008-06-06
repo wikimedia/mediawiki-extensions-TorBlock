@@ -81,3 +81,32 @@ $messages['ru'] = array(
 	'right-torunblocked' => 'обход автоматической блокировки узлов сети Tor',
 );
 
+/** Cantonese
+ * @author Shinjiman
+ */
+$messages['yue'] = array(
+	'torblock-desc'      => '容許tor出口點封鎖響一個wiki嘅編輯',
+	'torblock-blocked'   => '你嘅IP地址，<tt>$1</tt>已經被自動認定為一個tor嘅出口點。
+經tor嘅編輯已經封鎖以防止濫用。',
+	'right-torunblocked' => '繞過tor出口點嘅自動封鎖',
+);
+
+/** Simplified Chinese
+ * @author Shinjiman
+ */
+$messages['zh-hant'] = array(
+	'torblock-desc'      => '容许tor出口点封锁在一个wiki中的编辑',
+	'torblock-blocked'   => '您的IP地址，<tt>$1</tt>已经被自动认定为一个tor的出口点。
+经tor的编辑已经封锁以防止滥用。',
+	'right-torunblocked' => '绕过tor出口点的自动封锁',
+);
+
+/** Traditional Chinese
+ * @author Shinjiman
+ */
+$messages['zh-hant'] = array(
+	'torblock-desc'      => '容許tor出口點封鎖在一個wiki中的編輯',
+	'torblock-blocked'   => '您的IP地址，<tt>$1</tt>已經被自動認定為一個tor的出口點。
+經tor的編輯已經封鎖以防止濫用。',
+	'right-torunblocked' => '繞過tor出口點的自動封鎖',
+);
