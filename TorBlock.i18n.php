@@ -17,7 +17,9 @@ Editing through tor is blocked to prevent abuse.',
 	'right-torunblocked' => 'Bypass automatic blocks of tor exit nodes',
 );
 
-/** Arabic (العربية) */
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $messages['ar'] = array(
 	'torblock-desc'      => 'يسمح بمنع عقد خروج التور من تعديل ويكي',
 	'torblock-blocked'   => 'عنوان الأيبي الخاص بك، <tt>$1</tt>، تم التعرف عليه تلقائيا كعقدة خروج تور.
@@ -25,7 +27,9 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 );
 
-/** Czech (Česky) */
+/** Czech (Česky)
+ * @author Mormegil
+ */
 $messages['cs'] = array(
 	'torblock-desc'      => 'Umožňuje blokovat editace pocházející z výstupních uzlů sítě Tor',
 	'torblock-blocked'   => 'Vaše IP adresa (<tt>$1</tt>) byla automaticky rozpoznána jako výstupní uzel sítě Tor.
@@ -42,7 +46,9 @@ $messages['de'] = array(
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 );
 
-/** Esperanto (Esperanto) */
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
 $messages['eo'] = array(
 	'torblock-desc'      => 'Permesas por elignodoj esti forbaritaj kontraŭ redaktado de vikio',
 	'torblock-blocked'   => "Via IP-adreso, <tt>$1</tt> estis aŭtomate identigita kiel elignodo ''tor''.
@@ -86,7 +92,9 @@ $messages['he'] = array(
 	'right-torunblocked' => 'עקיפת חסימות אוטומטיות של נקודות יציאה ברשת TOR',
 );
 
-/** Indonesian (Bahasa Indonesia) */
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
 $messages['id'] = array(
 	'torblock-desc'      => 'Memblokir titik alamat Tor untuk menyunting wiki',
 	'torblock-blocked'   => 'Alamat IP Anda, <tt>$1</tt> telah diidentifikasi secara otomatis sebagai sebuah titik alamat Tor.
@@ -94,7 +102,9 @@ Penyuntingan melalui Tor diblokir untuk mencegah penyalahgunaan.',
 	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap alamat Tor',
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
 $messages['ksh'] = array(
 	'torblock-desc'      => 'Kann et Ändere am Wiki ongerbenge för Metmaacher, di övver <tt>tor</tt> Ußjäng kumme',
 	'torblock-blocked'   => 'Ding IP-Adress (<tt>$1</tt>) eß als_enne <tt>tor</tt> Ußjäng äkannt woode.
@@ -103,7 +113,9 @@ esu määt och Keiner Dreßß domet.',
 	'right-torunblocked' => 'Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße',
 );
 
-/** Marathi (मराठी) */
+/** Marathi (मराठी)
+ * @author Kaustubh
+ */
 $messages['mr'] = array(
 	'torblock-desc'      => 'टॉर एक्झीट नोड्सना विकि संपादनापासून ब्लॉक करण्याची परवानगी देते',
 	'torblock-blocked'   => 'तुमचा आयपी अंकपत्ता, <tt>$1</tt>, आपोआप टॉर एक्झीट नोड म्हणून ओळखला गेलेला आहे.
@@ -120,7 +132,9 @@ $messages['nl'] = array(
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeilen',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
 $messages['no'] = array(
 	'torblock-desc'      => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
 	'torblock-blocked'   => 'Din IP-adresse, <tt>$1</tt>, har blitt automatisk identifisert som en utgangsnode fra TOR.
@@ -128,7 +142,9 @@ Redigering via TOR er blokkert for å forhindre misbruk.',
 	'right-torunblocked' => 'Kan redigere fra automatisk blokkerte TOR-noder',
 );
 
-/** Occitan (Occitan) */
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
 $messages['oc'] = array(
 	'torblock-desc'      => 'Permet als noses de sortida Tor d’èsser blocats en escritura sus un wiki',
 	'torblock-blocked'   => "Vòstra adreça ip, <tt>$1</tt>, es estada identificada automaticament coma un nos de sortida Tor.
@@ -138,6 +154,7 @@ L’edicion per aqueste mejan es blocada per evitar d'abuses.",
 
 /** Polish (Polski)
  * @author Beau
+ * @author Sp5uhe
  */
 $messages['pl'] = array(
 	'torblock-desc'      => 'Blokuje możliwość edycji dla użytkowników anonimowych łączących się przez serwery wyjściowe sieci Tor',
@@ -156,7 +173,9 @@ $messages['ru'] = array(
 	'right-torunblocked' => 'обход автоматической блокировки узлов сети Tor',
 );
 
-/** Slovak (Slovenčina) */
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
 $messages['sk'] = array(
 	'torblock-desc'      => 'Umožňuje bolovať úpravy pochádzajúce z výstupných uzlov siete TOR.',
 	'torblock-blocked'   => 'Vaša IP adresa, <tt>$1</tt>, bola automaticky identifikovaná ako výstupný uzol siete TOR.
@@ -164,7 +183,9 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'right-torunblocked' => 'Obísť automatické blokovanie výstupných uzlov siete TOR',
 );
 
-/** Swedish (Svenska) */
+/** Swedish (Svenska)
+ * @author Lejonel
+ */
 $messages['sv'] = array(
 	'torblock-desc'      => 'Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki',
 	'torblock-blocked'   => 'Din IP-adress, <tt>$1</tt>, har automatiskt identifierats som en utgångsnod från Tor.
@@ -172,7 +193,9 @@ Redigering via Tor är blockerad för att förhindra missbruk.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
 );
 
-/** Vèneto (Vèneto) */
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
 $messages['vec'] = array(
 	'torblock-desc'      => 'Permeti de inpedirghe la modifica de la wiki ai nodi de uscita Tor',
 	'torblock-blocked'   => 'El to indirisso IP, <tt>$1</tt>, el xe stà identificà automaticamente come un nodo de uscita Tor.
