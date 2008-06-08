@@ -32,6 +32,10 @@ $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlock::onGetUserPermission
 $wgHooks['AbortAutoblock'][] = 'TorBlock::onAbortAutoblock';
 $wgHooks['GetAutoPromoteGroups'][] = 'TorBlock::onGetAutoPromoteGroups';
 $wgHooks['GetBlockedStatus'][] = 'TorBlock::onGetBlockedStatus';
+$wgHooks['AutopromoteCondition'][] = 'TorBlock::onAutopromoteCondition';
+
+// Define new autopromote condition
+define('APCOND_TOR', 'tor'); // Numbers won't work, we'll get collisions
 
 /**
  * Permission keys that bypass Tor blocks.

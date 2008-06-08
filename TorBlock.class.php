@@ -154,4 +154,12 @@ class TorBlock {
 
 		return true;
 	}
+	
+	public static function onAutopromoteCondition( $type, $args, $user, &$result ) {
+		if ($type == APCOND_TOR) {
+			$result = self::isExitNode();
+		}
+		
+		return true;
+	}
 }
