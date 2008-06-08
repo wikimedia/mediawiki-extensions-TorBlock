@@ -26,6 +26,15 @@ $messages['de'] = array(
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 );
 
+/** Persian (فارسی)
+ * @author Huji
+ */
+$messages['fa'] = array(
+	'torblock-desc'      => 'قطع دسترسی خروجی‌های TOR از ویرایش در یک ویکی را ممکن می‌کند',
+	'torblock-blocked'   => 'نشانی اینترنتی شما، <tt>$1</tt>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده‌است. ویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.',
+	'right-torunblocked' => 'گذر از قطع دسترسی خودکار خروجی‌های TOR',
+);
+
 /** Finnish (Suomi)
  * @author Crt
  */
