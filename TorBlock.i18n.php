@@ -27,6 +27,14 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 );
 
+/** Catalan (Català)
+ * @author SMP
+ */
+$messages['ca'] = array(
+	'torblock-blocked'   => "La vostra adreça IP <tt>$1</tt> ha estat identificada automàticament com un node de sortida de la xarxa Tor. L'edició a través de Tor està prohibida per a prevenir abusos.",
+	'right-torunblocked' => 'Evitar els blocatges automàtics de nodes Tor',
+);
+
 /** Czech (Česky)
  * @author Mormegil
  */
@@ -77,10 +85,10 @@ $messages['fi'] = array(
  * @author Grondin
  */
 $messages['fr'] = array(
-	'torblock-desc'      => 'Permet aux nœuds de sortie Tor d’être bloqués en écriture sur un wiki',
+	'torblock-desc'      => 'Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor',
 	'torblock-blocked'   => 'Votre adresse ip, <tt>$1</tt>, a été identifiée automatiquement comme un nœud de sortie Tor.
 L’édition par ce moyen est bloquée pour éviter des abus.',
-	'right-torunblocked' => 'Passer au travers des blocages des nœuds de sortie Tor.',
+	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor.',
 );
 
 /** Hebrew (עברית)
@@ -90,6 +98,16 @@ $messages['he'] = array(
 	'torblock-desc'      => 'אפשרות לחסימת נקודות יציאה של רשת TOR מעריכה בוויקי',
 	'torblock-blocked'   => 'כתובת ה־IP שלכם, <tt>$1</tt>, זוהתה אוטומטית כנקודת יציאה של רשת TOR. עריכה דרך TOR חסומה כדי למנוע ניצול לרעה.',
 	'right-torunblocked' => 'עקיפת חסימות אוטומטיות של נקודות יציאה ברשת TOR',
+);
+
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'torblock-desc'      => 'टॉर एक्झीट नोड्सको विकि संपादनसे ब्लॉक करने की अनुमति देता हैं',
+	'torblock-blocked'   => 'आपका आईपी एड्रेस, <tt>$1</tt>, अपनेआप टॉर एक्झीट नोड करके पहचाना गया हैं।
+गलत इस्तेमाल से बचने के लिये इसे अपनेआप ब्लॉक कर दिया गया हैं।',
+	'right-torunblocked' => 'टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -201,6 +219,16 @@ $messages['vec'] = array(
 	'torblock-blocked'   => 'El to indirisso IP, <tt>$1</tt>, el xe stà identificà automaticamente come un nodo de uscita Tor.
 Le modifiche tramite Tor le xe blocà par evitar abusi.',
 	'right-torunblocked' => 'Scavalca i blochi automatici dei nodi de uscita Tor',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
+ */
+$messages['vi'] = array(
+	'torblock-desc'      => 'Cho phép cấm các nút thoát tor sửa đổi wiki',
+	'torblock-blocked'   => 'Địa chỉ IP của bạn, <tt>$1</tt>, đã bị xác định là một nút thoát tor.
+Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
+	'right-torunblocked' => 'Bỏ qua các lệnh cấm tự động các nút thoát tor',
 );
 
 /** Cantonese
