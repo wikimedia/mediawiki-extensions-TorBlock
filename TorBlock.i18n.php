@@ -120,6 +120,13 @@ Penyuntingan melalui Tor diblokir untuk mencegah penyalahgunaan.',
 	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap alamat Tor',
 );
 
+/** Italian (Italiano)
+ * @author Darth Kule
+ */
+$messages['it'] = array(
+	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
+);
+
 /** Ripoarisch (Ripoarisch)
  * @author Purodha
  */
@@ -179,6 +186,13 @@ $messages['pl'] = array(
 	'torblock-blocked'   => 'Twój adres IP <tt>$1</tt> został automatycznie zidentyfikowany jako serwer wyjściowy sieci Tor.
 Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.',
 	'right-torunblocked' => 'Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor',
+);
+
+/** Portuguese (Português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar um wiki',
 );
 
 /** Russian (Русский)
