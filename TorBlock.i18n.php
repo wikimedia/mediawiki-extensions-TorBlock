@@ -91,6 +91,16 @@ L’édition par ce moyen est bloquée pour éviter des abus.',
 	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor.',
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'torblock-desc'      => 'Permite que os nodos de saída sexan bloqueados fronte á edición dun wiki',
+	'torblock-blocked'   => 'O seu enderezo IP, <tt>$1</tt>, foi identificado automaticamente como un nodo de saída tor.
+A edición a través disto está bloqueada para previr o abuso.',
+	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
@@ -136,6 +146,13 @@ $messages['ksh'] = array(
 Änderunge aam Wiki dom_mer övver <tt>tor</tt> nit zolohße,
 esu määt och Keiner Dreßß domet.',
 	'right-torunblocked' => 'Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'torblock-desc' => 'Erméiglecht et Ännerungen vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären',
 );
 
 /** Marathi (मराठी)
