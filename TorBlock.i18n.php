@@ -49,7 +49,7 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'torblock-desc'      => 'Ermöglicht die Schreibsperre im Wiki für Tor-Ausgangsknoten',
+	'torblock-desc'      => 'Ermöglicht die Schreibsperre für Tor-Ausgangsknoten',
 	'torblock-blocked'   => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 );
