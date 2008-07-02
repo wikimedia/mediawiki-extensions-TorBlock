@@ -152,7 +152,10 @@ esu määt och Keiner Dreßß domet.',
  * @author Robby
  */
 $messages['lb'] = array(
-	'torblock-desc' => 'Erméiglecht et Ännerungen vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären',
+	'torblock-desc'      => 'Erméiglecht et Ännerungen vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären',
+	'torblock-blocked'   => 'Är IP-Adress,  <tt>$1</tt>, gouf automatesch als Tor-ausgangsknuet erkannt.
+Ännerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.',
+	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
 );
 
 /** Marathi (मराठी)
