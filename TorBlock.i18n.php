@@ -17,6 +17,16 @@ Editing through tor is blocked to prevent abuse.',
 	'right-torunblocked' => 'Bypass automatic blocks of tor exit nodes',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'torblock-desc'      => 'Premite que os nodos de salida tor sían bloqueyatos ta editar una wiki',
+	'torblock-blocked'   => "A suya adreza IP, <tt>$1</tt>, s'ha identificato automaticament como un nodo de salida tor.
+Ye bedato d'editar con tor ta pribar abusos.",
+	'right-torunblocked' => "Pribar os bloqueyos automaticos d'os nodos tor",
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
