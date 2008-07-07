@@ -178,6 +178,16 @@ $messages['mr'] = array(
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सच्या आपोआप आलेल्या प्रतिबंधांकडे दुर्लक्ष करा',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Aviator
+ */
+$messages['ms'] = array(
+	'torblock-desc'      => 'Membolehkan sekatan terhadap nod keluar Tor',
+	'torblock-blocked'   => 'Alamat IP anda, <tt>$1</tt>, telah dikenal pasti sebagai nod keluar Tor.
+Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
+	'right-torunblocked' => 'Melepasi sekatan nod keluar Tor',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
