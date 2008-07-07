@@ -85,6 +85,7 @@ $messages['fa'] = array(
 
 /** Finnish (Suomi)
  * @author Crt
+ * @author Nike
  */
 $messages['fi'] = array(
 	'torblock-blocked'   => 'IP-osoitteesi <tt>$1</tt> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.',
@@ -93,6 +94,7 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'torblock-desc'      => 'Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor',
@@ -307,6 +309,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Shinjiman
+ * @author Alexsh
  */
 $messages['zh-hant'] = array(
 	'torblock-desc'      => '封鎖使用tor位址發出的匿名編輯',
