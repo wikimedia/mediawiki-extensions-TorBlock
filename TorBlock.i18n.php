@@ -287,7 +287,7 @@ Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
 	'right-torunblocked' => 'Bỏ qua các lệnh cấm tự động các nút thoát tor',
 );
 
-/** Cantonese
+/** Yue (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
@@ -297,7 +297,7 @@ $messages['yue'] = array(
 	'right-torunblocked' => '繞過tor出口點嘅自動封鎖',
 );
 
-/** Simplified Chinese
+/** Simplified Chinese (‪中文(简体)‬)
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
