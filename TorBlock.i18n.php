@@ -37,6 +37,15 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 );
 
+/** Southern Balochi (بلوچی مکرانی)
+ * @author Mostafadaneshvar
+ */
+$messages['bcc'] = array(
+	'torblock-desc'    => 'اجازت دن په در بیگ گرهنان په محدود بوتن چه اصلاح یک ویکیء',
+	'torblock-blocked' => 'شمی آدرس آی پی, <tt>$1</tt>,اتوماتیکی په داب یک گرهن خروجی سنگ نشان بوتت.
+اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
+);
+
 /** Catalan (Català)
  * @author SMP
  */
