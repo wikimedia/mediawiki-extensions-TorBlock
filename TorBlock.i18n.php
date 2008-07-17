@@ -266,6 +266,15 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'right-torunblocked' => 'Obísť automatické blokovanie výstupných uzlov siete TOR',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Millosh
+ */
+$messages['sr-ec'] = array(
+	'torblock-desc'      => 'Омогућава блокирање измена на викију од стране излазних нодова тора.',
+	'torblock-blocked'   => 'Твоја ИП адреса, <tt>$1</tt>, је аутоматски идентификована као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.',
+	'right-torunblocked' => 'Прескочи аутоматске блокове излазних нодова тора.',
+);
+
 /** Swedish (Svenska)
  * @author Lejonel
  */
