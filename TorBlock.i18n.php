@@ -141,6 +141,16 @@ $messages['hi'] = array(
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'torblock-desc'      => 'Permitte que le nodos de exito de Tor sia blocate de facer modificationes in un wiki',
+	'torblock-blocked'   => 'Tu adresse IP, <tt>$1</tt>, ha essite automaticamente identificate como un nodo de exito de Tor.
+Le modification via Tor es prohibite pro impedir le abuso.',
+	'right-torunblocked' => 'Contornar le blocadas automatic de nodos de exito de Tor',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
  */
@@ -155,6 +165,9 @@ Penyuntingan melalui Tor diblokir untuk mencegah penyalahgunaan.',
  * @author Darth Kule
  */
 $messages['it'] = array(
+	'torblock-desc'      => 'Permette di bloccare in scrittura exit node tor su una wiki',
+	'torblock-blocked'   => 'Il tuo indirizzo IP, <tt>$1</tt>, è stato automaticamente identificato come un exit node tor.
+La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
 );
 
