@@ -141,6 +141,13 @@ $messages['hi'] = array(
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
