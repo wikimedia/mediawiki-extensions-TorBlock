@@ -182,7 +182,7 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'torblock-desc'      => 'Kann et Ändere am Wiki ongerbenge för Metmaacher, di övver <tt>tor</tt> Ußjäng kumme',
+	'torblock-desc'      => 'Kann et Ändere am Wiki ongerbenge för Metmaacher, di övver <tt>tor</tt> Ußjäng kumme.',
 	'torblock-blocked'   => 'Ding IP-Adress (<tt>$1</tt>) eß als_enne <tt>tor</tt> Ußjäng äkannt woode.
 Änderunge aam Wiki dom_mer övver <tt>tor</tt> nit zolohße,
 esu määt och Keiner Dreßß domet.',
@@ -197,6 +197,15 @@ $messages['lb'] = array(
 	'torblock-blocked'   => 'Är IP-Adress,  <tt>$1</tt>, gouf automatesch als Tor-ausgangsknuet erkannt.
 Ännerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.',
 	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
+);
+
+/** Limburgish (Limburgs)
+ * @author Matthias
+ */
+$messages['li'] = array(
+	'torblock-desc'      => 'Maakt bewerke onmeugelik veur tor exitnodes',
+	'torblock-blocked'   => 'Oew IP-adres, <tt>$1</tt>, is herkend as tor exitnode. Bewerke via tor es niet toegestaon om misbroek te veurkomme.',
+	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeile',
 );
 
 /** Marathi (मराठी)
