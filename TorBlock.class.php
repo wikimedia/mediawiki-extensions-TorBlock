@@ -57,6 +57,7 @@ class TorBlock {
 
 		// We have to actually load from the server.
 
+		global $wgTorLoadNodes;
 		if (!$wgTorLoadNodes) {
 			// Disabled.
 			wfDebug( "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
