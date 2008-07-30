@@ -314,6 +314,16 @@ Redigering via Tor är blockerad för att förhindra missbruk.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
 );
 
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'torblock-desc'      => 'Дозволяє блокувати вихідні вузли мережі Tor',
+	'torblock-blocked'   => 'Ваша IP-адреса, <tt>$1</tt>, була автоматично визначена як вихідний вузол мережі Tor.
+Редагування шляхом Tor заборонене з метою уникнення зловживань.',
+	'right-torunblocked' => 'Обхід автоматичного блокування вузлів мережі Tor',
+);
+
 /** Vèneto (Vèneto)
  * @author Candalua
  */
