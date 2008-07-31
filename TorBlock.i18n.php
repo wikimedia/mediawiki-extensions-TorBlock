@@ -46,6 +46,13 @@ $messages['bcc'] = array(
 اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author Cesco
+ */
+$messages['be-tarask'] = array(
+	'right-torunblocked' => 'Абыход аўтаматычнай блякіроўкі вузлоў сеткі Tor',
+);
+
 /** Catalan (Català)
  * @author SMP
  */
@@ -145,6 +152,8 @@ $messages['hi'] = array(
  * @author Dani
  */
 $messages['hu'] = array(
+	'torblock-blocked'   => 'Az IP-címed (<tt>$1</tt>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.
+Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.',
 	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
 );
 
