@@ -48,9 +48,10 @@ $messages['bcc'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author Cesco
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
-	'right-torunblocked' => 'Абыход аўтаматычнай блякіроўкі вузлоў сеткі Tor',
+	'right-torunblocked' => 'Абыход аўтаматычнага блякаваньня вузлоў сеткі Tor',
 );
 
 /** Catalan (Català)
