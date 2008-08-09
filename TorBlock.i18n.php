@@ -37,6 +37,16 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'torblock-desc'      => "Permite que los nodos de salida tor torguen la edición d'una wiki",
+	'torblock-blocked'   => "La to direición IP, <tt>$1</tt>, foi identificada automáticamente como un nodu de salida tor.
+La edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
+	'right-torunblocked' => 'Evita los bloqueos automáticos de los nodos de salida tor',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
