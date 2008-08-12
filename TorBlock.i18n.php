@@ -168,6 +168,15 @@ $messages['hi'] = array(
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें',
 );
 
+/** Croatian (Hrvatski)
+ * @author Dalibor Bosits
+ */
+$messages['hr'] = array(
+	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski prepoznata kao tor izlaznog servera.
+Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
+	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
+);
+
 /** Hungarian (Magyar)
  * @author Dani
  */
