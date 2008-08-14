@@ -172,6 +172,7 @@ $messages['hi'] = array(
  * @author Dalibor Bosits
  */
 $messages['hr'] = array(
+	'torblock-desc' => 'Omogućava blokiranje tor izlaznih servera od uređivanja na wiki',
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski prepoznata kao tor izlaznog servera.
 Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
