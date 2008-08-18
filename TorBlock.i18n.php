@@ -46,6 +46,16 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Ramsis II
+ */
+$messages['arz'] = array(
+	'torblock-desc' => 'بيسمح بمنع عقد خروج التور من تعديل ويكي',
+	'torblock-blocked' => 'عنوان الاي بي بتاعك, <tt>$1</tt>, اتعرف عليه اوتوماتيكي كعقدة خروج تور.
+التعديل عن طريق التور مقفول علشان نمنع اساءة الاستعمال.',
+	'right-torunblocked' => 'اتفادى عمليات المنع الاوتوماتيكية لعقد خروج التور',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  */
