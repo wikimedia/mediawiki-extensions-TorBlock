@@ -134,6 +134,7 @@ $messages['fa'] = array(
  * @author Nike
  */
 $messages['fi'] = array(
+	'torblock-desc' => 'Mahdollistaa tor-poistumissolmujen estämisen.',
 	'torblock-blocked' => 'IP-osoitteesi <tt>$1</tt> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.',
 	'right-torunblocked' => 'Ohittaa automaattiset Tor-poistumispisteiden estot',
 );
@@ -225,6 +226,15 @@ $messages['it'] = array(
 	'torblock-blocked' => 'Il tuo indirizzo IP, <tt>$1</tt>, è stato automaticamente identificato come un exit node tor.
 La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
+);
+
+/** Japanese (日本語)
+ * @author Muttley
+ */
+$messages['ja'] = array(
+	'torblock-blocked' => 'あなたのIPアドレス<tt>$1</tt>は、自動的に不正中継ノードからのアクセスと認識されました。
+不正中継ノードからのアクセスは、不正な利用を防止するため、排除されます。',
+	'right-torunblocked' => '不正中継ノードの自動ブロックをバイパスする',
 );
 
 /** Ripoarisch (Ripoarisch)
