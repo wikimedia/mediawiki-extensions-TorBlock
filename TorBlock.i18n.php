@@ -229,11 +229,12 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author Muttley
  */
 $messages['ja'] = array(
-	'torblock-blocked' => 'あなたのIPアドレス<tt>$1</tt>は、自動的に不正中継ノードからのアクセスと認識されました。
-不正中継ノードからのアクセスは、不正な利用を防止するため、排除されます。',
+	'torblock-desc' => '不正中継ノードからのウィキの編集をブロックする',
+	'torblock-blocked' => 'あなたのIPアドレス<tt>$1</tt>は、自動的に不正中継ノードからのアクセスと認識されました。不正中継ノードからの編集は、不正な利用を防止するため、排除されます。',
 	'right-torunblocked' => '不正中継ノードの自動ブロックをバイパスする',
 );
 
