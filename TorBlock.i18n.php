@@ -47,11 +47,12 @@ $messages['ar'] = array(
 );
 
 /** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
  * @author Ramsis II
  */
 $messages['arz'] = array(
 	'torblock-desc' => 'بيسمح بمنع عقد خروج التور من تعديل ويكي',
-	'torblock-blocked' => 'عنوان الاي بي بتاعك, <tt>$1</tt>, اتعرف عليه اوتوماتيكي كعقدة خروج تور.
+	'torblock-blocked' => 'عنوان الاى بى بتاعك, <tt>$1</tt>, اتعرف عليه اوتوماتيكى كعقدة خروج تور.
 التعديل عن طريق التور مقفول علشان نمنع اساءة الاستعمال.',
 	'right-torunblocked' => 'اتفادى عمليات المنع الاوتوماتيكية لعقد خروج التور',
 );
