@@ -355,6 +355,15 @@ $messages['ru'] = array(
 	'right-torunblocked' => 'обход автоматической блокировки узлов сети Tor',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'torblock-desc' => 'Tor-ситим таһаарар түмүктэрин (выходные узлы) бүөлүүргэ туттуллар',
+	'torblock-blocked' => '<tt>$1</tt>, Эн IP-аадырыһыҥ Tor-ситим таһаарар түмүгүн (выходной узел) курдук көстүбүт.
+Tor-ситими туһанан уларытыы манна бобуллар.',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
