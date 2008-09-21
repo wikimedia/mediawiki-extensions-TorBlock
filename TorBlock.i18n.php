@@ -130,6 +130,15 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 	'right-torunblocked' => "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
 );
 
+/** Spanish (Español)
+ * @author Remember the dot
+ */
+$messages['es'] = array(
+	'torblock-desc' => 'Permite bloquear nodos de salida tor',
+	'torblock-blocked' => 'Su dirección IP, <tt>$1</tt>, ha sido identificada automáticamente como un nodo de salida tor.
+Se bloquea editar por tor para prevenir abusos.',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
@@ -362,6 +371,7 @@ $messages['sah'] = array(
 	'torblock-desc' => 'Tor-ситим таһаарар түмүктэрин (выходные узлы) бүөлүүргэ туттуллар',
 	'torblock-blocked' => '<tt>$1</tt>, Эн IP-аадырыһыҥ Tor-ситим таһаарар түмүгүн (выходной узел) курдук көстүбүт.
 Tor-ситими туһанан уларытыы манна бобуллар.',
+	'right-torunblocked' => 'Tor-ситим түмүктэрин аптамаатынан бобууну тумнуу',
 );
 
 /** Slovak (Slovenčina)
