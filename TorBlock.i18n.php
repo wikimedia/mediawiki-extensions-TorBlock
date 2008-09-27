@@ -19,8 +19,10 @@ Editing through tor is blocked to prevent abuse.',
 
 /** Message documentation (Message documentation)
  * @author Mormegil
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'torblock-desc' => 'Short description of the TorBlock extension, shown in [[Special:Version]]. Do not translate or change links.',
 	'right-torunblocked' => '{{doc-right}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension|TorBlock]] (and can therefore edit using tor).',
