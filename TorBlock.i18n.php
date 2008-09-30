@@ -139,6 +139,7 @@ $messages['es'] = array(
 	'torblock-desc' => 'Permite bloquear nodos de salida tor',
 	'torblock-blocked' => 'Su dirección IP, <tt>$1</tt>, ha sido identificada automáticamente como un nodo de salida tor.
 Se bloquea editar por tor para prevenir abusos.',
+	'right-torunblocked' => 'Circumventar bloqueos automáticos de nodos de salida tor',
 );
 
 /** Persian (فارسی)
