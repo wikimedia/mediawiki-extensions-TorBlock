@@ -355,6 +355,9 @@ Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiega
  */
 $messages['pt'] = array(
 	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar um wiki',
+	'torblock-blocked' => 'O seu endereço IP, <tt>$1</tt>, foi automaticamente identificado como um nó de saída Tor.
+A edição através de Tor está bloqueada para prevenir abusos.',
+	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 );
 
 /** Russian (Русский)
