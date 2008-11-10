@@ -319,6 +319,16 @@ $messages['nl'] = array(
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeilen',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Frokor
+ */
+$messages['nn'] = array(
+	'torblock-desc' => 'Gjer det mogeleg å blokkere Tor-utgangsnodar frå å gjere endringar i ein wiki',
+	'torblock-blocked' => 'IP-adressa di, <tt>$1</tt>, har blitt automatisk identifisert som eit utgangsnode frå TOR.
+Redigering via TOR er blokkert for å hindre misbruk.',
+	'right-torunblocked' => 'Kan redigere frå automatisk blokkerte TOR-nodar',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
