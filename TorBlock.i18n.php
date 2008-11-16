@@ -260,6 +260,16 @@ $messages['ja'] = array(
 	'right-torunblocked' => '不正中継ノードの自動ブロックをバイパスする',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Pras
+ */
+$messages['jv'] = array(
+	'torblock-desc' => "Mblokir titik alamat ''tor'' kanggo nyunting kaca wiki",
+	'torblock-blocked' => "Alamat IP panjenengan, <tt>$1</tt> wis diidhèntifikasi sacara otomatis minangka sawijining titik alamat ''tor''.
+Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
+	'right-torunblocked' => "Lirwakna pamblokiran otomatis marang alamat ''tor''",
+);
+
 /** Ripoarisch (Ripoarisch)
  * @author Purodha
  */
