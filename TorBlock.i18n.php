@@ -163,13 +163,14 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Sherbrooke
  * @author Verdy p
  */
 $messages['fr'] = array(
 	'torblock-desc' => 'Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor',
 	'torblock-blocked' => 'Votre adresse ip, <tt>$1</tt>, a été identifiée automatiquement comme un nœud de sortie Tor.
 L’édition par ce moyen est bloquée pour éviter des abus.',
-	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor.',
+	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor',
 );
 
 /** Galician (Galego)
