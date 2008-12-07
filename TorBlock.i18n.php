@@ -134,12 +134,13 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 
 /** Spanish (Español)
  * @author Remember the dot
+ * @author Sanbec
  */
 $messages['es'] = array(
 	'torblock-desc' => 'Permite bloquear nodos de salida tor',
 	'torblock-blocked' => 'Su dirección IP, <tt>$1</tt>, ha sido identificada automáticamente como un nodo de salida tor.
 Se bloquea editar por tor para prevenir abusos.',
-	'right-torunblocked' => 'Circumventar bloqueos automáticos de nodos de salida tor',
+	'right-torunblocked' => "Eludir bloqueos automáticos de nodos de salida ''tor''",
 );
 
 /** Persian (فارسی)
@@ -269,6 +270,15 @@ $messages['jv'] = array(
 	'torblock-blocked' => "Alamat IP panjenengan, <tt>$1</tt> wis diidhèntifikasi sacara otomatis minangka sawijining titik alamat ''tor''.
 Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 	'right-torunblocked' => "Lirwakna pamblokiran otomatis marang alamat ''tor''",
+);
+
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'torblock-blocked' => '당신의 IP 주소 <tt>$1</tt>는 자동적으로 토르임이 밝혀졌습니다.
+토르를 사용한 편집은 악용을 방지하기 위해 차단되어 있습니다.',
+	'right-torunblocked' => '토르 자동 차단을 무시',
 );
 
 /** Ripoarisch (Ripoarisch)
