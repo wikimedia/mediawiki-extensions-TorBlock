@@ -122,6 +122,16 @@ $messages['de'] = array(
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'torblock-desc' => 'Zajźujo, aby wuchadne suki TOR wobźěłowali wiki',
+	'torblock-blocked' => 'Twója IP-adresa, <tt>$1</tt>, jo se awtomatiski awtentificěrowała ako wuchadny suk TOR.
+Wobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.',
+	'right-torunblocked' => 'Awtomatiske blokěrowanja wuchadnych sukow TOR sw wobinuś',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
@@ -211,6 +221,16 @@ $messages['hr'] = array(
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski prepoznata kao tor izlaznog servera.
 Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
+);
+
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'torblock-desc' => 'Blokuje wobdźěłanje wikija přez wuchadne suki TOR',
+	'torblock-blocked' => 'Twoja IP-adresa, <tt>$1</tt>, je so awtomatisce jako wuchadny suk TOR identifikowała.
+Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
+	'right-torunblocked' => 'Awtomatiske blokowanja wuchadnych sukow TOR wobeńć',
 );
 
 /** Hungarian (Magyar)
