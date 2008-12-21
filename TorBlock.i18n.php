@@ -432,6 +432,16 @@ Tor-ситими туһанан уларытыы манна бобуллар.',
 	'right-torunblocked' => 'Tor-ситим түмүктэрин аптамаатынан бобууну тумнуу',
 );
 
+/** Sicilian (Sicilianu)
+ * @author Santu
+ */
+$messages['scn'] = array(
+	'torblock-desc' => "Pirmetti di bluccari 'n scrittura exit node tor sù na wiki",
+	'torblock-blocked' => 'Lu tò nnirizzu IP, <tt>$1</tt>, vinni ricanusciutu autumaticamenti comu nu exit node tor.
+La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari abbusi.',
+	'right-torunblocked' => "Non pigghiari 'n cunziddirazzioni li blocchi automàtichi di li exit node tor",
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
