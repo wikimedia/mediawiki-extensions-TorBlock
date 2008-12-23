@@ -80,9 +80,13 @@ $messages['bcc'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author Cesco
+ * @author Jim-by
  * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
+	'torblock-desc' => 'Дазваляе блякаваць мажлівасьць рэдагаваньняў для ананімных карыстальнікаў, якія карыстаюцца сеткай Tor',
+	'torblock-blocked' => 'Ваш ІР-адрас, <tt>$1</tt>, быў аўтаматычна вызначаны як выхадны вузел сеткі Tor.
+Рэдагаваньне праз Тor заблякаванае для ўнікненьня злоўжываньняў.',
 	'right-torunblocked' => 'Абыход аўтаматычнага блякаваньня вузлоў сеткі Tor',
 );
 
@@ -93,6 +97,16 @@ $messages['bg'] = array(
 	'torblock-desc' => 'Позволява да се блокира редактирането от изходни възли на TOR-мрежа',
 	'torblock-blocked' => 'Вашият IP-адрес, <tt>$1</tt>, е бил автоматично идентифициран като изходен възел на TOR-мрежа.
 Редактирането през такива адреси се ограничава с цел предотвратяване на евентуални злоупотреби.',
+);
+
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'torblock-desc' => 'Omogućuje da se blokiraju tor izlazni čvorovi za uređivanje wikija',
+	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski otkrivena i označena kao tor izlazni čvor.
+Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
+	'right-torunblocked' => 'Zaobilaženje automatskih blokada tor izlaznih čvorova',
 );
 
 /** Catalan (Català)
