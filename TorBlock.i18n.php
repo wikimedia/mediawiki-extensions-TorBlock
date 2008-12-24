@@ -252,6 +252,7 @@ Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
  * @author Dani
  */
 $messages['hu'] = array(
+	'torblock-desc' => 'Lehetővé teszi a tor kilépési csomópontokról való szerkesztés blokkolását',
 	'torblock-blocked' => 'Az IP-címed (<tt>$1</tt>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.
 Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.',
 	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
