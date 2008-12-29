@@ -487,6 +487,16 @@ Redigering via Tor är blockerad för att förhindra missbruk.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'torblock-desc' => "Nagpapahintulot na hadlangan/harangin ang labasan ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') mula sa paggawa ng pagbabago sa isang wiki",
+	'torblock-blocked' => "Ang adres ng IP mo, <tt>$1</tt>, ay kusang nakilala bilang isang bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') .
+Ang paggawa ng pagbabago mula sa isang bunton ng mga nakikipagugnayang hindi nagpapakilala ay hinadlangan upang maiwasan ang pangaabuso.",
+	'right-torunblocked' => "Laktawan ang kusang mga paghahadlang ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'').",
+);
+
 /** Ukrainian (Українська)
  * @author Ahonc
  */
