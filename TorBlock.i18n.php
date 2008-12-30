@@ -372,6 +372,7 @@ Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
  * @author Slomox
  */
 $messages['nds'] = array(
+	'torblock-desc' => 'Verlöövt dat Sperren vun Tor-Utgangsknütten',
 	'torblock-blocked' => 'Diene IP-Adress <tt>$1</tt> is automaatsch as Tor-Utgangsknütten kennt worrn. Dat Ännern vun Sieden över en Tor-Nettwark is sperrt, de Gefohr vun Missbruuk is to groot.',
 	'right-torunblocked' => 'Ümgahn vun de automaatsche Sperr vun Tor-Utgangsknütten',
 );
