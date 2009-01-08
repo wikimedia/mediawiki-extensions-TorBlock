@@ -209,6 +209,15 @@ A edición a través disto está bloqueada para previr o abuso.',
 	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'torblock-desc' => 'Macht d Schryybsperri fir Tor-Usgangs-Chnote megli',
+	'torblock-blocked' => 'Dyyni IP-Adräss <tt>$1</tt> isch automatisch as Tor-Usgangs-Chnote identifiziert wore. D Sytebearbeitig in Verbindig mit em Tor-Netzwärch isch nit gwinscht, wel d Gfohr vun eme Missbruuch seli hoch isch.',
+	'right-torunblocked' => 'Di automatisch Sperri vu Tor-Usgangs-Chnote umgoh',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  */
@@ -484,6 +493,15 @@ $messages['sr-ec'] = array(
 	'torblock-desc' => 'Омогућава блокирање измена на викију од стране излазних нодова тора.',
 	'torblock-blocked' => 'Твоја ИП адреса, <tt>$1</tt>, је аутоматски идентификована као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.',
 	'right-torunblocked' => 'Прескочи аутоматске блокове излазних нодова тора.',
+);
+
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'torblock-desc' => 'Moaket ju Schrieuwspeere foar Poute-Uutgongsknätte muugelk',
+	'torblock-blocked' => 'Dien IP-Adresse <tt>$1</tt> wuud automatisk as Poute-Uutgongsknät identifizierd. Ju Siedenbeoarbaidenge in Ferbiendenge mäd dät Poute-Nätwierk is nit wonsked, deer ju Misbruuksgefoar gjucht hooch is.',
+	'right-torunblocked' => 'Uumgungen fon ju automatiske Speere fon Poute-Uutgongknätte',
 );
 
 /** Swedish (Svenska)
