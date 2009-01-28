@@ -15,6 +15,8 @@ $messages['en'] = array(
 	'torblock-blocked' => 'Your IP address, <tt>$1</tt>, has been automatically identified as a tor exit node.
 Editing through tor is blocked to prevent abuse.',
 	'right-torunblocked' => 'Bypass automatic blocks of tor exit nodes',
+	'tag-tor-description' => 'If this tag is set, an edit was made from a Tor exit node.',
+	'tag-tor' => 'Made through tor',
 );
 
 /** Message documentation (Message documentation)

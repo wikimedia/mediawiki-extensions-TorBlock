@@ -168,4 +168,16 @@ class TorBlock {
 		
 		return true;
 	}
+
+	public static function onRecentChangeSave( $recentChange ) {
+		if ( class_exists('ChangeTags') && self::isExitNode() ) {
+			ChangeTags::addTags( 'tor', $recentChange->mAttribs['rc_id'], $recentChange->mAttribs['rc_this_oldid'], $recentChange->mAttribs['rc_logid'] );
+		}
+		return true;
+	}
+
+	public static function onListDefinedTags( &$emptyTags ) {
+		$emptyTags[] = 'tor';
+		return true;
+	}
 }
