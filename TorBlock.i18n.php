@@ -49,6 +49,8 @@ $messages['ar'] = array(
 	'torblock-blocked' => 'عنوان الأيبي الخاص بك، <tt>$1</tt>، تم التعرف عليه تلقائيا كعقدة خروج تور.
 التعديل من خلال التور ممنوع لمنع التخريب.',
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
+	'tag-tor-description' => 'لو أن هذا الوسم مضبوط، فإن تعديلا قد حدث من عقدة خروج تور.',
+	'tag-tor' => 'معمولة من خلال تور',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -92,6 +94,8 @@ $messages['be-tarask'] = array(
 	'torblock-blocked' => 'Ваш ІР-адрас <tt>$1</tt> быў аўтаматычна ідэнтыфікаваны як выхадны вузел сеткі Tor.
 Рэдагаваньне праз Тor заблякаванае для прадухіленьня злоўжываньняў.',
 	'right-torunblocked' => 'Абыход аўтаматычнага блякаваньня вузлоў сеткі Tor',
+	'tag-tor-description' => 'Калі гэты тэг быў дададзены, рэдагаваньне было зроблена праз выходны вузел Tor.',
+	'tag-tor' => 'Зроблена праз Tor',
 );
 
 /** Bulgarian (Български)
@@ -111,6 +115,8 @@ $messages['bs'] = array(
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski otkrivena i označena kao tor izlazni čvor.
 Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Zaobilaženje automatskih blokada tor izlaznih čvorova',
+	'tag-tor-description' => 'Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.',
+	'tag-tor' => 'Napravljeno kroz tor',
 );
 
 /** Catalan (Català)
@@ -138,6 +144,8 @@ $messages['de'] = array(
 	'torblock-desc' => 'Ermöglicht die Schreibsperre für Tor-Ausgangsknoten',
 	'torblock-blocked' => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
+	'tag-tor-description' => 'Wenn dieses Tag gesetzt ist, erfolgte die Bearbeitung durch einen Tor-Ausgangsknoten.',
+	'tag-tor' => 'Durch einen Tor-Ausgangsknoten',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -226,6 +234,8 @@ $messages['gsw'] = array(
 	'torblock-desc' => 'Macht d Schryybsperri fir Tor-Usgangs-Chnote megli',
 	'torblock-blocked' => 'Dyyni IP-Adräss <tt>$1</tt> isch automatisch as Tor-Usgangs-Chnote identifiziert wore. D Sytebearbeitig in Verbindig mit em Tor-Netzwärch isch nit gwinscht, wel d Gfohr vun eme Missbruuch seli hoch isch.',
 	'right-torunblocked' => 'Di automatisch Sperri vu Tor-Usgangs-Chnote umgoh',
+	'tag-tor-description' => 'Wänn des Tag gsetzt wird, isch e Bearbeitig gmacht wore vun eme Tor-Exit-Chnote.',
+	'tag-tor' => 'Gmacht dur Tor',
 );
 
 /** Hebrew (עברית)
@@ -353,6 +363,8 @@ $messages['ksh'] = array(
 Änderunge aam Wiki dom_mer övver <tt>tor</tt> nit zolohße,
 esu määt och Keiner Dreßß domet.',
 	'right-torunblocked' => 'Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße',
+	'tag-tor-description' => 'Wann dat Zeijshe jesaz es, kohm die Änderung övver ene <tt>tor</tt> Ußjang.',
+	'tag-tor' => 'Övver <tt>tor</tt> Ußjang jemaat',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -416,12 +428,15 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
+ * @author Harald Khan
  */
 $messages['nn'] = array(
 	'torblock-desc' => 'Gjer det mogeleg å blokkere Tor-utgangsnodar frå å gjere endringar i ein wiki',
 	'torblock-blocked' => 'IP-adressa di, <tt>$1</tt>, har blitt automatisk identifisert som eit utgangsnode frå TOR.
 Redigering via TOR er blokkert for å hindre misbruk.',
 	'right-torunblocked' => 'Kan redigere frå automatisk blokkerte TOR-nodar',
+	'tag-tor-description' => 'Om dette merket er på, vart endringa gjort frå eit Tor-utgangs-knutepunkt.',
+	'tag-tor' => 'Gjort gjennom tor',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -453,6 +468,8 @@ $messages['pl'] = array(
 	'torblock-blocked' => 'Twój adres IP <tt>$1</tt> został automatycznie zidentyfikowany jako serwer wyjściowy sieci Tor.
 Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.',
 	'right-torunblocked' => 'Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor',
+	'tag-tor-description' => 'Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci TOR.',
+	'tag-tor' => 'zrobione przez sieć TOR',
 );
 
 /** Portuguese (Português)
@@ -463,6 +480,8 @@ $messages['pt'] = array(
 	'torblock-blocked' => 'O seu endereço IP, <tt>$1</tt>, foi automaticamente identificado como um nó de saída Tor.
 A edição através de Tor está bloqueada para prevenir abusos.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
+	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
+	'tag-tor' => 'Feita através de Tor',
 );
 
 /** Russian (Русский)
@@ -503,6 +522,8 @@ $messages['sk'] = array(
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, bola automaticky identifikovaná ako výstupný uzol siete TOR.
 Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'right-torunblocked' => 'Obísť automatické blokovanie výstupných uzlov siete TOR',
+	'tag-tor-description' => 'Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.',
+	'tag-tor' => 'Prostredníctvom Tor',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -524,6 +545,7 @@ $messages['stq'] = array(
 );
 
 /** Swedish (Svenska)
+ * @author Boivie
  * @author Lejonel
  */
 $messages['sv'] = array(
@@ -531,6 +553,8 @@ $messages['sv'] = array(
 	'torblock-blocked' => 'Din IP-adress, <tt>$1</tt>, har automatiskt identifierats som en utgångsnod från Tor.
 Redigering via Tor är blockerad för att förhindra missbruk.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
+	'tag-tor-description' => 'Om denna taggen är på, så är en redigering gjord från en Tor-nod.',
+	'tag-tor' => 'Gjord genom tor',
 );
 
 /** Tagalog (Tagalog)
