@@ -135,6 +135,8 @@ $messages['cs'] = array(
 	'torblock-blocked' => 'Vaše IP adresa (<tt>$1</tt>) byla automaticky rozpoznána jako výstupní uzel sítě Tor.
 Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.',
 	'right-torunblocked' => 'Obcházení automatického blokování výstupních uzlů sítě Tor',
+	'tag-tor-description' => 'Pokud je nastavena tato značka, byla editace provedena z výstupního uzlu sítě Tor.',
+	'tag-tor' => 'Prostřednictvím Tor',
 );
 
 /** German (Deutsch)
@@ -299,6 +301,8 @@ $messages['ia'] = array(
 	'torblock-blocked' => 'Tu adresse IP, <tt>$1</tt>, ha essite automaticamente identificate como un nodo de exito de Tor.
 Le modification via Tor es prohibite pro impedir le abuso.',
 	'right-torunblocked' => 'Contornar le blocadas automatic de nodos de exito de Tor',
+	'tag-tor-description' => 'Si iste etiquetta es presente, un modification esseva facite ab un nodo de exito de Tor.',
+	'tag-tor' => 'Facite via tor',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -375,6 +379,7 @@ $messages['lb'] = array(
 	'torblock-blocked' => 'Är IP-Adress,  <tt>$1</tt>, gouf automatesch als Tor-ausgangsknuet erkannt.
 Ännerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.',
 	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
+	'tag-tor' => "Duech ''Tor'' gemaach",
 );
 
 /** Limburgish (Limburgs)
@@ -457,6 +462,8 @@ $messages['oc'] = array(
 	'torblock-blocked' => "Vòstra adreça ip, <tt>$1</tt>, es estada identificada automaticament coma un nos de sortida Tor.
 L’edicion per aqueste mejan es blocada per evitar d'abuses.",
 	'right-torunblocked' => 'Passar al travèrs dels blocatges dels noses de sortida Tor.',
+	'tag-tor-description' => 'Se aquesta balisa es utilizada, alara la modificacion es estada escafada dempuèi un nos de sortida de Tor.',
+	'tag-tor' => 'Fach dempuèi tor',
 );
 
 /** Polish (Polski)
@@ -469,7 +476,7 @@ $messages['pl'] = array(
 Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.',
 	'right-torunblocked' => 'Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor',
 	'tag-tor-description' => 'Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci TOR.',
-	'tag-tor' => 'zrobione przez sieć TOR',
+	'tag-tor' => 'zrobione poprzez sieć TOR',
 );
 
 /** Portuguese (Português)
@@ -492,6 +499,8 @@ $messages['ru'] = array(
 	'torblock-blocked' => 'Ваш IP-адрес, <tt>$1</tt>, был автоматически определён как выходной узел сети Tor.
 Редактирование посредством Tor запрещено во избежание злоупотреблений.',
 	'right-torunblocked' => 'обход автоматической блокировки узлов сети Tor',
+	'tag-tor-description' => 'Если данная метка установлена, значит правка была сделана с выходного узла сети Tor.',
+	'tag-tor' => 'Сделано через Tor',
 );
 
 /** Yakut (Саха тыла)
