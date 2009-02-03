@@ -170,14 +170,19 @@ class TorBlock {
 	}
 
 	public static function onRecentChangeSave( $recentChange ) {
-		if ( class_exists('ChangeTags') && self::isExitNode() ) {
+		global $wgTorTagChanges;
+		
+		if ( class_exists('ChangeTags') && $wgTorTagChanges && self::isExitNode() ) {
 			ChangeTags::addTags( 'tor', $recentChange->mAttribs['rc_id'], $recentChange->mAttribs['rc_this_oldid'], $recentChange->mAttribs['rc_logid'] );
 		}
 		return true;
 	}
 
 	public static function onListDefinedTags( &$emptyTags ) {
-		$emptyTags[] = 'tor';
+		global $wgTorTagChanges;
+		
+		if ($wgTorTagChanges)
+			$emptyTags[] = 'tor';
 		return true;
 	}
 }

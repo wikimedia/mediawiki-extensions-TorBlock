@@ -78,3 +78,6 @@ $wgTorIPs = array( '208.80.152.2' );
  * Disable existing blocks of Tor nodes
  */
 $wgTorDisableAdminBlocks = true;
+
+/** Mark tor edits as such */
+$wgTorTagChanges = true;
