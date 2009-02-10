@@ -528,6 +528,8 @@ $messages['sah'] = array(
 	'torblock-blocked' => '<tt>$1</tt>, Эн IP-аадырыһыҥ Tor-ситим таһаарар түмүгүн (выходной узел) курдук көстүбүт.
 Tor-ситими туһанан уларытыы манна бобуллар.',
 	'right-torunblocked' => 'Tor-ситим түмүктэрин аптамаатынан бобууну тумнуу',
+	'tag-tor-description' => 'Бу бэлиэ турбут буоллаҕына уларытыы Tor ситимтэн оҥоһуллубут эбит.',
+	'tag-tor' => 'Tor нөҥүө оҥоһуллубут',
 );
 
 /** Sicilian (Sicilianu)
@@ -623,6 +625,8 @@ $messages['vi'] = array(
 	'torblock-blocked' => 'Địa chỉ IP của bạn, <tt>$1</tt>, đã bị xác định là một nút thoát tor.
 Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
 	'right-torunblocked' => 'Bỏ qua các lệnh cấm tự động các nút thoát tor',
+	'tag-tor-description' => 'Nếu thẻ này được thiết lập, sửa đổi do một nút thoát Tor thực hiện.',
+	'tag-tor' => 'Thực hiện nhờ tor',
 );
 
 /** Yue (粵語)
