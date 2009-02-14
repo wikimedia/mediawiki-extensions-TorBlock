@@ -164,6 +164,17 @@ Wobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.',
 	'tag-tor' => 'Pśez TOR pśewjeźony',
 );
 
+/** Greek (Ελληνικά)
+ * @author Dead3y3
+ */
+$messages['el'] = array(
+	'torblock-desc' => 'Επιτρέπει να φραγούν κόμβοι εξόδου tor από το να επεξεργράζονται ένα wiki',
+	'torblock-blocked' => 'Η διεύθυνση IP σας, <tt>$1</tt>, ταυτοποιήθηκε αυτόματα ως ένας κόμβος εξόδου tor. Η επεξεργασία μέσω tor έχει φραγεί για την αποτροπή κατάχρησης.',
+	'right-torunblocked' => 'Παράκαμψη αυτομάτων φραγών για κόμβους εξόδου tor',
+	'tag-tor-description' => 'Αν αυτή η ετικέτα έχει τεθεί, μια επεξεργασία έγινε από έναν κόμβο εξόδου Tor.',
+	'tag-tor' => 'Έγινε μέσω Tor',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
@@ -265,12 +276,15 @@ $messages['hi'] = array(
 
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
+ * @author SpeedyGonsales
  */
 $messages['hr'] = array(
 	'torblock-desc' => 'Omogućava blokiranje tor izlaznih servera od uređivanja na wiki',
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski prepoznata kao tor izlaznog servera.
 Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
+	'tag-tor-description' => 'Ukoliko je ova kartica označena, uređivanje je vršeno s Tor mreže.',
+	'tag-tor' => 'Uređivano preko tor-mreže',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -381,6 +395,7 @@ $messages['lb'] = array(
 	'torblock-blocked' => 'Är IP-Adress,  <tt>$1</tt>, gouf automatesch als Tor-ausgangsknuet erkannt.
 Ännerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.',
 	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
+	'tag-tor-description' => 'Wann dësen Tag gesat ass da gouf eng Ännerung vun engm Tor-Ausgangsknuet gemaach.',
 	'tag-tor' => "Duech ''Tor'' gemaach",
 );
 
@@ -411,6 +426,8 @@ $messages['ms'] = array(
 	'torblock-blocked' => 'Alamat IP anda, <tt>$1</tt>, telah dikenal pasti sebagai nod keluar Tor.
 Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
 	'right-torunblocked' => 'Melepasi sekatan nod keluar Tor',
+	'tag-tor-description' => 'Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.',
+	'tag-tor' => 'Dibuat melalui tor',
 );
 
 /** Low German (Plattdüütsch)
