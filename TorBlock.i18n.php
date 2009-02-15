@@ -437,6 +437,7 @@ $messages['nds'] = array(
 	'torblock-desc' => 'Verlöövt dat Sperren vun Tor-Utgangsknütten',
 	'torblock-blocked' => 'Diene IP-Adress <tt>$1</tt> is automaatsch as Tor-Utgangsknütten kennt worrn. Dat Ännern vun Sieden över en Tor-Nettwark is sperrt, de Gefohr vun Missbruuk is to groot.',
 	'right-torunblocked' => 'Ümgahn vun de automaatsche Sperr vun Tor-Utgangsknütten',
+	'tag-tor' => 'Maakt dör Tor',
 );
 
 /** Dutch (Nederlands)
@@ -632,6 +633,8 @@ $messages['vec'] = array(
 	'torblock-blocked' => 'El to indirisso IP, <tt>$1</tt>, el xe stà identificà automaticamente come un nodo de uscita Tor.
 Le modifiche tramite Tor le xe blocà par evitar abusi.',
 	'right-torunblocked' => 'Scavalca i blochi automatici dei nodi de uscita Tor',
+	'tag-tor-description' => 'Se sto tag el xe presente, vol dir che xe stà fato na modifica atravero un nodo de uscita de Tor.',
+	'tag-tor' => 'Fato via Tor',
 );
 
 /** Vietnamese (Tiếng Việt)
