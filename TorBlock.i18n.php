@@ -186,6 +186,7 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 );
 
 /** Spanish (Español)
+ * @author Crazymadlover
  * @author Remember the dot
  * @author Sanbec
  */
@@ -194,6 +195,7 @@ $messages['es'] = array(
 	'torblock-blocked' => 'Su dirección IP, <tt>$1</tt>, ha sido identificada automáticamente como un nodo de salida tor.
 Se bloquea editar por tor para prevenir abusos.',
 	'right-torunblocked' => "Eludir bloqueos automáticos de nodos de salida ''tor''",
+	'tag-tor' => 'Hecho por medio de tor',
 );
 
 /** Persian (فارسی)
@@ -227,7 +229,7 @@ $messages['fr'] = array(
 L’édition par ce moyen est bloquée pour éviter des abus.',
 	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor',
 	'tag-tor-description' => 'Si cette balise est utilisée, alors la modification a été effectuée depuis un nœud de sortie de Tor.',
-	'tag-tor' => 'Fait depuis tor',
+	'tag-tor' => 'Effectué via Tor',
 );
 
 /** Galician (Galego)
