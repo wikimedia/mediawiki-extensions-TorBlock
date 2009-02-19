@@ -187,6 +187,7 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 
 /** Spanish (Español)
  * @author Crazymadlover
+ * @author Dferg
  * @author Remember the dot
  * @author Sanbec
  */
@@ -195,6 +196,7 @@ $messages['es'] = array(
 	'torblock-blocked' => 'Su dirección IP, <tt>$1</tt>, ha sido identificada automáticamente como un nodo de salida tor.
 Se bloquea editar por tor para prevenir abusos.',
 	'right-torunblocked' => "Eludir bloqueos automáticos de nodos de salida ''tor''",
+	'tag-tor-description' => 'Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.',
 	'tag-tor' => 'Hecho por medio de tor',
 );
 
@@ -210,11 +212,13 @@ $messages['fa'] = array(
 /** Finnish (Suomi)
  * @author Crt
  * @author Nike
+ * @author Str4nd
  */
 $messages['fi'] = array(
 	'torblock-desc' => 'Mahdollistaa tor-poistumissolmujen estämisen.',
 	'torblock-blocked' => 'IP-osoitteesi <tt>$1</tt> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.',
 	'right-torunblocked' => 'Ohittaa automaattiset Tor-poistumispisteiden estot',
+	'tag-tor' => 'Tehty torin kautta',
 );
 
 /** French (Français)
@@ -374,6 +378,8 @@ $messages['ko'] = array(
 	'torblock-blocked' => '당신의 IP 주소 <tt>$1</tt>는 자동적으로 토르임이 밝혀졌습니다.
 토르를 사용한 편집은 악용을 방지하기 위해 차단되어 있습니다.',
 	'right-torunblocked' => '토르 자동 차단을 무시',
+	'tag-tor-description' => '이 태그가 설정되어 있으면, 토르를 통해 편집된 것입니다.',
+	'tag-tor' => '토르 사용',
 );
 
 /** Ripoarisch (Ripoarisch)
