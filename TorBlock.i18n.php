@@ -109,6 +109,13 @@ $messages['bg'] = array(
 Редактирането през такива адреси се ограничава с цел предотвратяване на евентуални злоупотреби.',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'tag-tor' => 'Graet dre Tor',
+);
+
 /** Bosnian (Bosanski)
  * @author CERminator
  */
@@ -338,6 +345,7 @@ Penyuntingan melalui Tor diblokir untuk mencegah penyalahgunaan.',
 );
 
 /** Italian (Italiano)
+ * @author BrokenArrow
  * @author Darth Kule
  */
 $messages['it'] = array(
@@ -345,6 +353,8 @@ $messages['it'] = array(
 	'torblock-blocked' => 'Il tuo indirizzo IP, <tt>$1</tt>, è stato automaticamente identificato come un exit node tor.
 La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
+	'tag-tor-description' => 'Se questo tag è impostato, la modifica è stata effettuata da un nodo di uscita della rete Tor.',
+	'tag-tor' => 'Effettuato tramite tor',
 );
 
 /** Japanese (日本語)
