@@ -159,6 +159,13 @@ $messages['de'] = array(
 	'tag-tor' => 'Durch einen Tor-Ausgangsknoten',
 );
 
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author MichaelFrey
+ */
+$messages['de-formal'] = array(
+	'torblock-blocked' => 'Ihre IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -225,6 +232,7 @@ $messages['fi'] = array(
 	'torblock-desc' => 'Mahdollistaa tor-poistumissolmujen estämisen.',
 	'torblock-blocked' => 'IP-osoitteesi <tt>$1</tt> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.',
 	'right-torunblocked' => 'Ohittaa automaattiset Tor-poistumispisteiden estot',
+	'tag-tor-description' => 'Jos tämä tägi on asetettu, muokkaus on tehty Tor exit noden kautta.',
 	'tag-tor' => 'Tehty torin kautta',
 );
 
