@@ -427,11 +427,14 @@ $messages['lb'] = array(
 
 /** Limburgish (Limburgs)
  * @author Matthias
+ * @author Ooswesthoesbes
  */
 $messages['li'] = array(
 	'torblock-desc' => 'Maakt bewerke onmeugelik veur tor exitnodes',
 	'torblock-blocked' => 'Oew IP-adres, <tt>$1</tt>, is herkend as tor exitnode. Bewerke via tor es niet toegestaon om misbroek te veurkomme.',
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeile',
+	'tag-tor-description' => "Es dit label is ingesteldj, is de bewèrking gemaak via 'ne Tor exitnode.",
+	'tag-tor' => 'Gemaak mid tor',
 );
 
 /** Marathi (मराठी)
