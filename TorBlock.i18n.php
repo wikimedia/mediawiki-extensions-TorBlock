@@ -197,6 +197,7 @@ $messages['eo'] = array(
 	'torblock-blocked' => "Via IP-adreso, <tt>$1</tt> estis aŭtomate identigita kiel elignodo ''tor''.
 Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 	'right-torunblocked' => "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
+	'tag-tor' => 'Farita per tor',
 );
 
 /** Spanish (Español)
