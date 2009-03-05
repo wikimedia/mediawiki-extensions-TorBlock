@@ -40,6 +40,17 @@ class TorBlock {
 
 		return true;
 	}
+	
+	public static function onAbuseFilterFilterAction( &$vars, $title ) {
+		$vars->setVar( 'tor_exit_node', self::isExitNode() ? 1 : 0 );
+		return true;
+	}
+	
+	public static function onAbuseFilterBuilder( &$builder ) {
+		wfLoadExtensionMessages( 'TorBlock' );
+		$builder['vars']['tor_exit_node'] = 'tor-exit-node';
+		return true;
+	}
 
 	public static function getExitNodes() {
 		if (is_array(self::$mExitNodes)) {
