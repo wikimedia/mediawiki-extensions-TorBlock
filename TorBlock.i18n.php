@@ -17,7 +17,7 @@ Editing through tor is blocked to prevent abuse.',
 	'right-torunblocked' => 'Bypass automatic blocks of tor exit nodes',
 	'tag-tor-description' => 'If this tag is set, an edit was made from a Tor exit node.',
 	'tag-tor' => 'Made through tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Whether or not the change was made through a tor exit node.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Whether or not the change was made through a tor exit node',
 );
 
 /** Message documentation (Message documentation)
