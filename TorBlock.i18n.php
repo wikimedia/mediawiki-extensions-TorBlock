@@ -293,7 +293,7 @@ $messages['he'] = array(
 	'right-torunblocked' => 'עקיפת חסימות אוטומטיות של נקודות יציאה ברשת TOR',
 	'tag-tor-description' => 'אם תגית זו מוגדרת, בוצעה עריכה מנקודת יציאה של רשת TOR',
 	'tag-tor' => 'בוצעה דרך רשת TOR',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'האם השינוי בוצע דרך נקודת יציאה של רשת TOR או לא.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'האם השינוי בוצע דרך נקודת יציאה של רשת TOR או לא',
 );
 
 /** Hindi (हिन्दी)
