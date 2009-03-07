@@ -99,7 +99,7 @@ $messages['be-tarask'] = array(
 	'right-torunblocked' => 'Абыход аўтаматычнага блякаваньня вузлоў сеткі Tor',
 	'tag-tor-description' => 'Калі гэты тэг быў дададзены, рэдагаваньне было зроблена праз выходны вузел Tor.',
 	'tag-tor' => 'Зроблена праз Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці рэдагаваньне адбылася праз вузел Tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці рэдагаваньне адбылася праз вузел Tor',
 );
 
 /** Bulgarian (Български)
@@ -128,7 +128,7 @@ Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Zaobilaženje automatskih blokada tor izlaznih čvorova',
 	'tag-tor-description' => 'Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.',
 	'tag-tor' => 'Napravljeno kroz tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Da li je izmjena izvršena kroz tor izlazni čvor ili ne.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Da li je izmjena izvršena kroz tor izlazni čvor ili ne',
 );
 
 /** Catalan (Català)
@@ -161,7 +161,7 @@ $messages['de'] = array(
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 	'tag-tor-description' => 'Wenn dieses Tag gesetzt ist, erfolgte die Bearbeitung durch einen Tor-Ausgangsknoten.',
 	'tag-tor' => 'Durch einen Tor-Ausgangsknoten',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ob die Änderung durch einen Torausgangsknoten gemacht wurde oder ob nicht.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Änderung erfolgte durch einen Torausgangsknoten',
 );
 
 /** German (formal address) (Deutsch (Sie-Form))
@@ -181,7 +181,7 @@ Wobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.',
 	'right-torunblocked' => 'Awtomatiske blokěrowanja wuchadnych sukow TOR sw wobinuś',
 	'tag-tor-description' => 'Jolic toś ta toflicka jo stajona, jo se změna z wuchadnego modusa TOR pśewjadła.',
 	'tag-tor' => 'Pśez TOR pśewjeźony',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Lěc změna jo se cyniła pśez wuchadny suk TOR abo nic.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Lěc změna jo se cyniła pśez wuchadny suk TOR abo nic',
 );
 
 /** Greek (Ελληνικά)
@@ -269,7 +269,7 @@ A edición a través disto está bloqueada para previr o abuso.',
 	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
 	'tag-tor-description' => 'Se a etiqueta está fixada é que unha edición foi feita desde un nodo de saída Tor.',
 	'tag-tor' => 'Feito a través do Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Pode ser, ou non, que o cambio fose feito a través dun nodo tor de saída.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Pode ser, ou non, que o cambio fose feito a través dun nodo tor de saída',
 );
 
 /** Swiss German (Alemannisch)
@@ -281,7 +281,7 @@ $messages['gsw'] = array(
 	'right-torunblocked' => 'Di automatisch Sperri vu Tor-Usgangs-Chnote umgoh',
 	'tag-tor-description' => 'Wänn des Tag gsetzt wird, isch e Bearbeitig gmacht wore vun eme Tor-Exit-Chnote.',
 	'tag-tor' => 'Gmacht dur Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Eb d Änderig dur e TorExit-Chnote gmacht woren isch.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Eb d Änderig dur e TorExit-Chnote gmacht woren isch',
 );
 
 /** Hebrew (עברית)
@@ -329,7 +329,7 @@ Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
 	'right-torunblocked' => 'Awtomatiske blokowanja wuchadnych sukow TOR wobeńć',
 	'tag-tor-description' => 'Jeli tuta taflička je stajeny, je so změna z wuchadneho suka Tor činiła.',
 	'tag-tor' => 'Přez TOR sčinjeny',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hač změna je so přez wuchadny suk TOR činiła abo nic.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hač změna je so přez wuchadny suk TOR činiła abo nic',
 );
 
 /** Hungarian (Magyar)
@@ -352,7 +352,7 @@ Le modification via Tor es prohibite pro impedir le abuso.',
 	'right-torunblocked' => 'Contornar le blocadas automatic de nodos de exito de Tor',
 	'tag-tor-description' => 'Si iste etiquetta es presente, un modification esseva facite ab un nodo de exito de Tor.',
 	'tag-tor' => 'Facite via tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si le modification ha essite facite via un nodo de exito de Tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si le modification ha essite facite via un nodo de exito de Tor',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -376,6 +376,7 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
 	'tag-tor-description' => 'Se questo tag è impostato, la modifica è stata effettuata da un nodo di uscita della rete Tor.',
 	'tag-tor' => 'Effettuato tramite tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Indica se la modifica è stata fatta da un nodo di uscita TOR o meno',
 );
 
 /** Japanese (日本語)
@@ -389,7 +390,7 @@ $messages['ja'] = array(
 	'right-torunblocked' => 'Tor 末端ノードの自動ブロックを回避する',
 	'tag-tor-description' => 'このタグが設定されている場合、Tor 末端ノードから編集がなされました。',
 	'tag-tor' => 'Tor を通じてなされた',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'その変更が Tor 末端ノードを通じてなされたかどうか。',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'その変更が Tor 末端ノードを通じてなされたかどうか',
 );
 
 /** Javanese (Basa Jawa)
@@ -425,7 +426,7 @@ esu määt och Keiner Dreßß domet.',
 	'right-torunblocked' => 'Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße',
 	'tag-tor-description' => 'Wann dat Zeijshe jesaz es, kohm die Änderung övver ene <tt>tor</tt> Ußjang.',
 	'tag-tor' => 'Övver <tt>tor</tt> Ußjang jemaat',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of en Änderung övver ene <i lang="en">tor</i>-Ußjang jemaat woode es.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of en Änderung övver ene <i lang="en">tor</i>-Ußjang jemaat woode es',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -450,6 +451,7 @@ $messages['li'] = array(
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeile',
 	'tag-tor-description' => "Es dit label is ingesteldj, is de bewèrking gemaak via 'ne Tor exitnode.",
 	'tag-tor' => 'Gemaak mid tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Óf de-n angering waal ódder neet is gemaak waenger 'ne tor exitnode",
 );
 
 /** Marathi (मराठी)
@@ -483,6 +485,7 @@ $messages['nds'] = array(
 	'right-torunblocked' => 'Ümgahn vun de automaatsche Sperr vun Tor-Utgangsknütten',
 	'tag-tor-description' => 'Wenn disse Tag sett is, is de Ännern von en Tor-Utgangsknütten maakt worrn.',
 	'tag-tor' => 'Maakt dör Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Wat de Ännern över en Tor-Utgangsknütten maakt worrn is',
 );
 
 /** Dutch (Nederlands)
@@ -494,7 +497,7 @@ $messages['nl'] = array(
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeilen',
 	'tag-tor-description' => 'Als dit label is ingesteld, is de bewerking gemaakt via een Tor exitnode.',
 	'tag-tor' => 'Gemaakt via tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wijziging wel of niet is gemaakt via een tor exitnode.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wijziging wel of niet is gemaakt via een tor exitnode',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
@@ -507,7 +510,8 @@ $messages['nn'] = array(
 Redigering via TOR er blokkert for å hindre misbruk.',
 	'right-torunblocked' => 'Kan redigere frå automatisk blokkerte TOR-nodar',
 	'tag-tor-description' => 'Om dette merket er på, vart endringa gjort frå eit Tor-utgangs-knutepunkt.',
-	'tag-tor' => 'Gjort gjennom tor',
+	'tag-tor' => 'Gjord gjennom tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Om endringa vart gjord gjennom eit Tor-utgangsknutepunkt.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -533,6 +537,7 @@ L’edicion per aqueste mejan es blocada per evitar d'abuses.",
 	'right-torunblocked' => 'Passar al travèrs dels blocatges dels noses de sortida Tor.',
 	'tag-tor-description' => 'Se aquesta balisa es utilizada, alara la modificacion es estada escafada dempuèi un nos de sortida de Tor.',
 	'tag-tor' => 'Fach dempuèi tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se la modificacion es estada facha via un nos de sortida de Tor',
 );
 
 /** Polish (Polski)
@@ -546,7 +551,7 @@ Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiega
 	'right-torunblocked' => 'Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor',
 	'tag-tor-description' => 'Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci TOR.',
 	'tag-tor' => 'zrobione poprzez sieć TOR',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Czy zmiana została wprowadzona przez węzeł wyjściowy sieci tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Czy zmiana została wprowadzona przez węzeł wyjściowy sieci tor',
 );
 
 /** Portuguese (Português)
@@ -560,7 +565,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
 	'tag-tor' => 'Feita através de Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se mudança foi feita ou não através de um nodo de saída Tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se mudança foi feita ou não através de um nodo de saída Tor',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
@@ -573,6 +578,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
 	'tag-tor' => 'Feita através de Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se a mudança foi feita ou não através de um nó de saída Tor.',
 );
 
 /** Russian (Русский)
@@ -598,6 +604,7 @@ Tor-ситими туһанан уларытыы манна бобуллар.',
 	'right-torunblocked' => 'Tor-ситим түмүктэрин аптамаатынан бобууну тумнуу',
 	'tag-tor-description' => 'Бу бэлиэ турбут буоллаҕына уларытыы Tor ситимтэн оҥоһуллубут эбит.',
 	'tag-tor' => 'Tor нөҥүө оҥоһуллубут',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Көннөрүү Tor ситим нөҥүө оҥоһуллубут дуу суох дуу',
 );
 
 /** Sicilian (Sicilianu)
@@ -620,7 +627,7 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'right-torunblocked' => 'Obísť automatické blokovanie výstupných uzlov siete TOR',
 	'tag-tor-description' => 'Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.',
 	'tag-tor' => 'Prostredníctvom Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Či bola alebo nebola úprava vykonaná z koncového uzla TOR.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Či bola alebo nebola úprava vykonaná z koncového uzla TOR',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -652,7 +659,7 @@ Redigering via Tor är blockerad för att förhindra missbruk.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
 	'tag-tor-description' => 'Om denna taggen är på, så är en redigering gjord från en Tor-nod.',
 	'tag-tor' => 'Gjord genom tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Huruvida ändringen gjordes genom en tor utgångsnod.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Huruvida ändringen gjordes genom en tor utgångsnod',
 );
 
 /** Tagalog (Tagalog)
@@ -665,7 +672,20 @@ Ang paggawa ng pagbabago mula sa isang bunton ng mga nakikipagugnayang hindi nag
 	'right-torunblocked' => "Laktawan ang kusang mga paghahadlang ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'').",
 	'tag-tor-description' => 'Kapag nakatakda ang tatak na ito, may isang pagbabagong ginawa mula sa labasang bugkol ng isang Tor.',
 	'tag-tor' => 'Ginawa sa pamamagitan ng Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Kung ang pagbabago ay nagawa o hindi sa pamamagitan ng isang labasang bugkol na tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Kung ang pagbabago ay nagawa o hindi sa pamamagitan ng isang labasang bugkol na tor',
+);
+
+/** Turkish (Türkçe)
+ * @author Joseph
+ */
+$messages['tr'] = array(
+	'torblock-desc' => 'Tor çıkış nodlarının bir vikiyi değiştirmesinin engellemesini sağlar',
+	'torblock-blocked' => 'IP adresiniz, <tt>$1</tt>, otomatik olarak bir tor çıkış nodu olarak algılandı.
+Suistimali önlemek için tor üzerinden değişiklik engellendi.',
+	'right-torunblocked' => 'Tor çıkış nodlarının otomatik engelini atla',
+	'tag-tor-description' => 'Eğer bu etiket ayarlanmışsa, bir Tor çıkış nodundan bir değişiklik yapılmıştır.',
+	'tag-tor' => 'Tor üzerinden yapılmıştır',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Değişikliğin bir tor çıkış nodundan yapılıp yapılmadığı',
 );
 
 /** Ukrainian (Українська)
@@ -688,6 +708,7 @@ Le modifiche tramite Tor le xe blocà par evitar abusi.',
 	'right-torunblocked' => 'Scavalca i blochi automatici dei nodi de uscita Tor',
 	'tag-tor-description' => 'Se sto tag el xe presente, vol dir che xe stà fato na modifica atravero un nodo de uscita de Tor.',
 	'tag-tor' => 'Fato via Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Indica se la modifica la xe stà fata da un nodo de uscita TOR opure no',
 );
 
 /** Vietnamese (Tiếng Việt)
