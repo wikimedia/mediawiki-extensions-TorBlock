@@ -439,6 +439,7 @@ $messages['lb'] = array(
 	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
 	'tag-tor-description' => 'Wann dësen Tag gesat ass da gouf eng Ännerung vun engm Tor-Ausgangsknuet gemaach.',
 	'tag-tor' => "Duech ''Tor'' gemaach",
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Ob d'Ännerungen iwwer en Tor-Ausgangsknuet gemaach goufen",
 );
 
 /** Limburgish (Limburgs)
