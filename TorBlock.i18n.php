@@ -193,6 +193,7 @@ $messages['el'] = array(
 	'right-torunblocked' => 'Παράκαμψη αυτομάτων φραγών για κόμβους εξόδου tor',
 	'tag-tor-description' => 'Αν αυτή η ετικέτα έχει τεθεί, μια επεξεργασία έγινε από έναν κόμβο εξόδου Tor.',
 	'tag-tor' => 'Έγινε μέσω Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ανεξάρτητα από το αν η αλλαγή έγινε διαμέσου ενός κόμβου εξόδου tor',
 );
 
 /** Esperanto (Esperanto)
@@ -246,15 +247,16 @@ $messages['fi'] = array(
 /** French (Français)
  * @author Grondin
  * @author IAlex
+ * @author PieRRoMaN
  * @author Sherbrooke
  * @author Verdy p
  */
 $messages['fr'] = array(
 	'torblock-desc' => 'Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor',
-	'torblock-blocked' => 'Votre adresse ip, <tt>$1</tt>, a été identifiée automatiquement comme un nœud de sortie Tor.
-L’édition par ce moyen est bloquée pour éviter des abus.',
+	'torblock-blocked' => 'Votre adresse IP, <tt>$1</tt>, a été détectée automatiquement comme un nœud de sortie Tor.
+Les modifications via Tor sont bloquées pour éviter les abus.',
 	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor',
-	'tag-tor-description' => 'Si cette balise est utilisée, alors la modification a été effectuée depuis un nœud de sortie de Tor.',
+	'tag-tor-description' => 'Si cette balise est activée, une modification a été effectuée depuis un nœud de sortie Tor.',
 	'tag-tor' => 'Effectué via Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si la modification a été faite via un nœud de sortie de Tor',
 );
@@ -722,6 +724,7 @@ Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
 	'right-torunblocked' => 'Bỏ qua các lệnh cấm tự động các nút thoát tor',
 	'tag-tor-description' => 'Nếu thẻ này được thiết lập, sửa đổi do một nút thoát Tor thực hiện.',
 	'tag-tor' => 'Thực hiện nhờ tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Có thay đổi nào thực hiện qua nút thoát tor hay không',
 );
 
 /** Yue (粵語)
