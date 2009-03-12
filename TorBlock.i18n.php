@@ -52,6 +52,7 @@ $messages['ar'] = array(
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 	'tag-tor-description' => 'لو أن هذا الوسم مضبوط، فإن تعديلا قد حدث من عقدة خروج تور.',
 	'tag-tor' => 'معمولة من خلال تور',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'ما إذا كان التعديل قد تم عمله من خلال عقدة خروج تور',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -319,6 +320,7 @@ Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
 	'tag-tor-description' => 'Ukoliko je ova kartica označena, uređivanje je vršeno s Tor mreže.',
 	'tag-tor' => 'Uređivano preko tor-mreže',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bez obzira je li uređivanje učinjeno preko Tor izlaznog čvora',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
