@@ -471,6 +471,7 @@ $messages['mr'] = array(
 
 /** Malay (Bahasa Melayu)
  * @author Aviator
+ * @author Izzudin
  */
 $messages['ms'] = array(
 	'torblock-desc' => 'Membolehkan sekatan terhadap nod keluar Tor',
@@ -479,6 +480,7 @@ Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
 	'right-torunblocked' => 'Melepasi sekatan nod keluar Tor',
 	'tag-tor-description' => 'Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.',
 	'tag-tor' => 'Dibuat melalui tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Sama ada atau tidak perubahan dibuat melalui buku keluar tor',
 );
 
 /** Low German (Plattdüütsch)
@@ -741,12 +743,14 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Shinjiman
+ * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
 	'torblock-desc' => '容许tor出口点封锁在一个wiki中的编辑',
 	'torblock-blocked' => '您的IP地址，<tt>$1</tt>已经被自动认定为一个tor的出口点。
 经tor的编辑已经封锁以防止滥用。',
 	'right-torunblocked' => '绕过tor出口点的自动封锁',
+	'tag-tor-description' => '如果这个标签已标记，一个编辑从一个Tor节点中制造。',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
