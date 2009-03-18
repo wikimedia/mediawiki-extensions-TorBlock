@@ -150,6 +150,7 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
 	'right-torunblocked' => 'Obcházení automatického blokování výstupních uzlů sítě Tor',
 	'tag-tor-description' => 'Pokud je nastavena tato značka, byla editace provedena z výstupního uzlu sítě Tor.',
 	'tag-tor' => 'Prostřednictvím Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Zda byla tato editace provedena z výstupního uzlu sítě Tor',
 );
 
 /** German (Deutsch)
