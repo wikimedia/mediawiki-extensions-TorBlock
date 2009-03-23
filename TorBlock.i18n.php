@@ -206,6 +206,7 @@ $messages['eo'] = array(
 	'torblock-blocked' => "Via IP-adreso, <tt>$1</tt> estis aŭtomate identigita kiel elignodo ''tor''.
 Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 	'right-torunblocked' => "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
+	'tag-tor-description' => 'Se ĉi tiu etikedo estas ŝalta, redakto estis farita de Tor-a elira nodo.',
 	'tag-tor' => 'Farita per tor',
 );
 
@@ -409,6 +410,7 @@ Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 );
 
 /** Korean (한국어)
+ * @author Ilovesabbath
  * @author Kwj2772
  */
 $messages['ko'] = array(
@@ -418,6 +420,7 @@ $messages['ko'] = array(
 	'right-torunblocked' => '토르 자동 차단을 무시',
 	'tag-tor-description' => '이 태그가 설정되어 있으면, 토르를 통해 편집된 것입니다.',
 	'tag-tor' => '토르 사용',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '토르 출구노드를 통한 변형 여부에 무관하게',
 );
 
 /** Ripoarisch (Ripoarisch)
