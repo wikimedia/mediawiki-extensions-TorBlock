@@ -223,6 +223,7 @@ Se bloquea editar por tor para prevenir abusos.',
 	'right-torunblocked' => "Eludir bloqueos automáticos de nodos de salida ''tor''",
 	'tag-tor-description' => 'Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.',
 	'tag-tor' => 'Hecho por medio de tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si el cambio fue hecho o no a través de un nodo de salida tor',
 );
 
 /** Persian (فارسی)
@@ -499,6 +500,13 @@ $messages['nds'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Wat de Ännern över en Tor-Utgangsknütten maakt worrn is',
 );
 
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wieziging wè of neet mit een toruutgangsknope emaak is',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -561,7 +569,7 @@ $messages['pl'] = array(
 Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.',
 	'right-torunblocked' => 'Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor',
 	'tag-tor-description' => 'Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci TOR.',
-	'tag-tor' => 'zrobione poprzez sieć TOR',
+	'tag-tor' => 'wykonane poprzez sieć TOR',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Czy zmiana została wprowadzona przez węzeł wyjściowy sieci tor',
 );
 
