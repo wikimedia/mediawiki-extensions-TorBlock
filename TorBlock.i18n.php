@@ -208,6 +208,7 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 	'right-torunblocked' => "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
 	'tag-tor-description' => 'Se ĉi tiu etikedo estas ŝalta, redakto estis farita de Tor-a elira nodo.',
 	'tag-tor' => 'Farita per tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se la ŝanĝo estis farita per elira nodo de tor aŭ ne',
 );
 
 /** Spanish (Español)
@@ -665,6 +666,8 @@ $messages['stq'] = array(
 	'torblock-desc' => 'Moaket ju Schrieuwspeere foar Poute-Uutgongsknätte muugelk',
 	'torblock-blocked' => 'Dien IP-Adresse <tt>$1</tt> wuud automatisk as Poute-Uutgongsknät identifizierd. Ju Siedenbeoarbaidenge in Ferbiendenge mäd dät Poute-Nätwierk is nit wonsked, deer ju Misbruuksgefoar gjucht hooch is.',
 	'right-torunblocked' => 'Uumgungen fon ju automatiske Speere fon Poute-Uutgongknätte',
+	'tag-tor-description' => 'Wan dit Tag sät is, geböärde ju Beoarbaidenge truch n Tor-Uutgongsknät.',
+	'tag-tor' => 'Truch n Tor-Uutgongsknät',
 );
 
 /** Swedish (Svenska)
