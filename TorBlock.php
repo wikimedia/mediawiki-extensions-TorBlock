@@ -16,6 +16,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
 
 $dir = dirname(__FILE__);
 $wgExtensionCredits['other'][] = array(
+	'path'           => __FILE__,
 	'name'           => 'TorBlock',
 	'author'         => 'Andrew Garrett',
 	'description'    => 'Prevents Tor exit nodes from editing a wiki',
