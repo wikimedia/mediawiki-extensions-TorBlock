@@ -422,7 +422,7 @@ $messages['ko'] = array(
 	'right-torunblocked' => '토르 자동 차단을 무시',
 	'tag-tor-description' => '이 태그가 설정되어 있으면, 토르를 통해 편집된 것입니다.',
 	'tag-tor' => '토르 사용',
-	'abusefilter-edit-builder-vars-tor-exit-node' => '토르 출구노드를 통한 변형 여부에 무관하게',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '편집이 토르를 통해 이루어졌는 지의 여부',
 );
 
 /** Ripoarisch (Ripoarisch)
