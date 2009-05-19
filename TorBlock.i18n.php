@@ -537,6 +537,7 @@ Redigering via TOR er blokkert for å hindre misbruk.',
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Harald Khan
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
@@ -545,6 +546,7 @@ Redigering via TOR er blokkert for å forhindre misbruk.',
 	'right-torunblocked' => 'Kan redigere fra automatisk blokkerte TOR-noder',
 	'tag-tor-description' => 'Om denne taggen er på, ble redigeringen gjort via en Tor-node.',
 	'tag-tor' => 'Gjort via tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hvorvidt endringen ble gjort gjennom et tor-utgangsknutepunkt.',
 );
 
 /** Occitan (Occitan)
