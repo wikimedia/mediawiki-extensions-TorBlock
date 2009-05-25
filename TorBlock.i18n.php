@@ -348,6 +348,9 @@ $messages['hu'] = array(
 	'torblock-blocked' => 'Az IP-címed (<tt>$1</tt>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.
 Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.',
 	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
+	'tag-tor-description' => 'Ha ez a címke be van állítva, a szerkesztés egy Tor-csomópontról történt',
+	'tag-tor' => 'Toron keresztül készült',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'A szerkesztés egy tor-csomópontról készült vagy sem.',
 );
 
 /** Interlingua (Interlingua)
