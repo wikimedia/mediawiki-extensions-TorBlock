@@ -759,6 +759,9 @@ $messages['yue'] = array(
 	'torblock-blocked' => '你嘅IP地址，<tt>$1</tt>已經被自動認定為一個tor嘅出口點。
 經tor嘅編輯已經封鎖以防止濫用。',
 	'right-torunblocked' => '繞過tor出口點嘅自動封鎖',
+	'tag-tor-description' => '如果呢個標籤設定咗，個編輯就會由Tor出口點完成。',
+	'tag-tor' => '經tor編輯',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '睇個修改係咪經過一個tor出口點完成',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
@@ -771,6 +774,8 @@ $messages['zh-hans'] = array(
 经tor的编辑已经封锁以防止滥用。',
 	'right-torunblocked' => '绕过tor出口点的自动封锁',
 	'tag-tor-description' => '如果这个标签已标记，一个编辑从一个Tor节点中制造。',
+	'tag-tor' => '经Tor编辑',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过一个Tor节点完成',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
@@ -781,5 +786,8 @@ $messages['zh-hant'] = array(
 	'torblock-desc' => '封鎖使用tor位址發出的匿名編輯',
 	'torblock-blocked' => '您的IP位址<tt>$1</tt>已被系統自動認定為tor的節點，為防止破壞，經由tor發出的匿名編輯已經被封鎖。',
 	'right-torunblocked' => '自動繞過tor的節點',
+	'tag-tor-description' => '如果這個標籤已標記，一個編輯從一個Tor節點中製造。',
+	'tag-tor' => '經Tor編輯',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否經過一個Tor節點完成',
 );
 
