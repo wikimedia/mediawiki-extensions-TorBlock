@@ -673,6 +673,7 @@ $messages['stq'] = array(
 	'right-torunblocked' => 'Uumgungen fon ju automatiske Speere fon Poute-Uutgongknätte',
 	'tag-tor-description' => 'Wan dit Tag sät is, geböärde ju Beoarbaidenge truch n Tor-Uutgongsknät.',
 	'tag-tor' => 'Truch n Tor-Uutgongsknät',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Annerenge waas moaked truch n Poute-Uutgongs-Knät',
 );
 
 /** Swedish (Svenska)
