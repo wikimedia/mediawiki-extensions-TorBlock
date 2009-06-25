@@ -367,13 +367,17 @@ Le modification via Tor es prohibite pro impedir le abuso.',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Rex
  */
 $messages['id'] = array(
-	'torblock-desc' => 'Memblokir titik alamat Tor untuk menyunting wiki',
-	'torblock-blocked' => 'Alamat IP Anda, <tt>$1</tt> telah diidentifikasi secara otomatis sebagai sebuah titik alamat Tor.
-Penyuntingan melalui Tor diblokir untuk mencegah penyalahgunaan.',
-	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap alamat Tor',
+	'torblock-desc' => 'Mengijinkan "exit node" Tor untuk diblokir dari menyunting wiki',
+	'torblock-blocked' => 'Alamat IP Anda, <tt>$1</tt> telah diidentifikasi secara otomatis sebagai sebuah "exit node" tor.
+Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.',
+	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap "exit nodes" tor',
+	'tag-tor-description' => 'Jika tag ini dipasang, sebuah suntingan dibuat dari sebuah "exit node" Tor.',
+	'tag-tor' => 'Dibuat melalui tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Menampilkan apakah suatu perubahan dibuat melalui "exit node" tor atau tidak',
 );
 
 /** Italian (Italiano)
