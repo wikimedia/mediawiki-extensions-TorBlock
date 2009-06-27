@@ -247,6 +247,7 @@ $messages['fi'] = array(
 	'right-torunblocked' => 'Ohittaa automaattiset Tor-poistumispisteiden estot',
 	'tag-tor-description' => 'Jos tämä tägi on asetettu, muokkaus on tehty Tor exit noden kautta.',
 	'tag-tor' => 'Tehty torin kautta',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Onko muutos tehty tor exit -solmun kautta',
 );
 
 /** French (Français)
