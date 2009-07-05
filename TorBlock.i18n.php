@@ -153,6 +153,13 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Zda byla tato editace provedena z výstupního uzlu sítě Tor',
 );
 
+/** Danish (Dansk)
+ * @author Masz
+ */
+$messages['da'] = array(
+	'right-torunblocked' => 'Redigere fra blokerede TOR-noder',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  * @author Umherirrender
