@@ -426,6 +426,19 @@ Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 	'right-torunblocked' => "Lirwakna pamblokiran otomatis marang alamat ''tor''",
 );
 
+/** Georgian (ქართული)
+ * @author გიორგიმელა
+ */
+$messages['ka'] = array(
+	'torblock-desc' => 'Tor ხაზიდან ბლოკირების გასვლის ნებართვა',
+	'torblock-blocked' => 'თქვენი IP-მისამართი, <tt>$1</tt>, იდენტიფიცირებულია როგორც Tor-ი.
+რედაქტირება Tor-ის მეშვეობით აკრძალულია ბოროტად გამოყენებების .',
+	'right-torunblocked' => 'Tor-ის ავტომატური ბლოკირების გავლა',
+	'tag-tor-description' => 'იმ შემთხვევაში თუ ეს მინიშნება დაყენებულია, იგი გაკეთებულია Tor-ის მეშვეობით.',
+	'tag-tor' => 'გაკეთებულია Tor-ის მეშვეობით',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'თუ იყო ცვლილება გაკეთებული Tor-ის მეშვეობით',
+);
+
 /** Korean (한국어)
  * @author Ilovesabbath
  * @author Kwj2772
