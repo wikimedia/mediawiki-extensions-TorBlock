@@ -493,6 +493,19 @@ $messages['li'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Óf de-n angering waal ódder neet is gemaak waenger 'ne tor exitnode",
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Matasg
+ */
+$messages['lt'] = array(
+	'torblock-desc' => 'Leidžia tor išėjimo mazgams būti užblokuotiems nuo wiki redagavimo',
+	'torblock-blocked' => 'Jūsų IP adresas, <tt>$1</tt>, buvo automatiškai nustatytas kaip tor išėjimo mazgas.
+Redagavimas per tor yra užblokuotas, kad nebūtų piktnaudžiaujama.',
+	'right-torunblocked' => 'Praleisti automatinį tor išėjimo mazgų blokavimą',
+	'tag-tor-description' => 'Jei žymė yra nustatyta, redagavimas buvo atliktas iš Tor išėjimo mazgo.',
+	'tag-tor' => 'Atliktas per tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bet kuriuo atveju, pakeitimas buvo atliktas per tor išėjimo mazgą',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
