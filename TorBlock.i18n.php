@@ -703,6 +703,15 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'Прескочи аутоматске блокове излазних нодова тора.',
 );
 
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'torblock-desc' => 'Omogućava blokiranje izmena na vikiju od strane izlaznih nodova tora.',
+	'torblock-blocked' => 'Tvoja IP adresa, <tt>$1</tt>, je automatski identifikovana kao izlazni nod tora. Izmene putem tora su onemogućene zbog moguće zloupotrebe.',
+	'right-torunblocked' => 'Preskoči automatske blokove izlaznih nodova tora.',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
