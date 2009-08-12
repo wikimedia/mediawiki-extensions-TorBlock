@@ -672,6 +672,7 @@ Tor-ситими туһанан уларытыы манна бобуллар.',
 );
 
 /** Sicilian (Sicilianu)
+ * @author Melos
  * @author Santu
  */
 $messages['scn'] = array(
@@ -679,6 +680,9 @@ $messages['scn'] = array(
 	'torblock-blocked' => 'Lu tò nnirizzu IP, <tt>$1</tt>, vinni ricanusciutu autumaticamenti comu nu exit node tor.
 La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari abbusi.',
 	'right-torunblocked' => "Non pigghiari 'n cunziddirazzioni li blocchi automàtichi di li exit node tor",
+	'tag-tor-description' => 'Si stu tag fu impustatu, lu canciamentu fu fattu da nu nodu di nisciuta dâ reti Tor.',
+	'tag-tor' => 'Fattu attraversu tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Ndica si lu canciamentu fu fattu da nu nodu d'uscita TOR o menu",
 );
 
 /** Slovak (Slovenčina)
