@@ -243,6 +243,7 @@ $messages['et'] = array(
 Tor-võrgu kaudu toimetamine on väärtarvituse vältimiseks keelatud.',
 	'right-torunblocked' => 'Mööduda automaatsetest Tor-võrgu lõppsõlme blokeeringutest',
 	'tag-tor-description' => 'Kui see märgis on asetatud, tehti muudatus Tor-võrgu lõppsõlme kaudu.',
+	'tag-tor' => 'Tehtud Tor-võrgu kaudu',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Kas muudatus on Tor-võrgu lõppsõlme kaudu tehtud',
 );
 
