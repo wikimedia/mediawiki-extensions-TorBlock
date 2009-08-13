@@ -234,6 +234,18 @@ Se bloquea editar por tor para prevenir abusos.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si el cambio fue hecho o no a través de un nodo de salida tor',
 );
 
+/** Estonian (Eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'torblock-desc' => 'Lubab Tor-võrgu lõppsõlme jaoks viki toimetamise keelata.',
+	'torblock-blocked' => 'Sinu IP-aadress <tt>$1</tt> on automaatselt kindlaks tehtud kui Tor-võrgu lõppsõlm.
+Tor-võrgu kaudu toimetamine on väärtarvituse vältimiseks keelatud.',
+	'right-torunblocked' => 'Mööduda automaatsetest Tor-võrgu lõppsõlme blokeeringutest',
+	'tag-tor-description' => 'Kui see märgis on asetatud, tehti muudatus Tor-võrgu lõppsõlme kaudu.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Kas muudatus on Tor-võrgu lõppsõlme kaudu tehtud',
+);
+
 /** Persian (فارسی)
  * @author Huji
  */
