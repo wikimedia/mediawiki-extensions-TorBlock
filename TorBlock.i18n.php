@@ -831,17 +831,18 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author PhiLiP
  * @author Shinjiman
  * @author Wmr89502270
  */
 $messages['zh-hans'] = array(
-	'torblock-desc' => '容许tor出口点封锁在一个wiki中的编辑',
-	'torblock-blocked' => '您的IP地址，<tt>$1</tt>已经被自动认定为一个tor的出口点。
-经tor的编辑已经封锁以防止滥用。',
-	'right-torunblocked' => '绕过tor出口点的自动封锁',
-	'tag-tor-description' => '如果这个标签已标记，一个编辑从一个Tor节点中制造。',
+	'torblock-desc' => '允许封禁通过tor节点在wiki中的编辑',
+	'torblock-blocked' => '您的IP地址<tt>$1</tt>已被自动识别为tor节点。
+经tor的编辑已被封禁以防止滥用。',
+	'right-torunblocked' => '绕过tor节点的自动封禁',
+	'tag-tor-description' => '如果标记此标签，则将允许通过Tor节点编辑。',
 	'tag-tor' => '经Tor编辑',
-	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过一个Tor节点完成',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过Tor节点完成',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
