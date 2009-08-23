@@ -711,7 +711,7 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Či bola alebo nebola úprava vykonaná z koncového uzla TOR',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
  */
 $messages['sr-ec'] = array(
@@ -720,7 +720,7 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'Прескочи аутоматске блокове излазних нодова тора.',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
