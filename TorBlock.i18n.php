@@ -631,6 +631,19 @@ Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiega
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Czy zmiana została wprowadzona przez węzeł wyjściowy sieci tor',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'torblock-desc' => 'A përmëtt ëd bloché exit node tor an dzora a na wiki',
+	'torblock-blocked' => "Toa adrëssa IP, <tt>$1</tt>, a l'é stàita automaticament identificà com n'exit node tor.
+La modìfica con tor a l'é blocà për evité dj'abus.",
+	'right-torunblocked' => "Sàuta ij blòch automàtich dj'exit node tor",
+	'tag-tor-description' => "Se sto tag sì a l'é ampostà, na modìfica a l'é stàita fàita da n'exit node Tor.",
+	'tag-tor' => 'Fàit a travers tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Se ël cambi a l'é stàit fàit o pa a travers un exit node tor",
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  * @author Waldir
