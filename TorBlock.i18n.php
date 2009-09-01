@@ -116,7 +116,13 @@ $messages['bg'] = array(
  * @author Fulup
  */
 $messages['br'] = array(
+	'torblock-desc' => 'Talvezout a ra da stankañ kemmoù ur wiki adalek skoulmoù ezmont Tor',
+	'torblock-blocked' => "Detektet eo bet ho chomlec'h IP <tt>$1</tt> ent emgefre evel ur skoulm ezmont Tor.
+Stnaket eo ar c'hemmoù dre Tor, kuit da zegas trubuilh.",
+	'right-torunblocked' => "C'hoari an dro da stankadennoù emgefre skoulmoù ezmont Tor",
+	'tag-tor-description' => "Mard eo gweredekaet ar valizenn-mañ, ez eus bet degaset ur c'hemm adalek ur skoulm ezmont Tor.",
 	'tag-tor' => 'Graet dre Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Mard eo bet graet ur c'hemm adalek ur skolm ezmont Tor pe get",
 );
 
 /** Bosnian (Bosanski)
