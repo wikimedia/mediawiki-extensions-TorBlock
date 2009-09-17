@@ -661,7 +661,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
 	'tag-tor' => 'Feita através de Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se mudança foi feita ou não através de um nodo de saída Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se mudança foi feita ou não através de um nó de saída Tor',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
