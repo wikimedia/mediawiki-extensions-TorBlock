@@ -526,6 +526,16 @@ Redagavimas per tor yra užblokuotas, kad nebūtų piktnaudžiaujama.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bet kuriuo atveju, pakeitimas buvo atliktas per tor išėjimo mazgą',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Praveenp
+ */
+$messages['ml'] = array(
+	'torblock-desc' => 'ടോർ എക്സിറ്റ് നോഡുകൾ ഉപയോഗിച്ച് വിക്കി തിരുത്തുന്നത് തടയുക',
+	'torblock-blocked' => 'താങ്കളുടെ ഐ.പി. വിലാസം, <tt>$1</tt>, ഒരു ടോർ എക്സിറ്റ് നോഡാണെന്ന് സ്വയം കണ്ടെത്തിയിട്ടുണ്ട്.
+ദുരുപയോഗങ്ങൾ ഒഴിവാക്കാൻ ടോർ വഴി തിരുത്തുന്നത് നിരോധിച്ചിരിക്കുന്നു.',
+	'tag-tor' => 'ടോർ വഴി നടത്തിയത്',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
