@@ -5,7 +5,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
 class TorBlock {
 	public static $mExitNodes;
 
-	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, &$action, &$result ) {
+	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
 		global $wgTorAllowedActions;
 		if (in_array( $action, $wgTorAllowedActions)) {
 			return true;
