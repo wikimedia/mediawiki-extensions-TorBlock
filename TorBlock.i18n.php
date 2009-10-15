@@ -186,6 +186,19 @@ $messages['de-formal'] = array(
 	'torblock-blocked' => 'Ihre IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Aspar
+ */
+$messages['diq'] = array(
+	'torblock-desc' => 'nêrvedano nodê teberbiyayişê tori, wiki bıvurn',
+	'torblock-blocked' => 'IP adresa şıma, <tt>$1</tt>, nodê otomotoik hesıbya.
+qey ver-gırewtışê suistimali tor ser o vurnayiş qedexe biy.',
+	'right-torunblocked' => 'otomatik ver-gırewtışê nodê tori raviyer',
+	'tag-tor-description' => 'eke no sername eyar nêbiyo, vurnayiş nod ser o biyo.',
+	'tag-tor' => 'serê tor ra vıraziyayo',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'serê nodê tor ra biyo nê nêbiyo',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
