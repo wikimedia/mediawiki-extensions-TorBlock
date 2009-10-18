@@ -824,6 +824,7 @@ Suistimali önlemek için tor üzerinden değişiklik engellendi.',
 );
 
 /** Ukrainian (Українська)
+ * @author AS
  * @author Ahonc
  */
 $messages['uk'] = array(
@@ -831,6 +832,9 @@ $messages['uk'] = array(
 	'torblock-blocked' => 'Ваша IP-адреса, <tt>$1</tt>, була автоматично визначена як вихідний вузол мережі Tor.
 Редагування шляхом Tor заборонене з метою уникнення зловживань.',
 	'right-torunblocked' => 'Обхід автоматичного блокування вузлів мережі Tor',
+	'tag-tor-description' => 'Якщо встановлена ця мітка, значить редагування зроблене з вихідного вузла мережі Tor.',
+	'tag-tor' => 'Зроблене через Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Чи зроблене редагування через вихідний вузол мережі Tor',
 );
 
 /** Vèneto (Vèneto)
