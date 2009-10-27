@@ -14,6 +14,7 @@ $messages['en'] = array(
 	'torblock-desc'    => 'Allows tor exit nodes to be blocked from editing a wiki',
 	'torblock-blocked' => 'Your IP address, <tt>$1</tt>, has been automatically identified as a tor exit node.
 Editing through tor is blocked to prevent abuse.',
+	'torblock-isexitnode' => 'The IP address $1 is blocked as a Tor exit node.',
 	'right-torunblocked' => 'Bypass automatic blocks of tor exit nodes',
 	'tag-tor-description' => 'If this tag is set, an edit was made from a Tor exit node.',
 	'tag-tor' => 'Made through tor',

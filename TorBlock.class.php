@@ -159,7 +159,6 @@ class TorBlock {
 	}
 
 	public static function isExitNode($ip = null) {
-		#return true; ## FOR DEBUGGING
 		if ($ip == null) {
 			$ip = wfGetIp();
 		}
@@ -231,6 +230,28 @@ class TorBlock {
 		
 		if ($wgTorTagChanges)
 			$emptyTags[] = 'tor';
+		return true;
+	}
+
+	/**
+	 * Creates a message with the status
+	 * @param array $msg Message with the status
+	 * @param string $ip The IP address to be checked
+	 * @return boolean true
+	 */
+	public static function getTorBlockStatus( &$msg, $ip ) {
+		// IP addresses can be blocked only
+		// Fast return if IP is not an exit node
+		if ( !IP::isIPAddress( $ip ) || !self::isExitNode( $ip ) ) {
+			return true;
+		}
+
+		wfLoadExtensionMessages( 'TorBlock' );
+		$msg[] = Html::rawElement(
+			'span',
+			array( 'class' => 'mw-torblock-isexitnode' ),
+			wfMsgExt( 'torblock-isexitnode', 'parseinline', $ip )
+		);
 		return true;
 	}
 }
