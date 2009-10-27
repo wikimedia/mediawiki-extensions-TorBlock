@@ -174,6 +174,7 @@ $messages['da'] = array(
 $messages['de'] = array(
 	'torblock-desc' => 'Ermöglicht die Schreibsperre für Tor-Ausgangsknoten',
 	'torblock-blocked' => 'Deine IP-Adresse <tt>$1</tt> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
+	'torblock-isexitnode' => 'Die IP-Adresse $1 ist als Tor-Ausgangsknoten gesperrt.',
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
 	'tag-tor-description' => 'Wenn dieses Tag gesetzt ist, erfolgte die Bearbeitung durch einen Tor-Ausgangsknoten.',
 	'tag-tor' => 'Durch einen Tor-Ausgangsknoten',
@@ -189,11 +190,13 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Aspar
+ * @author Xoser
  */
 $messages['diq'] = array(
 	'torblock-desc' => 'nêrvedano nodê teberbiyayişê tori, wiki bıvurn',
 	'torblock-blocked' => 'IP adresa şıma, <tt>$1</tt>, nodê otomotoik hesıbya.
 qey ver-gırewtışê suistimali tor ser o vurnayiş qedexe biy.',
+	'torblock-isexitnode' => 'Adresê IPyî $1 blok biyo pê yew nodê Torî.',
 	'right-torunblocked' => 'otomatik ver-gırewtışê nodê tori raviyer',
 	'tag-tor-description' => 'eke no sername eyar nêbiyo, vurnayiş nod ser o biyo.',
 	'tag-tor' => 'serê tor ra vıraziyayo',
@@ -314,6 +317,7 @@ $messages['gl'] = array(
 	'torblock-desc' => 'Permite que os nodos de saída Tor sexan bloqueados fronte á edición nun wiki',
 	'torblock-blocked' => 'O seu enderezo IP, <tt>$1</tt>, foi identificado automaticamente como un nodo de saída tor.
 A edición a través disto está bloqueada para previr o abuso.',
+	'torblock-isexitnode' => 'O enderezo IP $1 está bloqueado como nodo de saída tor.',
 	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
 	'tag-tor-description' => 'Se a etiqueta está fixada é que unha edición foi feita desde un nodo de saída Tor.',
 	'tag-tor' => 'Feito a través do Tor',
