@@ -385,6 +385,7 @@ $messages['hsb'] = array(
 	'torblock-desc' => 'Blokuje wobdźěłanje wikija přez wuchadne suki TOR',
 	'torblock-blocked' => 'Twoja IP-adresa, <tt>$1</tt>, je so awtomatisce jako wuchadny suk TOR identifikowała.
 Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
+	'torblock-isexitnode' => 'IP-adresa $1 je jako wuchadny suk Tor zablokowana.',
 	'right-torunblocked' => 'Awtomatiske blokowanja wuchadnych sukow TOR wobeńć',
 	'tag-tor-description' => 'Jeli tuta taflička je stajeny, je so změna z wuchadneho suka Tor činiła.',
 	'tag-tor' => 'Přez TOR sčinjeny',
@@ -454,7 +455,7 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 $messages['ja'] = array(
 	'torblock-desc' => 'Tor の末端ノードからのウィキの編集をブロックできるようにする',
 	'torblock-blocked' => 'あなたのIPアドレス <tt>$1</tt> は、Tor の末端ノードであると自動的に認識されました。不正な利用を防止するため、Tor を通しての編集は禁止されています。',
-	'torblock-isexitnode' => 'IP アドレス $1 は Tor 末端ノードとしてブロックされています。',
+	'torblock-isexitnode' => 'IP アドレス $1 は Tor 末端ノードであるためブロックされています。',
 	'right-torunblocked' => 'Tor 末端ノードの自動ブロックを回避する',
 	'tag-tor-description' => 'このタグが設定されている場合、Tor 末端ノードから編集がなされました。',
 	'tag-tor' => 'Tor を通じてなされた',
