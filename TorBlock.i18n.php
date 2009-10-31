@@ -213,6 +213,7 @@ $messages['dsb'] = array(
 	'torblock-desc' => 'Zajźujo, aby wuchadne suki TOR wobźěłowali wiki',
 	'torblock-blocked' => 'Twója IP-adresa, <tt>$1</tt>, jo se awtomatiski awtentificěrowała ako wuchadny suk TOR.
 Wobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.',
+	'torblock-isexitnode' => 'IP-adresa $1 jo ako wuchadny suk Tor zablokěrowana.',
 	'right-torunblocked' => 'Awtomatiske blokěrowanja wuchadnych sukow TOR sw wobinuś',
 	'tag-tor-description' => 'Jolic toś ta toflicka jo stajona, jo se změna z wuchadnego modusa TOR pśewjadła.',
 	'tag-tor' => 'Pśez TOR pśewjeźony',
