@@ -422,12 +422,14 @@ Le modification via Tor es prohibite pro impedir le abuso.',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
 	'torblock-desc' => 'Mengijinkan "exit node" Tor untuk diblokir dari menyunting wiki',
 	'torblock-blocked' => 'Alamat IP Anda, <tt>$1</tt> telah diidentifikasi secara otomatis sebagai sebuah "exit node" tor.
 Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.',
+	'torblock-isexitnode' => 'Alamat IP $1 diblokir sebagai suatu simpul akhir Tor.',
 	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap "exit nodes" tor',
 	'tag-tor-description' => 'Jika tag ini dipasang, sebuah suntingan dibuat dari sebuah "exit node" Tor.',
 	'tag-tor' => 'Dibuat melalui tor',
@@ -838,6 +840,7 @@ $messages['tr'] = array(
 	'torblock-desc' => 'Tor çıkış nodlarının bir vikiyi değiştirmesinin engellemesini sağlar',
 	'torblock-blocked' => 'IP adresiniz, <tt>$1</tt>, otomatik olarak bir tor çıkış nodu olarak algılandı.
 Suistimali önlemek için tor üzerinden değişiklik engellendi.',
+	'torblock-isexitnode' => 'IP adresi $1 Tor çıkış nodu olarak engellenmiş.',
 	'right-torunblocked' => 'Tor çıkış nodlarının otomatik engelini atla',
 	'tag-tor-description' => 'Eğer bu etiket ayarlanmışsa, bir Tor çıkış nodundan bir değişiklik yapılmıştır.',
 	'tag-tor' => 'Tor üzerinden yapılmıştır',
