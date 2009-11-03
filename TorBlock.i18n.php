@@ -660,6 +660,7 @@ $messages['oc'] = array(
 	'torblock-desc' => 'Permet als noses de sortida Tor d’èsser blocats en escritura sus un wiki',
 	'torblock-blocked' => "Vòstra adreça ip, <tt>$1</tt>, es estada identificada automaticament coma un nos de sortida Tor.
 L’edicion per aqueste mejan es blocada per evitar d'abuses.",
+	'torblock-isexitnode' => "L'adreça IP $1 es blocada en tant que nos de sortida Tor.",
 	'right-torunblocked' => 'Passar al travèrs dels blocatges dels noses de sortida Tor.',
 	'tag-tor-description' => 'Se aquesta balisa es utilizada, alara la modificacion es estada escafada dempuèi un nos de sortida de Tor.',
 	'tag-tor' => 'Fach dempuèi tor',
