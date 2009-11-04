@@ -400,6 +400,7 @@ $messages['hu'] = array(
 	'torblock-desc' => 'Lehetővé teszi a tor kilépési csomópontokról való szerkesztés blokkolását',
 	'torblock-blocked' => 'Az IP-címed (<tt>$1</tt>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.
 Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.',
+	'torblock-isexitnode' => 'A(z) $1 IP-cím blokkolva van, mivel Tor kilépési csomópont.',
 	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
 	'tag-tor-description' => 'Ha ez a címke be van állítva, a szerkesztés egy Tor-csomópontról történt',
 	'tag-tor' => 'Toron keresztül készült',
@@ -565,6 +566,8 @@ $messages['ml'] = array(
 	'torblock-blocked' => 'താങ്കളുടെ ഐ.പി. വിലാസം, <tt>$1</tt>, ഒരു ടോർ എക്സിറ്റ് നോഡാണെന്ന് സ്വയം കണ്ടെത്തിയിട്ടുണ്ട്.
 ദുരുപയോഗങ്ങൾ ഒഴിവാക്കാൻ ടോർ വഴി തിരുത്തുന്നത് നിരോധിച്ചിരിക്കുന്നു.',
 	'torblock-isexitnode' => 'ടോർ എക്സിറ്റ് നോഡായതിനാൽ $1 ഐ.പി. വിലാസം തിരുത്തലുകൾ നടത്തുന്നതിൽ നിന്നും തടയപ്പെട്ടിരിക്കുന്നു.',
+	'right-torunblocked' => 'ടോറിന്റെ പുറത്തേയ്ക്കുള്ള കേന്ദ്രങ്ങൾക്കുള്ള തടയൽ പാർശ്വീകരിച്ചു കടക്കുക',
+	'tag-tor-description' => 'ഈ ടാഗ് ഉണ്ടെങ്കിൽ, ടോറിന്റെ പുറത്തേയ്ക്കുള്ള കേന്ദ്രം വഴി തിരുത്തൽ നടത്തപ്പെട്ടിരിക്കുന്നു.',
 	'tag-tor' => 'ടോർ വഴി നടത്തിയത്',
 );
 
