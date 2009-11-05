@@ -134,6 +134,7 @@ $messages['bs'] = array(
 	'torblock-desc' => 'Omogućuje da se blokiraju tor izlazni čvorovi za uređivanje wikija',
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski otkrivena i označena kao tor izlazni čvor.
 Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
+	'torblock-isexitnode' => 'IP adresa $1 je blokirana kao Tor izlazni čvor.',
 	'right-torunblocked' => 'Zaobilaženje automatskih blokada tor izlaznih čvorova',
 	'tag-tor-description' => 'Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.',
 	'tag-tor' => 'Napravljeno kroz tor',
@@ -692,6 +693,7 @@ $messages['pms'] = array(
 	'torblock-desc' => 'A përmëtt ëd bloché exit node tor an dzora a na wiki',
 	'torblock-blocked' => "Toa adrëssa IP, <tt>$1</tt>, a l'é stàita automaticament identificà com n'exit node tor.
 La modìfica con tor a l'é blocà për evité dj'abus.",
+	'torblock-isexitnode' => "L'adrëssa IP $1 a l'é blocà com n'exit node Tor.",
 	'right-torunblocked' => "Sàuta ij blòch automàtich dj'exit node tor",
 	'tag-tor-description' => "Se sto tag sì a l'é ampostà, na modìfica a l'é stàita fàita da n'exit node Tor.",
 	'tag-tor' => 'Fàit a travers tor',
