@@ -875,6 +875,7 @@ $messages['vec'] = array(
 	'torblock-desc' => 'Permeti de inpedirghe la modifica de la wiki ai nodi de uscita Tor',
 	'torblock-blocked' => 'El to indirisso IP, <tt>$1</tt>, el xe stà identificà automaticamente come un nodo de uscita Tor.
 Le modifiche tramite Tor le xe blocà par evitar abusi.',
+	'torblock-isexitnode' => "L'indirisso IP $1 el xe blocà in quanto el xe un nodo de uscita Tor.",
 	'right-torunblocked' => 'Scavalca i blochi automatici dei nodi de uscita Tor',
 	'tag-tor-description' => 'Se sto tag el xe presente, vol dir che xe stà fato na modifica atravero un nodo de uscita de Tor.',
 	'tag-tor' => 'Fato via Tor',
@@ -910,6 +911,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Bencmq
  * @author PhiLiP
  * @author Shinjiman
  * @author Wmr89502270
@@ -918,6 +920,7 @@ $messages['zh-hans'] = array(
 	'torblock-desc' => '允许封禁通过tor节点在wiki中的编辑',
 	'torblock-blocked' => '您的IP地址<tt>$1</tt>已被自动识别为tor节点。
 经tor的编辑已被封禁以防止滥用。',
+	'torblock-isexitnode' => 'IP地址$1被作为Tor出口节点而封禁。',
 	'right-torunblocked' => '绕过tor节点的自动封禁',
 	'tag-tor-description' => '如果标记此标签，则将允许通过Tor节点编辑。',
 	'tag-tor' => '经Tor编辑',
