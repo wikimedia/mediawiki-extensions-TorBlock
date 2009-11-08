@@ -121,6 +121,7 @@ $messages['br'] = array(
 	'torblock-desc' => 'Talvezout a ra da stankañ kemmoù ur wiki adalek skoulmoù ezmont Tor',
 	'torblock-blocked' => "Detektet eo bet ho chomlec'h IP <tt>$1</tt> ent emgefre evel ur skoulm ezmont Tor.
 Stnaket eo ar c'hemmoù dre Tor, kuit da zegas trubuilh.",
+	'torblock-isexitnode' => "Stanket eo ar chomlec'h UP $1 rak ur skoulm ermaeziañ Tor eo.",
 	'right-torunblocked' => "C'hoari an dro da stankadennoù emgefre skoulmoù ezmont Tor",
 	'tag-tor-description' => "Mard eo gweredekaet ar valizenn-mañ, ez eus bet degaset ur c'hemm adalek ur skoulm ezmont Tor.",
 	'tag-tor' => 'Graet dre Tor',
@@ -512,6 +513,7 @@ $messages['ksh'] = array(
 	'torblock-blocked' => 'Ding IP-Adress (<tt>$1</tt>) eß als_enne <tt>tor</tt> Ußjäng äkannt woode.
 Änderunge aam Wiki dom_mer övver <tt>tor</tt> nit zolohße,
 esu määt och Keiner Dreßß domet.',
+	'torblock-isexitnode' => 'De <i lang="en">IP</i>-Addräß $1 es jesperrt, weil se ene Ußjang vum Tor Näzwärrek es.',
 	'right-torunblocked' => 'Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße',
 	'tag-tor-description' => 'Wann dat Zeijshe jesaz es, kohm die Änderung övver ene <tt>tor</tt> Ußjang.',
 	'tag-tor' => 'Övver <tt>tor</tt> Ußjang jemaat',
@@ -688,13 +690,14 @@ Możliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiega
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
 	'torblock-desc' => 'A përmëtt ëd bloché exit node tor an dzora a na wiki',
 	'torblock-blocked' => "Toa adrëssa IP, <tt>$1</tt>, a l'é stàita automaticament identificà com n'exit node tor.
 La modìfica con tor a l'é blocà për evité dj'abus.",
-	'torblock-isexitnode' => "L'adrëssa IP $1 a l'é blocà com n'exit node Tor.",
+	'torblock-isexitnode' => "L'adrëssa IP $1 a l'é blocà com neu ëd surtìa Tor.",
 	'right-torunblocked' => "Sàuta ij blòch automàtich dj'exit node tor",
 	'tag-tor-description' => "Se sto tag sì a l'é ampostà, na modìfica a l'é stàita fàita da n'exit node Tor.",
 	'tag-tor' => 'Fàit a travers tor',
