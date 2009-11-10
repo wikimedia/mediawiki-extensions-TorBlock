@@ -712,6 +712,7 @@ $messages['pt'] = array(
 	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar um wiki',
 	'torblock-blocked' => 'O seu endereço IP, <tt>$1</tt>, foi automaticamente identificado como um nó de saída Tor.
 A edição através de Tor está bloqueada para prevenir abusos.',
+	'torblock-isexitnode' => 'O endereço IP $1 está bloqueado como nó de saída Tor.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
 	'tag-tor' => 'Feita através de Tor',
