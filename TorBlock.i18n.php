@@ -241,6 +241,7 @@ $messages['eo'] = array(
 	'torblock-desc' => 'Permesas por elignodoj esti forbaritaj kontraŭ redaktado de vikio',
 	'torblock-blocked' => "Via IP-adreso, <tt>$1</tt> estis aŭtomate identigita kiel elignodo ''tor''.
 Redaktado per ''tor'' estas forbarita por preventi misuzo.",
+	'torblock-isexitnode' => 'La IP-adreso $1 estas forbarita kiel Tor elira pordo.',
 	'right-torunblocked' => "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
 	'tag-tor-description' => 'Se ĉi tiu etikedo estas ŝalta, redakto estis farita de Tor-a elira nodo.',
 	'tag-tor' => 'Farita per tor',
@@ -705,11 +706,12 @@ La modìfica con tor a l'é blocà për evité dj'abus.",
 );
 
 /** Portuguese (Português)
+ * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
  */
 $messages['pt'] = array(
-	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar um wiki',
+	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar uma wiki',
 	'torblock-blocked' => 'O seu endereço IP, <tt>$1</tt>, foi automaticamente identificado como um nó de saída Tor.
 A edição através de Tor está bloqueada para prevenir abusos.',
 	'torblock-isexitnode' => 'O endereço IP $1 está bloqueado como nó de saída Tor.',
@@ -825,6 +827,7 @@ $messages['sv'] = array(
 	'torblock-desc' => 'Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki',
 	'torblock-blocked' => 'Din IP-adress, <tt>$1</tt>, har automatiskt identifierats som en utgångsnod från Tor.
 Redigering via Tor är blockerad för att förhindra missbruk.',
+	'torblock-isexitnode' => 'IP-adressen $1 är blockerad som en utgångsnod på Tor.',
 	'right-torunblocked' => 'Får redigera från automatiskt blockerade Tor-noder',
 	'tag-tor-description' => 'Om denna taggen är på, så är en redigering gjord från en Tor-nod.',
 	'tag-tor' => 'Gjord genom tor',
