@@ -443,11 +443,13 @@ Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
+ * @author OrbiliusMagister
  */
 $messages['it'] = array(
 	'torblock-desc' => 'Permette di bloccare in scrittura exit node tor su una wiki',
 	'torblock-blocked' => 'Il tuo indirizzo IP, <tt>$1</tt>, è stato automaticamente identificato come un exit node tor.
 La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
+	'torblock-isexitnode' => "L'indirizzo IP $1 è bloccato in quanto è un exit node Tor",
 	'right-torunblocked' => 'Ignora i blocchi automatici degli exit node tor',
 	'tag-tor-description' => 'Se questo tag è impostato, la modifica è stata effettuata da un nodo di uscita della rete Tor.',
 	'tag-tor' => 'Effettuato tramite tor',
