@@ -564,6 +564,20 @@ Redagavimas per tor yra užblokuotas, kad nebūtų piktnaudžiaujama.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bet kuriuo atveju, pakeitimas buvo atliktas per tor išėjimo mazgą',
 );
 
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'torblock-desc' => 'Овозможува блокирање на излезни Tor јазли за да не можат да го уредуваат некое вики',
+	'torblock-blocked' => 'Вашата IP адреса, <tt>$1</tt>, беше автоматски препознаена како излезен Tor јазол.
+Уредувањето преку Tor е забрането, со цел да се спречи злоупотреба.',
+	'torblock-isexitnode' => 'IP адресата $1 е блокирана како излезен Tor јазол.',
+	'right-torunblocked' => 'Заобиколување на автоматски блокови на излезни Tor јазли',
+	'tag-tor-description' => 'Ако е поставена оваа ознака, тоа значи дека било направено уредување со Tor излезен јазол.',
+	'tag-tor' => 'Направено преку Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Дали промената била направена преку излезен Tor јазол',
+);
+
 /** Malayalam (മലയാളം)
  * @author Praveenp
  */
