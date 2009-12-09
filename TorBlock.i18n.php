@@ -673,6 +673,7 @@ $messages['no'] = array(
 	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
 	'torblock-blocked' => 'Din IP-adresse, <tt>$1</tt>, har blitt automatisk identifisert som en utgangsnode fra TOR.
 Redigering via TOR er blokkert for å forhindre misbruk.',
+	'torblock-isexitnode' => 'IP-adressen $1 er blokkert som en utgangsnode for Tor.',
 	'right-torunblocked' => 'Kan redigere fra automatisk blokkerte TOR-noder',
 	'tag-tor-description' => 'Om denne taggen er på, ble redigeringen gjort via en Tor-node.',
 	'tag-tor' => 'Gjort via tor',
