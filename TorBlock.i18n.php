@@ -502,6 +502,7 @@ $messages['ko'] = array(
 	'torblock-desc' => '토르를 이용하는 사용자가 편집하는 것을 차단합니다.',
 	'torblock-blocked' => '당신의 IP 주소 <tt>$1</tt>는 자동적으로 토르임이 밝혀졌습니다.
 토르를 사용한 편집은 악용을 방지하기 위해 차단되어 있습니다.',
+	'torblock-isexitnode' => 'IP 주소 $1은 토르이기 때문에 차단되었습니다.',
 	'right-torunblocked' => '토르 자동 차단을 무시',
 	'tag-tor-description' => '이 태그가 설정되어 있으면, 토르를 통해 편집된 것입니다.',
 	'tag-tor' => '토르 사용',
