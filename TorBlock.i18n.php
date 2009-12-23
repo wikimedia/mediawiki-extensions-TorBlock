@@ -50,6 +50,7 @@ $messages['ar'] = array(
 	'torblock-desc' => 'يسمح بمنع عقد خروج التور من تعديل ويكي',
 	'torblock-blocked' => 'عنوان الأيبي الخاص بك، <tt>$1</tt>، تم التعرف عليه تلقائيا كعقدة خروج تور.
 التعديل من خلال التور ممنوع لمنع التخريب.',
+	'torblock-isexitnode' => 'عنوان الأيبي $1 ممنوع كعقدة خروج تور.',
 	'right-torunblocked' => 'تفادي عمليات المنع التلقائية لعقد خروج التور',
 	'tag-tor-description' => 'لو أن هذا الوسم مضبوط، فإن تعديلا قد حدث من عقدة خروج تور.',
 	'tag-tor' => 'معمولة من خلال تور',
@@ -754,6 +755,15 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se a mudança foi feita ou não através de um nó de saída Tor.',
 );
 
+/** Romanian (Română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'torblock-desc' => 'Permite nodurile de ieşire tor ca să fie blocat de la modificarea unui wiki',
+	'torblock-isexitnode' => 'Adresa IP $1 este blocată ca un nod de ieşire Tor.',
+	'tag-tor' => 'Făcut prin tor',
+);
+
 /** Russian (Русский)
  * @author Александр Сигачёв
  */
@@ -941,6 +951,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
+ * @author Gaoxuewei
  * @author PhiLiP
  * @author Shinjiman
  * @author Wmr89502270
@@ -949,7 +960,7 @@ $messages['zh-hans'] = array(
 	'torblock-desc' => '允许封禁通过tor节点在wiki中的编辑',
 	'torblock-blocked' => '您的IP地址<tt>$1</tt>已被自动识别为tor节点。
 经tor的编辑已被封禁以防止滥用。',
-	'torblock-isexitnode' => 'IP地址$1被作为Tor出口节点而封禁。',
+	'torblock-isexitnode' => 'IP地址$1被认为是Tor出口节点而遭到封禁。',
 	'right-torunblocked' => '绕过tor节点的自动封禁',
 	'tag-tor-description' => '如果标记此标签，则将允许通过Tor节点编辑。',
 	'tag-tor' => '经Tor编辑',
@@ -958,11 +969,13 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Gaoxuewei
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
 	'torblock-desc' => '封鎖使用tor位址發出的匿名編輯',
 	'torblock-blocked' => '您的IP位址<tt>$1</tt>已被系統自動認定為tor的節點，為防止破壞，經由tor發出的匿名編輯已經被封鎖。',
+	'torblock-isexitnode' => 'IP地址$1被認為是Tor出口節點而遭到封禁。',
 	'right-torunblocked' => '自動繞過tor的節點',
 	'tag-tor-description' => '如果這個標籤已標記，一個編輯從一個Tor節點中製造。',
 	'tag-tor' => '經Tor編輯',
