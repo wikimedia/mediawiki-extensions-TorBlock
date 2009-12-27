@@ -293,10 +293,12 @@ $messages['fa'] = array(
  * @author Crt
  * @author Nike
  * @author Str4nd
+ * @author ZeiP
  */
 $messages['fi'] = array(
 	'torblock-desc' => 'Mahdollistaa tor-poistumissolmujen estämisen.',
 	'torblock-blocked' => 'IP-osoitteesi <tt>$1</tt> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.',
+	'torblock-isexitnode' => 'IP-osoite $1 on estetty Tor-päätepisteenä.',
 	'right-torunblocked' => 'Ohittaa automaattiset Tor-poistumispisteiden estot',
 	'tag-tor-description' => 'Jos tämä tägi on asetettu, muokkaus on tehty Tor exit noden kautta.',
 	'tag-tor' => 'Tehty torin kautta',
@@ -325,7 +327,14 @@ Les modifications via Tor sont bloquées pour éviter les abus.',
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
+	'torblock-desc' => 'Pèrmèt de blocar los changements d’un vouiqui dês los nuods de sortia Tor.',
+	'torblock-blocked' => 'Voutra adrèce IP, <tt>$1</tt>, at étâ dècelâ ôtomaticament coment un nuod de sortia Tor.
+Los changements avouéc Tor sont blocâs por èvitar los abus.',
+	'torblock-isexitnode' => 'L’adrèce IP $1 est blocâ coment un nuod de sortia Tor.',
+	'right-torunblocked' => 'Contornar lo blocâjo ôtomatico des nuods de sortia Tor',
+	'tag-tor-description' => 'Se ceta balisa est activâ, un changement at étâ fêt dês un nuod de sortia Tor.',
 	'tag-tor' => 'Fêt avouéc Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se lo changement at étâ fêt avouéc un nuod de sortia Tor',
 );
 
 /** Galician (Galego)
@@ -772,6 +781,20 @@ $messages['ro'] = array(
 Editarea prin tor este blocată pentru a preveni abuzuri.',
 	'torblock-isexitnode' => 'Adresa IP $1 este blocată ca un nod de ieşire Tor.',
 	'tag-tor' => 'Făcut prin tor',
+);
+
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'torblock-desc' => "Permette 'a le node de uscite de tor de essere bloccate pe le cangiaminde sus a Uicchi",
+	'torblock-blocked' => "L'indirizze IP tune, <tt>$1</tt>, ha state automaticamende idendificate cumme a 'nu node de uscite de tor.<br />
+Le cangiaminde ausanne tor sonde bloccate pe prevenìe abbuse.",
+	'torblock-isexitnode' => "L'indirizze IP $1 jè bloccate cumme a 'nu node de uscite de Tor.",
+	'right-torunblocked' => 'Zumbe le blocche automatiche de le node de uscite de tor',
+	'tag-tor-description' => "Ce stu tag jè 'mbostate,  'nu cangiamende ha state fatte da 'nu node de uscite de Tor.",
+	'tag-tor' => 'Fatte attraverse',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Tutte o nisciune de le cangiaminde onne state fatte ausanne 'nu node de uscite de tor",
 );
 
 /** Russian (Русский)
