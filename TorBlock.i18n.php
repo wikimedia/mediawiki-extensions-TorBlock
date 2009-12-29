@@ -33,6 +33,13 @@ $messages['qqq'] = array(
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'tag-tor' => 'Gemaak met tor',
+);
+
 /** Aragonese (Aragonés)
  * @author Juanpabl
  */
