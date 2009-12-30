@@ -37,7 +37,7 @@ $wgHooks['ListDefinedTags'][] = 'TorBlock::onListDefinedTags';
 $wgHooks['AbuseFilter-filterAction'][] = 'TorBlock::onAbuseFilterFilterAction';
 $wgHooks['AbuseFilter-builder'][] = 'TorBlock::onAbuseFilterBuilder';
 $wgHooks['EmailUserPermissionsErrors'][] = 'TorBlock::onEmailUserPermissionsErrors';
-$wgHooks['getOtherBlockLogLink'][] = 'TorBlock::getTorBlockStatus';
+$wgHooks['OtherBlockLogLink'][] = 'TorBlock::getTorBlockStatus';
 
 // Define new autopromote condition
 define('APCOND_TOR', 'tor'); // Numbers won't work, we'll get collisions
