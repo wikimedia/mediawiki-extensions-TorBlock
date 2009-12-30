@@ -115,12 +115,15 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author Spiritia
+ * @author Turin
  */
 $messages['bg'] = array(
 	'torblock-desc' => 'Позволява да се блокира редактирането от изходни възли на TOR-мрежа',
 	'torblock-blocked' => 'Вашият IP-адрес, <tt>$1</tt>, е бил автоматично идентифициран като изходен възел на TOR-мрежа.
 Редактирането през такива адреси се ограничава с цел предотвратяване на евентуални злоупотреби.',
 	'torblock-isexitnode' => 'IP адресът $1 е блокиран като изходящ възел на Tor мрежа.',
+	'right-torunblocked' => 'Пренебрегване автоматичните блокирания на изходните възли на tor',
+	'tag-tor' => 'Направено през Tor',
 );
 
 /** Breton (Brezhoneg)
@@ -281,6 +284,7 @@ $messages['et'] = array(
 	'torblock-desc' => 'Lubab Tor-võrgu lõppsõlme jaoks viki toimetamise keelata.',
 	'torblock-blocked' => 'Sinu IP-aadress <tt>$1</tt> on automaatselt kindlaks tehtud kui Tor-võrgu lõppsõlm.
 Tor-võrgu kaudu toimetamine on väärtarvituse vältimiseks keelatud.',
+	'torblock-isexitnode' => 'IP-aadress $1 Tor-võrgu lõppsõlmena on blokeeritud.',
 	'right-torunblocked' => 'Mööduda automaatsetest Tor-võrgu lõppsõlme blokeeringutest',
 	'tag-tor-description' => 'Kui see märgis on asetatud, tehti muudatus Tor-võrgu lõppsõlme kaudu.',
 	'tag-tor' => 'Tehtud Tor-võrgu kaudu',
