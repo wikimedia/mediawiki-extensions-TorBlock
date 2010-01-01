@@ -912,7 +912,11 @@ Redigering via Tor är blockerad för att förhindra missbruk.',
  * @author Hanberke
  */
 $messages['tk'] = array(
+	'torblock-isexitnode' => 'IP adresi $1 Tor çykyş düwüni diýlip blokirlenipdir.',
+	'right-torunblocked' => 'Tor çykyş düwünleriniň awtomatik blokirlemelerinden aýlanyp geç',
+	'tag-tor-description' => 'Eger bu teg sazlanan bolsa, bir Tor çykyş düwüninden bir özgerdiş geçirildi.',
 	'tag-tor' => 'Tor bilen edilen',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Üýtgeşmäniň bir tor çykyş düwüninden edilip edilmändigi',
 );
 
 /** Tagalog (Tagalog)
