@@ -321,13 +321,14 @@ $messages['fi'] = array(
  * @author IAlex
  * @author PieRRoMaN
  * @author Sherbrooke
+ * @author Urhixidur
  * @author Verdy p
  */
 $messages['fr'] = array(
 	'torblock-desc' => 'Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor',
 	'torblock-blocked' => 'Votre adresse IP, <tt>$1</tt>, a été détectée automatiquement comme un nœud de sortie Tor.
 Les modifications via Tor sont bloquées pour éviter les abus.',
-	'torblock-isexitnode' => "L'adresse IP $1 est bloquée en tant que nœud de sortie Tor.",
+	'torblock-isexitnode' => 'L’adresse IP $1 est bloquée en tant que nœud de sortie Tor.',
 	'right-torunblocked' => 'Contourner le blocage automatique des nœuds de sortie Tor',
 	'tag-tor-description' => 'Si cette balise est activée, une modification a été effectuée depuis un nœud de sortie Tor.',
 	'tag-tor' => 'Effectué via Tor',
