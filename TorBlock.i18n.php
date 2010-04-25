@@ -539,7 +539,7 @@ $messages['ko'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => '편집이 토르를 통해 이루어졌는 지의 여부',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -994,7 +994,7 @@ Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Có thay đổi nào thực hiện qua nút thoát tor hay không',
 );
 
-/** Yue (粵語)
+/** Cantonese (粵語)
  * @author Shinjiman
  */
 $messages['yue'] = array(
