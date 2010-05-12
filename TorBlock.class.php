@@ -102,9 +102,21 @@ class TorBlock {
 			wfDebug( "Loading Tor exit node list from memcached.\n" );
 			// Lucky.
 			return self::$mExitNodes = $nodes;
-		} elseif ($nodes == 'loading') {
-			// Somebody else is loading it.
-			return array();
+		} else {
+			$liststatus = $wgMemc->get( 'mw-tor-list-status' );
+			if ( $liststatus == 'loading' ) {
+				// Somebody else is loading it.
+				wfDebug( "Old Tor list expired and we are still loading the new one.\n" );
+				return array();
+			} else if ( $liststatus == 'loaded' ) {
+				$nodes = $wgMemc->get( 'mw-tor-exit-nodes' );
+				if (is_array($nodes)) {
+					return self::$mExitNodes = $nodes;	
+				} else {
+					wfDebug( "Tried very hard to get the Tor list since mw-tor-list-status says it is loaded, to no avail.\n" );
+					return array();
+				}
+			}
 		}
 
 		// We have to actually load from the server.
@@ -128,7 +140,7 @@ class TorBlock {
 
 		// Set loading key, to prevent DoS of server.
 
-		$wgMemc->set( 'mw-tor-exit-nodes', 'loading', 300 );
+		$wgMemc->set( 'mw-tor-list-status', 'loading', 300 );
 
 		$nodes = array();
 		foreach( $wgTorIPs as $ip ) {
@@ -137,6 +149,7 @@ class TorBlock {
 
 		// Save to cache.
 		$wgMemc->set( 'mw-tor-exit-nodes', $nodes, 1800 ); // Store for half an hour.
+		$wgMemc->set( 'mw-tor-list-status', 'loaded', 1800 );
 
 		wfProfileOut( __METHOD__ );
 
