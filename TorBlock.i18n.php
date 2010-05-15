@@ -563,7 +563,7 @@ $messages['lb'] = array(
 	'torblock-blocked' => 'Är IP-Adress,  <tt>$1</tt>, gouf automatesch als Tor-ausgangsknuet erkannt.
 Ännerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.',
 	'torblock-isexitnode' => "D'IP-Adress $1 ass als Ausgangspunkt vun engem Tor gespaart.",
-	'right-torunblocked' => 'Automatesch Spär fir Tor-Ausgangskniet ëmgoen',
+	'right-torunblocked' => "Automatesch Spär fir Tor-Ausgangskniet z'ëmgoen",
 	'tag-tor-description' => 'Wann dës Markéierung gesat ass da gouf eng Ännerung vun engem Tor-Ausgangsknuet gemaach.',
 	'tag-tor' => "Iwwer ''Tor'' gemaach",
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Ob d'Ännerungen iwwer en Tor-Ausgangsknuet gemaach goufen",
