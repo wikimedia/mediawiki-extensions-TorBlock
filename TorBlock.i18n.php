@@ -790,10 +790,10 @@ A edição através de Tor está bloqueada para prevenir abusos.',
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'torblock-desc' => 'Permite nodurile de ieşire tor ca să fie blocat de la modificarea unui wiki',
-	'torblock-blocked' => 'Adresa dvs IP - <tt>$1</tt> - a fost identificată automat ca un nod de ieşire tor.
+	'torblock-desc' => 'Permite nodurile de ieșire tor ca să fie blocat de la modificarea unui wiki',
+	'torblock-blocked' => 'Adresa dvs IP - <tt>$1</tt> - a fost identificată automat ca un nod de ieșire tor.
 Editarea prin tor este blocată pentru a preveni abuzuri.',
-	'torblock-isexitnode' => 'Adresa IP $1 este blocată ca un nod de ieşire Tor.',
+	'torblock-isexitnode' => 'Adresa IP $1 este blocată ca un nod de ieșire Tor.',
 	'tag-tor' => 'Făcut prin tor',
 );
 
