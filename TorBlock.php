@@ -5,7 +5,9 @@ if ( ! defined( 'MEDIAWIKI' ) )
 /**#@+
  * Prevents Tor exit nodes from editing a wiki.
  * Requires
- * @addtogroup Extensions
+ *
+ * @file
+ * @ingroup Extensions
  *
  * @link http://www.mediawiki.org/wiki/Extension:TorBlock Documentation
  *
