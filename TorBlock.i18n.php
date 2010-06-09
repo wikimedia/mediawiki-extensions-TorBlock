@@ -47,8 +47,8 @@ $messages['af'] = array(
 $messages['an'] = array(
 	'torblock-desc' => 'Premite que os nodos de salida tor sían bloqueyatos ta editar una wiki',
 	'torblock-blocked' => "A suya adreza IP, <tt>$1</tt>, s'ha identificato automaticament como un nodo de salida tor.
-Ye bedato d'editar con tor ta pribar abusos.",
-	'right-torunblocked' => "Pribar os bloqueyos automaticos d'os nodos tor",
+Ye vedato d'editar con tor ta privar abusos.",
+	'right-torunblocked' => "Privar os bloqueyos automaticos d'os nodos tor",
 );
 
 /** Arabic (العربية)
