@@ -788,6 +788,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 );
 
 /** Romanian (Română)
+ * @author AdiJapan
  * @author Stelistcristi
  */
 $messages['ro'] = array(
@@ -795,7 +796,10 @@ $messages['ro'] = array(
 	'torblock-blocked' => 'Adresa dvs IP - <tt>$1</tt> - a fost identificată automat ca un nod de ieșire tor.
 Editarea prin tor este blocată pentru a preveni abuzuri.',
 	'torblock-isexitnode' => 'Adresa IP $1 este blocată ca un nod de ieșire Tor.',
+	'right-torunblocked' => "Nu este afectat de blocarea automată a nodurilor de ieșire ''tor''",
+	'tag-tor-description' => "Dacă această baliză este activată, s-a făcut o modificare de la un nod de ieșire ''tor''.",
 	'tag-tor' => 'Făcut prin tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Dacă modificarea s-a făcut printr-un nod de ieșire ''tor''",
 );
 
 /** Tarandíne (Tarandíne)
