@@ -1015,6 +1015,7 @@ $messages['yue'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Bencmq
+ * @author Chenxiaoqino
  * @author Gaoxuewei
  * @author PhiLiP
  * @author Shinjiman
@@ -1025,7 +1026,7 @@ $messages['zh-hans'] = array(
 	'torblock-blocked' => '您的IP地址<tt>$1</tt>已被自动识别为tor节点。
 经tor的编辑已被封禁以防止滥用。',
 	'torblock-isexitnode' => 'IP地址$1被认为是Tor出口节点而遭到封禁。',
-	'right-torunblocked' => '绕过tor节点的自动封禁',
+	'right-torunblocked' => '绕过对tor出口节点的自动封禁',
 	'tag-tor-description' => '如果标记此标签，则将允许通过Tor节点编辑。',
 	'tag-tor' => '经Tor编辑',
 	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过Tor节点完成',
