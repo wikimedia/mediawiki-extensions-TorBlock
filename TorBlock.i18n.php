@@ -294,11 +294,16 @@ Tor-võrgu kaudu toimetamine on väärtarvituse vältimiseks keelatud.',
 
 /** Persian (فارسی)
  * @author Huji
+ * @author Wayiran
  */
 $messages['fa'] = array(
 	'torblock-desc' => 'قطع دسترسی خروجی‌های TOR از ویرایش در یک ویکی را ممکن می‌کند',
 	'torblock-blocked' => 'نشانی اینترنتی شما، <tt>$1</tt>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده‌است. ویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.',
+	'torblock-isexitnode' => 'نشانی آی‌پی $1 به عنوان گرهٔ خروجی Tor مسدود شده است.',
 	'right-torunblocked' => 'گذر از قطع دسترسی خودکار خروجی‌های TOR',
+	'tag-tor-description' => 'اگر این تگ تنظیم شده، ویرایشی توسط گرهٔ خروجی Tor صورت گرفته است.',
+	'tag-tor' => 'انجام شده از طریق tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'آیا تغییر توسط یک گرهٔ خروجی tor انجام شده؟',
 );
 
 /** Finnish (Suomi)
