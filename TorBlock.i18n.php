@@ -26,9 +26,10 @@ Editing through tor is blocked to prevent abuse.',
  * @author Fryed-peach
  * @author Mormegil
  * @author Purodha
+ * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'torblock-desc' => 'Short description of the TorBlock extension, shown in [[Special:Version]]. Do not translate or change links.',
+	'torblock-desc' => '{{desc}}',
 	'right-torunblocked' => '{{doc-right}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
@@ -582,6 +583,7 @@ $messages['lb'] = array(
 $messages['li'] = array(
 	'torblock-desc' => 'Maakt bewerke onmeugelik veur tor exitnodes',
 	'torblock-blocked' => 'Oew IP-adres, <tt>$1</tt>, is herkend as tor exitnode. Bewerke via tor es niet toegestaon om misbroek te veurkomme.',
+	'torblock-isexitnode' => "'t IP-adres $1 is geblok es Torexitnode.",
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeile',
 	'tag-tor-description' => "Es dit label is ingesteldj, is de bewèrking gemaak via 'ne Tor exitnode.",
 	'tag-tor' => 'Gemaak mid tor',
