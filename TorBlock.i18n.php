@@ -413,6 +413,7 @@ $messages['hr'] = array(
 	'torblock-desc' => 'Omogućava blokiranje tor izlaznih servera od uređivanja na wiki',
 	'torblock-blocked' => 'Vaša IP adresa, <tt>$1</tt>, je automatski prepoznata kao tor izlaznog servera.
 Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
+	'torblock-isexitnode' => 'IP adresa $1 blokirana je kao Tor izlazni čvor.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
 	'tag-tor-description' => 'Ukoliko je ova kartica označena, uređivanje je vršeno s Tor mreže.',
 	'tag-tor' => 'Uređivano preko tor-mreže',
