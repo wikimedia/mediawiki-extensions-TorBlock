@@ -385,10 +385,12 @@ $messages['gsw'] = array(
 
 /** Hebrew (עברית)
  * @author Rotem Liss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'torblock-desc' => 'אפשרות לחסימת נקודות יציאה של רשת TOR מעריכה בוויקי',
 	'torblock-blocked' => 'כתובת ה־IP שלכם, <tt>$1</tt>, זוהתה אוטומטית כנקודת יציאה של רשת TOR. עריכה דרך TOR חסומה כדי למנוע ניצול לרעה.',
+	'torblock-isexitnode' => 'כתובת ה־IP $1 נחסמה כצומת יציאה של Tor.',
 	'right-torunblocked' => 'עקיפת חסימות אוטומטיות של נקודות יציאה ברשת TOR',
 	'tag-tor-description' => 'אם תגית זו מוגדרת, בוצעה עריכה מנקודת יציאה של רשת TOR',
 	'tag-tor' => 'בוצעה דרך רשת TOR',
