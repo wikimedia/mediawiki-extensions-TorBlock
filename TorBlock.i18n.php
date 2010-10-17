@@ -299,7 +299,8 @@ Tor-võrgu kaudu toimetamine on väärtarvituse vältimiseks keelatud.',
  */
 $messages['fa'] = array(
 	'torblock-desc' => 'قطع دسترسی خروجی‌های TOR از ویرایش در یک ویکی را ممکن می‌کند',
-	'torblock-blocked' => 'نشانی اینترنتی شما، <tt>$1</tt>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده‌است. ویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.',
+	'torblock-blocked' => 'نشانی آی‌پی شما، <tt>$1</tt>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده‌است.
+ویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.',
 	'torblock-isexitnode' => 'نشانی آی‌پی $1 به عنوان گرهٔ خروجی Tor مسدود شده است.',
 	'right-torunblocked' => 'گذر از قطع دسترسی خودکار خروجی‌های TOR',
 	'tag-tor-description' => 'اگر این تگ تنظیم شده، ویرایشی توسط گرهٔ خروجی Tor صورت گرفته است.',
@@ -838,6 +839,13 @@ $messages['ru'] = array(
 	'tag-tor-description' => 'Если данная метка установлена, значит правка была сделана с выходного узла сети Tor.',
 	'tag-tor' => 'Сделано через Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Была ли правка сделана через выходной узел сети Tor',
+);
+
+/** Rusyn (Русиньскый)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'tag-tor' => 'Зроблене через Tor',
 );
 
 /** Yakut (Саха тыла)
