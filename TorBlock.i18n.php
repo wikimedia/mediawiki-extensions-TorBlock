@@ -862,6 +862,7 @@ $messages['sah'] = array(
 	'torblock-desc' => 'Tor-ситим таһаарар түмүктэрин (выходные узлы) бүөлүүргэ туттуллар',
 	'torblock-blocked' => '<tt>$1</tt>, Эн IP-аадырыһыҥ Tor-ситим таһаарар түмүгүн (выходной узел) курдук көстүбүт.
 Tor-ситими туһанан уларытыы манна бобуллар.',
+	'torblock-isexitnode' => '$1 IP аадырыс Tor ситимин тахсар түмүгэ буоларын быһыытынан бобуллубут.',
 	'right-torunblocked' => 'Tor-ситим түмүктэрин аптамаатынан бобууну тумнуу',
 	'tag-tor-description' => 'Бу бэлиэ турбут буоллаҕына уларытыы Tor ситимтэн оҥоһуллубут эбит.',
 	'tag-tor' => 'Tor нөҥүө оҥоһуллубут',
@@ -894,6 +895,20 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'tag-tor-description' => 'Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.',
 	'tag-tor' => 'Prostredníctvom Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Či bola alebo nebola úprava vykonaná z koncového uzla TOR',
+);
+
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'torblock-desc' => 'Omogoča blokiranje izhodnih vozlišč tor pred urejanjem wikija',
+	'torblock-blocked' => 'Vaš IP-naslov, <tt>$1</tt>, je bil samodejno prepoznan kot izhodno vozlišče tor.
+Urejanje preko tor je blokirano za preprečitev zlorab.',
+	'torblock-isexitnode' => 'IP-naslov $1 je blokiran kot izhodno vozlišče tor.',
+	'right-torunblocked' => 'Izogne se samodejnim blokadam izhodnih vozlišč tor',
+	'tag-tor-description' => 'Če je ta oznaka določena, je bilo urejanje narejeno iz izhodnega vozlišča tor.',
+	'tag-tor' => 'Storjeno skozi tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
