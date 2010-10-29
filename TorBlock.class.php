@@ -256,7 +256,6 @@ class TorBlock {
 			return true;
 		}
 
-		wfLoadExtensionMessages( 'TorBlock' );
 		$msg[] = Html::rawElement(
 			'span',
 			array( 'class' => 'mw-torblock-isexitnode' ),
