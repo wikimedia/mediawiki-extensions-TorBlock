@@ -31,7 +31,6 @@ class TorBlock {
 
 			$ip = wfGetIp();
 			wfDebug( "-User detected as editing from Tor node. Adding Tor block to permissions errors\n" );
-			wfLoadExtensionMessages( 'TorBlock' );
 
 			$result[] = array('torblock-blocked', $ip);
 
@@ -68,8 +67,7 @@ class TorBlock {
 
 			$ip = wfGetIp();
 			wfDebug( "-User detected as editing from Tor node. Denying email.\n" );
-			
-			wfLoadExtensionMessages( 'TorBlock' );
+
 			$hookError = array( 'permissionserrors', 'torblock-blocked', array( $ip ) );
 			return false;
 		}
@@ -83,7 +81,6 @@ class TorBlock {
 	}
 	
 	public static function onAbuseFilterBuilder( &$builder ) {
-		wfLoadExtensionMessages( 'TorBlock' );
 		$builder['vars']['tor_exit_node'] = 'tor-exit-node';
 		return true;
 	}
