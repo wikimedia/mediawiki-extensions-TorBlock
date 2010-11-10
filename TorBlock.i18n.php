@@ -89,6 +89,20 @@ La edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
 	'right-torunblocked' => 'Evita los bloqueos automáticos de los nodos de salida tor',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'torblock-desc' => 'Tor селтәренең сығыу төйөндәрен викины мөхәррирләүҙән бикләргә мөмкинлек бирә',
+	'torblock-blocked' => 'Һеҙҙең IP адресығыҙ, <tt>$1</tt>, үҙенән-үҙе Tor селтәренең сығыу төйөнө тип билдәләнде.
+Tor аша мөхәррирләү урынһыҙ ҡулланыуҙы булдырмау маҡсатында тыйылған.',
+	'torblock-isexitnode' => '$1 IP адресы Tor селтәренең сығыу төйөнө булараҡ бикләнгән.',
+	'right-torunblocked' => 'Tor селтәренең сығыу төйөндәрен бикләүҙе урап үтеү',
+	'tag-tor-description' => 'Әгәр был билдә ҡуйылған булһа, мөххәрирләү Tor селтәренең сығыу төйөнөнән башҡарылған.',
+	'tag-tor' => 'Tor аша башҡарылған',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Мөххәрирләү Tor селтәренең сығыу төйөнөнән башҡарылғанмы, юҡмы',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
