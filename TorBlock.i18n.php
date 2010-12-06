@@ -171,11 +171,17 @@ Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
 );
 
 /** Catalan (Català)
+ * @author El libre
  * @author SMP
  */
 $messages['ca'] = array(
+	'torblock-desc' => "Permet que els nodes de sortida tor siguin bloquejats des de l'edició d'un wiki",
 	'torblock-blocked' => "La vostra adreça IP <tt>$1</tt> ha estat identificada automàticament com un node de sortida de la xarxa Tor. L'edició a través de Tor està prohibida per a prevenir abusos.",
+	'torblock-isexitnode' => "L'adreça IP $1 és bloquejada com a node de sortida Tor.",
 	'right-torunblocked' => 'Evitar els blocatges automàtics de nodes Tor',
+	'tag-tor-description' => "Si aquesta etiqueta s'estableix, una edició va ser feta des d'un node de sortida Tor.",
+	'tag-tor' => 'Realitzat a través de tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Per si el canvi es va realitzar a través d'un node de sortida tor",
 );
 
 /** Czech (Česky)
