@@ -17,7 +17,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
  */
 
 $dir = dirname(__FILE__);
-$wgExtensionCredits['antispam'][] = array(
+$wgExtensionCredits[version_compare($wgVersion, '1.17alpha', '>=') ? 'antispam' : 'other'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'TorBlock',
 	'author'         => 'Andrew Garrett',
