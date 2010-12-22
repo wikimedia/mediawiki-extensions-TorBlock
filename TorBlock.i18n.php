@@ -903,6 +903,14 @@ La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari ab
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Ndica si lu canciamentu fu fattu da nu nodu d'uscita TOR o menu",
 );
 
+/** Sinhala (සිංහල)
+ * @author තඹරු විජේසේකර
+ */
+$messages['si'] = array(
+	'torblock-blocked' => 'ඔබේ IP ලිපිනය, <tt>$1</tt> tor exit node බව ස්වයංක්‍රීයව දැනගති.
+torක් තුලින් සංස්කරණය කිරීම අපවාදයන් වැළකීම උදෙසා වාරණිත යි.',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
