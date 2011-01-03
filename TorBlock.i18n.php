@@ -904,12 +904,18 @@ La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari ab
 );
 
 /** Sinhala (සිංහල)
+ * @author Budhajeewa
  * @author තඹරු විජේසේකර
  */
 $messages['si'] = array(
+	'torblock-desc' => 'tor exit nodes මගින් විකියන් සැකසුම අවහිර කිරීමට ඉඩදෙයි.',
 	'torblock-blocked' => 'ඔබේ IP ලිපිනය, <tt>$1</tt> tor exit node බව ස්වයංක්‍රීයව දැනගති.
 torක් තුලින් සංස්කරණය කිරීම අපවාදයන් වැළකීම උදෙසා වාරණිත යි.',
 	'torblock-isexitnode' => 'Tor exit node ලෙස $1 යන IP ලිපිනය වාරණිතයි.',
+	'right-torunblocked' => 'toe exit nodes සඳහා වන ස්‍වයංක්‍රීය වාරණයන් මගහරියි',
+	'tag-tor-description' => 'මෙම ටැගය තිබේ නම්, Tor exit node යක් මගින් සැකසුමක් කොට ඇත.',
+	'tag-tor' => 'tor හරහා නිර්මාණිතයි',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'වෙනස tor exit node යක් හරහා සිදු කළ නොකළ බව',
 );
 
 /** Slovak (Slovenčina)
