@@ -948,11 +948,12 @@ Urejanje preko tor je blokirano za preprečitev zlorab.',
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Millosh
+ * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'torblock-desc' => 'Омогућава блокирање измена на викију од стране излазних нодова тора.',
 	'torblock-blocked' => 'Твоја ИП адреса, <tt>$1</tt>, је аутоматски идентификована као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.',
-	'right-torunblocked' => 'Прескочи аутоматске блокове излазних нодова тора.',
+	'right-torunblocked' => 'Прескакање аутоматских забрана излазних нодова тора.',
 );
 
 /** Serbian Latin ekavian (Srpski (latinica))
