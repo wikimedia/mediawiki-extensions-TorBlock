@@ -1111,15 +1111,16 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
  * @author Gaoxuewei
+ * @author Mark85296341
  * @author Shinjiman
  */
 $messages['zh-hant'] = array(
-	'torblock-desc' => '封鎖使用tor位址發出的匿名編輯',
-	'torblock-blocked' => '您的IP位址<tt>$1</tt>已被系統自動認定為tor的節點，為防止破壞，經由tor發出的匿名編輯已經被封鎖。',
-	'torblock-isexitnode' => 'IP地址$1被認為是Tor出口節點而遭到封禁。',
-	'right-torunblocked' => '自動繞過tor的節點',
-	'tag-tor-description' => '如果這個標籤已標記，一個編輯從一個Tor節點中製造。',
-	'tag-tor' => '經Tor編輯',
-	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否經過一個Tor節點完成',
+	'torblock-desc' => '封鎖使用 tor 位址發出的匿名編輯',
+	'torblock-blocked' => '您的 IP 位址<tt>$1</tt>已被系統自動認定為 tor 的節點，為防止破壞，經由 tor 發出的匿名編輯已經被封鎖。',
+	'torblock-isexitnode' => 'IP 位址 $1 被認為是 Tor 出口節點而遭到封禁。',
+	'right-torunblocked' => '自動繞過 tor 的節點',
+	'tag-tor-description' => '如果這個標籤已標記，一個編輯從一個 Tor 節點中製造。',
+	'tag-tor' => '經 Tor 編輯',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否經過一個 Tor 節點完成',
 );
 
