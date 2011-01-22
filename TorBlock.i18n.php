@@ -89,7 +89,7 @@ La edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
 	'right-torunblocked' => 'Evita los bloqueos automáticos de los nodos de salida tor',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -112,7 +112,7 @@ $messages['bcc'] = array(
 اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -219,7 +219,7 @@ $messages['de'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Änderung erfolgte durch einen Torausgangsknoten',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author MichaelFrey
  */
 $messages['de-formal'] = array(
@@ -946,7 +946,7 @@ Urejanje preko tor je blokirano za preprečitev zlorab.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  */
@@ -956,7 +956,7 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'Прескакање аутоматских забрана излазних нодова тора.',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
