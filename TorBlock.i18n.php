@@ -946,6 +946,20 @@ Urejanje preko tor je blokirano za preprečitev zlorab.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor',
 );
 
+/** Albanian (Shqip)
+ * @author Olsi
+ */
+$messages['sq'] = array(
+	'torblock-desc' => 'Lejon nyjet dalëse tor të jenë të bllokuara nga redaktimi i një wiki',
+	'torblock-blocked' => 'Adresa juaj IP, <tt>$1</tt>, është identifikuar automatikisht si një nyje dalëse tor.
+Redaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.',
+	'torblock-isexitnode' => 'Adresa IP $1 është bllokuar si një nyje dalëse Tor.',
+	'right-torunblocked' => 'Anashkaloni bllokimet e nyjeve dalëse tor.',
+	'tag-tor-description' => 'Nëse kjo etiketë është vendosur, një redaktim u bë nga një nyje dalëse Tor.',
+	'tag-tor' => 'Bërë nëpërmjet tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
