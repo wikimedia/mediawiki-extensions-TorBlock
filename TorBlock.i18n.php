@@ -258,10 +258,12 @@ Wobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.',
 
 /** Greek (Ελληνικά)
  * @author Dead3y3
+ * @author Glavkos
  */
 $messages['el'] = array(
 	'torblock-desc' => 'Επιτρέπει να φραγούν κόμβοι εξόδου tor από το να επεξεργράζονται ένα wiki',
 	'torblock-blocked' => 'Η διεύθυνση IP σας, <tt>$1</tt>, ταυτοποιήθηκε αυτόματα ως ένας κόμβος εξόδου tor. Η επεξεργασία μέσω tor έχει φραγεί για την αποτροπή κατάχρησης.',
+	'torblock-isexitnode' => 'Η διεύθυνση IP $1 είναι αποκλεισμένη ως κόμβος εξόδου Tor.',
 	'right-torunblocked' => 'Παράκαμψη αυτομάτων φραγών για κόμβους εξόδου tor',
 	'tag-tor-description' => 'Αν αυτή η ετικέτα έχει τεθεί, μια επεξεργασία έγινε από έναν κόμβο εξόδου Tor.',
 	'tag-tor' => 'Έγινε μέσω Tor',
