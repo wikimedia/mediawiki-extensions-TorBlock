@@ -5,6 +5,14 @@ if ( ! defined( 'MEDIAWIKI' ) )
 class TorBlock {
 	public static $mExitNodes;
 
+	/**
+	 * @static
+	 * @param $title Title
+	 * @param $user User
+	 * @param $action
+	 * @param $result
+	 * @return bool
+	 */
 	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
 		global $wgTorAllowedActions;
 		if (in_array( $action, $wgTorAllowedActions)) {
@@ -39,7 +47,14 @@ class TorBlock {
 
 		return true;
 	}
-	
+
+	/**
+	 * @static
+	 * @param $user User
+	 * @param $editToken
+	 * @param $hookError
+	 * @return bool
+	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
 		wfDebug( "Checking Tor status\n" );
 		
@@ -178,6 +193,11 @@ class TorBlock {
 		return in_array( $ip, $nodes );
 	}
 
+	/**
+	 * @static
+	 * @param $user User
+	 * @return bool
+	 */
 	public static function onGetBlockedStatus( &$user ) {
 		global $wgTorDisableAdminBlocks;
 		if ($wgTorDisableAdminBlocks && self::isExitNode() && $user->mBlock && !$user->mBlock->mUser) {
@@ -194,6 +214,12 @@ class TorBlock {
 		return !self::isExitNode( $autoblockip );
 	}
 
+	/**
+	 * @static
+	 * @param $user User
+	 * @param $promote
+	 * @return bool
+	 */
 	public static function onGetAutoPromoteGroups( $user, &$promote ) {
 		// Check against stricter requirements for tor nodes.
 		// Counterintuitively, we do the requirement checks first.
