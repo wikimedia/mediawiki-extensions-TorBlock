@@ -717,6 +717,7 @@ $messages['nl'] = array(
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
+ * @author Ranveig
  */
 $messages['nn'] = array(
 	'torblock-desc' => 'Gjer det mogeleg å blokkere Tor-utgangsnodar frå å gjere endringar i ein wiki',
@@ -725,8 +726,8 @@ Redigering via TOR er blokkert for å hindre misbruk.',
 	'torblock-isexitnode' => 'IP-adressa $1 er blokkert som ei utgangsnode på Tor.',
 	'right-torunblocked' => 'Kan redigere frå automatisk blokkerte TOR-nodar',
 	'tag-tor-description' => 'Om dette merket er på, vart endringa gjort frå eit Tor-utgangs-knutepunkt.',
-	'tag-tor' => 'Gjord gjennom tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Om endringa vart gjord gjennom eit Tor-utgangsknutepunkt.',
+	'tag-tor' => 'Gjort gjennom tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Om endringa vart gjort gjennom eit Tor-utgangsknutepunkt.',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
