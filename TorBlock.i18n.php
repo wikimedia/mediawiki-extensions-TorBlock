@@ -970,7 +970,7 @@ Redaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.',
 $messages['sr-ec'] = array(
 	'torblock-desc' => 'Омогућава блокирање измена викије од стране излазних чворова Тора.',
 	'torblock-blocked' => 'Твоја ИП адреса, <tt>$1</tt>, је аутоматски идентификована као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.',
-	'right-torunblocked' => 'Прескакање аутоматских забрана излазних нодова тора.',
+	'right-torunblocked' => 'прескакање самосталних забрана излазних нодова',
 );
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
