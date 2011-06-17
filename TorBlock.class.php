@@ -31,7 +31,7 @@ class TorBlock {
 					return true;
 				}
 			}
-			
+
 			if (Block::isWhitelistedFromAutoblocks( wfGetIp() )) {
 				wfDebug( "-IP is in autoblock whitelist. Exempting from Tor blocks.\n" );
 				return true;
@@ -57,13 +57,13 @@ class TorBlock {
 	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
 		wfDebug( "Checking Tor status\n" );
-		
+
 		// Just in case we're checking another user
 		global $wgUser;
 		if ( $user->getName() != $wgUser->getName() ) {
 			return true;
 		}
-		
+
 		if (self::isExitNode()) {
 			wfDebug( "-User detected as editing through tor.\n" );
 
@@ -74,7 +74,7 @@ class TorBlock {
 					return true;
 				}
 			}
-			
+
 			if (Block::isWhitelistedFromAutoblocks( wfGetIp() )) {
 				wfDebug( "-IP is in autoblock whitelist. Exempting from Tor blocks.\n" );
 				return true;
@@ -86,15 +86,15 @@ class TorBlock {
 			$hookError = array( 'permissionserrors', 'torblock-blocked', array( $ip ) );
 			return false;
 		}
-		
+
 		return true;
 	}
-	
+
 	public static function onAbuseFilterFilterAction( &$vars, $title ) {
 		$vars->setVar( 'tor_exit_node', self::isExitNode() ? 1 : 0 );
 		return true;
 	}
-	
+
 	public static function onAbuseFilterBuilder( &$builder ) {
 		$builder['vars']['tor_exit_node'] = 'tor-exit-node';
 		return true;
@@ -120,10 +120,10 @@ class TorBlock {
 				// Somebody else is loading it.
 				wfDebug( "Old Tor list expired and we are still loading the new one.\n" );
 				return array();
-			} else if ( $liststatus == 'loaded' ) {
+			} elseif ( $liststatus == 'loaded' ) {
 				$nodes = $wgMemc->get( 'mw-tor-exit-nodes' );
 				if (is_array($nodes)) {
-					return self::$mExitNodes = $nodes;	
+					return self::$mExitNodes = $nodes;
 				} else {
 					wfDebug( "Tried very hard to get the Tor list since mw-tor-list-status says it is loaded, to no avail.\n" );
 					return array();
@@ -202,7 +202,7 @@ class TorBlock {
 		global $wgTorDisableAdminBlocks;
 		if ( $wgTorDisableAdminBlocks && self::isExitNode() && $user->mBlock && $user->mBlock->getType() != Block::TYPE_USER ) {
 			wfDebug( "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
-			
+
 			// Node is probably blocked for being a Tor node. Remove block.
 			$user->mBlockedby = 0;
 		}
@@ -243,18 +243,18 @@ class TorBlock {
 
 		return true;
 	}
-	
+
 	public static function onAutopromoteCondition( $type, $args, $user, &$result ) {
 		if ($type == APCOND_TOR) {
 			$result = self::isExitNode();
 		}
-		
+
 		return true;
 	}
 
 	public static function onRecentChangeSave( $recentChange ) {
 		global $wgTorTagChanges;
-		
+
 		if ( class_exists('ChangeTags') && $wgTorTagChanges && self::isExitNode() ) {
 			ChangeTags::addTags( 'tor', $recentChange->mAttribs['rc_id'], $recentChange->mAttribs['rc_this_oldid'], $recentChange->mAttribs['rc_logid'] );
 		}
@@ -263,7 +263,7 @@ class TorBlock {
 
 	public static function onListDefinedTags( &$emptyTags ) {
 		global $wgTorTagChanges;
-		
+
 		if ($wgTorTagChanges)
 			$emptyTags[] = 'tor';
 		return true;
