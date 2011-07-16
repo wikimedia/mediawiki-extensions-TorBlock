@@ -669,6 +669,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  * @author Izzudin
  */
@@ -676,6 +677,7 @@ $messages['ms'] = array(
 	'torblock-desc' => 'Membolehkan sekatan terhadap nod keluar Tor',
 	'torblock-blocked' => 'Alamat IP anda, <tt>$1</tt>, telah dikenal pasti sebagai nod keluar Tor.
 Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
+	'torblock-isexitnode' => 'Alamat IP $1 disekat sebagai nod keluar Tor.',
 	'right-torunblocked' => 'Melepasi sekatan nod keluar Tor',
 	'tag-tor-description' => 'Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.',
 	'tag-tor' => 'Dibuat melalui tor',
