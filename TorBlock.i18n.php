@@ -700,7 +700,7 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wieziging wel of niet mit een tor-uutgangsknope emaakt is',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wieziging wel of niet mit n tor-uutgangsknope emaakt is',
 );
 
 /** Dutch (Nederlands)
