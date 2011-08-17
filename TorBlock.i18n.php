@@ -881,7 +881,7 @@ $messages['rue'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці было едітованя выконане з выступного узла мережы Tor',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
