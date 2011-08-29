@@ -201,9 +201,11 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
 
 /** Danish (Dansk)
  * @author Masz
+ * @author Peter Alberti
  */
 $messages['da'] = array(
 	'right-torunblocked' => 'Redigere fra blokerede TOR-noder',
+	'tag-tor' => 'Foretaget gennem tor',
 );
 
 /** German (Deutsch)
