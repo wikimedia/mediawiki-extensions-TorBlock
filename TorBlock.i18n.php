@@ -140,6 +140,7 @@ $messages['bg'] = array(
 	'torblock-isexitnode' => 'IP адресът $1 е блокиран като изходящ възел на Tor мрежа.',
 	'right-torunblocked' => 'Пренебрегване автоматичните блокирания на изходните възли на tor',
 	'tag-tor' => 'Направено през Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Дали промяната е направена от адрес, явяващ се изходен възел на Tor',
 );
 
 /** Breton (Brezhoneg)
