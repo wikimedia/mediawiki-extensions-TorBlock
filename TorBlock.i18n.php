@@ -766,6 +766,20 @@ L’edicion per aqueste mejan es blocada per evitar d'abuses.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se la modificacion es estada facha via un nos de sortida de Tor',
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Psubhashish
+ */
+$messages['or'] = array(
+	'torblock-desc' => 'tor ଏକ୍ଜିଟ ଅବସ୍ଥାରେ ଏକ ଉଇକିରେ ସମ୍ପାଦନାକୁ ବାରଣ କରିବା ନିମନ୍ତେ ଅନୁମତି ଦେଇଥାଏ',
+	'torblock-blocked' => 'ଆପଣଙ୍କ IP ଠିକଣା <tt>$1</tt> ଟି ଆପେଆପେ ଏକ tor ଏକ୍ଜିଟ ଅବସ୍ଥା ଭାବରେ ଗଣାଯାଇଅଛି ।
+ଅବ୍ୟବହାରକୁ ରୋକିବା ନିମନ୍ତେ tor ଦେଇ ବଦଳସବୁ ଅଟକାଯାଇଛି ।',
+	'torblock-isexitnode' => 'IP ଠିକଣା $1ଟି ଏକ tor exit ଅବସ୍ଥା ଭାବରେ ଅଟକାଯାଇଛି ।',
+	'right-torunblocked' => 'tor exit ଗଣ୍ଠିକୁ ଅଲଗା ଦିଗକୁ ବାଟ ଆଡ଼କୁ କଢ଼ାଇନେବେ',
+	'tag-tor-description' => 'ଯଦି ଚିହ୍ନଟି ଥୟ କରାଯାଇଥାଏ, ତେବେ ଏହି ବଦଳଟି ଏକ Tor exit nodeରୁ କରାଯାଇଛି ।',
+	'tag-tor' => 'tor ଦେଇ କରାଯାଇଛି',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'ଏକ tor exit node ଦେଇ ବଦଳାଯାଇଛି କି ନାହିଁ',
+);
+
 /** Polish (Polski)
  * @author Beau
  * @author Sp5uhe
