@@ -205,8 +205,14 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
  * @author Peter Alberti
  */
 $messages['da'] = array(
+	'torblock-desc' => 'Gør det muligt at blokere Tor udgangsknuder fra at redigere en wiki',
+	'torblock-blocked' => 'Din IP-adresse, <tt>$1</tt>, er automatisk blevet identificeret som en udgangsknude fra Tor.
+Redigering gennem Tor er blokeret for at forhindre misbrug.',
+	'torblock-isexitnode' => 'IP-adressen $1 er blokeret som en Tor udgangsknude.',
 	'right-torunblocked' => 'Redigere fra blokerede TOR-noder',
+	'tag-tor-description' => 'Hvis dette mærkat er angivet, blev en redigering udført via en Tor udgangsknude.',
 	'tag-tor' => 'Foretaget gennem tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hvorvidt ændringen blev foretaget gennem en Tor udgangsknude',
 );
 
 /** German (Deutsch)
