@@ -27,10 +27,11 @@ Editing through tor is blocked to prevent abuse.',
  * @author Mormegil
  * @author Purodha
  * @author The Evil IP address
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'torblock-desc' => '{{desc}}',
-	'right-torunblocked' => '{{doc-right}}
+	'right-torunblocked' => '{{doc-right|torunblocked}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
 );
