@@ -817,6 +817,20 @@ La modìfica con tor a l'é blocà për evité dj'abus.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Se ël cambi a l'é stàit fàit o pa a travers un exit node tor",
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'torblock-desc' => 'ٹار ایگزٹ نوڈز نوں اجازت دیو اک وکی نوں بدلن تے روکن نوں۔',
+	'torblock-blocked' => 'تواڈا آئی پی پتہ <tt>$1</tt> ٹار ايگزٹ نوڈ لئی اپنے آپ پچھان لیا گیا اے۔
+ٹار راہ تبدیلی کرنا روکیا گیا جے غلط کم توں بچن لئی۔',
+	'torblock-isexitnode' => 'آئی پی پتہ $1 ٹار ایگزٹ نوڈ لئی روک دتا گیا اے۔',
+	'right-torunblocked' => 'ٹار ایگزٹ نوڈ دیاں اپنے آپ روکاں نوں بائی پاس کرو۔',
+	'tag-tor-description' => 'اگر ایہ ٹیگ سیٹ اے، اک تبدیلی ٹار ایگزٹ نوڈ ولوں کیتی گئی اے۔',
+	'tag-tor' => 'ٹار وجوں بدیا۔',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'تبدیلی اک ٹار ايگزٹ نوڈ  ولوں بنائی گئی اے یا نئیں۔',
+);
+
 /** Portuguese (Português)
  * @author Hamilton Abreu
  * @author Malafaya
