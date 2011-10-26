@@ -443,6 +443,7 @@ $messages['hi'] = array(
 
 /** Croatian (Hrvatski)
  * @author Dalibor Bosits
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
@@ -451,7 +452,7 @@ $messages['hr'] = array(
 Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'torblock-isexitnode' => 'IP adresa $1 blokirana je kao Tor izlazni čvor.',
 	'right-torunblocked' => 'Premošćivanje automatskih blokiranja tor izlaznih servera',
-	'tag-tor-description' => 'Ukoliko je ova kartica označena, uređivanje je vršeno s Tor mreže.',
+	'tag-tor-description' => 'Ako je ova kartica označena, uređivanje je vršeno s Tor mreže.',
 	'tag-tor' => 'Uređivano preko tor-mreže',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bez obzira je li uređivanje učinjeno preko Tor izlaznog čvora',
 );
