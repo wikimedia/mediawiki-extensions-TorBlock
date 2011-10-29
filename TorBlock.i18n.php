@@ -1005,12 +1005,13 @@ Redaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Nikola Smolenski
  * @author Rancher
  */
 $messages['sr-ec'] = array(
-	'torblock-desc' => 'Омогућава блокирање измена викије од стране излазних чворова Тора.',
+	'torblock-desc' => 'Омогућава блокирање измена викија од стране излазних чворова Тора.',
 	'torblock-blocked' => 'Твоја ИП адреса, <tt>$1</tt>, је аутоматски идентификована као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.',
 	'right-torunblocked' => 'прескакање самосталних забрана излазних нодова',
 );
