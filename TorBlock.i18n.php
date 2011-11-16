@@ -1029,7 +1029,7 @@ $messages['sr-el'] = array(
  * @author Pyt
  */
 $messages['stq'] = array(
-	'torblock-desc' => 'Moaket ju Schrieuwspeere foar Poute-Uutgongsknätte muugelk',
+	'torblock-desc' => 'Moaket ju Skrieuwspeere foar Poute-Uutgongsknätte muugelk',
 	'torblock-blocked' => 'Dien IP-Adresse <tt>$1</tt> wuud automatisk as Poute-Uutgongsknät identifizierd. Ju Siedenbeoarbaidenge in Ferbiendenge mäd dät Poute-Nätwierk is nit wonsked, deer ju Misbruuksgefoar gjucht hooch is.',
 	'right-torunblocked' => 'Uumgungen fon ju automatiske Speere fon Poute-Uutgongknätte',
 	'tag-tor-description' => 'Wan dit Tag sät is, geböärde ju Beoarbaidenge truch n Tor-Uutgongsknät.',
