@@ -1016,7 +1016,7 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'прескакање самосталних забрана излазних нодова',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
