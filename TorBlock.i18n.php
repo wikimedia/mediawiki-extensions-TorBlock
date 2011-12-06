@@ -82,12 +82,17 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'torblock-desc' => "Permite que los nodos de salida tor torguen la edición d'una wiki",
-	'torblock-blocked' => "La to direición IP, <tt>$1</tt>, foi identificada automáticamente como un nodu de salida tor.
+	'torblock-blocked' => "La to direición IP, <tt>$1</tt>, foi identificada automáticamente como un nodiu de salida tor.
 La edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
+	'torblock-isexitnode' => 'La dirección IP $1 ta bloquiada por ser un nodiu de salida Tor.',
 	'right-torunblocked' => 'Evita los bloqueos automáticos de los nodos de salida tor',
+	'tag-tor-description' => 'Si tien puesta esta etiqueta, ye que se fizo una edición dende un nodiu de salida Tor.',
+	'tag-tor' => 'Fecho al traviés de Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Si ta fechu'l cambiu al traviés d'un nodiu de salida tor",
 );
 
 /** Bashkir (Башҡортса)
