@@ -675,6 +675,7 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaajawa
  * @author Kaustubh
  */
 $messages['mr'] = array(
@@ -682,6 +683,7 @@ $messages['mr'] = array(
 	'torblock-blocked' => 'तुमचा आयपी अंकपत्ता, <tt>$1</tt>, आपोआप टॉर एक्झीट नोड म्हणून ओळखला गेलेला आहे.
 गैरवापर टाळण्यासाठी टॉर मधून संपादन करण्यावर बंदी घालण्यात आलेली आहे.',
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सच्या आपोआप आलेल्या प्रतिबंधांकडे दुर्लक्ष करा',
+	'tag-tor' => 'टॉर-द्वारे (Tor) बनवले',
 );
 
 /** Malay (Bahasa Melayu)
