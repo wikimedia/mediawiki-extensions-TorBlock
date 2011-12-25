@@ -756,7 +756,7 @@ Redigering via TOR er blokkert for å hindre misbruk.',
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
 	'torblock-blocked' => 'Din IP-adresse, <tt>$1</tt>, har blitt automatisk identifisert som en utgangsnode fra Tor.
 Redigering via Tor er blokkert for å forhindre misbruk.',
