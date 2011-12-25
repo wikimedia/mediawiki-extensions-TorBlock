@@ -702,6 +702,22 @@ Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Sama ada atau tidak perubahan dibuat melalui buku keluar tor',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Harald Khan
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
+	'torblock-blocked' => 'Din IP-adresse, <tt>$1</tt>, har blitt automatisk identifisert som en utgangsnode fra Tor.
+Redigering via Tor er blokkert for å forhindre misbruk.',
+	'torblock-isexitnode' => 'IP-adressen $1 er blokkert som en utgangsnode for Tor.',
+	'right-torunblocked' => 'Kan redigere fra automatisk blokkerte Tor-noder',
+	'tag-tor-description' => 'Om denne taggen er på, ble redigeringen gjort via en Tor-node.',
+	'tag-tor' => 'Gjort via Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hvorvidt endringen ble gjort gjennom et Tor-utgangsknutepunkt.',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -749,22 +765,6 @@ Redigering via TOR er blokkert for å hindre misbruk.',
 	'tag-tor-description' => 'Om dette merket er på, vart endringa gjort frå eit Tor-utgangs-knutepunkt.',
 	'tag-tor' => 'Gjort gjennom tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Om endringa vart gjort gjennom eit Tor-utgangsknutepunkt.',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Harald Khan
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
-	'torblock-blocked' => 'Din IP-adresse, <tt>$1</tt>, har blitt automatisk identifisert som en utgangsnode fra Tor.
-Redigering via Tor er blokkert for å forhindre misbruk.',
-	'torblock-isexitnode' => 'IP-adressen $1 er blokkert som en utgangsnode for Tor.',
-	'right-torunblocked' => 'Kan redigere fra automatisk blokkerte Tor-noder',
-	'tag-tor-description' => 'Om denne taggen er på, ble redigeringen gjort via en Tor-node.',
-	'tag-tor' => 'Gjort via Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hvorvidt endringen ble gjort gjennom et Tor-utgangsknutepunkt.',
 );
 
 /** Occitan (Occitan)
