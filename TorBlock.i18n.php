@@ -520,6 +520,20 @@ Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Menampilkan apakah suatu perubahan dibuat melalui "exit node" tor atau tidak',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'torblock-desc' => 'Agpalubos ti tor exit nodes a maserraan manipud ti panagurnos ti wiki',
+	'torblock-blocked' => 'Ti Ip a pagtaengam, <tt>$1</tt>, ket na-automatikoa nainaganan a kas tor exit node.
+Ti panagurnos babaen ti tor ket naserraan tapno masalakniban ti panag-abuso.',
+	'torblock-isexitnode' => 'Ti Ip a pagtaengan $1 ket naserraan a kasla Tor exit node.',
+	'right-torunblocked' => 'Labsan ti automatiko a panagserra ti tor exit nodes',
+	'tag-tor-description' => 'No maidisso daytoy nga etiketa, maysa a panag-urnos ket maaramid manipud iti Tor exit node.',
+	'tag-tor' => 'Naaramid babaen ti tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'No man wenno saan a ti sinukatan ket naaramid babaen ti tor exit node',
+);
+
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
