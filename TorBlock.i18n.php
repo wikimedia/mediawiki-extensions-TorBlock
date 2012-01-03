@@ -38,9 +38,14 @@ Users with this right are not affected by automatic blocking by [[mw:Extension:T
 
 /** Afrikaans (Afrikaans)
  * @author Naudefj
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
+	'torblock-desc' => "Tor afrit nodes te geblokkeer word van die wysiging van 'n wiki",
+	'right-torunblocked' => 'Verbypad outomatiese blokke van Tor afrit nodes',
+	'tag-tor-description' => "Indien hierdie merker is, was 'n verandering gemaak van' n Tor afrit knoop.",
 	'tag-tor' => 'Gemaak met tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Of die verandering is gemaak deur middel van 'n tor afrit knoop",
 );
 
 /** Aragonese (Aragonés)
