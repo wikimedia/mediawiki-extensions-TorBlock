@@ -6,17 +6,17 @@ class ASN1Exception extends Exception {
 class ASN1Parser {
 	/* const */ static $tagClasses = array( 'universal', 'application', 'context-specific', 'private' );
 	/* const */ static $tagNames = array(
-		 2 => 'INTEGER',
-		 3 => 'BIT STRING',
-		 4 => 'OCTET STRING',
-		 5 => 'NULL',
-		 6 => 'OBJECT IDENTIFIER',
-		16 => 'SEQUENCE',
-		17 => 'SET',
-		19 => 'PrintableString',
-		20 => 'T61String',
-		22 => 'IA5String',
-		23 => 'UTCTime'
+		self::INTEGER => 'INTEGER',
+		self::BIT_STRING => 'BIT STRING',
+		self::OCTET_STRING => 'OCTET STRING',
+		self::NULL => 'NULL',
+		self::OBJECT_IDENTIFIER => 'OBJECT IDENTIFIER',
+		self::SEQUENCE => 'SEQUENCE',
+		self::SET => 'SET',
+		self::PrintableString => 'PrintableString',
+		self::T61String => 'T61String',
+		self::IA5String => 'IA5String',
+		self::UTCTime => 'UTCTime'
 	);
 
 	const INTEGER = 2;
