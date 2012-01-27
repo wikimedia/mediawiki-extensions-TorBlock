@@ -114,10 +114,9 @@ class ASN1Parser {
 				 * project or crypto/objects/obj_dat.txt (where hexadecimal
 				 * data is available )
 				 */
-				 $item['contents'] = $item['contents'];
-			} else {
 				$item['contents'] = $item['contents'];
 			}
+			/* Else, we leave contents as binary data */
 
 			$result[] = $item;
 		}
