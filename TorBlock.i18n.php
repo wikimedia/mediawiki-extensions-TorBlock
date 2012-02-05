@@ -166,7 +166,7 @@ $messages['br'] = array(
 	'torblock-blocked' => "Detektet eo bet ho chomlec'h IP <tt>$1</tt> ent emgefre evel ur skoulm ezmont Tor.
 Stnaket eo ar c'hemmoù dre Tor, kuit da zegas trubuilh.",
 	'torblock-isexitnode' => "Stanket eo ar chomlec'h UP $1 rak ur skoulm ermaeziañ Tor eo.",
-	'right-torunblocked' => "C'hoari an dro da stankadennoù emgefre skoulmoù ezmont Tor",
+	'right-torunblocked' => 'Tremen dreist da stankadennoù emgefre skoulmoù ezmont Tor',
 	'tag-tor-description' => "Mard eo gweredekaet ar valizenn-mañ, ez eus bet degaset ur c'hemm adalek ur skoulm ezmont Tor.",
 	'tag-tor' => 'Graet dre Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Mard eo bet graet ur c'hemm adalek ur skolm ezmont Tor pe get",
