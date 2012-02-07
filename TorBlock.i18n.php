@@ -431,6 +431,13 @@ $messages['gsw'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Eb d Änderig dur e TorExit-Chnote gmacht woren isch',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Sushant savla
+ */
+$messages['gu'] = array(
+	'tag-tor' => 'ટોર  માંથી બનાવાયું',
+);
+
 /** Hebrew (עברית)
  * @author Rotem Liss
  * @author YaronSh
