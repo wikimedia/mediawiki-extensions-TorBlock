@@ -432,9 +432,12 @@ $messages['gsw'] = array(
 );
 
 /** Gujarati (ગુજરાતી)
+ * @author KartikMistry
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'torblock-isexitnode' => 'IP સરનામું $1 એ ટોર એક્ઝિટ નોડ તરીકે પ્રતિબંધિત છે.',
+	'right-torunblocked' => 'ટોર ઍક્ઝીટ નોડ ના સ્વયંચાલી પ્રતિબંધને અવગણો',
 	'tag-tor' => 'ટોર  માંથી બનાવાયું',
 );
 
