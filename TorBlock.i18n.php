@@ -549,7 +549,7 @@ Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.
  */
 $messages['ilo'] = array(
 	'torblock-desc' => 'Agpalubos ti tor exit nodes a maserraan manipud ti panagurnos ti wiki',
-	'torblock-blocked' => 'Ti Ip a pagtaengam, <tt>$1</tt>, ket na-automatikoa nainaganan a kas tor exit node.
+	'torblock-blocked' => 'Ti IPa pagtaengam, <tt>$1</tt>, ket na-automatikoa nainaganan a kas tor exit node.
 Ti panagurnos babaen ti tor ket naserraan tapno masalakniban ti panag-abuso.',
 	'torblock-isexitnode' => 'Ti Ip a pagtaengan $1 ket naserraan a kasla Tor exit node.',
 	'right-torunblocked' => 'Labsan ti automatiko a panagserra ti tor exit nodes',
