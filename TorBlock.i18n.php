@@ -600,12 +600,14 @@ Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 );
 
 /** Georgian (ქართული)
+ * @author David1010
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
 	'torblock-desc' => 'Tor ხაზიდან ბლოკირების გასვლის ნებართვა',
 	'torblock-blocked' => 'თქვენი IP-მისამართი, <tt>$1</tt>, იდენტიფიცირებულია როგორც Tor-ი.
 რედაქტირება Tor-ის მეშვეობით აკრძალულია ბოროტად გამოყენებების .',
+	'torblock-isexitnode' => 'IP მისამართი $1 დაბლოკილია, როგორც Tor-ის ქსელის გამოსავალი კვანძი.',
 	'right-torunblocked' => 'Tor-ის ავტომატური ბლოკირების გავლა',
 	'tag-tor-description' => 'იმ შემთხვევაში თუ ეს მინიშნება დაყენებულია, იგი გაკეთებულია Tor-ის მეშვეობით.',
 	'tag-tor' => 'გაკეთებულია Tor-ის მეშვეობით',
