@@ -415,7 +415,7 @@ A edición a través disto está bloqueada para previr o abuso.',
 	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
 	'tag-tor-description' => 'Se a etiqueta está fixada é que unha edición foi feita desde un nodo de saída Tor.',
 	'tag-tor' => 'Feito a través do Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Pode ser, ou non, que o cambio fose feito a través dun nodo tor de saída',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se o cambio foi feito a través dun nodo tor de saída ou non',
 );
 
 /** Swiss German (Alemannisch)
