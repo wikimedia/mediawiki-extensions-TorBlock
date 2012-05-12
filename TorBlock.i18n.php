@@ -797,6 +797,7 @@ $messages['nl'] = array(
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
+ * @author Njardarlogar
  * @author Ranveig
  */
 $messages['nn'] = array(
