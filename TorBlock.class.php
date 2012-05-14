@@ -6,7 +6,6 @@ class TorBlock {
 	public static $mExitNodes;
 
 	/**
-	 * @static
 	 * @param $title Title
 	 * @param $user User
 	 * @param $action
@@ -14,7 +13,7 @@ class TorBlock {
 	 * @return bool
 	 */
 	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
-		global $wgTorAllowedActions;
+		global $wgTorAllowedActions, $wgRequest;
 		if (in_array( $action, $wgTorAllowedActions)) {
 			return true;
 		}
@@ -32,15 +31,15 @@ class TorBlock {
 				}
 			}
 
-			if (Block::isWhitelistedFromAutoblocks( wfGetIp() )) {
+			$ip = $wgRequest->getIP();
+			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
 				wfDebug( "-IP is in autoblock whitelist. Exempting from Tor blocks.\n" );
 				return true;
 			}
 
-			$ip = wfGetIp();
 			wfDebug( "-User detected as editing from Tor node. Adding Tor block to permissions errors\n" );
 
-			$result[] = array('torblock-blocked', $ip);
+			$result[] = array( 'torblock-blocked', $ip );
 
 			return false;
 		}
@@ -59,7 +58,7 @@ class TorBlock {
 		wfDebug( "Checking Tor status\n" );
 
 		// Just in case we're checking another user
-		global $wgUser;
+		global $wgUser, $wgRequest;
 		if ( $user->getName() != $wgUser->getName() ) {
 			return true;
 		}
@@ -75,12 +74,12 @@ class TorBlock {
 				}
 			}
 
-			if (Block::isWhitelistedFromAutoblocks( wfGetIp() )) {
+			$ip = $wgRequest->getIP();
+			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
 				wfDebug( "-IP is in autoblock whitelist. Exempting from Tor blocks.\n" );
 				return true;
 			}
 
-			$ip = wfGetIp();
 			wfDebug( "-User detected as editing from Tor node. Denying email.\n" );
 
 			$hookError = array( 'permissionserrors', 'torblock-blocked', array( $ip ) );
@@ -90,16 +89,28 @@ class TorBlock {
 		return true;
 	}
 
+	/**
+	 * @param $vars AbuseFilterVariableHolder
+	 * @param $title Title
+	 * @return bool
+	 */
 	public static function onAbuseFilterFilterAction( &$vars, $title ) {
 		$vars->setVar( 'tor_exit_node', self::isExitNode() ? 1 : 0 );
 		return true;
 	}
 
+	/**
+	 * @param $builder array
+	 * @return bool
+	 */
 	public static function onAbuseFilterBuilder( &$builder ) {
 		$builder['vars']['tor_exit_node'] = 'tor-exit-node';
 		return true;
 	}
 
+	/**
+	 * @return array|mixed
+	 */
 	public static function getExitNodes() {
 		if (is_array(self::$mExitNodes)) {
 			wfDebug( "Loading Tor exit node list from memory.\n" );
@@ -145,6 +156,9 @@ class TorBlock {
 		return self::loadExitNodes();
 	}
 
+	/**
+	 * @return array
+	 */
 	public static function loadExitNodes() {
 		wfProfileIn( __METHOD__ );
 
@@ -168,8 +182,12 @@ class TorBlock {
 		return self::$mExitNodes = $nodes;
 	}
 
+	/**
+	 * @param $ip
+	 * @return array
+	 */
 	public static function loadNodesForIP( $ip ) {
-		$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip='.$ip;
+		$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
 		$data = Http::get( $url, 'default', array( 'sslVerifyCert' => false ) );
 		$lines = explode("\n", $data);
 
@@ -183,9 +201,14 @@ class TorBlock {
 		return $nodes;
 	}
 
-	public static function isExitNode($ip = null) {
-		if ($ip == null) {
-			$ip = wfGetIp();
+	/**
+	 * @param null $ip
+	 * @return bool
+	 */
+	public static function isExitNode( $ip = null ) {
+		if ( $ip == null ) {
+			global $wgRequest;
+			$ip = $wgRequest->getIP();
 		}
 
 		$nodes = self::getExitNodes();
@@ -210,6 +233,11 @@ class TorBlock {
 		return true;
 	}
 
+	/**
+	 * @param $autoblockip
+	 * @param $block
+	 * @return bool
+	 */
 	public static function onAbortAutoblock( $autoblockip, &$block ) {
 		return !self::isExitNode( $autoblockip );
 	}
@@ -244,6 +272,13 @@ class TorBlock {
 		return true;
 	}
 
+	/**
+	 * @param $type
+	 * @param $args
+	 * @param $user
+	 * @param $result
+	 * @return bool
+	 */
 	public static function onAutopromoteCondition( $type, $args, $user, &$result ) {
 		if ($type == APCOND_TOR) {
 			$result = self::isExitNode();
@@ -252,6 +287,10 @@ class TorBlock {
 		return true;
 	}
 
+	/**
+	 * @param $recentChange
+	 * @return bool
+	 */
 	public static function onRecentChangeSave( $recentChange ) {
 		global $wgTorTagChanges;
 
@@ -261,6 +300,10 @@ class TorBlock {
 		return true;
 	}
 
+	/**
+	 * @param $emptyTags
+	 * @return bool
+	 */
 	public static function onListDefinedTags( &$emptyTags ) {
 		global $wgTorTagChanges;
 
