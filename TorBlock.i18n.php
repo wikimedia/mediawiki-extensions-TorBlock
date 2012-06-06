@@ -581,13 +581,14 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'torblock-desc' => 'Torの末端ノードからのウィキの編集のブロックを許可する',
-	'torblock-blocked' => 'あなたのIPアドレス <tt>$1</tt> は、Tor の末端ノードであると自動的に認識されました。不正な利用を防止するため、Tor を通しての編集は禁止されています。',
-	'torblock-isexitnode' => 'IP アドレス $1 は Tor 末端ノードであるためブロックされています。',
+	'torblock-desc' => 'Torの末端ノードからのウィキの編集をブロックできるようにする',
+	'torblock-blocked' => 'あなたのIPアドレス <tt>$1</tt> は、Tor の末端ノードであると自動的に認識されました。
+不正な利用を防止するため、Torを通じての編集を禁止しています。',
+	'torblock-isexitnode' => 'IPアドレス $1 はTor末端ノードであるためブロックされています。',
 	'right-torunblocked' => 'Tor末端ノードの自動ブロックを回避',
-	'tag-tor-description' => 'このタグが設定されている場合、Tor 末端ノードから編集がなされました。',
+	'tag-tor-description' => 'このタグが設定されている場合、Tor末端ノードを通じて行われた編集です。',
 	'tag-tor' => 'Torを通じてなされた',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'その変更がTor末端ノードを通じてなされたかどうか',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Tor末端ノードを通じて行われた変更かどうか',
 );
 
 /** Javanese (Basa Jawa)
