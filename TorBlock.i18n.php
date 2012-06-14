@@ -89,7 +89,7 @@ $messages['arz'] = array(
 	'tag-tor' => 'اتعمل من خلال tor',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -144,7 +144,7 @@ $messages['be-tarask'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці рэдагаваньне адбылася праз вузел Tor',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Spiritia
  * @author Turin
  */
@@ -158,7 +158,7 @@ $messages['bg'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Дали промяната е направена от адрес, явяващ се изходен възел на Tor',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -172,7 +172,7 @@ Stnaket eo ar c'hemmoù dre Tor, kuit da zegas trubuilh.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Mard eo bet graet ur c'hemm adalek ur skolm ezmont Tor pe get",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -186,7 +186,7 @@ Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Da li je izmjena izvršena kroz tor izlazni čvor ili ne',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author El libre
  * @author SMP
  * @author Vriullop
@@ -201,7 +201,7 @@ $messages['ca'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Si el canvi ha estat fet, o no, a través d'un node de sortida tor",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Mormegil
  */
 $messages['cs'] = array(
@@ -215,7 +215,7 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Zda byla tato editace provedena z výstupního uzlu sítě Tor',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Masz
  * @author Peter Alberti
  */
@@ -309,7 +309,7 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se la ŝanĝo estis farita per elira nodo de tor aŭ ne',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Dferg
  * @author Remember the dot
@@ -326,7 +326,7 @@ Se bloquea editar por tor para prevenir abusos.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si el cambio fue hecho o no a través de un nodo de salida tor',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  */
 $messages['et'] = array(
@@ -355,7 +355,7 @@ $messages['fa'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'آیا تغییر توسط یک گرهٔ خروجی tor انجام شده؟',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Crt
  * @author Nike
  * @author Str4nd
@@ -371,7 +371,7 @@ $messages['fi'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Onko muutos tehty tor exit -solmun kautta',
 );
 
-/** French (Français)
+/** French (français)
  * @author Grondin
  * @author IAlex
  * @author PieRRoMaN
@@ -390,7 +390,7 @@ Les modifications via Tor sont bloquées pour éviter les abus.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Si la modification a été faite via un nœud de sortie de Tor',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -470,7 +470,7 @@ $messages['hi'] = array(
 	'right-torunblocked' => 'टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author Roberta F.
  * @author SpeedyGonsales
@@ -500,7 +500,7 @@ Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hač změna je so přez wuchadny suk TOR činiła abo nic',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  */
 $messages['hu'] = array(
@@ -514,7 +514,7 @@ Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása célj
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'A szerkesztés egy tor-csomópontról készült vagy sem.',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -558,7 +558,7 @@ Ti panagurnos babaen ti tor ket naserraan tapno masalakniban ti panag-abuso.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'No man wenno saan a ti sinukatan ket naaramid babaen ti tor exit node',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author BrokenArrow
  * @author Darth Kule
  * @author OrbiliusMagister
@@ -675,7 +675,7 @@ $messages['li'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Óf de-n angering waal ódder neet is gemaak waenger 'ne tor exitnode",
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Matasg
  */
 $messages['lt'] = array(
@@ -688,7 +688,7 @@ Redagavimas per tor yra užblokuotas, kad nebūtų piktnaudžiaujama.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bet kuriuo atveju, pakeitimas buvo atliktas per tor išėjimo mazgą',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -794,7 +794,7 @@ $messages['nl'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wijziging wel of niet is gemaakt via een tor exitnode',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -812,7 +812,7 @@ Redigering via TOR er blokkert for å hindre misbruk.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Om endringa vart gjort gjennom eit Tor-utgangsknutepunkt.',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -840,7 +840,7 @@ $messages['or'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'ଏକ tor exit node ଦେଇ ବଦଳାଯାଇଛି କି ନାହିଁ',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Beau
  * @author Sp5uhe
  */
@@ -884,7 +884,7 @@ $messages['pnb'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'تبدیلی اک ٹار ايگزٹ نوڈ  ولوں بنائی گئی اے یا نئیں۔',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  * @author Waldir
@@ -900,7 +900,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se mudança foi feita ou não através de um nó de saída Tor',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Jesielt
  */
@@ -915,7 +915,7 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se a mudança foi feita ou não através de um nó de saída Tor.',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author AdiJapan
  * @author Stelistcristi
  */
@@ -930,7 +930,7 @@ Editarea prin tor este blocată pentru a preveni abuzuri.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Dacă modificarea s-a făcut printr-un nod de ieșire ''tor''",
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -944,7 +944,7 @@ Le cangiaminde ausanne tor sonde bloccate pe prevenìe abbuse.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Tutte o nisciune de le cangiaminde onne state fatte ausanne 'nu node de uscite de tor",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -972,7 +972,7 @@ $messages['rue'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці было едітованя выконане з выступного узла мережы Tor',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -986,7 +986,7 @@ Tor-ситими туһанан уларытыы манна бобуллар.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Көннөрүү Tor ситим нөҥүө оҥоһуллубут дуу суох дуу',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Melos
  * @author Santu
  */
@@ -1015,7 +1015,7 @@ torක් තුලින් සංස්කරණය කිරීම අපව�
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'වෙනස tor exit node යක් හරහා සිදු කළ නොකළ බව',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1029,7 +1029,7 @@ Aby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Či bola alebo nebola úprava vykonaná z koncového uzla TOR',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1043,7 +1043,7 @@ Urejanje preko tor je blokirano za preprečitev zlorab.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Olsi
  */
 $messages['sq'] = array(
@@ -1057,7 +1057,7 @@ Redaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Nikola Smolenski
  * @author Rancher
@@ -1068,7 +1068,7 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'прескакање самосталних забрана излазних нодова',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1089,7 +1089,7 @@ $messages['stq'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Annerenge waas moaked truch n Poute-Uutgongs-Knät',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Lejonel
  */
@@ -1143,7 +1143,7 @@ Suistimali önlemek için tor üzerinden değişiklik engellendi.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Değişikliğin bir tor çıkış nodundan yapılıp yapılmadığı',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Prima klasy4na
@@ -1159,7 +1159,7 @@ $messages['uk'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Чи зроблене редагування через вихідний вузол мережі Tor',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -1201,7 +1201,7 @@ $messages['yue'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => '睇個修改係咪經過一個tor出口點完成',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Gaoxuewei
@@ -1220,7 +1220,7 @@ $messages['zh-hans'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过Tor节点完成',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author Gaoxuewei
  * @author Mark85296341
