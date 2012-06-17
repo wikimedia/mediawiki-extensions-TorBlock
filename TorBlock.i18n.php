@@ -583,7 +583,7 @@ La possibilità di editare utilizzando tor è bloccata per impedire abusi.',
 $messages['ja'] = array(
 	'torblock-desc' => 'Torの末端ノードからのウィキの編集をブロックできるようにする',
 	'torblock-blocked' => 'あなたのIPアドレス <tt>$1</tt> は、Tor の末端ノードであると自動的に認識されました。
-不正な利用を防止するため、Torを通じての編集を禁止しています。',
+不正利用を防止するため、Torを通じての編集を禁止しています。',
 	'torblock-isexitnode' => 'IPアドレス $1 はTor末端ノードであるためブロックされています。',
 	'right-torunblocked' => 'Tor末端ノードの自動ブロックを回避',
 	'tag-tor-description' => 'このタグが設定されている場合、Tor末端ノードを通じて行われた編集です。',
