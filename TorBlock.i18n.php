@@ -89,6 +89,13 @@ $messages['arz'] = array(
 	'tag-tor' => 'اتعمل من خلال tor',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Chaipau
+ */
+$messages['as'] = array(
+	'tag-tor' => "ট'ৰ দ্বাৰা নিৰ্মিত",
+);
+
 /** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
