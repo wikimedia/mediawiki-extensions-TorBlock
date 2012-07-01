@@ -48,7 +48,7 @@ $messages['af'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Of die verandering is gemaak deur middel van 'n tor afrit knoop",
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -134,7 +134,7 @@ $messages['bcc'] = array(
 اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -274,7 +274,7 @@ qey ver-gırewtışê suistimali tor ser o vurnayiş qedexe biy.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'serê nodê tor ra biyo nê nêbiyo',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -411,7 +411,7 @@ Los changements avouéc Tor sont blocâs por èvitar los abus.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se lo changement at étâ fêt avouéc un nuod de sortia Tor',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -493,7 +493,7 @@ Uređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Bez obzira je li uređivanje učinjeno preko Tor izlaznog čvora',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -965,7 +965,7 @@ $messages['ru'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Была ли правка сделана через выходной узел сети Tor',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
