@@ -111,7 +111,7 @@ La edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Si ta fechu'l cambiu al traviés d'un nodiu de salida tor",
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -753,10 +753,10 @@ Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Sama ada atau tidak perubahan dibuat melalui buku keluar tor',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Harald Khan
- * @author Jon Harald Søby
  * @author Nghtwlkr
+ * @author Njardarlogar
  */
 $messages['nb'] = array(
 	'torblock-desc' => 'Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki',
