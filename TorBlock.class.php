@@ -39,7 +39,7 @@ class TorBlock {
 
 			wfDebug( "-User detected as editing from Tor node. Adding Tor block to permissions errors\n" );
 
-			$result[] = array( 'torblock-blocked', $ip );
+			$result = array( 'torblock-blocked', $ip );
 
 			return false;
 		}
