@@ -606,6 +606,7 @@ $messages['ja'] = array(
 );
 
 /** Javanese (Basa Jawa)
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
@@ -613,6 +614,7 @@ $messages['jv'] = array(
 	'torblock-blocked' => "Alamat IP panjenengan, <tt>$1</tt> wis diidhèntifikasi sacara otomatis minangka sawijining titik alamat ''tor''.
 Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 	'right-torunblocked' => "Lirwakna pamblokiran otomatis marang alamat ''tor''",
+	'tag-tor' => 'Digawé liwat tor',
 );
 
 /** Georgian (ქართული)
@@ -758,6 +760,13 @@ Penyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.',
 	'tag-tor-description' => 'Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.',
 	'tag-tor' => 'Dibuat melalui tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Sama ada atau tidak perubahan dibuat melalui buku keluar tor',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'torblock-isexitnode' => "L-indirizz IP $1 huwa mblukkat minħabba li huwa ''exit node'' Tor.",
 );
 
 /** Norwegian Bokmål (‪norsk (bokmål)‬)
@@ -984,6 +993,17 @@ $messages['rue'] = array(
 	'tag-tor-description' => 'Покы є наставлена тота значка, едітованя было выконане з выступного узла мережы Tor.',
 	'tag-tor' => 'Зроблене через Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Ці было едітованя выконане з выступного узла мережы Tor',
+);
+
+/** Sanskrit (संस्कृतम्)
+ * @author Shubha
+ */
+$messages['sa'] = array(
+	'torblock-isexitnode' => 'टार्-एक्सिट्-नोड् इति नाम्ना $1 ऐ पि सङ्केतः अवरुद्धः अस्ति ।',
+	'right-torunblocked' => 'टार्-एक्सिट्-नोड्स् इत्येतेषां स्वयंचालितावरोधं परिहरतु ।',
+	'tag-tor-description' => 'इदम् अङ्कनं यदि व्यवस्थापितं तर्हि टार् एक्सिट् नोड्तः किञ्चन सम्पादनं कृतम् ।',
+	'tag-tor' => 'टार् द्वारा निर्मितम्',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'टार् एक्सिट् नोड्तः वा अन्यथा वा परिवर्तनं कृतम्',
 );
 
 /** Sakha (саха тыла)
