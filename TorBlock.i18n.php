@@ -613,8 +613,11 @@ $messages['jv'] = array(
 	'torblock-desc' => "Mblokir titik alamat ''tor'' kanggo nyunting kaca wiki",
 	'torblock-blocked' => "Alamat IP panjenengan, <tt>$1</tt> wis diidhèntifikasi sacara otomatis minangka sawijining titik alamat ''tor''.
 Panyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
+	'torblock-isexitnode' => 'Alamat IP $1 diblokir minangka nodè akir Tor.',
 	'right-torunblocked' => "Lirwakna pamblokiran otomatis marang alamat ''tor''",
+	'tag-tor-description' => 'Yèn tag iki dipasang, suntingan digawé saka nodé akir Tor.',
 	'tag-tor' => 'Digawé liwat tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Mesthèkaké yèn owahan digawé saka nodé akir tor iya apa ora.',
 );
 
 /** Georgian (ქართული)
@@ -817,6 +820,13 @@ $messages['nl'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wijziging wel of niet is gemaakt via een tor exitnode',
 );
 
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'torblock-blocked' => 'Jouw IP-adres, <tt>$1</tt>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
+);
+
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Gunnernett
@@ -999,6 +1009,9 @@ $messages['rue'] = array(
  * @author Shubha
  */
 $messages['sa'] = array(
+	'torblock-desc' => 'टार् एक्झीट् नोड्स विकि सम्पादने अवरोद्धुम् अनुमतिं यच्छति',
+	'torblock-blocked' => 'भवतः ऐ पि सङ्केतः, <tt>$1</tt>, स्वयं टार् एक्सिट् नोड्-रूपेण अभिज्ञातमस्ति ।
+दुरुपयोगस्य निग्रहणाय टार्-द्वारा सम्पादनम् अवरुद्धमस्ति ।',
 	'torblock-isexitnode' => 'टार्-एक्सिट्-नोड् इति नाम्ना $1 ऐ पि सङ्केतः अवरुद्धः अस्ति ।',
 	'right-torunblocked' => 'टार्-एक्सिट्-नोड्स् इत्येतेषां स्वयंचालितावरोधं परिहरतु ।',
 	'tag-tor-description' => 'इदम् अङ्कनं यदि व्यवस्थापितं तर्हि टार् एक्सिट् नोड्तः किञ्चन सम्पादनं कृतम् ।',
