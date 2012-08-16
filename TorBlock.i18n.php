@@ -1206,6 +1206,13 @@ $messages['uk'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Чи зроблене редагування через вихідний вузол мережі Tor',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'چاہے یا نہیں میں تبدیلی ایک tor باہر نکلیں نوڈ کے ذریعے بنایا گیا تھا',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
