@@ -16,7 +16,7 @@ if ( ! defined( 'MEDIAWIKI' ) )
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-$dir = dirname(__FILE__);
+$dir = __DIR__;
 $wgExtensionCredits['antispam'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'TorBlock',

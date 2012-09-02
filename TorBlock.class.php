@@ -328,7 +328,7 @@ class TorBlock {
 		$msg[] = Html::rawElement(
 			'span',
 			array( 'class' => 'mw-torblock-isexitnode' ),
-			wfMsgExt( 'torblock-isexitnode', 'parseinline', $ip )
+			wfMessage( 'torblock-isexitnode', $ip )->parse()
 		);
 		return true;
 	}
