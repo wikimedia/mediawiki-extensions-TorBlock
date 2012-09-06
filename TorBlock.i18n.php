@@ -544,12 +544,13 @@ Le modification via Tor es prohibite pro impedir le abuso.',
 
 /** Indonesian (Bahasa Indonesia)
  * @author Bennylin
+ * @author Farras
  * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
 	'torblock-desc' => 'Mengijinkan "exit node" Tor untuk diblokir dari menyunting wiki',
-	'torblock-blocked' => 'Alamat IP Anda, <strong>$1</strong> telah diidentifikasi secara otomatis sebagai sebuah "exit node" tor.
+	'torblock-blocked' => 'Alamat IP Anda, <strong>$1</strong> telah diidentifikasi secara otomatis sebagai sebuah simpul akhir tor.
 Penyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.',
 	'torblock-isexitnode' => 'Alamat IP <strong>$1</strong> diblokir sebagai suatu simpul akhir Tor.',
 	'right-torunblocked' => 'Mengabaikan pemblokiran otomatis terhadap "exit nodes" tor',
