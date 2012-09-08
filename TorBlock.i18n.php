@@ -814,7 +814,7 @@ $messages['nds-nl'] = array(
 $messages['nl'] = array(
 	'torblock-desc' => 'Maakt bewerken onmogelijk voor tor exitnodes',
 	'torblock-blocked' => 'Uw IP-adres, <strong>$1</strong>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
-	'torblock-isexitnode' => 'Het IP-adres <strong>$1</strong> is geblokkeerd als Tor exitnode.',
+	'torblock-isexitnode' => 'Het IP-adres <strong>$1</strong> is geblokkeerd als tor exitnode.',
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeilen',
 	'tag-tor-description' => 'Als dit label is ingesteld, is de bewerking gemaakt via een Tor exitnode.',
 	'tag-tor' => 'Gemaakt via tor',
@@ -1050,12 +1050,13 @@ La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari ab
 
 /** Sinhala (සිංහල)
  * @author Budhajeewa
+ * @author Singhalawap
  * @author තඹරු විජේසේකර
  */
 $messages['si'] = array(
 	'torblock-desc' => 'tor exit nodes මගින් විකියන් සැකසුම අවහිර කිරීමට ඉඩදෙයි.',
 	'torblock-blocked' => 'ඔබේ IP ලිපිනය, <strong>$1</strong> tor exit node බව ස්වයංක්‍රීයව දැනගති.
-torක් තුලින් සංස්කරණය කිරීම අපවාදයන් වැළකීම උදෙසා වාරණිත යි.',
+අනිසි භාවිතයන් වළක්වාලීම සඳහා torක් තුලින් සංස්කරණය කිරීම  වාරණයකර ඇත.',
 	'torblock-isexitnode' => 'Tor exit node ලෙස <strong>$1</strong> යන IP ලිපිනය වාරණිතයි.',
 	'right-torunblocked' => 'toe exit nodes සඳහා වන ස්‍වයංක්‍රීය වාරණයන් මගහරියි',
 	'tag-tor-description' => 'මෙම ටැගය තිබේ නම්, Tor exit node යක් මගින් සැකසුමක් කොට ඇත.',
