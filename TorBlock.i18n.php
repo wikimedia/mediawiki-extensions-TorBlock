@@ -515,6 +515,7 @@ Wobdźěłanje přez TOR bu zablokowane, zo by znjewužiću zadźěwało.',
 );
 
 /** Hungarian (magyar)
+ * @author BáthoryPéter
  * @author Dani
  */
 $messages['hu'] = array(
@@ -524,7 +525,7 @@ Toron keresztül nem lehet szerkeszteni a visszaélések megakadályozása célj
 	'torblock-isexitnode' => 'A(z) <strong>$1</strong> IP-cím blokkolva van, mivel Tor kilépési csomópont.',
 	'right-torunblocked' => 'bejelentkezés automatikusan blokkolt torvégpontokról',
 	'tag-tor-description' => 'Ha ez a címke be van állítva, a szerkesztés egy Tor-csomópontról történt',
-	'tag-tor' => 'Toron keresztül készült',
+	'tag-tor' => 'TOR-on keresztüli szerkesztés',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'A szerkesztés egy tor-csomópontról készült vagy sem.',
 );
 
