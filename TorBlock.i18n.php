@@ -141,7 +141,7 @@ $messages['bcc'] = array(
 اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Cesco
  * @author EugeneZelenko
  * @author Jim-by
@@ -258,7 +258,7 @@ $messages['de'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Änderung erfolgte durch einen Torausgangsknoten',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author MichaelFrey
  */
 $messages['de-formal'] = array(
@@ -774,7 +774,7 @@ $messages['mt'] = array(
 	'torblock-isexitnode' => "L-indirizz IP <strong>$1</strong> huwa mblukkat minħabba li huwa ''exit node'' Tor.",
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Harald Khan
  * @author Nghtwlkr
  * @author Njardarlogar
@@ -822,14 +822,14 @@ $messages['nl'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Of de wijziging wel of niet is gemaakt via een tor exitnode',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
 	'torblock-blocked' => 'Jouw IP-adres, <strong>$1</strong>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -1107,7 +1107,7 @@ Redaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Nikola Smolenski
  * @author Rancher
@@ -1118,7 +1118,7 @@ $messages['sr-ec'] = array(
 	'right-torunblocked' => 'прескакање самосталних забрана излазних нодова',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1258,7 +1258,7 @@ $messages['yue'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => '睇個修改係咪經過一個tor出口點完成',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Gaoxuewei
@@ -1277,7 +1277,7 @@ $messages['zh-hans'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过Tor节点完成',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author Gaoxuewei
  * @author Mark85296341
