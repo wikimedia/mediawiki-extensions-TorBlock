@@ -814,7 +814,8 @@ $messages['nds-nl'] = array(
  */
 $messages['nl'] = array(
 	'torblock-desc' => 'Maakt bewerken onmogelijk voor tor exitnodes',
-	'torblock-blocked' => 'Uw IP-adres, <strong>$1</strong>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
+	'torblock-blocked' => 'Uw IP-adres, <strong>$1</strong>, is herkend als tor exitnode.
+Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
 	'torblock-isexitnode' => 'Het IP-adres <strong>$1</strong> is geblokkeerd als tor exitnode.',
 	'right-torunblocked' => 'Automatische blokkades van tor exitnodes omzeilen',
 	'tag-tor-description' => 'Als dit label is ingesteld, is de bewerking gemaakt via een Tor exitnode.',
@@ -826,7 +827,8 @@ $messages['nl'] = array(
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
-	'torblock-blocked' => 'Jouw IP-adres, <strong>$1</strong>, is herkend als tor exitnode. Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
+	'torblock-blocked' => 'Jouw IP-adres, <strong>$1</strong>, is herkend als tor exitnode.
+Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
