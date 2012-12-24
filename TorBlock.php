@@ -41,6 +41,7 @@ $wgExtensionCredits['antispam'][] = array(
 
 $wgExtensionMessagesFiles['TorBlock'] =  "$dir/TorBlock.i18n.php";
 $wgAutoloadClasses['TorBlock'] = "$dir/TorBlock.class.php";
+$wgAutoloadClasses['TorExitNodes'] = "$dir/TorExitNodes.php";
 
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlock::onGetUserPermissionsErrorsExpensive';
 $wgHooks['AbortAutoblock'][] = 'TorBlock::onAbortAutoblock';
@@ -91,6 +92,11 @@ $wgTorAutoConfirmCount = 0;
  * (i.e. all IPs which can be used to access the site.
  */
 $wgTorIPs = array( '208.80.152.2' );
+
+/**
+ * Onionoo server to use to poll information from for exit nodes.
+ */
+$wgTorOnionooServer = 'https://onionoo.torproject.org';
 
 /**
  * Disable existing blocks of Tor nodes

@@ -36,11 +36,15 @@ class LoadExitNodes extends Maintenance {
 	public function __construct() {
 		parent::__construct();
 		$this->mDescription = "Load the list of Tor exit nodes.";
+		$this->addOption( 'force', 'Force loading of exit nodes from the server rather than cache.' );
 	}
 
 	public function execute() {
-		$nodes = TorBlock::loadExitNodes();
-		if( !$nodes ) {
+		if ( $this->getOption( 'force', false ) ) {
+			TorExitNodes::loadExitNodes();
+		}
+		$nodes = TorExitNodes::getExitNodes();
+		if ( !$nodes ) {
 			$this->error( "Could not load exit nodes.", true );
 		}
 		$this->output( "Successfully loaded exit nodes.\n" );
