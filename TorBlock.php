@@ -99,6 +99,18 @@ $wgTorIPs = array( '208.80.152.2' );
 $wgTorOnionooServer = 'https://onionoo.torproject.org';
 
 /**
+ * Path to the CA file for the Onionoo server.
+ * Set to false or any other invalid value to disable.
+ */
+$wgTorOnionooCA = "$dir/torproject.crt";
+
+/**
+ * Path to the CA file for the Tor Project.
+ * Set to false or any other invalid value to disable.
+ */
+$wgTorProjectCA = "$dir/torproject.crt";
+
+/**
  * Disable existing blocks of Tor nodes
  */
 $wgTorDisableAdminBlocks = true;

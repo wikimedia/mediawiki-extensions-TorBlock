@@ -133,13 +133,15 @@ class TorExitNodes {
 	protected static function loadExitNodes_BulkList() {
 		wfProfileIn( __METHOD__ );
 
-		global $wgTorIPs;
+		global $wgTorIPs, $wgTorProjectCA;
 
 		$nodes = array();
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
-			$data = Http::get( $url, 'default', array( 'sslVerifyCert' => false ) );
-			$lines = explode( "\n", $data );
+			$data = Http::get( $url, 'default', array(
+				'caInfo' => is_readable( $wgTorProjectCA ) ? $wgTorProjectCA : null
+			) );
+			$lines = explode("\n", $data);
 
 			foreach ( $lines as $line ) {
 				if ( strpos( $line, '#' ) === false ) {
@@ -162,10 +164,12 @@ class TorExitNodes {
 	protected static function loadExitNodes_Onionoo() {
 		wfProfileIn( __METHOD__ );
 
-		global $wgTorOnionooServer;
+		global $wgTorOnionooServer, $wgTorOnionooCA;
 		$nodes = array();
 		$url = wfExpandUrl( "$wgTorOnionooServer/summary", PROTO_HTTPS );
-		$raw = Http::get( $url, 'default', array( 'sslVerifyCert' => false ) );
+		$raw = Http::get( $url, 'default', array(
+			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
+		) );
 		$data = FormatJson::decode( $raw, true );
 
 		$nodes = array();
