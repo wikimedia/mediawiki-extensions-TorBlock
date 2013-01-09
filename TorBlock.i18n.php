@@ -940,16 +940,17 @@ A edição através de Tor está bloqueada para prevenir abusos.',
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  * @author Jesielt
+ * @author Tuliouel
  */
 $messages['pt-br'] = array(
-	'torblock-desc' => 'Permite que nós de saída Tor sejam impedidos de editar um wiki',
+	'torblock-desc' => 'Permite que nós de saída Tor sejam bloqueados para editar um wiki',
 	'torblock-blocked' => 'O seu endereço IP, <strong>$1</strong>, foi automaticamente identificado como um nó de saída Tor.
 A edição através de Tor está bloqueada para prevenir abusos.',
-	'torblock-isexitnode' => 'O endereço de IP <strong>$1</strong> está bloqueado como nó de saída Tor.',
+	'torblock-isexitnode' => 'O endereço de IP <strong>$1</strong> está bloqueado por ser nó de saída Tor.',
 	'right-torunblocked' => 'Ultrapassar bloqueios automáticos de nós de saída Tor',
 	'tag-tor-description' => 'Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.',
 	'tag-tor' => 'Feita através de Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se a mudança foi feita ou não através de um nó de saída Tor.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se a mudança foi ou não feita através de um nó de saída Tor.',
 );
 
 /** Romanian (română)
