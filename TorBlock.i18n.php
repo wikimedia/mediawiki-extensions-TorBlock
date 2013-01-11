@@ -640,10 +640,11 @@ $messages['ka'] = array(
 /** Korean (한국어)
  * @author Ilovesabbath
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
 	'torblock-desc' => '토르를 이용하는 사용자가 편집하는 것을 차단합니다.',
-	'torblock-blocked' => '당신의 IP 주소 <strong>$1</strong>는 자동적으로 토르임이 밝혀졌습니다.
+	'torblock-blocked' => 'IP 주소 <strong>$1</strong>는 자동적으로 토르임이 밝혀졌습니다.
 토르를 사용한 편집은 악용을 방지하기 위해 차단되어 있습니다.',
 	'torblock-isexitnode' => 'IP 주소 <strong>$1</strong>은 토르이기 때문에 차단되었습니다.',
 	'right-torunblocked' => '토르 자동 차단을 무시',
