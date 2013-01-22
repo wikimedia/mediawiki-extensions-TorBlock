@@ -1,20 +1,34 @@
 <?php
-if ( ! defined( 'MEDIAWIKI' ) )
-	die();
 
-/**#@+
+/**
  * Prevents Tor exit nodes from editing a wiki.
- * Requires
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * http://www.gnu.org/copyleft/gpl.html
  *
  * @file
  * @ingroup Extensions
- *
  * @link http://www.mediawiki.org/wiki/Extension:TorBlock Documentation
- *
  *
  * @author Andrew Garrett <andrew@epstone.net>
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
+
+if ( !defined( 'MEDIAWIKI' ) ) {
+	die();
+}
 
 $dir = __DIR__;
 $wgExtensionCredits['antispam'][] = array(
@@ -26,7 +40,7 @@ $wgExtensionCredits['antispam'][] = array(
 );
 
 $wgExtensionMessagesFiles['TorBlock'] =  "$dir/TorBlock.i18n.php";
-$wgAutoloadClasses[ 'TorBlock' ] = "$dir/TorBlock.class.php";
+$wgAutoloadClasses['TorBlock'] = "$dir/TorBlock.class.php";
 
 $wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlock::onGetUserPermissionsErrorsExpensive';
 $wgHooks['AbortAutoblock'][] = 'TorBlock::onAbortAutoblock';
@@ -41,7 +55,7 @@ $wgHooks['EmailUserPermissionsErrors'][] = 'TorBlock::onEmailUserPermissionsErro
 $wgHooks['OtherBlockLogLink'][] = 'TorBlock::getTorBlockStatus';
 
 // Define new autopromote condition
-define('APCOND_TOR', 'tor'); // Numbers won't work, we'll get collisions
+define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
 
 /**
  * Permission keys that bypass Tor blocks.
@@ -63,7 +77,7 @@ $wgTorLoadNodes = true;
  * Actions tor users are allowed to do.
  * E.g. to allow account creation, add createaccount.
  */
-$wgTorAllowedActions = array('read');
+$wgTorAllowedActions = array( 'read' );
 
 /**
  * Autoconfirm limits for tor users.
