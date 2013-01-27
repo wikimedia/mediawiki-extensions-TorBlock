@@ -819,7 +819,7 @@ $messages['nds'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Wat de Ännern över en Tor-Utgangsknütten maakt worrn is',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
