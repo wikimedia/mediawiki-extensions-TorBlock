@@ -659,14 +659,14 @@ $messages['ka'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'torblock-desc' => '토르를 이용하는 사용자가 편집하는 것을 차단합니다.',
-	'torblock-blocked' => 'IP 주소 <strong>$1</strong>는 자동적으로 토르임이 밝혀졌습니다.
+	'torblock-desc' => '토르 끝 노드로 위키를 편집하는 것을 차단합니다',
+	'torblock-blocked' => '<strong>$1</strong> IP 주소는 토르 끝 노드로 자동적으로 확인되었습니다.
 토르를 사용한 편집은 악용을 방지하기 위해 차단되어 있습니다.',
-	'torblock-isexitnode' => 'IP 주소 <strong>$1</strong>은 토르이기 때문에 차단되었습니다.',
-	'right-torunblocked' => '토르 자동 차단을 무시',
-	'tag-tor-description' => '이 태그가 설정되어 있으면, 토르를 통해 편집된 것입니다.',
+	'torblock-isexitnode' => '<strong>$1</strong> IP 주소는 토르 끝 노드이기 때문에 차단되었습니다.',
+	'right-torunblocked' => '토르 끝 노드의 자동 차단을 적용하지 않음',
+	'tag-tor-description' => '이 태그가 설정되어 있으면 토르 끝 노드를 통해 편집한 것입니다.',
 	'tag-tor' => '토르 사용',
-	'abusefilter-edit-builder-vars-tor-exit-node' => '편집이 토르를 통해 이루어졌는 지의 여부',
+	'abusefilter-edit-builder-vars-tor-exit-node' => '편집이 토르 끝 노드를 통해 바뀌었는 지의 여부',
 );
 
 /** Colognian (Ripoarisch)
