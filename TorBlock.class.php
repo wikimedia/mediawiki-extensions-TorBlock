@@ -43,7 +43,7 @@ class TorBlock {
 			return true;
 		}
 
-		wfDebugLog( 'torblock', "Checking Tor status\n" );
+		// wfDebugLog( 'torblock', "Checking Tor status\n" );
 
 		if ( TorExitNodes::isExitNode() ) {
 			wfDebugLog( 'torblock', "User detected as editing through tor." );
@@ -82,7 +82,7 @@ class TorBlock {
 	 * @return bool
 	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
-		wfDebugLog( 'torblock', "Checking Tor status" );
+		// wfDebugLog( 'torblock', "Checking Tor status" );
 
 		// Just in case we're checking another user
 		global $wgUser, $wgRequest;
