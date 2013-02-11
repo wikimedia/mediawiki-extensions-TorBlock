@@ -56,7 +56,7 @@ class TorExitNodes {
 	 */
 	public static function getExitNodes() {
 		if ( is_array( self::$mExitNodes ) ) {
-			wfDebug( "Loading Tor exit node list from memory.\n" );
+			wfDebugLog( 'torblock', "Loading Tor exit node list from memory.\n" );
 			return self::$mExitNodes;
 		}
 
@@ -65,21 +65,21 @@ class TorExitNodes {
 		$nodes = $wgMemc->get( 'mw-tor-exit-nodes' ); // No use of wfMemcKey because it should be multi-wiki.
 
 		if ( is_array( $nodes ) ) {
-			wfDebug( "Loading Tor exit node list from memcached.\n" );
+			wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
 			// Lucky.
 			return self::$mExitNodes = $nodes;
 		} else {
 			$liststatus = $wgMemc->get( 'mw-tor-list-status' );
 			if ( $liststatus == 'loading' ) {
 				// Somebody else is loading it.
-				wfDebug( "Old Tor list expired and we are still loading the new one.\n" );
+				wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
 				return array();
 			} elseif ( $liststatus == 'loaded' ) {
 				$nodes = $wgMemc->get( 'mw-tor-exit-nodes' );
 				if ( is_array( $nodes ) ) {
 					return self::$mExitNodes = $nodes;
 				} else {
-					wfDebug( "Tried very hard to get the Tor list since mw-tor-list-status says it is loaded, to no avail.\n" );
+					wfDebugLog( 'torblock', "Tried very hard to get the Tor list since mw-tor-list-status says it is loaded, to no avail.\n" );
 					return array();
 				}
 			}
@@ -90,11 +90,11 @@ class TorExitNodes {
 		global $wgTorLoadNodes;
 		if ( !$wgTorLoadNodes ) {
 			// Disabled.
-			wfDebug( "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
+			wfDebugLog( 'torblock', "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
 			return array();
 		}
 
-		wfDebug( "Loading Tor exit node list cold.\n" );
+		wfDebugLog( 'torblock', "Loading Tor exit node list cold.\n" );
 
 		self::loadExitNodes();
 		return self::$mExitNodes;

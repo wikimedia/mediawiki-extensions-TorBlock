@@ -43,26 +43,26 @@ class TorBlock {
 			return true;
 		}
 
-		wfDebug( "Checking Tor status\n" );
+		wfDebugLog( 'torblock', "Checking Tor status\n" );
 
 		if ( TorExitNodes::isExitNode() ) {
-			wfDebug( "User detected as editing through tor." );
+			wfDebugLog( 'torblock', "User detected as editing through tor." );
 
 			global $wgTorBypassPermissions;
 			foreach ( $wgTorBypassPermissions as $perm) {
 				if ( $user->isAllowed( $perm ) ) {
-					wfDebug( "User has $perm permission. Exempting from Tor Blocks" );
+					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks" );
 					return true;
 				}
 			}
 
 			$ip = $wgRequest->getIP();
 			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
-				wfDebug( "IP is in autoblock whitelist. Exempting from Tor blocks." );
+				wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
 				return true;
 			}
 
-			wfDebug( "User detected as editing from Tor node. Adding Tor block to permissions errors." );
+			wfDebugLog( 'torblock', "User detected as editing from Tor node. Adding Tor block to permissions errors." );
 
 			$result = array( 'torblock-blocked', $ip );
 
@@ -82,7 +82,7 @@ class TorBlock {
 	 * @return bool
 	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
-		wfDebug( "Checking Tor status" );
+		wfDebugLog( 'torblock', "Checking Tor status" );
 
 		// Just in case we're checking another user
 		global $wgUser, $wgRequest;
@@ -91,23 +91,23 @@ class TorBlock {
 		}
 
 		if ( TorExitNodes::isExitNode() ) {
-			wfDebug( "User detected as editing through tor." );
+			wfDebugLog( 'torblock', "User detected as editing through tor." );
 
 			global $wgTorBypassPermissions;
 			foreach ( $wgTorBypassPermissions as $perm) {
 				if ( $user->isAllowed( $perm ) ) {
-					wfDebug( "User has $perm permission. Exempting from Tor Blocks." );
+					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
 					return true;
 				}
 			}
 
 			$ip = $wgRequest->getIP();
 			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
-				wfDebug( "IP is in autoblock whitelist. Exempting from Tor blocks." );
+				wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
 				return true;
 			}
 
-			wfDebug( "User detected as editing from Tor node. Denying email." );
+			wfDebugLog( 'torblock', "User detected as editing from Tor node. Denying email." );
 
 			$hookError = array( 'permissionserrors', 'torblock-blocked', array( $ip ) );
 			return false;
@@ -154,7 +154,7 @@ class TorBlock {
 			$user->mBlock instanceof Block &&
 			$user->mBlock->getType() != Block::TYPE_USER
 		) {
-			wfDebug( "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
+			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
 			$user->mBlockedby = 0;
 		}
