@@ -90,7 +90,7 @@ class TorExitNodes {
 		global $wgTorLoadNodes;
 		if ( !$wgTorLoadNodes ) {
 			// Disabled.
-			wfDebugLog( 'torblock', "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
+			// wfDebugLog( 'torblock', "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
 			return array();
 		}
 
