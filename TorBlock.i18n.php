@@ -42,11 +42,12 @@ Editing through tor is blocked to prevent abuse.',
  * @author Fryed-peach
  * @author Mormegil
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'torblock-desc' => '{{desc}}',
+	'torblock-desc' => '{{desc|name=Tor Block|url=http://www.mediawiki.org/wiki/Extension:TorBlock}}',
 	'right-torunblocked' => '{{doc-right|torunblocked}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
