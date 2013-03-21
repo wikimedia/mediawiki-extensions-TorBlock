@@ -48,6 +48,10 @@ Editing through tor is blocked to prevent abuse.',
  */
 $messages['qqq'] = array(
 	'torblock-desc' => '{{desc|name=Tor Block|url=http://www.mediawiki.org/wiki/Extension:TorBlock}}',
+	'torblock-blocked' => 'Used as error message. Paramters:
+* $1 - IP address',
+	'torblock-isexitnode' => 'Used as the tor blocking status message. Paramters:
+* $1 - IP address',
 	'right-torunblocked' => '{{doc-right|torunblocked}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
