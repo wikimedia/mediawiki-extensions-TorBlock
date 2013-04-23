@@ -117,3 +117,8 @@ $wgTorDisableAdminBlocks = true;
 
 /** Mark tor edits as such */
 $wgTorTagChanges = true;
+
+/**
+ * Proxy to use, if not the default proxy
+ */
+$wgTorBlockProxy = false;

@@ -133,14 +133,19 @@ class TorExitNodes {
 	protected static function loadExitNodes_BulkList() {
 		wfProfileIn( __METHOD__ );
 
-		global $wgTorIPs, $wgTorProjectCA;
+		global $wgTorIPs, $wgTorProjectCA, $wgTorBlockProxy;
+
+		$options = array(
+			'caInfo' => is_readable( $wgTorProjectCA ) ? $wgTorProjectCA : null
+		);
+		if ( $wgTorBlockProxy ) {
+			$options['proxy'] = $wgTorBlockProxy;
+		}
 
 		$nodes = array();
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
-			$data = Http::get( $url, 'default', array(
-				'caInfo' => is_readable( $wgTorProjectCA ) ? $wgTorProjectCA : null
-			) );
+			$data = Http::get( $url, 'default', $options );
 			$lines = explode("\n", $data);
 
 			foreach ( $lines as $line ) {
@@ -164,12 +169,15 @@ class TorExitNodes {
 	protected static function loadExitNodes_Onionoo() {
 		wfProfileIn( __METHOD__ );
 
-		global $wgTorOnionooServer, $wgTorOnionooCA;
-		$nodes = array();
+		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
 		$url = wfExpandUrl( "$wgTorOnionooServer/summary", PROTO_HTTPS );
-		$raw = Http::get( $url, 'default', array(
+		$options = array(
 			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
-		) );
+		);
+		if ( $wgTorBlockProxy ) {
+			$options['proxy'] = $wgTorBlockProxy;
+		}
+		$raw = Http::get( $url, 'default', $options );
 		$data = FormatJson::decode( $raw, true );
 
 		$nodes = array();
