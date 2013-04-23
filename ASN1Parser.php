@@ -31,19 +31,30 @@ class ASN1Parser {
 	const IA5String = 22;
 	const UTCTime = 23;
 
-	static function encodeLength($number) {
-		if ($number < 128)
-			return chr($number);
+	/**
+	 * @param $number int
+	 * @return string
+	 */
+	public static function encodeLength( $number ) {
+		if ( $number < 128 ) {
+			return chr( $number );
+		}
 
-		$out = pack("N*", $number);
+		$out = pack( "N*", $number );
 		$out = ltrim( $out, "\0" );
 
-		return chr( 0x80 | strlen($out) ) . $out;
+		return chr( 0x80 | strlen( $out ) ) . $out;
 	}
 
-	static function decode($buffer) {
-		if ( strlen( $buffer ) < 2 )
+	/**
+	 * @param $buffer string
+	 * @return array
+	 * @throws ASN1Exception
+	 */
+	public static function decode( $buffer ) {
+		if ( strlen( $buffer ) < 2 ) {
 			throw new ASN1Exception( 'ASN1 string is too short' );
+		}
 
 		$i = 0;
 		$result = array();
@@ -63,7 +74,7 @@ class ASN1Parser {
 				$item['tag'] = $tag;
 			} else {
 				$tag = 0;
-				for (; $i < strlen($buffer); $i++) {
+				for (; $i < strlen( $buffer ); $i++) {
 					$t = ord( $buffer[$i] );
 					$tag = ( $tag << 7 ) | ( $t & 0x7f );
 
@@ -72,8 +83,9 @@ class ASN1Parser {
 						break;
 					}
 				}
-				if ( $i == strlen($buffer) )
+				if ( $i == strlen( $buffer ) ) {
 					throw new ASN1Exception( 'End of data found when processing tag identifier' );
+				}
 
 				$item['tag'] = $tag;
 				$i++;
@@ -96,8 +108,9 @@ class ASN1Parser {
 				for ($j = 0; $j < $l; $j++, $i++) {
 					$length = ( $length << 8 ) | ord( $lengthBytes[$j] );
 
-					if ( $length < 0 )
+					if ( $length < 0 ) {
 						throw new ASN1Exception( 'Overflow calculating length' );
+					}
 				}
 				$item['length'] = $length;
 
@@ -114,7 +127,7 @@ class ASN1Parser {
 				 * project or crypto/objects/obj_dat.txt (where hexadecimal
 				 * data is available )
 				 */
-				$item['contents'] = $item['contents'];
+				// $item['contents'] = $item['contents'];
 			}
 			/* Else, we leave contents as binary data */
 
@@ -125,17 +138,22 @@ class ASN1Parser {
 	}
 
 	/**
-	 * Prettifies an array output by decode()
+	 * @param $decodedArray array
+	 * @return array
 	 */
-	static function prettyDecode($decodedArray) {
+	public static function prettyDecode($decodedArray) {
 		$decoded = $decodedArray;
-		array_walk_recursive($decoded, array( __CLASS__, 'prettyItem' ) );
+		array_walk_recursive( $decoded, array( __CLASS__, 'prettyItem' ) );
 
 		return $decoded;
 	}
 
-	static protected function prettyItem(&$value, $key) {
-		switch ($key) {
+	/**
+	 * @param $value string
+	 * @param $key string
+	 */
+	static protected function prettyItem( &$value, $key ) {
+		switch ( $key ) {
 			case 'contents': // Not called when contents is an array
 				$value = strlen( $value ) ? '0x' . bin2hex( $value ) : "''";
 				break;
@@ -147,7 +165,13 @@ class ASN1Parser {
 		}
 	}
 
-	static function buildTag($tagId, $contents) {
+	/**
+	 * @param $tagId
+	 * @param $contents
+	 * @return string
+	 * @throws ASN1Exception
+	 */
+	public static function buildTag( $tagId, $contents ) {
 		if ( is_int( $tagId ) &&  $tagId < 31 ) {
 			if ( $tagId == self::SEQUENCE || $tagId == self::SET ) {
 				$tagId |= 0x20; // Mark as structured data
