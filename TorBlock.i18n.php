@@ -1262,7 +1262,7 @@ Le modifiche tramite Tor le xe blocà par evitar abusi.',
 $messages['vi'] = array(
 	'torblock-desc' => 'Cho phép cấm các nút thoát tor sửa đổi wiki',
 	'torblock-blocked' => 'Địa chỉ IP của bạn, <strong>$1</strong>, đã bị xác định là một nút thoát tor.
-Sửa đổi thông qua tor đã bị cấm để tránh lạm dụng.',
+Sửa đổi thông qua tor đã bị cấm để tránh sai phạm.',
 	'torblock-isexitnode' => 'Địa chỉ IP <strong>$1</strong> bị cấm vì là nốt đi ra của Tor.',
 	'right-torunblocked' => 'Bỏ qua các lệnh cấm tự động các nút thoát tor',
 	'tag-tor-description' => 'Nếu thẻ này được thiết lập, sửa đổi do một nút thoát Tor thực hiện.',
