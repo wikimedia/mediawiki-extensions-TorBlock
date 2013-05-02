@@ -45,7 +45,7 @@ class TorExitNodes {
 		}
 
 		$nodes = self::getExitNodes();
-		return in_array( $ip, $nodes );
+		return in_array( IP::sanitizeIP( $ip ), $nodes );
 	}
 
 	/**
@@ -170,7 +170,7 @@ class TorExitNodes {
 		wfProfileIn( __METHOD__ );
 
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
-		$url = wfExpandUrl( "$wgTorOnionooServer/summary", PROTO_HTTPS );
+		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit", PROTO_HTTPS );
 		$options = array(
 			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
 		);
@@ -182,8 +182,30 @@ class TorExitNodes {
 
 		$nodes = array();
 		foreach ( $data['relays'] as $relay ) {
-			foreach ( $relay['a'] as $ip ) {
-				$nodes[$ip] = true;
+			$addresses = $relay['or_addresses'];
+			if ( isset( $relay['exit_addresses'] ) ) {
+				$addresses += $relay['exit_addresses'];
+			}
+
+			foreach ( $addresses as $ip ) {
+				// Trim the port if it has one.
+				$portPosition = strrpos( $ip, ':' );
+				if ( $portPosition !== false ) {
+					$ip = substr( $ip, 0, $portPosition );
+				}
+
+				// Trim surrounding brackets for IPv6 addresses.
+				$hasBrackets = $ip[0] == '[';
+				if ( $hasBrackets ) {
+					$ip = substr( $ip, 1, -1 );
+				}
+
+				if ( !IP::isValid( $ip ) ) {
+					wfDebug( 'Invalid IP address in Onionoo response.' );
+					continue;
+				}
+
+				$nodes[IP::sanitizeIP( $ip )] = true;
 			}
 		}
 		$nodes = array_keys( $nodes );
