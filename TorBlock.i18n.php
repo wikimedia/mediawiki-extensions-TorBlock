@@ -266,11 +266,12 @@ Redigering gennem Tor er blokeret for at forhindre misbrug.',
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'torblock-desc' => 'Ermöglicht die Schreibsperre für Tor-Ausgangsknoten',
+	'torblock-desc' => 'Ermöglicht das Sperren des Schreibzugriffs über Tor-Ausgangsknoten',
 	'torblock-blocked' => 'Deine IP-Adresse <strong>$1</strong> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.',
 	'torblock-isexitnode' => 'Die IP-Adresse <strong>$1</strong> ist als Tor-Ausgangsknoten gesperrt.',
 	'right-torunblocked' => 'Umgehung der automatischen Sperre von Tor-Ausgangsknoten',
