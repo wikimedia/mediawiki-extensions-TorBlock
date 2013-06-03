@@ -1291,6 +1291,7 @@ $messages['yue'] = array(
  * @author PhiLiP
  * @author Shinjiman
  * @author Wmr89502270
+ * @author Xiaomingyan
  */
 $messages['zh-hans'] = array(
 	'torblock-desc' => '允许封禁通过tor节点在wiki中的编辑',
@@ -1299,7 +1300,7 @@ $messages['zh-hans'] = array(
 	'torblock-isexitnode' => 'IP地址<strong>$1</strong>被认为是Tor出口节点而遭到封禁。',
 	'right-torunblocked' => '绕过对tor出口节点的自动封禁',
 	'tag-tor-description' => '如果标记此标签，则将允许通过Tor节点编辑。',
-	'tag-tor' => '经Tor编辑',
+	'tag-tor' => '通过Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => '修改是否经过Tor节点完成',
 );
 
