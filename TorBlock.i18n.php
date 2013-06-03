@@ -110,7 +110,7 @@ $messages['arz'] = array(
 	'tag-tor' => 'اتعمل من خلال tor',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Chaipau
  * @author Gitartha.bordoloi
  */
@@ -348,6 +348,7 @@ Redaktado per ''tor'' estas forbarita por preventi misuzo.",
 /** Spanish (español)
  * @author Crazymadlover
  * @author Dferg
+ * @author MarcoAurelio
  * @author Remember the dot
  * @author Sanbec
  */
@@ -797,7 +798,7 @@ $messages['mt'] = array(
 	'torblock-isexitnode' => "L-indirizz IP <strong>$1</strong> huwa mblukkat minħabba li huwa ''exit node'' Tor.",
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Harald Khan
  * @author Nghtwlkr
  * @author Njardarlogar
@@ -825,7 +826,7 @@ $messages['nds'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Wat de Ännern över en Tor-Utgangsknütten maakt worrn is',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -854,7 +855,7 @@ $messages['nl-informal'] = array(
 Bewerken via tor is niet toegestaan om misbruik te voorkomen.',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -886,7 +887,7 @@ L’edicion per aqueste mejan es blocada per evitar d'abuses.",
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se la modificacion es estada facha via un nos de sortida de Tor',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Psubhashish
  */
 $messages['or'] = array(
