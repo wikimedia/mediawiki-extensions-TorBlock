@@ -162,6 +162,20 @@ $messages['bcc'] = array(
 اصلاح کتن چه طرق سنگ(tor) په خاطر جلوگرگ سوء استفاده بند بوتت.',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'torblock-desc' => 'Minatugot kan tor na mga boko nin pagluwas tanganing pagkukubkubon sa pagliliwat nin sarong wiki',
+	'torblock-blocked' => 'An saimong estada kan IP, <strong>$1</strong>, awtomatikong pinagbibisto bilang sarong tor na boko nin pagluwas.
+An pagliliwat sa paagi kan tor pinagkubkob na tanganing maprebentaran an abuso.',
+	'torblock-isexitnode' => 'An estada kan IP na <strong>$1</strong> pinagkubkob bilang sarong Tor na boko nin pagluwas.',
+	'right-torunblocked' => 'Sampawan an awtomatikong mga kubkob kan tor na mga boko nin pagluwas',
+	'tag-tor-description' => 'Kun ining tatak an kinaag, sarong pagliwat pinaghimo gikan sa sarong Tor na boko nin pagluwas.',
+	'tag-tor' => 'Hinimo sa paagi kan tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Nangyari man o bako an kaliwatan hinimo sa paagi kan tor na boko nin pagluwas',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Cesco
  * @author EugeneZelenko
