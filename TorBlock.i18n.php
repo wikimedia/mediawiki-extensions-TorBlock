@@ -250,6 +250,13 @@ $messages['ca'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Si el canvi ha estat fet, o no, a través d'un node de sortida tor",
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀонца.',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
