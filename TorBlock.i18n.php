@@ -255,6 +255,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀонца.',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Нисдар Tor тӀера дина дуй',
 );
 
 /** Czech (česky)
