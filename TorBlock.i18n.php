@@ -258,6 +258,13 @@ $messages['ce'] = array(
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Нисдар Tor тӀера дина дуй',
 );
 
+/** Sorani Kurdish (کوردی)
+ * @author Calak
+ */
+$messages['ckb'] = array(
+	'right-torunblocked' => 'لادان لە بەربەستنە خۆگەڕەکانی گرێکانی دەرچووی تۆر',
+);
+
 /** Czech (česky)
  * @author Mormegil
  */
