@@ -56,7 +56,7 @@ class TorExitNodes {
 	 */
 	public static function getExitNodes() {
 		if ( is_array( self::$mExitNodes ) ) {
-			wfDebugLog( 'torblock', "Loading Tor exit node list from memory.\n" );
+			// wfDebugLog( 'torblock', "Loading Tor exit node list from memory.\n" );
 			return self::$mExitNodes;
 		}
 
@@ -65,7 +65,7 @@ class TorExitNodes {
 		$nodes = $wgMemc->get( 'mw-tor-exit-nodes' ); // No use of wfMemcKey because it should be multi-wiki.
 
 		if ( is_array( $nodes ) ) {
-			wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
+			// wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
 			// Lucky.
 			return self::$mExitNodes = $nodes;
 		} else {
