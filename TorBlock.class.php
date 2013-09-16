@@ -68,7 +68,10 @@ class TorBlock {
 
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. Adding Tor block to permissions errors." );
 
-			$result = array( 'torblock-blocked', $ip );
+			// Allow site customization of blocked message.
+			$blockedMsg = 'torblock-blocked';
+			wfRunHooks( 'TorBlockBlockedMsg', &$blockedMsg );
+			$result = array( $blockedMsg, $ip );
 
 			return false;
 		}
@@ -113,7 +116,10 @@ class TorBlock {
 
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. Denying email." );
 
-			$hookError = array( 'permissionserrors', 'torblock-blocked', array( $ip ) );
+			// Allow site customization of blocked message.
+			$blockedMsg = 'torblock-blocked';
+			wfRunHooks( 'TorBlockBlockedMsg', &$blockedMsg );
+			$hookError = array( 'permissionserrors', $blockedMsg, array( $ip ) );
 			return false;
 		}
 
