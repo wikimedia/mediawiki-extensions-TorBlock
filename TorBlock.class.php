@@ -118,7 +118,7 @@ class TorBlock {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			wfRunHooks( 'TorBlockBlockedMsg', &$blockedMsg );
+			wfRunHooks( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
 			$hookError = array( 'permissionserrors', $blockedMsg, array( $ip ) );
 			return false;
 		}
