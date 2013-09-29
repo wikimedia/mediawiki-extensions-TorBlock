@@ -475,13 +475,13 @@ Los changements avouéc Tor sont blocâs por èvitar los abus.',
  */
 $messages['gl'] = array(
 	'torblock-desc' => 'Permite que os nodos de saída Tor sexan bloqueados fronte á edición nun wiki',
-	'torblock-blocked' => 'O seu enderezo IP, <strong>$1</strong>, foi identificado automaticamente como un nodo de saída tor.
-A edición a través disto está bloqueada para previr o abuso.',
-	'torblock-isexitnode' => 'O enderezo IP <strong>$1</strong> está bloqueado como nodo de saída tor.',
-	'right-torunblocked' => 'Esquivar os bloqueos automáticos dos nodos tor de saída',
-	'tag-tor-description' => 'Se a etiqueta está fixada é que unha edición foi feita desde un nodo de saída Tor.',
-	'tag-tor' => 'Feito a través do Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se o cambio foi feito a través dun nodo tor de saída ou non',
+	'torblock-blocked' => 'O seu enderezo IP, <strong>$1</strong>, foi identificado automaticamente como un nodo de saída Tor.
+A edición a través de Tor está bloqueada para previr o abuso.',
+	'torblock-isexitnode' => 'O enderezo IP <strong>$1</strong> está bloqueado como nodo de saída Tor.',
+	'right-torunblocked' => 'Evitar os bloqueos automáticos dos nodos de saída Tor',
+	'tag-tor-description' => 'Se a etiqueta está presente, é que unha edición se realizou desde un nodo de saída Tor.',
+	'tag-tor' => 'Feito a través de Tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Se o cambio se realizou a través dun nodo de saída Tor ou non',
 );
 
 /** Swiss German (Alemannisch)
