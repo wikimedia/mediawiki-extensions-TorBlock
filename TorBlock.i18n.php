@@ -254,6 +254,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'right-torunblocked' => 'Tor олучу зӀен шедан автоматически блоктохаран чекхбовлар',
 	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀонца.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Нисдар Tor тӀера дина дуй',
 );
@@ -1318,6 +1319,7 @@ $messages['yue'] = array(
  * @author Bencmq
  * @author Chenxiaoqino
  * @author Gaoxuewei
+ * @author Liuxinyu970226
  * @author PhiLiP
  * @author Shinjiman
  * @author Wmr89502270
@@ -1325,7 +1327,7 @@ $messages['yue'] = array(
  */
 $messages['zh-hans'] = array(
 	'torblock-desc' => '允许封禁通过tor节点在wiki中的编辑',
-	'torblock-blocked' => '您的IP地址<strong>$1</strong>已被自动识别为tor节点。
+	'torblock-blocked' => '您的IP地址，<strong>$1</strong>，已被自动识别为tor节点。
 经tor的编辑已被封禁以防止滥用。',
 	'torblock-isexitnode' => 'IP地址<strong>$1</strong>被认为是Tor出口节点而遭到封禁。',
 	'right-torunblocked' => '绕过对tor出口节点的自动封禁',
