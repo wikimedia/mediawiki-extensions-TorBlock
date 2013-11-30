@@ -237,6 +237,7 @@ Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
 
 /** Catalan (català)
  * @author El libre
+ * @author Papapep
  * @author SMP
  * @author Vriullop
  */
@@ -247,7 +248,7 @@ $messages['ca'] = array(
 	'right-torunblocked' => 'Evitar els blocatges automàtics de nodes Tor',
 	'tag-tor-description' => "Si aquesta etiqueta s'estableix, una edició va ser feta des d'un node de sortida Tor.",
 	'tag-tor' => 'Realitzat a través de tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => "Si el canvi ha estat fet, o no, a través d'un node de sortida tor",
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Si el canvi s'ha fet, o no, a través d'un node de sortida tor",
 );
 
 /** Chechen (нохчийн)
@@ -281,6 +282,7 @@ Editace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.
 );
 
 /** Danish (dansk)
+ * @author Christian List
  * @author Masz
  * @author Peter Alberti
  */
@@ -289,9 +291,9 @@ $messages['da'] = array(
 	'torblock-blocked' => 'Din IP-adresse, <strong>$1</strong>, er automatisk blevet identificeret som en udgangsknude fra Tor.
 Redigering gennem Tor er blokeret for at forhindre misbrug.',
 	'torblock-isexitnode' => 'IP-adressen <strong>$1</strong> er blokeret som en Tor udgangsknude.',
-	'right-torunblocked' => 'Redigere fra blokerede TOR-noder',
+	'right-torunblocked' => 'Kan redigere fra blokerede Tor udgangsknuder',
 	'tag-tor-description' => 'Hvis dette mærkat er angivet, blev en redigering udført via en Tor udgangsknude.',
-	'tag-tor' => 'Foretaget gennem tor',
+	'tag-tor' => 'Foretaget gennem Tor',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Hvorvidt ændringen blev foretaget gennem en Tor udgangsknude',
 );
 
