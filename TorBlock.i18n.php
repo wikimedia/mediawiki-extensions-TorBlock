@@ -243,7 +243,7 @@ Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
  */
 $messages['ca'] = array(
 	'torblock-desc' => "Permet que els nodes de sortida tor siguin bloquejats des de l'edició d'un wiki",
-	'torblock-blocked' => "La vostra adreça IP <strong>$1</strong> ha estat identificada automàticament com un node de sortida de la xarxa Tor. L'edició a través de Tor està prohibida per a prevenir abusos.",
+	'torblock-blocked' => "S'ha identificat automàticament la vostra adreça IP <strong>$1</strong> com un node de sortida de la xarxa Tor. L'edició a través de Tor està prohibida per a prevenir abusos.",
 	'torblock-isexitnode' => "L'adreça IP <strong>$1</strong> és bloquejada com a node de sortida Tor.",
 	'right-torunblocked' => 'Evitar els blocatges automàtics de nodes Tor',
 	'tag-tor-description' => "Si aquesta etiqueta s'estableix, una edició va ser feta des d'un node de sortida Tor.",
