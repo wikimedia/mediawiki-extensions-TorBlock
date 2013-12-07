@@ -267,7 +267,7 @@ $messages['ckb'] = array(
 	'right-torunblocked' => 'لادان لە بەربەستنە خۆگەڕەکانی گرێکانی دەرچووی تۆر',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Mormegil
  */
 $messages['cs'] = array(
