@@ -218,7 +218,7 @@ Stnaket eo ar c'hemmoù dre Tor, kuit da zegas trubuilh.",
 	'right-torunblocked' => 'Tremen dreist da stankadennoù emgefre skoulmoù ezmont Tor',
 	'tag-tor-description' => "Mard eo gweredekaet ar valizenn-mañ, ez eus bet degaset ur c'hemm adalek ur skoulm ezmont Tor.",
 	'tag-tor' => 'Graet dre Tor',
-	'abusefilter-edit-builder-vars-tor-exit-node' => "Mard eo bet graet ur c'hemm adalek ur skolm ezmont Tor pe get",
+	'abusefilter-edit-builder-vars-tor-exit-node' => "Mard eo bet graet ar c'hemm adalek ur skoulm ezmont Tor pe get",
 );
 
 /** Bosnian (bosanski)
