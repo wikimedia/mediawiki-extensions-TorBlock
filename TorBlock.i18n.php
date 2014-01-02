@@ -256,7 +256,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'right-torunblocked' => 'Tor олучу зӀен шедан автоматически блоктохаран чекхбовлар',
-	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀонца.',
+	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀоьнца.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Нисдар Tor тӀера дина дуй',
 );
 
