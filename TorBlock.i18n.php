@@ -516,12 +516,14 @@ $messages['gu'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Guycn2
  * @author Rotem Liss
  * @author YaronSh
  */
 $messages['he'] = array(
-	'torblock-desc' => 'אפשרות לחסימת נקודות יציאה של רשת TOR מעריכה בוויקי',
-	'torblock-blocked' => 'כתובת ה־IP שלכם, <strong>$1</strong>, זוהתה אוטומטית כנקודת יציאה של רשת TOR. עריכה דרך TOR חסומה כדי למנוע ניצול לרעה.',
+	'torblock-desc' => 'אפשרות לחסימת נקודות יציאה של רשת tor מעריכה בוויקי',
+	'torblock-blocked' => 'כתובת ה־IP שלך, <strong>$1</strong>, זוהתה אוטומטית כנקודת יציאה של רשת tor.
+עריכה דרך tor נחסמה כדי למנוע ניצול לרעה.',
 	'torblock-isexitnode' => 'כתובת ה־IP <strong>$1</strong> נחסמה כצומת יציאה של Tor.',
 	'right-torunblocked' => 'עקיפת חסימות אוטומטיות של נקודות יציאה ברשת TOR',
 	'tag-tor-description' => 'אם תגית זו מוגדרת, בוצעה עריכה מנקודת יציאה של רשת TOR',
