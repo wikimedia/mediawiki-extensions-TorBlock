@@ -255,6 +255,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'torblock-desc' => 'Tor зӀен арахьара шадийн блоктоха таро хуьлуьйту',
 	'right-torunblocked' => 'Tor олучу зӀен шедан автоматически блоктохаран чекхбовлар',
 	'tag-tor-description' => 'ХӀара билгало хӀоттина елахь нисдарш дина Tor гӀоьнца.',
 	'abusefilter-edit-builder-vars-tor-exit-node' => 'Нисдар Tor тӀера дина дуй',
