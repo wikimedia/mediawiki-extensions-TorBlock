@@ -1111,6 +1111,20 @@ La pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari ab
 	'abusefilter-edit-builder-vars-tor-exit-node' => "Ndica si lu canciamentu fu fattu da nu nodu d'uscita TOR o menu",
 );
 
+/** Serbo-Croatian (srpskohrvatski / српскохрватски)
+ * @author Kolega2357
+ */
+$messages['sh'] = array(
+	'torblock-desc' => 'Omogućava blokiranje izmena wikija od strane izlaznih čvorova Tora.',
+	'torblock-blocked' => 'Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.
+Uređivanje preko tora je blokirano da bi se spriječila zloupotreba.',
+	'torblock-isexitnode' => 'IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.',
+	'right-torunblocked' => 'Zaobilaženje automatskih blokada tor izlaznih čvorova',
+	'tag-tor-description' => 'Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.',
+	'tag-tor' => 'Napravljeno kroz tor',
+	'abusefilter-edit-builder-vars-tor-exit-node' => 'Da li je izmjena izvršena kroz tor izlazni čvor ili ne',
+);
+
 /** Sinhala (සිංහල)
  * @author Budhajeewa
  * @author Singhalawap
