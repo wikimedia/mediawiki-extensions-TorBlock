@@ -55,6 +55,7 @@ $messages['qqq'] = array(
 	'right-torunblocked' => '{{doc-right|torunblocked}}
 
 Users with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).',
+	'tag-tor-description' => 'Description of tag that appears e.g. in [[Special:Tags]]',
 );
 
 /** Afrikaans (Afrikaans)
