@@ -47,7 +47,7 @@ class LoadExitNodes extends Maintenance {
 		if ( !$nodes ) {
 			$this->error( "Could not load exit nodes.", true );
 		}
-		$this->output( "Successfully loaded exit nodes.\n" );
+		$this->output( 'Successfully loaded ' . count( $nodes ) . " exit nodes.\n" );
 	}
 }
 

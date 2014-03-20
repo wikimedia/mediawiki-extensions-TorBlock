@@ -184,7 +184,7 @@ class TorExitNodes {
 		foreach ( $data['relays'] as $relay ) {
 			$addresses = $relay['or_addresses'];
 			if ( isset( $relay['exit_addresses'] ) ) {
-				$addresses += $relay['exit_addresses'];
+				$addresses = array_merge( $addresses, $relay['exit_addresses'] );
 			}
 
 			foreach ( $addresses as $ip ) {
