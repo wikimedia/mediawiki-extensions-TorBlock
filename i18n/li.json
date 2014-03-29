@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matthias",
+            "Ooswesthoesbes"
+        ]
+    },
+    "torblock-desc": "Maakt bewerke onmeugelik veur tor exitnodes",
+    "torblock-blocked": "Oew IP-adres, <strong>$1</strong>, is herkend as tor exitnode. Bewerke via tor es niet toegestaon om misbroek te veurkomme.",
+    "torblock-isexitnode": "'t IP-adres <strong>$1</strong> is geblok es Torexitnode.",
+    "right-torunblocked": "Automatische blokkades van tor exitnodes omzeile",
+    "tag-tor-description": "Es dit label is ingesteldj, is de bewèrking gemaak via 'ne Tor exitnode.",
+    "tag-tor": "Gemaak mid tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Óf de-n angering waal ódder neet is gemaak waenger 'ne tor exitnode"
+}

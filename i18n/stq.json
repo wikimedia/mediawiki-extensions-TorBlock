@@ -1,0 +1,13 @@
+{
+    "@metadata": {
+        "authors": [
+            "Pyt"
+        ]
+    },
+    "torblock-desc": "Moaket ju Skrieuwspeere foar Poute-Uutgongsknätte muugelk",
+    "torblock-blocked": "Dien IP-Adresse <strong>$1</strong> wuud automatisk as Poute-Uutgongsknät identifizierd. Ju Siedenbeoarbaidenge in Ferbiendenge mäd dät Poute-Nätwierk is nit wonsked, deer ju Misbruuksgefoar gjucht hooch is.",
+    "right-torunblocked": "Uumgungen fon ju automatiske Speere fon Poute-Uutgongknätte",
+    "tag-tor-description": "Wan dit Tag sät is, geböärde ju Beoarbaidenge truch n Tor-Uutgongsknät.",
+    "tag-tor": "Truch n Tor-Uutgongsknät",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Annerenge waas moaked truch n Poute-Uutgongs-Knät"
+}

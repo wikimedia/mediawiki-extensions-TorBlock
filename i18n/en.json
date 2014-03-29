@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Andrew Garrett"
+        ]
+    },
+    "torblock-desc": "Allows tor exit nodes to be blocked from editing a wiki",
+    "torblock-blocked": "Your IP address, <strong>$1</strong>, has been automatically identified as a tor exit node.\nEditing through tor is blocked to prevent abuse.",
+    "torblock-isexitnode": "The IP address <strong>$1</strong> is blocked as a Tor exit node.",
+    "right-torunblocked": "Bypass automatic blocks of tor exit nodes",
+    "tag-tor-description": "If this tag is set, an edit was made from a Tor exit node.",
+    "tag-tor": "Made through tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Whether or not the change was made through a tor exit node"
+}

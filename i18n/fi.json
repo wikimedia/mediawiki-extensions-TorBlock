@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": [
+            "Crt",
+            "Nike",
+            "Str4nd",
+            "ZeiP"
+        ]
+    },
+    "torblock-desc": "Mahdollistaa tor-poistumissolmujen estämisen.",
+    "torblock-blocked": "IP-osoitteesi <strong>$1</strong> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.",
+    "torblock-isexitnode": "IP-osoite <strong>$1</strong> on estetty Tor-päätepisteenä.",
+    "right-torunblocked": "Ohittaa automaattiset Tor-poistumispisteiden estot",
+    "tag-tor-description": "Jos tämä tägi on asetettu, muokkaus on tehty Tor exit noden kautta.",
+    "tag-tor": "Tehty torin kautta",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Onko muutos tehty tor exit -solmun kautta"
+}

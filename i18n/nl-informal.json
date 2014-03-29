@@ -1,0 +1,8 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "torblock-blocked": "Jouw IP-adres, <strong>$1</strong>, is herkend als tor exitnode.\nBewerken via tor is niet toegestaan om misbruik te voorkomen."
+}

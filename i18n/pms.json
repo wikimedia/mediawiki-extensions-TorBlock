@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Borichèt",
+            "Dragonòt"
+        ]
+    },
+    "torblock-desc": "A përmëtt ëd bloché exit node tor an dzora a na wiki",
+    "torblock-blocked": "Soa adrëssa IP, <strong>$1</strong>, a l'é stàita automaticament identificà com neu 'd surtìa tor.\nLa modìfica con tor a l'é blocà për evité dj'abus.",
+    "torblock-isexitnode": "L'adrëssa IP <strong>$1</strong> a l'é blocà com neu ëd surtìa Tor.",
+    "right-torunblocked": "Sàuta ij blòch automàtich dj'exit node tor",
+    "tag-tor-description": "Se sto tag sì a l'é ampostà, na modìfica a l'é stàita fàita da n'exit node Tor.",
+    "tag-tor": "Fàit a travers tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Se ël cambi a l'é stàit fàit o pa a travers un exit node tor"
+}

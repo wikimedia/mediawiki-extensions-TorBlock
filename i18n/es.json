@@ -1,0 +1,18 @@
+{
+    "@metadata": {
+        "authors": [
+            "Crazymadlover",
+            "Dferg",
+            "MarcoAurelio",
+            "Remember the dot",
+            "Sanbec"
+        ]
+    },
+    "torblock-desc": "Permite bloquear nodos de salida tor",
+    "torblock-blocked": "Su dirección IP, <strong>$1</strong>, ha sido identificada automáticamente como un nodo de salida tor.\nSe bloquea editar por tor para prevenir abusos.",
+    "torblock-isexitnode": "La dirección IP <strong>$1</strong> está bloqueada por ser un nodo de salida Tor.",
+    "right-torunblocked": "Eludir bloqueos automáticos de nodos de salida ''tor''",
+    "tag-tor-description": "Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.",
+    "tag-tor": "Hecho por medio de tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Si el cambio fue hecho o no a través de un nodo de salida tor"
+}

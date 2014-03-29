@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joseph"
+        ]
+    },
+    "torblock-desc": "Tor çıkış nodlarının bir vikiyi değiştirmesinin engellemesini sağlar",
+    "torblock-blocked": "IP adresiniz, <strong>$1</strong>, otomatik olarak bir tor çıkış nodu olarak algılandı.\nSuistimali önlemek için tor üzerinden değişiklik engellendi.",
+    "torblock-isexitnode": "IP adresi <strong>$1</strong> Tor çıkış nodu olarak engellenmiş.",
+    "right-torunblocked": "Tor çıkış nodlarının otomatik engelini atla",
+    "tag-tor-description": "Eğer bu etiket ayarlanmışsa, bir Tor çıkış nodundan bir değişiklik yapılmıştır.",
+    "tag-tor": "Tor üzerinden yapılmıştır",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Değişikliğin bir tor çıkış nodundan yapılıp yapılmadığı"
+}

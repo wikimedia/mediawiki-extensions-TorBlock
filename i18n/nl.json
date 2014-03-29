@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Siebrand"
+        ]
+    },
+    "torblock-desc": "Maakt bewerken onmogelijk voor tor exitnodes",
+    "torblock-blocked": "Uw IP-adres, <strong>$1</strong>, is herkend als tor exitnode.\nBewerken via tor is niet toegestaan om misbruik te voorkomen.",
+    "torblock-isexitnode": "Het IP-adres <strong>$1</strong> is geblokkeerd als tor exitnode.",
+    "right-torunblocked": "Automatische blokkades van tor exitnodes omzeilen",
+    "tag-tor-description": "Als dit label is ingesteld, is de bewerking gemaakt via een Tor exitnode.",
+    "tag-tor": "Gemaakt via tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Of de wijziging wel of niet is gemaakt via een tor exitnode"
+}

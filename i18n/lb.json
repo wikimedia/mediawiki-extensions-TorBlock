@@ -1,0 +1,15 @@
+{
+    "@metadata": {
+        "authors": [
+            "Les Meloures",
+            "Robby"
+        ]
+    },
+    "torblock-desc": "Erméiglecht et Ännerunge vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären",
+    "torblock-blocked": "Är IP-Adress,  <strong>$1</strong>, gouf automatesch als Tor-ausgangsknuet erkannt.\nÄnnerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.",
+    "torblock-isexitnode": "D'IP-Adress <strong>$1</strong> ass als Ausgangspunkt vun engem Tor gespaart.",
+    "right-torunblocked": "Automatesch Spär fir Tor-Ausgangskniet z'ëmgoen",
+    "tag-tor-description": "Wann dës Markéierung gesat ass da gouf eng Ännerung vun engem Tor-Ausgangsknuet gemaach.",
+    "tag-tor": "Iwwer ''Tor'' gemaach",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Ob d'Ännerungen iwwer en Tor-Ausgangsknuet gemaach goufen"
+}

@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Candalua"
+        ]
+    },
+    "torblock-desc": "Permeti de inpedirghe la modifica de la wiki ai nodi de uscita Tor",
+    "torblock-blocked": "El to indirisso IP, <strong>$1</strong>, el xe stà identificà automaticamente come un nodo de uscita Tor.\nLe modifiche tramite Tor le xe blocà par evitar abusi.",
+    "torblock-isexitnode": "L'indirisso IP <strong>$1</strong> el xe blocà in quanto el xe un nodo de uscita Tor.",
+    "right-torunblocked": "Scavalca i blochi automatici dei nodi de uscita Tor",
+    "tag-tor-description": "Se sto tag el xe presente, vol dir che xe stà fato na modifica atravero un nodo de uscita de Tor.",
+    "tag-tor": "Fato via Tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Indica se la modifica la xe stà fata da un nodo de uscita TOR opure no"
+}

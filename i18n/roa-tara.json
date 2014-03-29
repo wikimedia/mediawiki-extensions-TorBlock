@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joetaras"
+        ]
+    },
+    "torblock-desc": "Permette 'a le node de uscite de tor de essere bloccate pe le cangiaminde sus a Uicchi",
+    "torblock-blocked": "L'indirizze IP tune, <strong>$1</strong>, ha state automaticamende idendificate cumme a 'nu node de uscite de tor.<br />\nLe cangiaminde ausanne tor sonde bloccate pe prevenìe abbuse.",
+    "torblock-isexitnode": "L'indirizze IP <strong>$1</strong> jè bloccate cumme a 'nu node de uscite de Tor.",
+    "right-torunblocked": "Zumbe le blocche automatiche de le node de uscite de tor",
+    "tag-tor-description": "Ce stu tag jè 'mbostate,  'nu cangiamende ha state fatte da 'nu node de uscite de Tor.",
+    "tag-tor": "Fatte attraverse",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Tutte o nisciune de le cangiaminde onne state fatte ausanne 'nu node de uscite de tor"
+}

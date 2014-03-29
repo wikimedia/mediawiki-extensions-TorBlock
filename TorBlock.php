@@ -39,6 +39,7 @@ $wgExtensionCredits['antispam'][] = array(
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:TorBlock',
 );
 
+$wgMessagesDirs['TorBlock'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['TorBlock'] =  "$dir/TorBlock.i18n.php";
 $wgAutoloadClasses['TorBlock'] = "$dir/TorBlock.class.php";
 $wgAutoloadClasses['TorExitNodes'] = "$dir/TorExitNodes.php";

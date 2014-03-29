@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Als-Holder"
+        ]
+    },
+    "torblock-desc": "Macht d Schryybsperri fir Tor-Usgangs-Chnote megli",
+    "torblock-blocked": "Dyyni IP-Adräss <strong>$1</strong> isch automatisch as Tor-Usgangs-Chnote identifiziert wore. D Sytebearbeitig in Verbindig mit em Tor-Netzwärch isch nit gwinscht, wel d Gfohr vun eme Missbruuch seli hoch isch.",
+    "torblock-isexitnode": "D IP-Adräss <strong>$1</strong> isch as Tor-Uusgangs-Chnote gsperrt.",
+    "right-torunblocked": "Di automatisch Sperri vu Tor-Usgangs-Chnote umgoh",
+    "tag-tor-description": "Wänn des Tag gsetzt wird, isch e Bearbeitig gmacht wore vun eme Tor-Exit-Chnote.",
+    "tag-tor": "Gmacht dur Tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Eb d Änderig dur e TorExit-Chnote gmacht woren isch"
+}

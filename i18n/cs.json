@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Mormegil"
+        ]
+    },
+    "torblock-desc": "Umožňuje blokovat editace pocházející z výstupních uzlů sítě Tor",
+    "torblock-blocked": "Vaše IP adresa (<strong>$1</strong>) byla automaticky rozpoznána jako výstupní uzel sítě Tor.\nEditace prostřednictvím sítě Tor je kvůli prevenci zneužití zablokována.",
+    "torblock-isexitnode": "IP adresa <strong>$1</strong> je zablokována jako výstupní uzel sítě Tor.",
+    "right-torunblocked": "Obcházení automatického blokování výstupních uzlů sítě Tor",
+    "tag-tor-description": "Pokud je nastavena tato značka, byla editace provedena z výstupního uzlu sítě Tor.",
+    "tag-tor": "Prostřednictvím Tor",
+    "abusefilter-edit-builder-vars-tor-exit-node": "Zda byla tato editace provedena z výstupního uzlu sítě Tor"
+}
