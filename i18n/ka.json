@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "David1010",
-            "გიორგიმელა"
-        ]
-    },
-    "torblock-desc": "Tor ხაზიდან ბლოკირების გასვლის ნებართვა",
-    "torblock-blocked": "თქვენი IP-მისამართი, <strong>$1</strong>, იდენტიფიცირებულია როგორც Tor-ი.\nრედაქტირება Tor-ის მეშვეობით აკრძალულია ბოროტად გამოყენებების .",
-    "torblock-isexitnode": "IP მისამართი <strong>$1</strong> დაბლოკილია, როგორც Tor-ის ქსელის გამოსავალი კვანძი.",
-    "right-torunblocked": "Tor-ის ავტომატური ბლოკირების გავლა",
-    "tag-tor-description": "იმ შემთხვევაში თუ ეს მინიშნება დაყენებულია, იგი გაკეთებულია Tor-ის მეშვეობით.",
-    "tag-tor": "გაკეთებულია Tor-ის მეშვეობით",
-    "abusefilter-edit-builder-vars-tor-exit-node": "თუ იყო ცვლილება გაკეთებული Tor-ის მეშვეობით"
+	"@metadata": {
+		"authors": [
+			"David1010",
+			"გიორგიმელა"
+		]
+	},
+	"torblock-desc": "Tor ხაზიდან ბლოკირების გასვლის ნებართვა",
+	"torblock-blocked": "თქვენი IP-მისამართი, <strong>$1</strong>, იდენტიფიცირებულია როგორც Tor-ი.\nრედაქტირება Tor-ის მეშვეობით აკრძალულია ბოროტად გამოყენებების .",
+	"torblock-isexitnode": "IP მისამართი <strong>$1</strong> დაბლოკილია, როგორც Tor-ის ქსელის გამოსავალი კვანძი.",
+	"right-torunblocked": "Tor-ის ავტომატური ბლოკირების გავლა",
+	"tag-tor-description": "იმ შემთხვევაში თუ ეს მინიშნება დაყენებულია, იგი გაკეთებულია Tor-ის მეშვეობით.",
+	"tag-tor": "გაკეთებულია Tor-ის მეშვეობით",
+	"abusefilter-edit-builder-vars-tor-exit-node": "თუ იყო ცვლილება გაკეთებული Tor-ის მეშვეობით"
 }

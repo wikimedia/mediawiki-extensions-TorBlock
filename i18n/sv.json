@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Boivie",
-            "Lejonel"
-        ]
-    },
-    "torblock-desc": "Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki",
-    "torblock-blocked": "Din IP-adress, <strong>$1</strong>, har automatiskt identifierats som en utgångsnod från Tor.\nRedigering via Tor är blockerad för att förhindra missbruk.",
-    "torblock-isexitnode": "IP-adressen <strong>$1</strong> är blockerad som en utgångsnod på Tor.",
-    "right-torunblocked": "Får redigera från automatiskt blockerade Tor-noder",
-    "tag-tor-description": "Om denna taggen är på, så är en redigering gjord från en Tor-nod.",
-    "tag-tor": "Gjord genom tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Huruvida ändringen gjordes genom en tor utgångsnod"
+	"@metadata": {
+		"authors": [
+			"Boivie",
+			"Lejonel"
+		]
+	},
+	"torblock-desc": "Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki",
+	"torblock-blocked": "Din IP-adress, <strong>$1</strong>, har automatiskt identifierats som en utgångsnod från Tor.\nRedigering via Tor är blockerad för att förhindra missbruk.",
+	"torblock-isexitnode": "IP-adressen <strong>$1</strong> är blockerad som en utgångsnod på Tor.",
+	"right-torunblocked": "Får redigera från automatiskt blockerade Tor-noder",
+	"tag-tor-description": "Om denna taggen är på, så är en redigering gjord från en Tor-nod.",
+	"tag-tor": "Gjord genom tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Huruvida ändringen gjordes genom en tor utgångsnod"
 }

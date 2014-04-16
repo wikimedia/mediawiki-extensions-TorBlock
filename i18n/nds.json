@@ -1,13 +1,13 @@
 {
-    "@metadata": {
-        "authors": [
-            "Slomox"
-        ]
-    },
-    "torblock-desc": "Verlöövt dat Sperren vun Tor-Utgangsknütten",
-    "torblock-blocked": "Diene IP-Adress <strong>$1</strong> is automaatsch as Tor-Utgangsknütten kennt worrn. Dat Ännern vun Sieden över en Tor-Nettwark is sperrt, de Gefohr vun Missbruuk is to groot.",
-    "right-torunblocked": "Ümgahn vun de automaatsche Sperr vun Tor-Utgangsknütten",
-    "tag-tor-description": "Wenn disse Tag sett is, is de Ännern von en Tor-Utgangsknütten maakt worrn.",
-    "tag-tor": "Maakt dör Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Wat de Ännern över en Tor-Utgangsknütten maakt worrn is"
+	"@metadata": {
+		"authors": [
+			"Slomox"
+		]
+	},
+	"torblock-desc": "Verlöövt dat Sperren vun Tor-Utgangsknütten",
+	"torblock-blocked": "Diene IP-Adress <strong>$1</strong> is automaatsch as Tor-Utgangsknütten kennt worrn. Dat Ännern vun Sieden över en Tor-Nettwark is sperrt, de Gefohr vun Missbruuk is to groot.",
+	"right-torunblocked": "Ümgahn vun de automaatsche Sperr vun Tor-Utgangsknütten",
+	"tag-tor-description": "Wenn disse Tag sett is, is de Ännern von en Tor-Utgangsknütten maakt worrn.",
+	"tag-tor": "Maakt dör Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Wat de Ännern över en Tor-Utgangsknütten maakt worrn is"
 }

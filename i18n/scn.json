@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Melos",
-            "Santu"
-        ]
-    },
-    "torblock-desc": "Pirmetti di bluccari 'n scrittura exit node tor sù na wiki",
-    "torblock-blocked": "Lu tò nnirizzu IP, <strong>$1</strong>, vinni ricanusciutu autumaticamenti comu nu exit node tor.\nLa pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari abbusi.",
-    "right-torunblocked": "Non pigghiari 'n cunziddirazzioni li blocchi automàtichi di li exit node tor",
-    "tag-tor-description": "Si stu tag fu impustatu, lu canciamentu fu fattu da nu nodu di nisciuta dâ reti Tor.",
-    "tag-tor": "Fattu attraversu tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Ndica si lu canciamentu fu fattu da nu nodu d'uscita TOR o menu"
+	"@metadata": {
+		"authors": [
+			"Melos",
+			"Santu"
+		]
+	},
+	"torblock-desc": "Pirmetti di bluccari 'n scrittura exit node tor sù na wiki",
+	"torblock-blocked": "Lu tò nnirizzu IP, <strong>$1</strong>, vinni ricanusciutu autumaticamenti comu nu exit node tor.\nLa pussibbilitati di scrìviri utilizzannu tor è bluccata pi non putiri fari abbusi.",
+	"right-torunblocked": "Non pigghiari 'n cunziddirazzioni li blocchi automàtichi di li exit node tor",
+	"tag-tor-description": "Si stu tag fu impustatu, lu canciamentu fu fattu da nu nodu di nisciuta dâ reti Tor.",
+	"tag-tor": "Fattu attraversu tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Ndica si lu canciamentu fu fattu da nu nodu d'uscita TOR o menu"
 }

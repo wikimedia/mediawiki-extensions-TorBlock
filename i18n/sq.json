@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Olsi"
-        ]
-    },
-    "torblock-desc": "Lejon nyjet dalëse tor të jenë të bllokuara nga redaktimi i një wiki",
-    "torblock-blocked": "Adresa juaj IP, <strong>$1</strong>, është identifikuar automatikisht si një nyje dalëse tor.\nRedaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.",
-    "torblock-isexitnode": "Adresa IP <strong>$1</strong> është bllokuar si një nyje dalëse Tor.",
-    "right-torunblocked": "Anashkaloni bllokimet e nyjeve dalëse tor.",
-    "tag-tor-description": "Nëse kjo etiketë është vendosur, një redaktim u bë nga një nyje dalëse Tor.",
-    "tag-tor": "Bërë nëpërmjet tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor"
+	"@metadata": {
+		"authors": [
+			"Olsi"
+		]
+	},
+	"torblock-desc": "Lejon nyjet dalëse tor të jenë të bllokuara nga redaktimi i një wiki",
+	"torblock-blocked": "Adresa juaj IP, <strong>$1</strong>, është identifikuar automatikisht si një nyje dalëse tor.\nRedaktimi nëpërmjet tor është i bllokuar për të parandaluar abuzimet.",
+	"torblock-isexitnode": "Adresa IP <strong>$1</strong> është bllokuar si një nyje dalëse Tor.",
+	"right-torunblocked": "Anashkaloni bllokimet e nyjeve dalëse tor.",
+	"tag-tor-description": "Nëse kjo etiketë është vendosur, një redaktim u bë nga një nyje dalëse Tor.",
+	"tag-tor": "Bërë nëpërmjet tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Nëse është apo jo ndryshimi i bërë nëpërmjet një nyje dalëse tor"
 }

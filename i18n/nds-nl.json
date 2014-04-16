@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Servien"
-        ]
-    },
-    "abusefilter-edit-builder-vars-tor-exit-node": "Of de wieziging wel of niet mit n tor-uutgangsknope emaakt is"
+	"@metadata": {
+		"authors": [
+			"Servien"
+		]
+	},
+	"abusefilter-edit-builder-vars-tor-exit-node": "Of de wieziging wel of niet mit n tor-uutgangsknope emaakt is"
 }

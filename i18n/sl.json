@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dbc334"
-        ]
-    },
-    "torblock-desc": "Omogoča blokiranje izhodnih vozlišč tor pred urejanjem wikija",
-    "torblock-blocked": "Vaš IP-naslov, <strong>$1</strong>, je bil samodejno prepoznan kot izhodno vozlišče tor.\nUrejanje preko tor je blokirano za preprečitev zlorab.",
-    "torblock-isexitnode": "IP-naslov <strong>$1</strong> je blokiran kot izhodno vozlišče tor.",
-    "right-torunblocked": "Izogne se samodejnim blokadam izhodnih vozlišč tor",
-    "tag-tor-description": "Če je ta oznaka določena, je bilo urejanje narejeno iz izhodnega vozlišča tor.",
-    "tag-tor": "Storjeno skozi tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor"
+	"@metadata": {
+		"authors": [
+			"Dbc334"
+		]
+	},
+	"torblock-desc": "Omogoča blokiranje izhodnih vozlišč tor pred urejanjem wikija",
+	"torblock-blocked": "Vaš IP-naslov, <strong>$1</strong>, je bil samodejno prepoznan kot izhodno vozlišče tor.\nUrejanje preko tor je blokirano za preprečitev zlorab.",
+	"torblock-isexitnode": "IP-naslov <strong>$1</strong> je blokiran kot izhodno vozlišče tor.",
+	"right-torunblocked": "Izogne se samodejnim blokadam izhodnih vozlišč tor",
+	"tag-tor-description": "Če je ta oznaka določena, je bilo urejanje narejeno iz izhodnega vozlišča tor.",
+	"tag-tor": "Storjeno skozi tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor"
 }

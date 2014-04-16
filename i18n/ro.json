@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "AdiJapan",
-            "Stelistcristi"
-        ]
-    },
-    "torblock-desc": "Permite nodurile de ieșire tor ca să fie blocat de la modificarea unui wiki",
-    "torblock-blocked": "Adresa dvs IP - <strong>$1</strong> - a fost identificată automat ca un nod de ieșire tor.\nEditarea prin tor este blocată pentru a preveni abuzuri.",
-    "torblock-isexitnode": "Adresa IP <strong>$1</strong> este blocată ca un nod de ieșire Tor.",
-    "right-torunblocked": "Nu este afectat de blocarea automată a nodurilor de ieșire ''tor''",
-    "tag-tor-description": "Dacă această baliză este activată, s-a făcut o modificare de la un nod de ieșire ''tor''.",
-    "tag-tor": "Făcut prin tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Dacă modificarea s-a făcut printr-un nod de ieșire ''tor''"
+	"@metadata": {
+		"authors": [
+			"AdiJapan",
+			"Stelistcristi"
+		]
+	},
+	"torblock-desc": "Permite nodurile de ieșire tor ca să fie blocat de la modificarea unui wiki",
+	"torblock-blocked": "Adresa dvs IP - <strong>$1</strong> - a fost identificată automat ca un nod de ieșire tor.\nEditarea prin tor este blocată pentru a preveni abuzuri.",
+	"torblock-isexitnode": "Adresa IP <strong>$1</strong> este blocată ca un nod de ieșire Tor.",
+	"right-torunblocked": "Nu este afectat de blocarea automată a nodurilor de ieșire ''tor''",
+	"tag-tor-description": "Dacă această baliză este activată, s-a făcut o modificare de la un nod de ieșire ''tor''.",
+	"tag-tor": "Făcut prin tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Dacă modificarea s-a făcut printr-un nod de ieșire ''tor''"
 }

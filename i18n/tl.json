@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "AnakngAraw"
-        ]
-    },
-    "torblock-desc": "Nagpapahintulot na hadlangan/harangin ang labasan ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') mula sa paggawa ng pagbabago sa isang wiki",
-    "torblock-blocked": "Ang adres ng IP mo, <strong>$1</strong>, ay kusang nakilala bilang isang bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') .\nAng paggawa ng pagbabago mula sa isang bunton ng mga nakikipagugnayang hindi nagpapakilala ay hinadlangan upang maiwasan ang pangaabuso.",
-    "torblock-isexitnode": "Ang adres ng IP na <strong>$1</strong> ay hinadlangan bilang isang labasang buhol ng Tor.",
-    "right-torunblocked": "Laktawan ang kusang mga paghahadlang ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'').",
-    "tag-tor-description": "Kapag nakatakda ang tatak na ito, may isang pagbabagong ginawa mula sa labasang bugkol ng isang Tor.",
-    "tag-tor": "Ginawa sa pamamagitan ng Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Kung ang pagbabago ay nagawa o hindi sa pamamagitan ng isang labasang bugkol na tor"
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"torblock-desc": "Nagpapahintulot na hadlangan/harangin ang labasan ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') mula sa paggawa ng pagbabago sa isang wiki",
+	"torblock-blocked": "Ang adres ng IP mo, <strong>$1</strong>, ay kusang nakilala bilang isang bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'') .\nAng paggawa ng pagbabago mula sa isang bunton ng mga nakikipagugnayang hindi nagpapakilala ay hinadlangan upang maiwasan ang pangaabuso.",
+	"torblock-isexitnode": "Ang adres ng IP na <strong>$1</strong> ay hinadlangan bilang isang labasang buhol ng Tor.",
+	"right-torunblocked": "Laktawan ang kusang mga paghahadlang ng mga bugkol/alimpuso (''node'') ng bunton ng mga nakikipagugnayang hindi nagpapakilala (mga ''tor'').",
+	"tag-tor-description": "Kapag nakatakda ang tatak na ito, may isang pagbabagong ginawa mula sa labasang bugkol ng isang Tor.",
+	"tag-tor": "Ginawa sa pamamagitan ng Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Kung ang pagbabago ay nagawa o hindi sa pamamagitan ng isang labasang bugkol na tor"
 }

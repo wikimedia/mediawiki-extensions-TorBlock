@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Anakmalaysia",
-            "Aviator",
-            "Izzudin"
-        ]
-    },
-    "torblock-desc": "Membolehkan sekatan terhadap nod keluar Tor",
-    "torblock-blocked": "Alamat IP anda, <strong>$1</strong>, telah dikenal pasti sebagai nod keluar Tor.\nPenyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.",
-    "torblock-isexitnode": "Alamat IP <strong>$1</strong> disekat sebagai nod keluar Tor.",
-    "right-torunblocked": "Melepasi sekatan nod keluar Tor",
-    "tag-tor-description": "Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.",
-    "tag-tor": "Dibuat melalui tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Sama ada atau tidak perubahan dibuat melalui buku keluar tor"
+	"@metadata": {
+		"authors": [
+			"Anakmalaysia",
+			"Aviator",
+			"Izzudin"
+		]
+	},
+	"torblock-desc": "Membolehkan sekatan terhadap nod keluar Tor",
+	"torblock-blocked": "Alamat IP anda, <strong>$1</strong>, telah dikenal pasti sebagai nod keluar Tor.\nPenyuntingan melalui Tor disekat untuk mengelak penyalahgunaan.",
+	"torblock-isexitnode": "Alamat IP <strong>$1</strong> disekat sebagai nod keluar Tor.",
+	"right-torunblocked": "Melepasi sekatan nod keluar Tor",
+	"tag-tor-description": "Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.",
+	"tag-tor": "Dibuat melalui tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Sama ada atau tidak perubahan dibuat melalui buku keluar tor"
 }

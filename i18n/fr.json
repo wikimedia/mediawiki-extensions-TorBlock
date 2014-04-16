@@ -1,19 +1,19 @@
 {
-    "@metadata": {
-        "authors": [
-            "Grondin",
-            "IAlex",
-            "PieRRoMaN",
-            "Sherbrooke",
-            "Urhixidur",
-            "Verdy p"
-        ]
-    },
-    "torblock-desc": "Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor",
-    "torblock-blocked": "Votre adresse IP, <strong>$1</strong>, a été détectée automatiquement comme un nœud de sortie Tor.\nLes modifications via Tor sont bloquées pour éviter les abus.",
-    "torblock-isexitnode": "L’adresse IP <strong>$1</strong> est bloquée en tant que nœud de sortie Tor.",
-    "right-torunblocked": "Contourner le blocage automatique des nœuds de sortie Tor",
-    "tag-tor-description": "Si cette balise est activée, une modification a été effectuée depuis un nœud de sortie Tor.",
-    "tag-tor": "Effectué via Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Si la modification a été faite via un nœud de sortie de Tor"
+	"@metadata": {
+		"authors": [
+			"Grondin",
+			"IAlex",
+			"PieRRoMaN",
+			"Sherbrooke",
+			"Urhixidur",
+			"Verdy p"
+		]
+	},
+	"torblock-desc": "Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor",
+	"torblock-blocked": "Votre adresse IP, <strong>$1</strong>, a été détectée automatiquement comme un nœud de sortie Tor.\nLes modifications via Tor sont bloquées pour éviter les abus.",
+	"torblock-isexitnode": "L’adresse IP <strong>$1</strong> est bloquée en tant que nœud de sortie Tor.",
+	"right-torunblocked": "Contourner le blocage automatique des nœuds de sortie Tor",
+	"tag-tor-description": "Si cette balise est activée, une modification a été effectuée depuis un nœud de sortie Tor.",
+	"tag-tor": "Effectué via Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si la modification a été faite via un nœud de sortie de Tor"
 }

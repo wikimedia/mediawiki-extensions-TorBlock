@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Christian List",
-            "Masz",
-            "Peter Alberti"
-        ]
-    },
-    "torblock-desc": "Gør det muligt at blokere Tor udgangsknuder fra at redigere en wiki",
-    "torblock-blocked": "Din IP-adresse, <strong>$1</strong>, er automatisk blevet identificeret som en udgangsknude fra Tor.\nRedigering gennem Tor er blokeret for at forhindre misbrug.",
-    "torblock-isexitnode": "IP-adressen <strong>$1</strong> er blokeret som en Tor udgangsknude.",
-    "right-torunblocked": "Kan redigere fra blokerede Tor udgangsknuder",
-    "tag-tor-description": "Hvis dette mærkat er angivet, blev en redigering udført via en Tor udgangsknude.",
-    "tag-tor": "Foretaget gennem Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Hvorvidt ændringen blev foretaget gennem en Tor udgangsknude"
+	"@metadata": {
+		"authors": [
+			"Christian List",
+			"Masz",
+			"Peter Alberti"
+		]
+	},
+	"torblock-desc": "Gør det muligt at blokere Tor udgangsknuder fra at redigere en wiki",
+	"torblock-blocked": "Din IP-adresse, <strong>$1</strong>, er automatisk blevet identificeret som en udgangsknude fra Tor.\nRedigering gennem Tor er blokeret for at forhindre misbrug.",
+	"torblock-isexitnode": "IP-adressen <strong>$1</strong> er blokeret som en Tor udgangsknude.",
+	"right-torunblocked": "Kan redigere fra blokerede Tor udgangsknuder",
+	"tag-tor-description": "Hvis dette mærkat er angivet, blev en redigering udført via en Tor udgangsknude.",
+	"tag-tor": "Foretaget gennem Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Hvorvidt ændringen blev foretaget gennem en Tor udgangsknude"
 }

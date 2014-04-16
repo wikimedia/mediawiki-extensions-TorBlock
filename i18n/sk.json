@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Helix84"
-        ]
-    },
-    "torblock-desc": "Umožňuje bolovať úpravy pochádzajúce z výstupných uzlov siete TOR.",
-    "torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, bola automaticky identifikovaná ako výstupný uzol siete TOR.\nAby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.",
-    "torblock-isexitnode": "IP adresa <strong>$1</strong> je zablokovaná, pretože je to výstupný uzol siete Tor.",
-    "right-torunblocked": "Obísť automatické blokovanie výstupných uzlov siete TOR",
-    "tag-tor-description": "Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.",
-    "tag-tor": "Prostredníctvom Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Či bola alebo nebola úprava vykonaná z koncového uzla TOR"
+	"@metadata": {
+		"authors": [
+			"Helix84"
+		]
+	},
+	"torblock-desc": "Umožňuje bolovať úpravy pochádzajúce z výstupných uzlov siete TOR.",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, bola automaticky identifikovaná ako výstupný uzol siete TOR.\nAby sa zabránilo zneužitiu, úpravy zo siete TOR sú blokované.",
+	"torblock-isexitnode": "IP adresa <strong>$1</strong> je zablokovaná, pretože je to výstupný uzol siete Tor.",
+	"right-torunblocked": "Obísť automatické blokovanie výstupných uzlov siete TOR",
+	"tag-tor-description": "Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.",
+	"tag-tor": "Prostredníctvom Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Či bola alebo nebola úprava vykonaná z koncového uzla TOR"
 }

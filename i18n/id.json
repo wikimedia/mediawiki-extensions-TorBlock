@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bennylin",
-            "Farras",
-            "IvanLanin",
-            "Rex"
-        ]
-    },
-    "torblock-desc": "Mengijinkan \"exit node\" Tor untuk diblokir dari menyunting wiki",
-    "torblock-blocked": "Alamat IP Anda, <strong>$1</strong> telah diidentifikasi secara otomatis sebagai sebuah simpul akhir tor.\nPenyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.",
-    "torblock-isexitnode": "Alamat IP <strong>$1</strong> diblokir sebagai suatu simpul akhir Tor.",
-    "right-torunblocked": "Mengabaikan pemblokiran otomatis terhadap \"exit nodes\" tor",
-    "tag-tor-description": "Jika tag ini dipasang, sebuah suntingan dibuat dari sebuah \"exit node\" Tor.",
-    "tag-tor": "Dibuat melalui tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Menampilkan apakah suatu perubahan dibuat melalui \"exit node\" tor atau tidak"
+	"@metadata": {
+		"authors": [
+			"Bennylin",
+			"Farras",
+			"IvanLanin",
+			"Rex"
+		]
+	},
+	"torblock-desc": "Mengijinkan \"exit node\" Tor untuk diblokir dari menyunting wiki",
+	"torblock-blocked": "Alamat IP Anda, <strong>$1</strong> telah diidentifikasi secara otomatis sebagai sebuah simpul akhir tor.\nPenyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.",
+	"torblock-isexitnode": "Alamat IP <strong>$1</strong> diblokir sebagai suatu simpul akhir Tor.",
+	"right-torunblocked": "Mengabaikan pemblokiran otomatis terhadap \"exit nodes\" tor",
+	"tag-tor-description": "Jika tag ini dipasang, sebuah suntingan dibuat dari sebuah \"exit node\" Tor.",
+	"tag-tor": "Dibuat melalui tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Menampilkan apakah suatu perubahan dibuat melalui \"exit node\" tor atau tidak"
 }

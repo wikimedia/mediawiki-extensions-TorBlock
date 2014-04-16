@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "BáthoryPéter",
-            "Dani"
-        ]
-    },
-    "torblock-desc": "Lehetővé teszi a tor kilépési csomópontokról való szerkesztés blokkolását",
-    "torblock-blocked": "Az IP-címed (<strong>$1</strong>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.\nToron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.",
-    "torblock-isexitnode": "A(z) <strong>$1</strong> IP-cím blokkolva van, mivel Tor kilépési csomópont.",
-    "right-torunblocked": "bejelentkezés automatikusan blokkolt torvégpontokról",
-    "tag-tor-description": "Ha ez a címke be van állítva, a szerkesztés egy Tor-csomópontról történt",
-    "tag-tor": "TOR-on keresztüli szerkesztés",
-    "abusefilter-edit-builder-vars-tor-exit-node": "A szerkesztés egy tor-csomópontról készült vagy sem."
+	"@metadata": {
+		"authors": [
+			"BáthoryPéter",
+			"Dani"
+		]
+	},
+	"torblock-desc": "Lehetővé teszi a tor kilépési csomópontokról való szerkesztés blokkolását",
+	"torblock-blocked": "Az IP-címed (<strong>$1</strong>) automatikusan blokkolva lett, mivel tor végpontként azonosítottuk.\nToron keresztül nem lehet szerkeszteni a visszaélések megakadályozása céljából.",
+	"torblock-isexitnode": "A(z) <strong>$1</strong> IP-cím blokkolva van, mivel Tor kilépési csomópont.",
+	"right-torunblocked": "bejelentkezés automatikusan blokkolt torvégpontokról",
+	"tag-tor-description": "Ha ez a címke be van állítva, a szerkesztés egy Tor-csomópontról történt",
+	"tag-tor": "TOR-on keresztüli szerkesztés",
+	"abusefilter-edit-builder-vars-tor-exit-node": "A szerkesztés egy tor-csomópontról készült vagy sem."
 }

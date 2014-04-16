@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Dalibor Bosits",
-            "Roberta F.",
-            "SpeedyGonsales"
-        ]
-    },
-    "torblock-desc": "Omogućava blokiranje tor izlaznih servera od uređivanja na wiki",
-    "torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski prepoznata kao tor izlaznog servera.\nUređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.",
-    "torblock-isexitnode": "IP adresa <strong>$1</strong> blokirana je kao Tor izlazni čvor.",
-    "right-torunblocked": "Premošćivanje automatskih blokiranja tor izlaznih servera",
-    "tag-tor-description": "Ako je ova kartica označena, uređivanje je vršeno s Tor mreže.",
-    "tag-tor": "Uređivano preko tor-mreže",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Bez obzira je li uređivanje učinjeno preko Tor izlaznog čvora"
+	"@metadata": {
+		"authors": [
+			"Dalibor Bosits",
+			"Roberta F.",
+			"SpeedyGonsales"
+		]
+	},
+	"torblock-desc": "Omogućava blokiranje tor izlaznih servera od uređivanja na wiki",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski prepoznata kao tor izlaznog servera.\nUređivanje kroz tor je onemogućeno kako bi se spriječila zloupotreba.",
+	"torblock-isexitnode": "IP adresa <strong>$1</strong> blokirana je kao Tor izlazni čvor.",
+	"right-torunblocked": "Premošćivanje automatskih blokiranja tor izlaznih servera",
+	"tag-tor-description": "Ako je ova kartica označena, uređivanje je vršeno s Tor mreže.",
+	"tag-tor": "Uređivano preko tor-mreže",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Bez obzira je li uređivanje učinjeno preko Tor izlaznog čvora"
 }

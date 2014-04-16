@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "torblock-desc": "Zajźujo, aby wuchadne suki TOR wobźěłowali wiki",
-    "torblock-blocked": "Twója IP-adresa, <strong>$1</strong>, jo se awtomatiski awtentificěrowała ako wuchadny suk TOR.\nWobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.",
-    "torblock-isexitnode": "IP-adresa <strong>$1</strong> jo ako wuchadny suk Tor zablokěrowana.",
-    "right-torunblocked": "Awtomatiske blokěrowanja wuchadnych sukow TOR sw wobinuś",
-    "tag-tor-description": "Jolic toś ta toflicka jo stajona, jo se změna z wuchadnego modusa TOR pśewjadła.",
-    "tag-tor": "Pśez TOR pśewjeźony",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Lěc změna jo se cyniła pśez wuchadny suk TOR abo nic"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"torblock-desc": "Zajźujo, aby wuchadne suki TOR wobźěłowali wiki",
+	"torblock-blocked": "Twója IP-adresa, <strong>$1</strong>, jo se awtomatiski awtentificěrowała ako wuchadny suk TOR.\nWobźěłowanje pśez TOR jo blokěrowane, aby zajźowało znjewužiwanju.",
+	"torblock-isexitnode": "IP-adresa <strong>$1</strong> jo ako wuchadny suk Tor zablokěrowana.",
+	"right-torunblocked": "Awtomatiske blokěrowanja wuchadnych sukow TOR sw wobinuś",
+	"tag-tor-description": "Jolic toś ta toflicka jo stajona, jo se změna z wuchadnego modusa TOR pśewjadła.",
+	"tag-tor": "Pśez TOR pśewjeźony",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Lěc změna jo se cyniła pśez wuchadny suk TOR abo nic"
 }

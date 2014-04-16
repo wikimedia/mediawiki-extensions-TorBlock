@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "torblock-desc": "Pèrmèt de blocar los changements d’un vouiqui dês los nuods de sortia Tor.",
-    "torblock-blocked": "Voutra adrèce IP, <strong>$1</strong>, at étâ dècelâ ôtomaticament coment un nuod de sortia Tor.\nLos changements avouéc Tor sont blocâs por èvitar los abus.",
-    "torblock-isexitnode": "L’adrèce IP <strong>$1</strong> est blocâ coment un nuod de sortia Tor.",
-    "right-torunblocked": "Contornar lo blocâjo ôtomatico des nuods de sortia Tor",
-    "tag-tor-description": "Se ceta balisa est activâ, un changement at étâ fêt dês un nuod de sortia Tor.",
-    "tag-tor": "Fêt avouéc Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Se lo changement at étâ fêt avouéc un nuod de sortia Tor"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"torblock-desc": "Pèrmèt de blocar los changements d’un vouiqui dês los nuods de sortia Tor.",
+	"torblock-blocked": "Voutra adrèce IP, <strong>$1</strong>, at étâ dècelâ ôtomaticament coment un nuod de sortia Tor.\nLos changements avouéc Tor sont blocâs por èvitar los abus.",
+	"torblock-isexitnode": "L’adrèce IP <strong>$1</strong> est blocâ coment un nuod de sortia Tor.",
+	"right-torunblocked": "Contornar lo blocâjo ôtomatico des nuods de sortia Tor",
+	"tag-tor-description": "Se ceta balisa est activâ, un changement at étâ fêt dês un nuod de sortia Tor.",
+	"tag-tor": "Fêt avouéc Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Se lo changement at étâ fêt avouéc un nuod de sortia Tor"
 }

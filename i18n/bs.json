@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "torblock-desc": "Omogućuje da se blokiraju tor izlazni čvorovi za uređivanje wikija",
-    "torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.\nUređivanje preko tora je blokirano da bi se spriječila zloupotreba.",
-    "torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
-    "right-torunblocked": "Zaobilaženje automatskih blokada tor izlaznih čvorova",
-    "tag-tor-description": "Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.",
-    "tag-tor": "Napravljeno kroz tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmjena izvršena kroz tor izlazni čvor ili ne"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"torblock-desc": "Omogućuje da se blokiraju tor izlazni čvorovi za uređivanje wikija",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.\nUređivanje preko tora je blokirano da bi se spriječila zloupotreba.",
+	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
+	"right-torunblocked": "Zaobilaženje automatskih blokada tor izlaznih čvorova",
+	"tag-tor-description": "Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.",
+	"tag-tor": "Napravljeno kroz tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmjena izvršena kroz tor izlazni čvor ili ne"
 }

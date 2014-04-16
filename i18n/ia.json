@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "torblock-desc": "Permitte que le nodos de exito de Tor sia blocate de facer modificationes in un wiki",
-    "torblock-blocked": "Tu adresse IP, <strong>$1</strong>, ha essite automaticamente identificate como un nodo de exito de Tor.\nLe modification via Tor es prohibite pro impedir le abuso.",
-    "torblock-isexitnode": "Le adresse IP <strong>$1</strong> es blocate como nodo de exito Tor.",
-    "right-torunblocked": "Contornar le blocadas automatic de nodos de exito de Tor",
-    "tag-tor-description": "Si iste etiquetta es presente, un modification esseva facite ab un nodo de exito de Tor.",
-    "tag-tor": "Facite via tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Si le modification ha essite facite via un nodo de exito de Tor"
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"torblock-desc": "Permitte que le nodos de exito de Tor sia blocate de facer modificationes in un wiki",
+	"torblock-blocked": "Tu adresse IP, <strong>$1</strong>, ha essite automaticamente identificate como un nodo de exito de Tor.\nLe modification via Tor es prohibite pro impedir le abuso.",
+	"torblock-isexitnode": "Le adresse IP <strong>$1</strong> es blocate como nodo de exito Tor.",
+	"right-torunblocked": "Contornar le blocadas automatic de nodos de exito de Tor",
+	"tag-tor-description": "Si iste etiquetta es presente, un modification esseva facite ab un nodo de exito de Tor.",
+	"tag-tor": "Facite via tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si le modification ha essite facite via un nodo de exito de Tor"
 }

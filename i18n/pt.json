@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hamilton Abreu",
-            "Malafaya",
-            "Waldir"
-        ]
-    },
-    "torblock-desc": "Permite que nós de saída Tor sejam impedidos de editar uma wiki",
-    "torblock-blocked": "O seu endereço IP, <strong>$1</strong>, foi automaticamente identificado como um nó de saída Tor.\nA edição através de Tor está bloqueada para prevenir abusos.",
-    "torblock-isexitnode": "O endereço IP <strong>$1</strong> está bloqueado como nó de saída Tor.",
-    "right-torunblocked": "Ultrapassar bloqueios automáticos de nós de saída Tor",
-    "tag-tor-description": "Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.",
-    "tag-tor": "Feita através de Tor",
-    "abusefilter-edit-builder-vars-tor-exit-node": "Se mudança foi feita ou não através de um nó de saída Tor"
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu",
+			"Malafaya",
+			"Waldir"
+		]
+	},
+	"torblock-desc": "Permite que nós de saída Tor sejam impedidos de editar uma wiki",
+	"torblock-blocked": "O seu endereço IP, <strong>$1</strong>, foi automaticamente identificado como um nó de saída Tor.\nA edição através de Tor está bloqueada para prevenir abusos.",
+	"torblock-isexitnode": "O endereço IP <strong>$1</strong> está bloqueado como nó de saída Tor.",
+	"right-torunblocked": "Ultrapassar bloqueios automáticos de nós de saída Tor",
+	"tag-tor-description": "Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.",
+	"tag-tor": "Feita através de Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Se mudança foi feita ou não através de um nó de saída Tor"
 }
