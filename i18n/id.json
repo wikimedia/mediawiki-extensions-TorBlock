@@ -7,7 +7,7 @@
 			"Rex"
 		]
 	},
-	"torblock-desc": "Mengijinkan \"exit node\" Tor untuk diblokir dari menyunting wiki",
+	"torblock-desc": "Mengizinkan \"exit node\" Tor untuk diblokir dari menyunting wiki",
 	"torblock-blocked": "Alamat IP Anda, <strong>$1</strong> telah diidentifikasi secara otomatis sebagai sebuah simpul akhir tor.\nPenyuntingan melalui tor saat ini sedang diblokir untuk mencegah penyalahgunaan.",
 	"torblock-isexitnode": "Alamat IP <strong>$1</strong> diblokir sebagai suatu simpul akhir Tor.",
 	"right-torunblocked": "Mengabaikan pemblokiran otomatis terhadap \"exit nodes\" tor",
