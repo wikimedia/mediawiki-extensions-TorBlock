@@ -28,18 +28,21 @@
 
 class TorBlockHooks {
 	/**
-	 * Check if a user is a Tor node and not whitelisted or allowed
-	 * to bypass tor blocks.
+	 * Whether the given user is allowed to perform $action from its current IP
 	 *
-	 * @param Title $title Title being acted upon
-	 * @param User $user User performing the action
-	 * @param string $action Action being performed
-	 * @param array &$result Will be filled with block status if blocked
+	 * @param User $user
+	 * @param string|null $action
 	 * @return bool
 	 */
-	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
-		global $wgTorAllowedActions, $wgRequest;
-		if ( in_array( $action, $wgTorAllowedActions ) ) {
+	private static function checkUserCan( User $user, $action = null ) {
+		global $wgTorAllowedActions, $wgRequest, $wgUser;
+
+		// Just in case we're checking another user
+		if ( $user->getName() !== $wgUser->getName() ) {
+			return true;
+		}
+
+		if ( $action !== null && in_array( $action, $wgTorAllowedActions ) ) {
 			return true;
 		}
 
@@ -60,6 +63,24 @@ class TorBlockHooks {
 				return true;
 			}
 
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Check if a user is a Tor node and not whitelisted or allowed
+	 * to bypass tor blocks.
+	 *
+	 * @param Title $title Title being acted upon
+	 * @param User $user User performing the action
+	 * @param string $action Action being performed
+	 * @param array &$result Will be filled with block status if blocked
+	 * @return bool
+	 */
+	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
+		if ( !self::checkUserCan( $user, $action ) ) {
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. Adding Tor block to permissions errors." );
 
 			// Allow site customization of blocked message.
@@ -83,32 +104,8 @@ class TorBlockHooks {
 	 * @return bool
 	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
-		// wfDebugLog( 'torblock', "Checking Tor status" );
-
-		// Just in case we're checking another user
-		global $wgUser, $wgRequest;
-		if ( $user->getName() != $wgUser->getName() ) {
-			return true;
-		}
-
-		if ( TorExitNodes::isExitNode() ) {
-			wfDebugLog( 'torblock', "User detected as editing through tor." );
-
-			global $wgTorBypassPermissions;
-			foreach ( $wgTorBypassPermissions as $perm) {
-				if ( $user->isAllowed( $perm ) ) {
-					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
-					return true;
-				}
-			}
-
-			$ip = $wgRequest->getIP();
-			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
-				wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
-				return true;
-			}
-
-			wfDebugLog( 'torblock', "User detected as editing from Tor node. Denying email." );
+		if ( !self::checkUserCan( $user ) ) {
+			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
