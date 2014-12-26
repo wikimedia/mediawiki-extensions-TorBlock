@@ -26,11 +26,7 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die();
-}
-
-class TorBlock {
+class TorBlockHooks {
 	/**
 	 * Check if a user is a Tor node and not whitelisted or allowed
 	 * to bypass tor blocks.
@@ -47,15 +43,13 @@ class TorBlock {
 			return true;
 		}
 
-		// wfDebugLog( 'torblock', "Checking Tor status\n" );
-
 		if ( TorExitNodes::isExitNode() ) {
 			wfDebugLog( 'torblock', "User detected as editing through tor." );
 
 			global $wgTorBypassPermissions;
 			foreach ( $wgTorBypassPermissions as $perm) {
 				if ( $user->isAllowed( $perm ) ) {
-					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks" );
+					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
 					return true;
 				}
 			}
@@ -274,7 +268,7 @@ class TorBlock {
 	 * @param string $ip The IP address to be checked
 	 * @return boolean true
 	 */
-	public static function getTorBlockStatus( array &$msg, $ip ) {
+	public static function onOtherBlockLogLink( array &$msg, $ip ) {
 		// IP addresses can be blocked only
 		// Fast return if IP is not an exit node
 		if ( IP::isIPAddress( $ip ) && TorExitNodes::isExitNode( $ip ) ) {

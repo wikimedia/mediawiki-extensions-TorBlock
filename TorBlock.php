@@ -30,7 +30,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
 }
 
-$dir = __DIR__;
 $wgExtensionCredits['antispam'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'TorBlock',
@@ -40,21 +39,21 @@ $wgExtensionCredits['antispam'][] = array(
 );
 
 $wgMessagesDirs['TorBlock'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TorBlock'] =  "$dir/TorBlock.i18n.php";
-$wgAutoloadClasses['TorBlock'] = "$dir/TorBlock.class.php";
-$wgAutoloadClasses['TorExitNodes'] = "$dir/TorExitNodes.php";
+$wgExtensionMessagesFiles['TorBlock'] =  __DIR__ . "/TorBlock.i18n.php";
+$wgAutoloadClasses['TorBlockHooks'] = __DIR__ . '/includes/TorBlockHooks.php';
+$wgAutoloadClasses['TorExitNodes'] = __DIR__ . '/includes/TorExitNodes.php';
 
-$wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlock::onGetUserPermissionsErrorsExpensive';
-$wgHooks['AbortAutoblock'][] = 'TorBlock::onAbortAutoblock';
-$wgHooks['GetAutoPromoteGroups'][] = 'TorBlock::onGetAutoPromoteGroups';
-$wgHooks['GetBlockedStatus'][] = 'TorBlock::onGetBlockedStatus';
-$wgHooks['AutopromoteCondition'][] = 'TorBlock::onAutopromoteCondition';
-$wgHooks['RecentChange_save'][] = 'TorBlock::onRecentChangeSave';
-$wgHooks['ListDefinedTags'][] = 'TorBlock::onListDefinedTags';
-$wgHooks['AbuseFilter-filterAction'][] = 'TorBlock::onAbuseFilterFilterAction';
-$wgHooks['AbuseFilter-builder'][] = 'TorBlock::onAbuseFilterBuilder';
-$wgHooks['EmailUserPermissionsErrors'][] = 'TorBlock::onEmailUserPermissionsErrors';
-$wgHooks['OtherBlockLogLink'][] = 'TorBlock::getTorBlockStatus';
+$wgHooks['getUserPermissionsErrorsExpensive'][] = 'TorBlockHooks::onGetUserPermissionsErrorsExpensive';
+$wgHooks['AbortAutoblock'][] = 'TorBlockHooks::onAbortAutoblock';
+$wgHooks['GetAutoPromoteGroups'][] = 'TorBlockHooks::onGetAutoPromoteGroups';
+$wgHooks['GetBlockedStatus'][] = 'TorBlockHooks::onGetBlockedStatus';
+$wgHooks['AutopromoteCondition'][] = 'TorBlockHooks::onAutopromoteCondition';
+$wgHooks['RecentChange_save'][] = 'TorBlockHooks::onRecentChangeSave';
+$wgHooks['ListDefinedTags'][] = 'TorBlockHooks::onListDefinedTags';
+$wgHooks['AbuseFilter-filterAction'][] = 'TorBlockHooks::onAbuseFilterFilterAction';
+$wgHooks['AbuseFilter-builder'][] = 'TorBlockHooks::onAbuseFilterBuilder';
+$wgHooks['EmailUserPermissionsErrors'][] = 'TorBlockHooks::onEmailUserPermissionsErrors';
+$wgHooks['OtherBlockLogLink'][] = 'TorBlockHooks::onOtherBlockLogLink';
 
 // Define new autopromote condition
 define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
@@ -103,13 +102,13 @@ $wgTorOnionooServer = 'https://onionoo.torproject.org';
  * Path to the CA file for the Onionoo server.
  * Set to false or any other invalid value to disable.
  */
-$wgTorOnionooCA = "$dir/torproject.crt";
+$wgTorOnionooCA = __DIR__ . "/torproject.crt";
 
 /**
  * Path to the CA file for the Tor Project.
  * Set to false or any other invalid value to disable.
  */
-$wgTorProjectCA = "$dir/torproject.crt";
+$wgTorProjectCA = __DIR__ . "/torproject.crt";
 
 /**
  * Disable existing blocks of Tor nodes
