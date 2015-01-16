@@ -80,13 +80,14 @@ class TorBlockHooks {
 	 * @return bool
 	 */
 	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
+		global $wgRequest;
 		if ( !self::checkUserCan( $user, $action ) ) {
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. Adding Tor block to permissions errors." );
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
 			wfRunHooks( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
-			$result = array( $blockedMsg, $ip );
+			$result = array( $blockedMsg, $wgRequest->getIP() );
 
 			return false;
 		}
@@ -104,13 +105,18 @@ class TorBlockHooks {
 	 * @return bool
 	 */
 	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
+		global $wgRequest;
 		if ( !self::checkUserCan( $user ) ) {
 			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
 			wfRunHooks( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
-			$hookError = array( 'permissionserrors', $blockedMsg, array( $ip ) );
+			$hookError = array(
+				'permissionserrors',
+				$blockedMsg,
+				array( $wgRequest->getIP() ),
+			);
 			return false;
 		}
 
