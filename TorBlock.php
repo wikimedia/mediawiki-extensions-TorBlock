@@ -36,6 +36,7 @@ $wgExtensionCredits['antispam'][] = array(
 	'author'         => 'Andrew Garrett',
 	'descriptionmsg' => 'torblock-desc',
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:TorBlock',
+	'license-name'   => 'GPL-2.0+',
 );
 
 $wgMessagesDirs['TorBlock'] = __DIR__ . '/i18n';
