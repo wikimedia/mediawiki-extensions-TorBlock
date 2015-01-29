@@ -51,6 +51,7 @@ $wgHooks['GetBlockedStatus'][] = 'TorBlockHooks::onGetBlockedStatus';
 $wgHooks['AutopromoteCondition'][] = 'TorBlockHooks::onAutopromoteCondition';
 $wgHooks['RecentChange_save'][] = 'TorBlockHooks::onRecentChangeSave';
 $wgHooks['ListDefinedTags'][] = 'TorBlockHooks::onListDefinedTags';
+$wgHooks['ChangeTagsListActive'][] = 'TorBlockHooks::onListDefinedTags';
 $wgHooks['AbuseFilter-filterAction'][] = 'TorBlockHooks::onAbuseFilterFilterAction';
 $wgHooks['AbuseFilter-builder'][] = 'TorBlockHooks::onAbuseFilterBuilder';
 $wgHooks['EmailUserPermissionsErrors'][] = 'TorBlockHooks::onEmailUserPermissionsErrors';

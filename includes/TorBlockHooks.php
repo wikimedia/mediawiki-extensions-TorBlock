@@ -252,7 +252,8 @@ class TorBlockHooks {
 	/**
 	 * If enabled, add a new tag type for recent changes made by Tor exit nodes.
 	 *
-	 * @param array $emptyTags List of defined tags
+	 * @param array $emptyTags List of defined tags (for ListDefinedTags hook) or
+	 * list of active tags (for ChangeTagsListActive hook)
 	 * @return bool true
 	 */
 	public static function onListDefinedTags( array &$emptyTags ) {
