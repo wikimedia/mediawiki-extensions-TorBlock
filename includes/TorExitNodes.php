@@ -164,7 +164,7 @@ class TorExitNodes {
 	 * Get the list of Tor exit nodes using the Onionoo protocol with the
 	 * server specified in the configuration.
 	 *
-	 * @return array Tor exit nodes
+	 * @return string[] Tor exit nodes
 	 */
 	protected static function loadExitNodes_Onionoo() {
 		wfProfileIn( __METHOD__ );
@@ -179,6 +179,11 @@ class TorExitNodes {
 		}
 		$raw = Http::get( $url, 'default', $options );
 		$data = FormatJson::decode( $raw, true );
+
+		if ( !isset( $data['relays'] ) ) {
+			wfDebugLog( 'torblock', "Got no reply or an invalid reply from Onionoo.\n" );
+			return array();
+		}
 
 		$nodes = array();
 		foreach ( $data['relays'] as $relay ) {
