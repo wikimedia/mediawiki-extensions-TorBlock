@@ -106,7 +106,6 @@ class TorExitNodes {
 	 */
 	public static function loadExitNodes() {
 		global $wgMemc;
-		wfProfileIn( __METHOD__ );
 
 		// Set loading key, to prevent DoS of server.
 		$wgMemc->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
@@ -121,8 +120,6 @@ class TorExitNodes {
 		// Save to cache
 		$wgMemc->set( 'mw-tor-exit-nodes', $nodes, 1800 ); // Store for half an hour.
 		$wgMemc->set( 'mw-tor-list-status', 'loaded', 1800 );
-
-		wfProfileOut( __METHOD__ );
 	}
 
 	/**
@@ -131,8 +128,6 @@ class TorExitNodes {
 	 * @return array Tor exit nodes
 	 */
 	protected static function loadExitNodes_BulkList() {
-		wfProfileIn( __METHOD__ );
-
 		global $wgTorIPs, $wgTorProjectCA, $wgTorBlockProxy;
 
 		$options = array(
@@ -154,10 +149,7 @@ class TorExitNodes {
 				}
 			}
 		}
-		$nodes = array_keys( $nodes );
-
-		wfProfileOut( __METHOD__ );
-		return $nodes;
+		return array_keys( $nodes );
 	}
 
 	/**
@@ -167,8 +159,6 @@ class TorExitNodes {
 	 * @return array Tor exit nodes
 	 */
 	protected static function loadExitNodes_Onionoo() {
-		wfProfileIn( __METHOD__ );
-
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
 		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit", PROTO_HTTPS );
 		$options = array(
@@ -208,9 +198,6 @@ class TorExitNodes {
 				$nodes[IP::sanitizeIP( $ip )] = true;
 			}
 		}
-		$nodes = array_keys( $nodes );
-
-		wfProfileOut( __METHOD__ );
-		return $nodes;
+		return array_keys( $nodes );
 	}
 }
