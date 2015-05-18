@@ -6,12 +6,15 @@
 			"Purodha",
 			"Shirayuki",
 			"The Evil IP address",
-			"Umherirrender"
+			"Umherirrender",
+			"Legoktm"
 		]
 	},
 	"torblock-desc": "{{desc|name=Tor Block|url=https://www.mediawiki.org/wiki/Extension:TorBlock}}",
 	"torblock-blocked": "Used as error message. Paramters:\n* $1 - IP address",
 	"torblock-isexitnode": "Used as the tor blocking status message. Paramters:\n* $1 - IP address",
 	"right-torunblocked": "{{doc-right|torunblocked}}\n\nUsers with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).",
-	"tag-tor-description": "Description of tag that appears e.g. in [[Special:Tags]]"
+	"tag-tor-description": "Description of tag that appears e.g. in [[Special:Tags]]",
+	"tag-tor": "Shown on lists of changes (history, recentchanges, etc.) for each edit made through tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Abuse filter syntax option in a dropdown from the group {{msg-mw|Abusefilter-edit-builder-group-vars}}."
 }
