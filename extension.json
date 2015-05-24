@@ -1,0 +1,95 @@
+{
+	"name": "TorBlock",
+	"author": "Andrew Garrett",
+	"url": "https://www.mediawiki.org/wiki/Extension:TorBlock",
+	"descriptionmsg": "torblock-desc",
+	"license-name": "GPL-2.0+",
+	"type": "antispam",
+	"version": "1.1.0",
+	"callback": "TorBlockHooks::registerExtension",
+	"GroupPermissions": {
+		"basic": {
+			"torunblocked": true
+		},
+		"user": {
+			"torunblocked": true
+		}
+	},
+	"AvailableRights": [
+		"torunblocked"
+	],
+	"MessagesDirs": {
+		"TorBlock": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"TorBlockHooks": "includes/TorBlockHooks.php",
+		"TorExitNodes": "includes/TorExitNodes.php"
+	},
+	"Hooks": {
+		"getUserPermissionsErrorsExpensive": [
+			"TorBlockHooks::onGetUserPermissionsErrorsExpensive"
+		],
+		"AbortAutoblock": [
+			"TorBlockHooks::onAbortAutoblock"
+		],
+		"GetAutoPromoteGroups": [
+			"TorBlockHooks::onGetAutoPromoteGroups"
+		],
+		"GetBlockedStatus": [
+			"TorBlockHooks::onGetBlockedStatus"
+		],
+		"AutopromoteCondition": [
+			"TorBlockHooks::onAutopromoteCondition"
+		],
+		"RecentChange_save": [
+			"TorBlockHooks::onRecentChangeSave"
+		],
+		"ListDefinedTags": [
+			"TorBlockHooks::onListDefinedTags"
+		],
+		"ChangeTagsListActive": [
+			"TorBlockHooks::onListDefinedTags"
+		],
+		"AbuseFilter-filterAction": [
+			"TorBlockHooks::onAbuseFilterFilterAction"
+		],
+		"AbuseFilter-builder": [
+			"TorBlockHooks::onAbuseFilterBuilder"
+		],
+		"EmailUserPermissionsErrors": [
+			"TorBlockHooks::onEmailUserPermissionsErrors"
+		],
+		"OtherBlockLogLink": [
+			"TorBlockHooks::onOtherBlockLogLink"
+		]
+	},
+	"config": {
+		"TorBypassPermissions": [
+			"torunblocked"
+		],
+		"TorLoadNodes": true,
+		"TorAllowedActions": [
+			"read"
+		],
+		"TorAutoConfirmAge": 0,
+		"TorAutoConfirmCount": 0,
+		"TorIPs": [
+			"208.80.152.2"
+		],
+		"TorOnionooServer": "https://onionoo.torproject.org",
+		"TorDisableAdminBlocks": true,
+		"TorTagChanges": true,
+		"TorBlockProxy": false,
+		"TorOnionooCA": {
+			"value": "torproject.crt",
+			"path": true
+		},
+		"TorProjectCA": {
+			"value": "torproject.crt",
+			"path": true
+		}
+	},
+	"manifest_version": 2
+}

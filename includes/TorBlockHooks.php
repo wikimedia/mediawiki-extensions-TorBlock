@@ -27,6 +27,12 @@
  */
 
 class TorBlockHooks {
+
+	public static function registerExtension() {
+		// Define new autopromote condition
+		define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
+	}
+
 	/**
 	 * Whether the given user is allowed to perform $action from its current IP
 	 *
