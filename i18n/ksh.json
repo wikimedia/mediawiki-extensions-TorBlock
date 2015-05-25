@@ -8,7 +8,7 @@
 	"torblock-blocked": "Ding IP-Adress (<strong>$1</strong>) eß als_enne <tt>tor</tt> Ußjäng äkannt woode.\nÄnderunge aam Wiki dom_mer övver <tt>tor</tt> nit zolohße,\nesu määt och Keiner Dreßß domet.",
 	"torblock-isexitnode": "De <i lang=\"en\">IP</i>-Addräß <strong>$1</strong> es jesperrt, weil se ene Ußjang vum Tor Näzwärrek es.",
 	"right-torunblocked": "Et Ändere am Wiki övver <tt>tor</tt> Ußjäng zolohße",
-	"tag-tor-description": "Wann dat Zeijshe jesaz es, kohm die Änderung övver ene <tt>tor</tt> Ußjang.",
+	"tag-tor-description": "Wann dat Zeijsche jesaz es, kohm die Änderong övver ene <tt>tor</tt> Ußjang.",
 	"tag-tor": "Övver <tt>tor</tt> Ußjang jemaat",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Of en Änderung övver ene <i lang=\"en\">tor</i>-Ußjang jemaat woode es"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Of en Änderong övver ene <i lang=\"en\">tor</i>-Ußjang jemaat woode es!!FIZZY!!"
 }
