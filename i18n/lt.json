@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Matasg"
+			"Matasg",
+			"Albertas"
 		]
 	},
 	"torblock-desc": "Leidžia tor išėjimo mazgams būti užblokuotiems nuo wiki redagavimo",
 	"torblock-blocked": "Jūsų IP adresas, <strong>$1</strong>, buvo automatiškai nustatytas kaip tor išėjimo mazgas.\nRedagavimas per tor yra užblokuotas, kad nebūtų piktnaudžiaujama.",
+	"torblock-isexitnode": "IP adresas <strong>$1</strong> yra užblokuotas kaip Tor išėjimo mazgas.",
 	"right-torunblocked": "Praleisti automatinį tor išėjimo mazgų blokavimą",
 	"tag-tor-description": "Jei žymė yra nustatyta, redagavimas buvo atliktas iš Tor išėjimo mazgo.",
 	"tag-tor": "Atliktas per tor",
