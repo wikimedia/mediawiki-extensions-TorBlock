@@ -86,7 +86,7 @@ class TorBlockHooks {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			wfRunHooks( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
+			Hooks::run( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
 			$result = array( $blockedMsg, $wgRequest->getIP() );
 
 			return false;
@@ -111,7 +111,7 @@ class TorBlockHooks {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			wfRunHooks( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
+			Hooks::run( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
 			$hookError = array(
 				'permissionserrors',
 				$blockedMsg,
