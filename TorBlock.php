@@ -40,7 +40,6 @@ $wgExtensionCredits['antispam'][] = array(
 );
 
 $wgMessagesDirs['TorBlock'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['TorBlock'] =  __DIR__ . "/TorBlock.i18n.php";
 $wgAutoloadClasses['TorBlockHooks'] = __DIR__ . '/includes/TorBlockHooks.php';
 $wgAutoloadClasses['TorExitNodes'] = __DIR__ . '/includes/TorExitNodes.php';
 
