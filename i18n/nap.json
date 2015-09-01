@@ -4,5 +4,11 @@
 			"C.R."
 		]
 	},
-	"torblock-blocked": "Ll'indirizzo IP, <strong>$1</strong> vuosto, è stato automatecamente identificato comm'a nu exit node tor.\n'A possibbiletà 'e cagnà ausanno tor è bluccata pe' putè mpiccià cocch'abbuso."
+	"torblock-desc": "Premmettesse 'e nurece 'asciuta 'e se bluccà 'e ffà cagnamiente dint'a wiki",
+	"torblock-blocked": "Ll'indirizzo IP, <strong>$1</strong> vuosto, è stato automatecamente identificato comm'a nu exit node tor.\n'A possibbiletà 'e cagnà ausanno tor è bluccata pe' putè mpiccià cocch'abbuso.",
+	"torblock-isexitnode": "L'indirizzo IP <strong>$1</strong> è bloccato comm'a nu nurece d'asciuta 'e Tor.",
+	"right-torunblocked": "Passa 'e blocche automatiche d' 'o proxy 'e node asciuta 'e tor",
+	"tag-tor-description": "Si stu tag se mpustasse, nu cagnamiento se facesse 'a 'o nureco 'asciuta d' 'o Tor.",
+	"tag-tor": "Fatto pe' bbìa 'e tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si se facesse o no 'o cagnamiento pe' bbìa d' 'o nureco 'asciuta"
 }
