@@ -60,22 +60,21 @@ class TorExitNodes {
 			return self::$mExitNodes;
 		}
 
-		global $wgMemc;
-
-		$nodes = $wgMemc->get( 'mw-tor-exit-nodes' ); // No use of wfMemcKey because it should be multi-wiki.
+		$cache = ObjectCache::getMainStashInstance();
+		$nodes = $cache->get( 'mw-tor-exit-nodes' ); // No use of wfMemcKey because it should be multi-wiki.
 
 		if ( is_array( $nodes ) ) {
 			// wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
 			// Lucky.
 			return self::$mExitNodes = $nodes;
 		} else {
-			$liststatus = $wgMemc->get( 'mw-tor-list-status' );
+			$liststatus = $cache->get( 'mw-tor-list-status' );
 			if ( $liststatus == 'loading' ) {
 				// Somebody else is loading it.
 				wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
 				return array();
 			} elseif ( $liststatus == 'loaded' ) {
-				$nodes = $wgMemc->get( 'mw-tor-exit-nodes' );
+				$nodes = $cache->get( 'mw-tor-exit-nodes' );
 				if ( is_array( $nodes ) ) {
 					return self::$mExitNodes = $nodes;
 				} else {
@@ -105,10 +104,10 @@ class TorExitNodes {
 	 * for future use.
 	 */
 	public static function loadExitNodes() {
-		global $wgMemc;
+		$cache = ObjectCache::getMainStashInstance();
 
 		// Set loading key, to prevent DoS of server.
-		$wgMemc->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
+		$cache->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
 
 		$nodes = self::loadExitNodes_Onionoo();
 		if( !$nodes ) {
@@ -118,8 +117,8 @@ class TorExitNodes {
 		self::$mExitNodes = $nodes;
 
 		// Save to cache
-		$wgMemc->set( 'mw-tor-exit-nodes', $nodes, 1800 ); // Store for half an hour.
-		$wgMemc->set( 'mw-tor-list-status', 'loaded', 1800 );
+		$cache->set( 'mw-tor-exit-nodes', $nodes, 86400 );
+		$cache->set( 'mw-tor-list-status', 'loaded', 86400 );
 	}
 
 	/**
@@ -160,6 +159,7 @@ class TorExitNodes {
 	 */
 	protected static function loadExitNodes_Onionoo() {
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
+
 		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit", PROTO_HTTPS );
 		$options = array(
 			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
