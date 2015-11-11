@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Subi"
+		]
+	},
+	"torblock-blocked": "Zure IP helbidea, <strong>$1</strong>, tor irteera-nodo gisa identifikatu da automatikoki.\nTor bidezko edizioak blokeatuta daude gehiegikeriak ekiditeko.",
+	"tag-tor": "Tor bidez eginda"
+}
