@@ -6,11 +6,12 @@
 			"Justincheng12345",
 			"Mark85296341",
 			"Shinjiman",
-			"Cwlin0416"
+			"Cwlin0416",
+			"EagerLin"
 		]
 	},
 	"torblock-desc": "允許封鎖 Tor 出口節點編輯 Wiki",
-	"torblock-blocked": "您的 IP 位址 <strong>$1</strong> 已被系統自動認定為 Tor 的出口節點。\n目前己經封鎖使用 Tor 編輯避免破壞。",
+	"torblock-blocked": "您的 IP 位址 <strong>$1</strong> 已被系統自動認定為 Tor 的出口節點。\n目前已經封鎖使用 Tor 編輯避免破壞。",
 	"torblock-isexitnode": "IP 位址 <strong>$1</strong> 被判定為 Tor 出口節點己被封鎖。",
 	"right-torunblocked": "跳過 Tor 出口節點的自動封鎖",
 	"tag-tor-description": "若設定此標籤代表透過 Tor 出口節點所編輯。",
