@@ -37,12 +37,12 @@ class TorBlockHooks {
 	private static function checkUserCan( User $user, $action = null ) {
 		global $wgTorAllowedActions, $wgRequest, $wgUser;
 
-		// Just in case we're checking another user
-		if ( $user->getName() !== $wgUser->getName() ) {
+		if ( $action !== null && in_array( $action, $wgTorAllowedActions ) ) {
 			return true;
 		}
 
-		if ( $action !== null && in_array( $action, $wgTorAllowedActions ) ) {
+		// Just in case we're checking another user
+		if ( $user->getName() !== $wgUser->getName() ) {
 			return true;
 		}
 
