@@ -9,6 +9,6 @@
 	"torblock-isexitnode": "L'adreça IP <strong>$1</strong> es blocada en tant que nos de sortida Tor.",
 	"right-torunblocked": "Passar al travèrs dels blocatges dels noses de sortida Tor.",
 	"tag-tor-description": "Se aquesta balisa es utilizada, alara la modificacion es estada escafada dempuèi un nos de sortida de Tor.",
-	"tag-tor": "Fach dempuèi tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Se la modificacion es estada facha via un nos de sortida de Tor"
+	"tag-tor": "Fait dempuèi Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Se la modificacion es estada faita via un nos de sortida de Tor"
 }
