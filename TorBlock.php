@@ -65,7 +65,7 @@ define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
  */
 $wgTorBypassPermissions = array( 'torunblocked', /*'autoconfirmed'*/ );
 $wgAvailableRights[] = 'torunblocked';
-
+$wgGrantPermissions['basic']['torunblocked'] = true;
 $wgGroupPermissions['user']['torunblocked'] = true;
 
 /**
