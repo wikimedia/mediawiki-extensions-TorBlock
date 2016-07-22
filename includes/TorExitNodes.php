@@ -139,7 +139,7 @@ class TorExitNodes {
 		$nodes = array();
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
-			$data = Http::get( $url, 'default', $options );
+			$data = Http::get( $url, $options, __METHOD__ );
 			$lines = explode("\n", $data);
 
 			foreach ( $lines as $line ) {
@@ -167,7 +167,7 @@ class TorExitNodes {
 		if ( $wgTorBlockProxy ) {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
-		$raw = Http::get( $url, 'default', $options );
+		$raw = Http::get( $url, $options, __METHOD__ );
 		$data = FormatJson::decode( $raw, true );
 
 		if ( !isset( $data['relays'] ) ) {
