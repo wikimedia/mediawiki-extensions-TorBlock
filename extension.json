@@ -66,22 +66,42 @@
 		]
 	},
 	"config": {
-		"TorBypassPermissions": [
-			"torunblocked"
-		],
-		"TorLoadNodes": true,
-		"TorAllowedActions": [
-			"read"
-		],
-		"TorAutoConfirmAge": 0,
-		"TorAutoConfirmCount": 0,
-		"TorIPs": [
-			"208.80.152.2"
-		],
-		"TorOnionooServer": "https://onionoo.torproject.org",
-		"TorDisableAdminBlocks": true,
-		"TorTagChanges": true,
-		"TorBlockProxy": false,
+		"TorBypassPermissions": {
+			"value": [
+				"torunblocked"
+			]
+		},
+		"TorLoadNodes": {
+			"value": true
+		},
+		"TorAllowedActions": {
+			"value": [
+				"read"
+			]
+		},
+		"TorAutoConfirmAge": {
+			"value": 0
+		},
+		"TorAutoConfirmCount":  {
+			"value": 0
+		},
+		"TorIPs": {
+			"value": [
+				"208.80.152.2"
+			]
+		},
+		"TorOnionooServer": {
+			"value": "https://onionoo.torproject.org"
+		},
+		"TorDisableAdminBlocks": {
+			"value": true
+		},
+		"TorTagChanges": {
+			"value": true
+		},
+		"TorBlockProxy": {
+			"value": false
+		},
 		"TorOnionooCA": {
 			"value": "torproject.crt",
 			"path": true
