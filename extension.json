@@ -8,10 +8,12 @@
 	"version": "1.1.0",
 	"callback": "TorBlockHooks::registerExtension",
 	"GroupPermissions": {
-		"basic": {
-			"torunblocked": true
-		},
 		"user": {
+			"torunblocked": true
+		}
+	},
+	"GrantPermissions": {
+		"basic": {
 			"torunblocked": true
 		}
 	},
