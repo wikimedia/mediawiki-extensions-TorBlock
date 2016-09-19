@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Muhammad Shuaib"
 		]
 	},
+	"right-torunblocked": "ٹور کے خروجی گرہوں کی خودکار پابندیوں سے آزادی",
 	"abusefilter-edit-builder-vars-tor-exit-node": "چاہے یا نہیں میں تبدیلی ایک tor باہر نکلیں نوڈ کے ذریعے بنایا گیا تھا"
 }
