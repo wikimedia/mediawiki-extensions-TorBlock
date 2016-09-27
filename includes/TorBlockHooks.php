@@ -250,7 +250,7 @@ class TorBlockHooks {
 		global $wgTorTagChanges;
 
 		if ( class_exists('ChangeTags') && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
-			ChangeTags::addTags( 'tor', $recentChange->mAttribs['rc_id'], $recentChange->mAttribs['rc_this_oldid'], $recentChange->mAttribs['rc_logid'] );
+			$recentChange->addTags( 'tor' );
 		}
 		return true;
 	}
