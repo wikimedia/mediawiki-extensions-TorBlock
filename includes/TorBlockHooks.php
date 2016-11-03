@@ -31,6 +31,14 @@ class TorBlockHooks {
 	public static function registerExtension() {
 		// Define new autopromote condition
 		define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
+
+		global $wgTorOnionooCA, $wgTorProjectCA;
+		if ( $wgTorOnionooCA === null ) {
+			$wgTorOnionooCA = dirname( __DIR__ ) . '/torproject.crt';
+		}
+		if ( $wgTorProjectCA === null ) {
+			$wgTorProjectCA = dirname( __DIR__ ) . '/torproject.crt';
+		}
 	}
 
 	/**
