@@ -6,10 +6,11 @@
 			"MarcoAurelio",
 			"Remember the dot",
 			"Sanbec",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
-	"torblock-desc": "Permite bloquear las ediciones realizadas a través de nodos de salida tor",
+	"torblock-desc": "Permite bloquear las ediciones realizadas a través de nodos de salida Tor",
 	"torblock-blocked": "Tu dirección IP, <strong>$1</strong>, se identificó automáticamente como un nodo de salida de Tor.\nLa edición por medio de Tor está bloqueada para prevenir abusos.",
 	"torblock-isexitnode": "La dirección IP <strong>$1</strong> está bloqueada por ser un nodo de salida Tor.",
 	"right-torunblocked": "Eludir bloqueos automáticos de nodos de salida ''tor''",
