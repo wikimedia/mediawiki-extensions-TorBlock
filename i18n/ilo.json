@@ -4,11 +4,11 @@
 			"Lam-ang"
 		]
 	},
-	"torblock-desc": "Agpalubos ti tor exit nodes a maserraan manipud ti panagurnos ti wiki",
-	"torblock-blocked": "Ti IPa pagtaengam, <strong>$1</strong>, ket na-automatikoa nainaganan a kas tor exit node.\nTi panagurnos babaen ti tor ket naserraan tapno masalakniban ti panag-abuso.",
-	"torblock-isexitnode": "Ti Ip a pagtaengan <strong>$1</strong> ket naserraan a kasla Tor exit node.",
+	"torblock-desc": "Agpalubos ti Tor exit nodes a maserraan manipud iti panagurnos ti wiki",
+	"torblock-blocked": "Ti IP nga adresmo, <strong>$1</strong>, ket naautomatiko a nainaganan a kas Tor exit node.\nTi panagurnos babaen ti Tor ket naserraan tapno masalakniban ti panagabuso.",
+	"torblock-isexitnode": "Ti adres ti IP ti <strong>$1</strong> ket naserraan a kas Tor exit node.",
 	"right-torunblocked": "Labsan ti automatiko a panagserra ti tor exit nodes",
-	"tag-tor-description": "No maidisso daytoy nga etiketa, maysa a panag-urnos ket maaramid manipud iti Tor exit node.",
+	"tag-tor-description": "No maisaad daytoy nga etiketa, maysa a panagurnos ket maaramid manipud iti Tor exit node.",
 	"tag-tor": "Naaramid babaen ti tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "No man wenno saan a ti sinukatan ket naaramid babaen ti tor exit node"
 }
