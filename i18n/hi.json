@@ -1,15 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kaustubh",
-			"Sfic"
+			"Kaustubh"
 		]
 	},
 	"torblock-desc": "टॉर एक्झीट नोड्सको विकि संपादनसे ब्लॉक करने की अनुमति देता हैं",
 	"torblock-blocked": "आपका आईपी एड्रेस, <strong>$1</strong>, अपनेआप टॉर एक्झीट नोड करके पहचाना गया हैं।\nगलत इस्तेमाल से बचने के लिये इसे अपनेआप ब्लॉक कर दिया गया हैं।",
-	"torblock-isexitnode": "The IP address <strong>$1</strong> is blocked as a Tor exit node.",
-	"right-torunblocked": "टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें",
-	"tag-tor-description": "If this tag is set, an edit was made from a Tor exit node.",
-	"tag-tor": "Made through Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Whether or not the change was made through a Tor exit node"
+	"right-torunblocked": "टॉर एक्झीट नोड्सके अपनेआप आये हुए प्रतिबंधोंको नजर अंदाज करें"
 }
