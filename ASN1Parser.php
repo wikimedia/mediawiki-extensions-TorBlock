@@ -4,8 +4,13 @@ class ASN1Exception extends Exception {
 }
 
 class ASN1Parser {
-	/* const */ static $tagClasses = array( 'universal', 'application', 'context-specific', 'private' );
-	/* const */ static $tagNames = array(
+	/* const */ public static $tagClasses = [
+		'universal',
+		'application',
+		'context-specific',
+		'private'
+	];
+	/* const */ public static $tagNames = [
 		self::INTEGER => 'INTEGER',
 		self::BIT_STRING => 'BIT STRING',
 		self::OCTET_STRING => 'OCTET STRING',
@@ -17,8 +22,9 @@ class ASN1Parser {
 		self::T61String => 'T61String',
 		self::IA5String => 'IA5String',
 		self::UTCTime => 'UTCTime'
-	);
+	];
 
+	// @codingStandardsIgnoreStart
 	const INTEGER = 2;
 	const BIT_STRING = 3;
 	const OCTET_STRING = 4;
@@ -30,6 +36,7 @@ class ASN1Parser {
 	const T61String = 20;
 	const IA5String = 22;
 	const UTCTime = 23;
+	// @codingStandardsIgnoreEnd
 
 	/**
 	 * @param $number int
@@ -52,14 +59,15 @@ class ASN1Parser {
 	 * @throws ASN1Exception
 	 */
 	public static function decode( $buffer ) {
-		if ( strlen( $buffer ) < 2 ) {
+		$len = strlen( $buffer );
+		if ( $len < 2 ) {
 			throw new ASN1Exception( 'ASN1 string is too short' );
 		}
 
 		$i = 0;
-		$result = array();
-		while ( $i < strlen( $buffer ) ) {
-			$item = array();
+		$result = [];
+		while ( $i < $len ) {
+			$item = [];
 
 			$tag = ord( $buffer[$i] );
 			$item['tag-class'] = self::$tagClasses[$tag >> 6];
@@ -74,7 +82,7 @@ class ASN1Parser {
 				$item['tag'] = $tag;
 			} else {
 				$tag = 0;
-				for (; $i < strlen( $buffer ); $i++) {
+				while ( $i < $len ) {
 					$t = ord( $buffer[$i] );
 					$tag = ( $tag << 7 ) | ( $t & 0x7f );
 
@@ -82,8 +90,9 @@ class ASN1Parser {
 					if ( ( $t & 0x80 ) == 0 ) {
 						break;
 					}
+					$i++;
 				}
-				if ( $i == strlen( $buffer ) ) {
+				if ( $i == $len ) {
 					throw new ASN1Exception( 'End of data found when processing tag identifier' );
 				}
 
@@ -105,7 +114,7 @@ class ASN1Parser {
 				}
 
 				$length = 0;
-				for ($j = 0; $j < $l; $j++, $i++) {
+				for ( $j = 0; $j < $l; $j++, $i++ ) {
 					$length = ( $length << 8 ) | ord( $lengthBytes[$j] );
 
 					if ( $length < 0 ) {
@@ -134,16 +143,16 @@ class ASN1Parser {
 			$result[] = $item;
 		}
 
-		return count ( $result ) > 1 ? $result : $result[0];
+		return count( $result ) > 1 ? $result : $result[0];
 	}
 
 	/**
 	 * @param $decodedArray array
 	 * @return array
 	 */
-	public static function prettyDecode($decodedArray) {
+	public static function prettyDecode( $decodedArray ) {
 		$decoded = $decodedArray;
-		array_walk_recursive( $decoded, array( __CLASS__, 'prettyItem' ) );
+		array_walk_recursive( $decoded, [ __CLASS__, 'prettyItem' ] );
 
 		return $decoded;
 	}
@@ -152,7 +161,7 @@ class ASN1Parser {
 	 * @param $value string
 	 * @param $key string
 	 */
-	static protected function prettyItem( &$value, $key ) {
+	protected static function prettyItem( &$value, $key ) {
 		switch ( $key ) {
 			case 'contents': // Not called when contents is an array
 				$value = strlen( $value ) ? '0x' . bin2hex( $value ) : "''";
@@ -172,7 +181,7 @@ class ASN1Parser {
 	 * @throws ASN1Exception
 	 */
 	public static function buildTag( $tagId, $contents ) {
-		if ( is_int( $tagId ) &&  $tagId < 31 ) {
+		if ( is_int( $tagId ) && $tagId < 31 ) {
 			if ( $tagId == self::SEQUENCE || $tagId == self::SET ) {
 				$tagId |= 0x20; // Mark as structured data
 			}

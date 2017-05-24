@@ -56,7 +56,7 @@ class TorBlockHooks {
 			wfDebugLog( 'torblock', "User detected as editing through tor." );
 
 			global $wgTorBypassPermissions;
-			foreach ( $wgTorBypassPermissions as $perm) {
+			foreach ( $wgTorBypassPermissions as $perm ) {
 				if ( $user->isAllowed( $perm ) ) {
 					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
 					return true;
@@ -88,12 +88,13 @@ class TorBlockHooks {
 	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
 		global $wgRequest;
 		if ( !self::checkUserCan( $user, $action ) ) {
-			wfDebugLog( 'torblock', "User detected as editing from Tor node. Adding Tor block to permissions errors." );
+			wfDebugLog( 'torblock', "User detected as editing from Tor node. " .
+				"Adding Tor block to permissions errors." );
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			Hooks::run( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
-			$result = array( $blockedMsg, $wgRequest->getIP() );
+			Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			$result = [ $blockedMsg, $wgRequest->getIP() ];
 
 			return false;
 		}
@@ -117,12 +118,12 @@ class TorBlockHooks {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			Hooks::run( 'TorBlockBlockedMsg', array( &$blockedMsg ) );
-			$hookError = array(
+			Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			$hookError = [
 				'permissionserrors',
 				$blockedMsg,
-				array( $wgRequest->getIP() ),
-			);
+				[ $wgRequest->getIP() ],
+			];
 			return false;
 		}
 
@@ -167,7 +168,8 @@ class TorBlockHooks {
 			$user->mBlock instanceof Block &&
 			$user->mBlock->getType() != Block::TYPE_USER
 		) {
-			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably targetted at the tor node." );
+			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably " .
+				"targetted at the tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
 			$user->mBlockedby = 0;
 		}
@@ -216,7 +218,7 @@ class TorBlockHooks {
 
 		if ( TorExitNodes::isExitNode() ) {
 			// Tor user, doesn't match the expanded requirements.
-			$promote = array();
+			$promote = [];
 		}
 
 		return true;
@@ -249,7 +251,7 @@ class TorBlockHooks {
 	public static function onRecentChangeSave( RecentChange &$recentChange ) {
 		global $wgTorTagChanges;
 
-		if ( class_exists('ChangeTags') && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
+		if ( class_exists( 'ChangeTags' ) && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
 			$recentChange->addTags( 'tor' );
 		}
 		return true;
@@ -284,7 +286,7 @@ class TorBlockHooks {
 		if ( IP::isIPAddress( $ip ) && TorExitNodes::isExitNode( $ip ) ) {
 			$msg[] = Html::rawElement(
 				'span',
-				array( 'class' => 'mw-torblock-isexitnode' ),
+				[ 'class' => 'mw-torblock-isexitnode' ],
 				wfMessage( 'torblock-isexitnode', $ip )->parse()
 			);
 		}

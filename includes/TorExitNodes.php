@@ -61,7 +61,8 @@ class TorExitNodes {
 		}
 
 		$cache = ObjectCache::getMainStashInstance();
-		$nodes = $cache->get( 'mw-tor-exit-nodes' ); // No use of wfMemcKey because it should be multi-wiki.
+		// No use of wfMemcKey because it should be multi-wiki.
+		$nodes = $cache->get( 'mw-tor-exit-nodes' );
 
 		if ( is_array( $nodes ) ) {
 			// wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
@@ -72,14 +73,15 @@ class TorExitNodes {
 			if ( $liststatus == 'loading' ) {
 				// Somebody else is loading it.
 				wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
-				return array();
+				return [];
 			} elseif ( $liststatus == 'loaded' ) {
 				$nodes = $cache->get( 'mw-tor-exit-nodes' );
 				if ( is_array( $nodes ) ) {
 					return self::$mExitNodes = $nodes;
 				} else {
-					wfDebugLog( 'torblock', "Tried very hard to get the Tor list since mw-tor-list-status says it is loaded, to no avail.\n" );
-					return array();
+					wfDebugLog( 'torblock', "Tried very hard to get the Tor list since " .
+						"mw-tor-list-status says it is loaded, to no avail.\n" );
+					return [];
 				}
 			}
 		}
@@ -89,8 +91,9 @@ class TorExitNodes {
 		global $wgTorLoadNodes;
 		if ( !$wgTorLoadNodes ) {
 			// Disabled.
-			// wfDebugLog( 'torblock', "Unable to load Tor exit node list: cold load disabled on page-views.\n" );
-			return array();
+			// wfDebugLog( 'torblock', "Unable to load Tor exit node list: " .
+			// 	"cold load disabled on page-views.\n" );
+			return [];
 		}
 
 		wfDebugLog( 'torblock', "Loading Tor exit node list cold.\n" );
@@ -110,7 +113,7 @@ class TorExitNodes {
 		$cache->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
 
 		$nodes = self::loadExitNodes_Onionoo();
-		if( !$nodes ) {
+		if ( !$nodes ) {
 			$nodes = self::loadExitNodes_BulkList();
 		}
 
@@ -129,22 +132,22 @@ class TorExitNodes {
 	protected static function loadExitNodes_BulkList() {
 		global $wgTorIPs, $wgTorProjectCA, $wgTorBlockProxy;
 
-		$options = array(
+		$options = [
 			'caInfo' => is_readable( $wgTorProjectCA ) ? $wgTorProjectCA : null
-		);
+		];
 		if ( $wgTorBlockProxy ) {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
 
-		$nodes = array();
+		$nodes = [];
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
 			$data = Http::get( $url, $options, __METHOD__ );
-			$lines = explode("\n", $data);
+			$lines = explode( "\n", $data );
 
 			foreach ( $lines as $line ) {
 				if ( strpos( $line, '#' ) === false ) {
-					$nodes[trim($line)] = true;
+					$nodes[trim( $line )] = true;
 				}
 			}
 		}
@@ -160,10 +163,11 @@ class TorExitNodes {
 	protected static function loadExitNodes_Onionoo() {
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
 
-		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit", PROTO_HTTPS );
-		$options = array(
+		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit",
+			PROTO_HTTPS );
+		$options = [
 			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
-		);
+		];
 		if ( $wgTorBlockProxy ) {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
@@ -172,10 +176,10 @@ class TorExitNodes {
 
 		if ( !isset( $data['relays'] ) ) {
 			wfDebugLog( 'torblock', "Got no reply or an invalid reply from Onionoo.\n" );
-			return array();
+			return [];
 		}
 
-		$nodes = array();
+		$nodes = [];
 		foreach ( $data['relays'] as $relay ) {
 			$addresses = $relay['or_addresses'];
 			if ( isset( $relay['exit_addresses'] ) ) {
