@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo.mps",
 			"Jesielt",
-			"Tuliouel"
+			"Tuliouel",
+			"Felipe L. Ewald"
 		]
 	},
 	"torblock-desc": "Permite que nós de saída Tor sejam bloqueados para editar um wiki",
@@ -12,5 +13,5 @@
 	"right-torunblocked": "Ultrapassar bloqueios automáticos de nós de saída Tor",
 	"tag-tor-description": "Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.",
 	"tag-tor": "Feita através de Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Se a mudança foi ou não feita através de um nó de saída Tor."
+	"abusefilter-edit-builder-vars-tor-exit-node": "Se a mudança foi ou não feita através de um nó de saída Tor"
 }
