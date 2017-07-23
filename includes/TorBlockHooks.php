@@ -278,7 +278,7 @@ class TorBlockHooks {
 	 *
 	 * @param array $msg Message with the status
 	 * @param string $ip The IP address to be checked
-	 * @return boolean true
+	 * @return bool true
 	 */
 	public static function onOtherBlockLogLink( array &$msg, $ip ) {
 		// IP addresses can be blocked only
