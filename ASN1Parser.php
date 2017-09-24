@@ -39,7 +39,7 @@ class ASN1Parser {
 	// @codingStandardsIgnoreEnd
 
 	/**
-	 * @param $number int
+	 * @param int $number
 	 * @return string
 	 */
 	public static function encodeLength( $number ) {
@@ -54,7 +54,7 @@ class ASN1Parser {
 	}
 
 	/**
-	 * @param $buffer string
+	 * @param string $buffer
 	 * @return array
 	 * @throws ASN1Exception
 	 */
@@ -147,7 +147,7 @@ class ASN1Parser {
 	}
 
 	/**
-	 * @param $decodedArray array
+	 * @param array $decodedArray
 	 * @return array
 	 */
 	public static function prettyDecode( $decodedArray ) {
@@ -158,8 +158,8 @@ class ASN1Parser {
 	}
 
 	/**
-	 * @param $value string
-	 * @param $key string
+	 * @param string &$value
+	 * @param string $key
 	 */
 	protected static function prettyItem( &$value, $key ) {
 		switch ( $key ) {
@@ -175,8 +175,8 @@ class ASN1Parser {
 	}
 
 	/**
-	 * @param $tagId
-	 * @param $contents
+	 * @param int $tagId
+	 * @param string $contents
 	 * @return string
 	 * @throws ASN1Exception
 	 */

@@ -79,8 +79,8 @@ class TorBlockHooks {
 	 * Check if a user is a Tor node and not whitelisted or allowed
 	 * to bypass tor blocks.
 	 *
-	 * @param Title $title Title being acted upon
-	 * @param User $user User performing the action
+	 * @param Title &$title Title being acted upon
+	 * @param User &$user User performing the action
 	 * @param string $action Action being performed
 	 * @param array &$result Will be filled with block status if blocked
 	 * @return bool
@@ -147,7 +147,7 @@ class TorBlockHooks {
 	 * Set a variable for Extension:AbuseFilter indicating whether the
 	 * user is operating from a tor exit node or not.
 	 *
-	 * @param array $builder Array of builder values
+	 * @param array &$builder Array of builder values
 	 * @return bool
 	 */
 	public static function onAbuseFilterBuilder( array &$builder ) {
@@ -157,7 +157,7 @@ class TorBlockHooks {
 
 	/**
 	 * @static
-	 * @param $user User
+	 * @param User &$user
 	 * @return bool
 	 */
 	public static function onGetBlockedStatus( &$user ) {
@@ -260,7 +260,7 @@ class TorBlockHooks {
 	/**
 	 * If enabled, add a new tag type for recent changes made by Tor exit nodes.
 	 *
-	 * @param array $emptyTags List of defined tags (for ListDefinedTags hook) or
+	 * @param array &$emptyTags List of defined tags (for ListDefinedTags hook) or
 	 * list of active tags (for ChangeTagsListActive hook)
 	 * @return bool true
 	 */
@@ -276,7 +276,7 @@ class TorBlockHooks {
 	/**
 	 * Creates a message with the Tor blocking status if applicable.
 	 *
-	 * @param array $msg Message with the status
+	 * @param array &$msg Message with the status
 	 * @param string $ip The IP address to be checked
 	 * @return bool true
 	 */
