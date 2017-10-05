@@ -4,6 +4,8 @@
 			"Benel"
 		]
 	},
+	"torblock-desc": "mahasa milangat Tor katahkalan ciyityin mikawaway-kalumyiti Wiki",
 	"right-torunblocked": "sekipo Tor katahkalan ciyityin a lunuk milangat",
-	"tag-tor": "namakay Tor mikawaway-kalumyiti"
+	"tag-tor": "namakay Tor mikawaway-kalumyiti",
+	"abusefilter-edit-builder-vars-tor-exit-node": "misumad namakay Tor katahkalan ciyityin malaheci haw"
 }
