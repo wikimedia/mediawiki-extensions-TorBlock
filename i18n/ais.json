@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benel"
+			"Benel",
+			"Bunukwiki"
 		]
 	},
 	"torblock-desc": "mahasa milangat Tor katahkalan ciyityin mikawaway-kalumyiti Wiki",
+	"torblock-isexitnode": "IP puenengan <strong>$1</strong> maketun tu i Tor katahkalan ciyityin  malangat tu.",
 	"right-torunblocked": "sekipo Tor katahkalan ciyityin a lunuk milangat",
 	"tag-tor-description": "anu misetin tina aazihen-paya dayhiw micaliw ku Tor katahkalan ciyityin mikawaway-kalumyiti.",
 	"tag-tor": "namakay Tor mikawaway-kalumyiti",
