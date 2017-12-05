@@ -3,7 +3,8 @@
 		"authors": [
 			"Harald Khan",
 			"Nghtwlkr",
-			"Njardarlogar"
+			"Njardarlogar",
+			"Jon Harald Søby"
 		]
 	},
 	"torblock-desc": "Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki",
