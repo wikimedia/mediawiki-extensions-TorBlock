@@ -67,7 +67,8 @@ class TorExitNodes {
 		if ( is_array( $nodes ) ) {
 			// wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
 			// Lucky.
-			return self::$mExitNodes = $nodes;
+			self::$mExitNodes = $nodes;
+			return self::$mExitNodes;
 		} else {
 			$liststatus = $cache->get( 'mw-tor-list-status' );
 			if ( $liststatus == 'loading' ) {
@@ -77,7 +78,8 @@ class TorExitNodes {
 			} elseif ( $liststatus == 'loaded' ) {
 				$nodes = $cache->get( 'mw-tor-exit-nodes' );
 				if ( is_array( $nodes ) ) {
-					return self::$mExitNodes = $nodes;
+					self::$mExitNodes = $nodes;
+					return self::$mExitNodes;
 				} else {
 					wfDebugLog( 'torblock', "Tried very hard to get the Tor list since " .
 						"mw-tor-list-status says it is loaded, to no avail.\n" );
