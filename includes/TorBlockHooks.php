@@ -139,7 +139,7 @@ class TorBlockHooks {
 	 * @return bool
 	 */
 	public static function onAbuseFilterFilterAction( &$vars, $title ) {
-		$vars->setVar( 'tor_exit_node', TorExitNodes::isExitNode() ? 1 : 0 );
+		$vars->setVar( 'tor_exit_node', TorExitNodes::isExitNode() );
 		return true;
 	}
 
