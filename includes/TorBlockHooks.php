@@ -156,7 +156,6 @@ class TorBlockHooks {
 	}
 
 	/**
-	 * @static
 	 * @param User &$user
 	 * @return bool
 	 */
