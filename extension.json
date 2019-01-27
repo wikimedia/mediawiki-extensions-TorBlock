@@ -34,6 +34,9 @@
 	"HookHandlers": {
 		"TorBlockHooks": {
 			"class": "MediaWiki\\Extension\\TorBlock\\Hooks"
+		},
+		"TorBlockAbuseFilterHooks": {
+			"class": "MediaWiki\\Extension\\TorBlock\\TorBlockAbuseFilterHooks"
 		}
 	},
 	"Hooks": {
@@ -61,12 +64,12 @@
 		"ChangeTagsListActive": {
 			"handler": "TorBlockHooks"
 		},
-		"AbuseFilter-filterAction": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterFilterAction"
-		],
-		"AbuseFilter-builder": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterBuilder"
-		],
+		"AbuseFilterAlterVariables": {
+			"handler": "TorBlockAbuseFilterHooks"
+		},
+		"AbuseFilter-builder": {
+			"handler": "TorBlockAbuseFilterHooks"
+		},
 		"EmailUserPermissionsErrors": {
 			"handler": "TorBlockHooks"
 		},
