@@ -31,7 +31,7 @@
  */
 class TorExitNodes {
 
-	static protected $mExitNodes = null;
+	protected static $mExitNodes = null;
 
 	/**
 	 * Determine if a given IP is a Tor exit node.
