@@ -9,7 +9,7 @@
 	"torblock-blocked": "Alamat IP panjenengan, <strong>$1</strong> wis diidhèntifikasi sacara otomatis minangka sawijining titik alamat ''tor''.\nPanyuntingan liwat ''tor'' diblokir kanggo nyegah salahguna.",
 	"torblock-isexitnode": "Alamat IP <strong>$1</strong> diblokir minangka nodè akir Tor.",
 	"right-torunblocked": "Lirwakna pamblokiran otomatis marang alamat ''tor''",
-	"tag-tor-description": "Yèn tag iki dipasang, suntingan digawé saka nodé akir Tor.",
+	"tag-tor-description": "Yèn tenger iki kapacak, tegesé besutan asal saka nodhé pungkasan Tor.",
 	"tag-tor": "Digawé liwat tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Mesthèkaké yèn owahan digawé saka nodé akir tor iya apa ora."
 }
