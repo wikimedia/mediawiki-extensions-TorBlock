@@ -196,6 +196,7 @@ class TorExitNodes {
 				}
 
 				// Trim surrounding brackets for IPv6 addresses.
+				// @phan-suppress-next-line PhanTypeArraySuspicious false positive
 				$hasBrackets = $ip[0] == '[';
 				if ( $hasBrackets ) {
 					$ip = substr( $ip, 1, -1 );
