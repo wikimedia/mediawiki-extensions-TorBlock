@@ -244,13 +244,13 @@ class TorBlockHooks {
 	/**
 	 * If enabled, tag recent changes made by a Tor exit node.
 	 *
-	 * @param RecentChange &$recentChange The change being saved
+	 * @param RecentChange $recentChange The change being saved
 	 * @return bool true
 	 */
-	public static function onRecentChangeSave( RecentChange &$recentChange ) {
+	public static function onRecentChangeSave( RecentChange $recentChange ) {
 		global $wgTorTagChanges;
 
-		if ( class_exists( ChangeTags::class ) && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
+		if ( $wgTorTagChanges && TorExitNodes::isExitNode() ) {
 			$recentChange->addTags( 'tor' );
 		}
 		return true;
