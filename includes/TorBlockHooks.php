@@ -250,7 +250,7 @@ class TorBlockHooks {
 	public static function onRecentChangeSave( RecentChange &$recentChange ) {
 		global $wgTorTagChanges;
 
-		if ( class_exists( 'ChangeTags' ) && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
+		if ( class_exists( ChangeTags::class ) && $wgTorTagChanges && TorExitNodes::isExitNode() ) {
 			$recentChange->addTags( 'tor' );
 		}
 		return true;

@@ -52,5 +52,5 @@ class LoadExitNodes extends Maintenance {
 	}
 }
 
-$maintClass = 'LoadExitNodes';
+$maintClass = LoadExitNodes::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
