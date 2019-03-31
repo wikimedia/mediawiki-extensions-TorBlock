@@ -43,36 +43,32 @@ class TorBlockHooks {
 	private static function checkUserCan( User $user, $action = null ) {
 		global $wgTorAllowedActions, $wgRequest, $wgUser;
 
-		if ( $action !== null && in_array( $action, $wgTorAllowedActions ) ) {
+		if ( ( $action !== null && in_array( $action, $wgTorAllowedActions ) )
+			|| $user->getName() !== $wgUser->getName()
+			|| !TorExitNodes::isExitNode()
+		) {
 			return true;
 		}
 
-		// Just in case we're checking another user
-		if ( $user->getName() !== $wgUser->getName() ) {
-			return true;
-		}
+		wfDebugLog( 'torblock', "User detected as editing through tor." );
 
-		if ( TorExitNodes::isExitNode() ) {
-			wfDebugLog( 'torblock', "User detected as editing through tor." );
+		global $wgTorBypassPermissions;
+		foreach ( $wgTorBypassPermissions as $perm ) {
+			if ( $user->isAllowed( $perm ) ) {
+				wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
 
-			global $wgTorBypassPermissions;
-			foreach ( $wgTorBypassPermissions as $perm ) {
-				if ( $user->isAllowed( $perm ) ) {
-					wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
-					return true;
-				}
-			}
-
-			$ip = $wgRequest->getIP();
-			if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
-				wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
 				return true;
 			}
-
-			return false;
 		}
 
-		return true;
+		$ip = $wgRequest->getIP();
+		if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
+			wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
+
+			return true;
+		}
+
+		return false;
 	}
 
 	/**

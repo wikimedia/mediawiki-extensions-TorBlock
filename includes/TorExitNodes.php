@@ -69,27 +69,27 @@ class TorExitNodes {
 			// Lucky.
 			self::$mExitNodes = $nodes;
 			return self::$mExitNodes;
-		} else {
-			$liststatus = $cache->get( 'mw-tor-list-status' );
-			if ( $liststatus == 'loading' ) {
-				// Somebody else is loading it.
-				wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
-				return [];
-			} elseif ( $liststatus == 'loaded' ) {
-				$nodes = $cache->get( 'mw-tor-exit-nodes' );
-				if ( is_array( $nodes ) ) {
-					self::$mExitNodes = $nodes;
-					return self::$mExitNodes;
-				} else {
-					wfDebugLog( 'torblock', "Tried very hard to get the Tor list since " .
-						"mw-tor-list-status says it is loaded, to no avail.\n" );
-					return [];
-				}
+		}
+
+		$liststatus = $cache->get( 'mw-tor-list-status' );
+		if ( $liststatus === 'loading' ) {
+			// Somebody else is loading it.
+			wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
+			return [];
+		} elseif ( $liststatus === 'loaded' ) {
+			$nodes = $cache->get( 'mw-tor-exit-nodes' );
+			if ( is_array( $nodes ) ) {
+				self::$mExitNodes = $nodes;
+				return self::$mExitNodes;
 			}
+
+			wfDebugLog( 'torblock', "Tried very hard to get the Tor list since " .
+				"mw-tor-list-status says it is loaded, to no avail.\n" );
+
+			return [];
 		}
 
 		// We have to actually load from the server.
-
 		global $wgTorLoadNodes;
 		if ( !$wgTorLoadNodes ) {
 			// Disabled.
