@@ -20,7 +20,7 @@
  *
  * @file
  * @ingroup Extensions
- * @link http://www.mediawiki.org/wiki/Extension:TorBlock Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:TorBlock Documentation
  *
  * @author Andrew Garrett <andrew@epstone.net>
  * @license GPL-2.0-or-later
