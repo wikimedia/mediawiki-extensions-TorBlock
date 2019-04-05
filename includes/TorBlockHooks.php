@@ -173,7 +173,7 @@ class TorBlockHooks {
 	}
 
 	/**
-	 * If an IP address is an exit node, stop it from beign autoblocked.
+	 * If an IP address is an exit node, stop it from being autoblocked.
 	 *
 	 * @param string $autoblockip IP address being blocked
 	 * @param Block &$block Block being applied
