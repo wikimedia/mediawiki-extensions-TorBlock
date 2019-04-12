@@ -7,6 +7,7 @@
 	"torblock-desc": "Allows Tor exit nodes to be blocked from editing a wiki",
 	"torblock-blocked": "Your IP address, <strong>$1</strong>, has been automatically identified as a Tor exit node.\nEditing through Tor is blocked to prevent abuse.",
 	"torblock-isexitnode": "The IP address <strong>$1</strong> is blocked as a Tor exit node.",
+	"action-torunblocked": "bypass automatic blocks of Tor exit nodes",
 	"right-torunblocked": "Bypass automatic blocks of Tor exit nodes",
 	"tag-tor-description": "If this tag is set, an edit was made from a Tor exit node.",
 	"tag-tor": "Made through Tor",
