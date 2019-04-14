@@ -4,12 +4,14 @@
 			"Eduardo.mps",
 			"Jesielt",
 			"Tuliouel",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"torblock-desc": "Permite que nós de saída Tor sejam bloqueados para editar um wiki",
 	"torblock-blocked": "O seu endereço IP, <strong>$1</strong>, foi automaticamente identificado como um nó de saída Tor.\nA edição através de Tor está bloqueada para prevenir abusos.",
 	"torblock-isexitnode": "O endereço de IP <strong>$1</strong> está bloqueado por ser nó de saída Tor.",
+	"action-torunblocked": "ultrapassar bloqueios automáticos de nós de saída Tor",
 	"right-torunblocked": "Ultrapassar bloqueios automáticos de nós de saída Tor",
 	"tag-tor-description": "Se esta marca estiver presente, uma edição foi feita de um nó de saída Tor.",
 	"tag-tor": "Feita através de Tor",

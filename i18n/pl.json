@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Beau",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Railfail536"
 		]
 	},
 	"torblock-desc": "Blokuje możliwość edycji dla użytkowników anonimowych łączących się przez serwery wyjściowe sieci Tor",
 	"torblock-blocked": "Twój adres IP <strong>$1</strong> został automatycznie zidentyfikowany jako serwer wyjściowy sieci Tor.\nMożliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.",
 	"torblock-isexitnode": "Adres IP <strong>$1</strong> jest zablokowany ponieważ jest wyjściowym węzłem sieci Tor.",
+	"action-torunblocked": "obchodzenia automatycznych blokad zakładanych na serwery wyjściowe sieci Tor",
 	"right-torunblocked": "Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor",
 	"tag-tor-description": "Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci TOR.",
 	"tag-tor": "wykonane poprzez sieć TOR",

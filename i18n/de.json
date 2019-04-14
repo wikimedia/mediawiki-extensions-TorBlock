@@ -3,12 +3,14 @@
 		"authors": [
 			"Kghbln",
 			"Raimond Spekking",
-			"Umherirrender"
+			"Umherirrender",
+			"Metalhead64"
 		]
 	},
 	"torblock-desc": "Ermöglicht das Sperren des Schreibzugriffs über Tor-Ausgangsknoten",
 	"torblock-blocked": "Deine IP-Adresse <strong>$1</strong> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist.",
 	"torblock-isexitnode": "Die IP-Adresse <strong>$1</strong> ist als Tor-Ausgangsknoten gesperrt.",
+	"action-torunblocked": "automatische Sperren von Tor-Ausgangsknoten zu umgehen",
 	"right-torunblocked": "Umgehung der automatischen Sperre von Tor-Ausgangsknoten",
 	"tag-tor-description": "Wenn dieses Tag gesetzt ist, erfolgte die Bearbeitung durch einen Tor-Ausgangsknoten.",
 	"tag-tor": "Durch einen Tor-Ausgangsknoten",

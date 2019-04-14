@@ -11,6 +11,7 @@
 	"torblock-desc": "אפשרות לחסימת נקודות יציאה של רשת Tor מעריכה בוויקי",
 	"torblock-blocked": "כתובת ה־IP שלך, <strong>$1</strong>, זוהתה אוטומטית כנקודת יציאה של רשת Tor.\nעריכה דרך Tor נחסמה כדי למנוע ניצול לרעה.",
 	"torblock-isexitnode": "כתובת ה־IP <strong>$1</strong> נחסמה כצומת יציאה של Tor.",
+	"action-torunblocked": "לעקוף חסימות אוטומטיות של נקודות יציאה של Tor",
 	"right-torunblocked": "עקיפת חסימות אוטומטיות של נקודות יציאה ברשת Tor",
 	"tag-tor-description": "אם התג הזה מוגדר, בוצעה עריכה מנקודת יציאה של רשת Tor.",
 	"tag-tor": "בוצעה דרך רשת Tor",
