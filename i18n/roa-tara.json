@@ -7,6 +7,7 @@
 	"torblock-desc": "Permette 'a le node de uscite de tor de essere bloccate pe le cangiaminde sus a Uicchi",
 	"torblock-blocked": "L'indirizze IP tune, <strong>$1</strong>, ha state automaticamende idendificate cumme a 'nu node de uscite de tor.<br />\nLe cangiaminde ausanne tor sonde bloccate pe prevenìe abbuse.",
 	"torblock-isexitnode": "L'indirizze IP <strong>$1</strong> jè bloccate cumme a 'nu node de uscite de Tor.",
+	"action-torunblocked": "zumbe le blocche automatiche de le node de uscite de tor",
 	"right-torunblocked": "Zumbe le blocche automatiche de le node de uscite de tor",
 	"tag-tor-description": "Ce stu tag jè 'mbostate,  'nu cangiamende ha state fatte da 'nu node de uscite de Tor.",
 	"tag-tor": "Fatte attraverse",
