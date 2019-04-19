@@ -8,13 +8,15 @@
 			"Shinjiman",
 			"Cwlin0416",
 			"EagerLin",
-			"WQL"
+			"WQL",
+			"Kly"
 		]
 	},
 	"torblock-desc": "允許封鎖 Tor 出口節點編輯 Wiki",
 	"torblock-blocked": "您的 IP 位址 <strong>$1</strong> 已被系統自動認定為 Tor 的出口節點。\n目前已經封鎖使用 Tor 編輯避免破壞。",
 	"torblock-isexitnode": "IP 位址 <strong>$1</strong> 因被判定為 Tor 出口節點而被封鎖。",
-	"right-torunblocked": "跳過 Tor 出口節點的自動封鎖",
+	"action-torunblocked": "繞過 Tor 出口節點的自動封鎖",
+	"right-torunblocked": "繞過 Tor 出口節點的自動封鎖",
 	"tag-tor-description": "若設定此標籤代表透過 Tor 出口節點所編輯。",
 	"tag-tor": "透過 Tor 編輯",
 	"abusefilter-edit-builder-vars-tor-exit-node": "變更是否是透過 Tor 出口節點完成"
