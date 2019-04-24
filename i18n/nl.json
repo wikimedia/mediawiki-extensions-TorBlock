@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Siebrand",
-			"Kippenvlees1"
+			"Kippenvlees1",
+			"Mainframe98"
 		]
 	},
 	"torblock-desc": "Maakt bewerken onmogelijk voor Tor-exitnodes",
 	"torblock-blocked": "Uw IP-adres, <strong>$1</strong>, is herkend als een Tor-exitnode.\nBewerken via Tor is niet toegestaan om misbruik te voorkomen.",
 	"torblock-isexitnode": "Het IP-adres <strong>$1</strong> is geblokkeerd als Tor-exitnode.",
+	"action-torunblocked": "automatische blokkades van Tor-exitnodes te omzeilen",
 	"right-torunblocked": "Automatische blokkades van Tor-exitnodes omzeilen",
 	"tag-tor-description": "Als dit label is ingesteld, is de bewerking gemaakt via een Tor-exitnode.",
 	"tag-tor": "Gemaakt via Tor",
