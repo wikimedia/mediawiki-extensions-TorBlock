@@ -9,6 +9,7 @@
 	"torblock-desc": "nêrvedano nodê teberbiyayişê tori, wiki bıvurn",
 	"torblock-blocked": "IP adresa şıma, <strong>$1</strong>, nodê otomotoik hesıbya.\nqey ver-gırewtışê suistimali tor ser o vurnayiş qedexe biy.",
 	"torblock-isexitnode": "IP-adresa <strong>$1</strong>i zey yew gırey veciyayışiê Tori kılit bena.",
+	"action-torunblocked": "vergırewtışê otomatikiyê gıreyanê veciyayışê tori ra ravêre",
 	"right-torunblocked": "otomatik ver-gırewtışê nodê tori raviyer",
 	"tag-tor-description": "eke no sername eyar nêbiyo, vurnayiş nod ser o biyo.",
 	"tag-tor": "serê tor ra vıraziyayo",
