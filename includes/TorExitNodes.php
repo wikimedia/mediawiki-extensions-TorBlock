@@ -26,6 +26,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Collection of functions maintaining the list of Tor exit nodes.
  */
@@ -60,7 +62,7 @@ class TorExitNodes {
 			return self::$mExitNodes;
 		}
 
-		$cache = ObjectCache::getMainStashInstance();
+		$cache = MediaWikiServices::getInstance()->getMainObjectStash();
 		// No use of wfMemcKey because it should be multi-wiki.
 		$nodes = $cache->get( 'mw-tor-exit-nodes' );
 
@@ -109,7 +111,7 @@ class TorExitNodes {
 	 * for future use.
 	 */
 	public static function loadExitNodes() {
-		$cache = ObjectCache::getMainStashInstance();
+		$cache = MediaWikiServices::getInstance()->getMainObjectStash();
 
 		// Set loading key, to prevent DoS of server.
 		$cache->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
