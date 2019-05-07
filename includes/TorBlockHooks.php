@@ -25,6 +25,7 @@
  * @author Andrew Garrett <andrew@epstone.net>
  * @license GPL-2.0-or-later
  */
+use MediaWiki\Block\AbstractBlock;
 
 class TorBlockHooks {
 
@@ -160,7 +161,7 @@ class TorBlockHooks {
 		if (
 			$wgTorDisableAdminBlocks &&
 			TorExitNodes::isExitNode() &&
-			$user->mBlock instanceof Block &&
+			$user->mBlock instanceof AbstractBlock &&
 			$user->mBlock->getType() != Block::TYPE_USER
 		) {
 			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably " .
