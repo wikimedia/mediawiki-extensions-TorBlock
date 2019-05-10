@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
 	"torblock-desc": "Permesas por elignodoj esti forbaritaj kontraŭ redaktado de vikio",
 	"torblock-blocked": "Via IP-adreso, <strong>$1</strong> estis aŭtomate identigita kiel elignodo ''tor''.\nRedaktado per ''tor'' estas forbarita por preventi misuzo.",
 	"torblock-isexitnode": "La IP-adreso <strong>$1</strong> estas forbarita kiel Tor elira pordo.",
+	"action-torunblocked": "preterpasi aŭtomatan forbaron de Tor-elirnodoj",
 	"right-torunblocked": "Preterpasi aŭtomatajn blokojn de elignodoj ''tor''.",
 	"tag-tor-description": "Se ĉi tiu etikedo estas ŝalta, redakto estis farita de Tor-a elira nodo.",
 	"tag-tor": "Farita per tor",
