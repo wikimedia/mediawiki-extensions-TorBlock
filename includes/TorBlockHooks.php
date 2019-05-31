@@ -25,7 +25,9 @@
  * @author Andrew Garrett <andrew@epstone.net>
  * @license GPL-2.0-or-later
  */
+
 use MediaWiki\Block\AbstractBlock;
+use MediaWiki\Block\DatabaseBlock;
 
 class TorBlockHooks {
 
@@ -63,7 +65,7 @@ class TorBlockHooks {
 		}
 
 		$ip = $wgRequest->getIP();
-		if ( Block::isWhitelistedFromAutoblocks( $ip ) ) {
+		if ( DatabaseBlock::isWhitelistedFromAutoblocks( $ip ) ) {
 			wfDebugLog( 'torblock', "IP is in autoblock whitelist. Exempting from Tor blocks." );
 
 			return true;
@@ -162,7 +164,7 @@ class TorBlockHooks {
 			$wgTorDisableAdminBlocks &&
 			TorExitNodes::isExitNode() &&
 			$user->mBlock instanceof AbstractBlock &&
-			$user->mBlock->getType() != Block::TYPE_USER
+			$user->mBlock->getType() != DatabaseBlock::TYPE_USER
 		) {
 			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably " .
 				"targetted at the tor node." );
@@ -177,10 +179,10 @@ class TorBlockHooks {
 	 * If an IP address is an exit node, stop it from being autoblocked.
 	 *
 	 * @param string $autoblockip IP address being blocked
-	 * @param Block &$block Block being applied
+	 * @param DatabaseBlock &$block Block being applied
 	 * @return bool
 	 */
-	public static function onAbortAutoblock( $autoblockip, Block &$block ) {
+	public static function onAbortAutoblock( $autoblockip, DatabaseBlock &$block ) {
 		return !TorExitNodes::isExitNode( $autoblockip );
 	}
 
