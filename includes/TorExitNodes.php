@@ -32,8 +32,8 @@ use MediaWiki\MediaWikiServices;
  * Collection of functions maintaining the list of Tor exit nodes.
  */
 class TorExitNodes {
-
-	protected static $mExitNodes = null;
+	const CACHE_NORMAL = 'cached';
+	const CACHE_REFRESH = 'refresh';
 
 	/**
 	 * Determine if a given IP is a Tor exit node.
@@ -46,86 +46,55 @@ class TorExitNodes {
 			$ip = RequestContext::getMain()->getRequest()->getIP();
 		}
 
-		$nodes = self::getExitNodes();
-		return in_array( IP::sanitizeIP( $ip ), $nodes );
+		return in_array( IP::sanitizeIP( $ip ), self::getExitNodes() );
 	}
 
 	/**
-	 * Get the array of Tor exit nodes. First try the cache, then query
-	 * the source.
+	 * Get the array of Tor exit nodes. First try the cache, then query the source.
+	 *
+	 * @param string $mode Class CACHE_* constant
+	 * @return array Tor exit nodes
+	 */
+	public static function getExitNodes( $mode = self::CACHE_NORMAL ) {
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+
+		return $cache->getWithSetCallback(
+			$cache->makeGlobalKey( 'mw-tor-exit-nodes' ),
+			$cache::TTL_DAY,
+			function () {
+				global $wgTorLoadNodes;
+
+				if ( $wgTorLoadNodes ) {
+					wfDebugLog( 'torblock', "Loading Tor exit node list cold." );
+					$value = self::loadExitNodes_Onionoo() ?: self::loadExitNodes_BulkList();
+				} else {
+					$value = []; // disabled
+				}
+
+				return $value;
+			},
+			( $mode === self::CACHE_REFRESH )
+				? [ 'minAsOf' => INF ] // force a cache regeneration
+				: [
+					// Avoid excess cache server I/O via process caching
+					'pcTTL' => $cache::TTL_PROC_LONG,
+					'pcGroup' => 'tor-exit-nodes:1',
+					// Avoid stampedes on TOR list servers due to cache expiration
+					'lockTSE' => 30,
+					'staleTTL' => $cache::TTL_MINUTE,
+					 // Avoid stampedes on TOR list servers due to cache eviction
+					'busyValue' => []
+				]
+		);
+	}
+
+	/**
+	 * Load the list of Tor exit nodes from the source and cache it for future use
 	 *
 	 * @return array Tor exit nodes
 	 */
-	public static function getExitNodes() {
-		if ( is_array( self::$mExitNodes ) ) {
-			// wfDebugLog( 'torblock', "Loading Tor exit node list from memory.\n" );
-			return self::$mExitNodes;
-		}
-
-		$cache = MediaWikiServices::getInstance()->getMainObjectStash();
-		// No use of wfMemcKey because it should be multi-wiki.
-		$nodes = $cache->get( 'mw-tor-exit-nodes' );
-
-		if ( is_array( $nodes ) ) {
-			// wfDebugLog( 'torblock', "Loading Tor exit node list from memcached.\n" );
-			// Lucky.
-			self::$mExitNodes = $nodes;
-			return self::$mExitNodes;
-		}
-
-		$liststatus = $cache->get( 'mw-tor-list-status' );
-		if ( $liststatus === 'loading' ) {
-			// Somebody else is loading it.
-			wfDebugLog( 'torblock', "Old Tor list expired and we are still loading the new one.\n" );
-			return [];
-		} elseif ( $liststatus === 'loaded' ) {
-			$nodes = $cache->get( 'mw-tor-exit-nodes' );
-			if ( is_array( $nodes ) ) {
-				self::$mExitNodes = $nodes;
-				return self::$mExitNodes;
-			}
-
-			wfDebugLog( 'torblock', "Tried very hard to get the Tor list since " .
-				"mw-tor-list-status says it is loaded, to no avail.\n" );
-
-			return [];
-		}
-
-		// We have to actually load from the server.
-		global $wgTorLoadNodes;
-		if ( !$wgTorLoadNodes ) {
-			// Disabled.
-			// wfDebugLog( 'torblock', "Unable to load Tor exit node list: " .
-			// "cold load disabled on page-views.\n" );
-			return [];
-		}
-
-		wfDebugLog( 'torblock', "Loading Tor exit node list cold.\n" );
-
-		self::loadExitNodes();
-		return self::$mExitNodes;
-	}
-
-	/**
-	 * Load the list of Tor exit nodes from the source and cache it
-	 * for future use.
-	 */
 	public static function loadExitNodes() {
-		$cache = MediaWikiServices::getInstance()->getMainObjectStash();
-
-		// Set loading key, to prevent DoS of server.
-		$cache->set( 'mw-tor-list-status', 'loading', intval( ini_get( 'max_execution_time' ) ) );
-
-		$nodes = self::loadExitNodes_Onionoo();
-		if ( !$nodes ) {
-			$nodes = self::loadExitNodes_BulkList();
-		}
-
-		self::$mExitNodes = $nodes;
-
-		// Save to cache
-		$cache->set( 'mw-tor-exit-nodes', $nodes, 86400 );
-		$cache->set( 'mw-tor-list-status', 'loaded', 86400 );
+		return self::getExitNodes( self::CACHE_REFRESH );
 	}
 
 	/**

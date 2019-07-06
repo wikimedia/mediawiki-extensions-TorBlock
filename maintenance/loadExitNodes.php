@@ -42,9 +42,10 @@ class LoadExitNodes extends Maintenance {
 
 	public function execute() {
 		if ( $this->getOption( 'force', false ) ) {
-			TorExitNodes::loadExitNodes();
+			$nodes = TorExitNodes::loadExitNodes();
+		} else {
+			$nodes = TorExitNodes::getExitNodes();
 		}
-		$nodes = TorExitNodes::getExitNodes();
 		if ( !$nodes ) {
 			$this->error( "Could not load exit nodes.", true );
 		}
