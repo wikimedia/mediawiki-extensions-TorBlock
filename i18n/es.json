@@ -13,6 +13,7 @@
 	"torblock-desc": "Permite bloquear las ediciones realizadas a través de nodos de salida Tor",
 	"torblock-blocked": "Tu dirección IP, <strong>$1</strong>, se identificó automáticamente como un nodo de salida de Tor.\nLa edición por medio de Tor está bloqueada para prevenir abusos.",
 	"torblock-isexitnode": "La dirección IP <strong>$1</strong> está bloqueada por ser un nodo de salida Tor.",
+	"action-torunblocked": "eludir bloqueos automáticos de nodos de salida Tor",
 	"right-torunblocked": "Eludir bloqueos automáticos de nodos de salida ''tor''",
 	"tag-tor-description": "Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.",
 	"tag-tor": "Hecho por medio de tor",
