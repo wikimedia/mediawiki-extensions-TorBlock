@@ -76,9 +76,6 @@
 				"torunblocked"
 			]
 		},
-		"TorLoadNodes": {
-			"value": true
-		},
 		"TorAllowedActions": {
 			"value": [
 				"read"

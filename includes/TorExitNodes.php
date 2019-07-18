@@ -32,11 +32,8 @@ use MediaWiki\MediaWikiServices;
  * Collection of functions maintaining the list of Tor exit nodes.
  */
 class TorExitNodes {
-	const CACHE_NORMAL = 'cached';
-	const CACHE_REFRESH = 'refresh';
-
 	/**
-	 * Determine if a given IP is a Tor exit node.
+	 * Determine if a given IP is a Tor exit node
 	 *
 	 * @param string|null $ip The IP address to check, or null to use the request IP
 	 * @return bool True if an exit node, false otherwise
@@ -50,59 +47,75 @@ class TorExitNodes {
 	}
 
 	/**
-	 * Get the array of Tor exit nodes. First try the cache, then query the source.
+	 * Get the array of Tor exit nodes using caching
 	 *
-	 * @param string $mode Class CACHE_* constant
-	 * @return array Tor exit nodes
+	 * @return string[] List of Tor exit node addresses
 	 */
-	public static function getExitNodes( $mode = self::CACHE_NORMAL ) {
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+	public static function getExitNodes() {
+		static $srvCache;
+		if ( $srvCache === null ) {
+			$srvCache = new CachedBagOStuff(
+				MediaWikiServices::getInstance()->getLocalServerObjectCache()
+			);
+		}
 
-		return $cache->getWithSetCallback(
-			$cache->makeGlobalKey( 'mw-tor-exit-nodes' ),
-			$cache::TTL_DAY,
+		return $srvCache->getWithSetCallback(
+			$srvCache->makeGlobalKey( 'tor-exit-nodes' ),
+			$srvCache::TTL_HOUR,
 			function () {
-				global $wgTorLoadNodes;
+				$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
-				if ( $wgTorLoadNodes ) {
-					wfDebugLog( 'torblock', "Loading Tor exit node list cold." );
-					$value = self::loadExitNodes_Onionoo() ?: self::loadExitNodes_BulkList();
-				} else {
-					$value = []; // disabled
-				}
-
-				return $value;
-			},
-			( $mode === self::CACHE_REFRESH )
-				? [ 'minAsOf' => INF ] // force a cache regeneration
-				: [
-					// Avoid excess cache server I/O via process caching
-					'pcTTL' => $cache::TTL_PROC_LONG,
-					'pcGroup' => 'tor-exit-nodes:1',
-					// Avoid stampedes on TOR list servers due to cache expiration
-					'lockTSE' => 30,
-					'staleTTL' => $cache::TTL_MINUTE,
-					 // Avoid stampedes on TOR list servers due to cache eviction
-					'busyValue' => []
-				]
+				return $wanCache->getWithSetCallback(
+					$wanCache->makeGlobalKey( 'tor-exit-nodes' ),
+					$wanCache::TTL_DAY,
+					function () {
+						return self::fetchExitNodes();
+					},
+					[
+						// Avoid stampedes on TOR list servers due to cache expiration
+						'lockTSE' => $wanCache::TTL_DAY,
+						'staleTTL' => $wanCache::TTL_DAY,
+						// Avoid stampedes on TOR list servers due to cache eviction
+						'busyValue' => []
+					]
+				);
+			}
 		);
 	}
 
 	/**
 	 * Load the list of Tor exit nodes from the source and cache it for future use
 	 *
-	 * @return array Tor exit nodes
+	 * Do not call this method during HTTP GET/HEAD requests
+	 *
+	 * @return string[] List of Tor exit node addresses
 	 */
 	public static function loadExitNodes() {
-		return self::getExitNodes( self::CACHE_REFRESH );
+		$nodes = self::fetchExitNodes();
+
+		$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$wanCache->set( $wanCache->makeGlobalKey( 'tor-exit-nodes' ), $nodes, $wanCache::TTL_DAY );
+
+		return $nodes;
+	}
+
+	/**
+	 * Get the list of Tor exit nodes from the configured source
+	 *
+	 * @return string[] List of Tor exit node addresses
+	 */
+	private static function fetchExitNodes() {
+		wfDebugLog( 'torblock', "Loading Tor exit node list cold." );
+
+		return self::fetchExitNodesFromOnionooServer() ?: self::fetchExitNodesFromTorProject();
 	}
 
 	/**
 	 * Get the list of Tor exit nodes from the Tor Project's website.
 	 *
-	 * @return array Tor exit nodes
+	 * @return string[] List of Tor exit node addresses
 	 */
-	protected static function loadExitNodes_BulkList() {
+	private static function fetchExitNodesFromTorProject() {
 		global $wgTorIPs, $wgTorProjectCA, $wgTorBlockProxy;
 
 		$options = [
@@ -124,6 +137,7 @@ class TorExitNodes {
 				}
 			}
 		}
+
 		return array_keys( $nodes );
 	}
 
@@ -131,9 +145,9 @@ class TorExitNodes {
 	 * Get the list of Tor exit nodes using the Onionoo protocol with the
 	 * server specified in the configuration.
 	 *
-	 * @return string[] Tor exit nodes
+	 * @return string[] List of Tor exit node addresses
 	 */
-	protected static function loadExitNodes_Onionoo() {
+	private static function fetchExitNodesFromOnionooServer() {
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
 
 		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit",
@@ -181,6 +195,7 @@ class TorExitNodes {
 				$nodes[IP::sanitizeIP( $ip )] = true;
 			}
 		}
+
 		return array_keys( $nodes );
 	}
 }
