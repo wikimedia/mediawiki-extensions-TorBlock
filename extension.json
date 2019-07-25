@@ -42,8 +42,8 @@
 		"GetAutoPromoteGroups": [
 			"TorBlockHooks::onGetAutoPromoteGroups"
 		],
-		"GetBlockedStatus": [
-			"TorBlockHooks::onGetBlockedStatus"
+		"GetUserBlock": [
+			"TorBlockHooks::onGetUserBlock"
 		],
 		"AutopromoteCondition": [
 			"TorBlockHooks::onAutopromoteCondition"

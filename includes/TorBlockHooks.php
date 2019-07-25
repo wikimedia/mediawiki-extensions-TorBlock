@@ -28,6 +28,7 @@
 
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\Block\CompositeBlock;
 
 class TorBlockHooks {
 
@@ -155,21 +156,36 @@ class TorBlockHooks {
 	}
 
 	/**
-	 * @param User &$user
+	 * Remove a block if it only targets a Tor node. A composite block comprises
+	 * multiple blocks, and if any of these target the user, then do not remove the
+	 * block.
+	 *
+	 * @param User $user
+	 * @param string|null $ip
+	 * @param AbstractBlock|null &$block
 	 * @return bool
 	 */
-	public static function onGetBlockedStatus( &$user ) {
+	public static function onGetUserBlock( $user, $ip, &$block ) {
 		global $wgTorDisableAdminBlocks;
-		if (
-			$wgTorDisableAdminBlocks &&
-			TorExitNodes::isExitNode() &&
-			$user->mBlock instanceof AbstractBlock &&
-			$user->mBlock->getType() != DatabaseBlock::TYPE_USER
-		) {
-			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was probably " .
-				"targetted at the tor node." );
+		if ( !$block || !$wgTorDisableAdminBlocks || !TorExitNodes::isExitNode() ) {
+			return true;
+		}
+
+		$blocks = $block instanceof CompositeBlock ? $block->getOriginalBlocks() : [ $block ];
+
+		$removeBlock = true;
+		foreach ( $blocks as $singleBlock ) {
+			if ( $singleBlock->getType() === AbstractBlock::TYPE_USER ) {
+				$removeBlock = false;
+				break;
+			}
+		}
+
+		if ( $removeBlock ) {
+			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was " .
+				"probably targetted at the Tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
-			$user->mBlockedby = 0;
+			$block = null;
 		}
 
 		return true;
