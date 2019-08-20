@@ -11,8 +11,8 @@
 		]
 	},
 	"torblock-desc": "{{desc|name=Tor Block|url=https://www.mediawiki.org/wiki/Extension:TorBlock}}",
-	"torblock-blocked": "Used as error message. Paramters:\n* $1 - IP address",
-	"torblock-isexitnode": "Used as the tor blocking status message. Paramters:\n* $1 - IP address",
+	"torblock-blocked": "Used as error message. Parameters:\n* $1 - IP address",
+	"torblock-isexitnode": "Used as the tor blocking status message. Parameters:\n* $1 - IP address",
 	"action-torunblocked": "{{doc-action|torunblocked}}",
 	"right-torunblocked": "{{doc-right|torunblocked}}\n\nUsers with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).",
 	"tag-tor-description": "Description of tag that appears e.g. in [[Special:Tags]]",
