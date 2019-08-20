@@ -10,6 +10,7 @@
 	"torblock-desc": "Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki",
 	"torblock-blocked": "Din IP-adresse, <strong>$1</strong>, har blitt automatisk identifisert som en utgangsnode fra Tor.\nRedigering via Tor er blokkert for å forhindre misbruk.",
 	"torblock-isexitnode": "IP-adressen <strong>$1</strong> er blokkert som en utgangsnode for Tor.",
+	"action-torunblocked": "forbigå automatisk blokkering av Tor-noder",
 	"right-torunblocked": "Kan redigere fra automatisk blokkerte Tor-noder",
 	"tag-tor-description": "Om denne taggen er på, ble redigeringen gjort via en Tor-node.",
 	"tag-tor": "Gjort via Tor",
