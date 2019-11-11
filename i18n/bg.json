@@ -3,7 +3,8 @@
 		"authors": [
 			"Spiritia",
 			"Turin",
-			"StanProg"
+			"StanProg",
+			"Ted Masters"
 		]
 	},
 	"torblock-desc": "Позволява да се блокира редактирането от изходни възли на Tor-мрежа",
@@ -11,7 +12,7 @@
 	"torblock-isexitnode": "IP адресът <strong>$1</strong> е блокиран като изходящ възел на Tor мрежа.",
 	"action-torunblocked": "пренебрегване автоматичните блокирания на изходните възли на Tor",
 	"right-torunblocked": "Пренебрегване автоматичните блокирания на изходните възли на Tor",
-	"tag-tor-description": "Ако този таг е установен, значи е била направена редакция от изходен възел на Tor.",
+	"tag-tor-description": "Ако този етикет е приложен, значи е била направена редакция от изходен възел на Tor.",
 	"tag-tor": "Направено през Tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Дали промяната е направена от адрес, явяващ се изходен възел на Tor"
 }
