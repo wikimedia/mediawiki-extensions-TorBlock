@@ -79,13 +79,18 @@ class TorBlockHooks {
 	 * Check if a user is a Tor node and not whitelisted or allowed
 	 * to bypass tor blocks.
 	 *
-	 * @param Title &$title Title being acted upon
-	 * @param User &$user User performing the action
+	 * @param Title $title Title being acted upon
+	 * @param User $user User performing the action
 	 * @param string $action Action being performed
 	 * @param array &$result Will be filled with block status if blocked
 	 * @return bool
 	 */
-	public static function onGetUserPermissionsErrorsExpensive( &$title, &$user, $action, &$result ) {
+	public static function onGetUserPermissionsErrorsExpensive(
+		Title $title,
+		User $user,
+		$action,
+		&$result
+	) {
 		global $wgRequest;
 		if ( !self::checkUserCan( $user, $action ) ) {
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. " .
@@ -195,10 +200,10 @@ class TorBlockHooks {
 	 * If an IP address is an exit node, stop it from being autoblocked.
 	 *
 	 * @param string $autoblockip IP address being blocked
-	 * @param DatabaseBlock &$block Block being applied
+	 * @param DatabaseBlock $block Block being applied
 	 * @return bool
 	 */
-	public static function onAbortAutoblock( $autoblockip, DatabaseBlock &$block ) {
+	public static function onAbortAutoblock( $autoblockip, DatabaseBlock $block ) {
 		return !TorExitNodes::isExitNode( $autoblockip );
 	}
 
