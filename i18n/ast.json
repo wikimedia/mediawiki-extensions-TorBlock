@@ -8,6 +8,7 @@
 	"torblock-desc": "Permite que los nodos de salida tor torguen la edición d'una wiki",
 	"torblock-blocked": "La to direición IP, <strong>$1</strong>, foi identificada automáticamente como un nodiu de salida tor.\nLa edición al traviés de tor ta bloquiada pa prevenir l'abusu.",
 	"torblock-isexitnode": "La dirección IP <strong>$1</strong> ta bloquiada por ser un nodiu de salida Tor.",
+	"action-torunblocked": "evita los bloqueos automáticos de los nodios de salida Tor",
 	"right-torunblocked": "Evita los bloqueos automáticos de los nodos de salida tor",
 	"tag-tor-description": "Si tien puesta esta etiqueta, ye que se fizo una edición dende un nodiu de salida Tor.",
 	"tag-tor": "Fecho al traviés de Tor",
