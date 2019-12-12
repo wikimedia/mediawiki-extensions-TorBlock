@@ -48,7 +48,7 @@ class LoadExitNodes extends Maintenance {
 			$nodes = TorExitNodes::getExitNodes();
 		}
 		if ( !$nodes ) {
-			$this->error( "Could not load exit nodes.", true );
+			$this->fatalError( "Could not load exit nodes." );
 		}
 
 		$this->output( 'Successfully loaded ' . count( $nodes ) . " exit nodes.\n" );
