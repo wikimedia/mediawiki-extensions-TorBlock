@@ -228,7 +228,7 @@ class TorBlockHooks {
 			return true;
 		}
 
-		$age = time() - wfTimestampOrNull( TS_UNIX, $user->getRegistration() );
+		$age = time() - (int)wfTimestampOrNull( TS_UNIX, $user->getRegistration() );
 
 		if ( $age >= $wgTorAutoConfirmAge && $user->getEditCount() >= $wgTorAutoConfirmCount ) {
 			// Does match requirements. Don't bother checking if we're an exit node.
