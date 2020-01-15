@@ -27,8 +27,8 @@
  */
 
 use MediaWiki\Block\AbstractBlock;
-use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\CompositeBlock;
+use MediaWiki\Block\DatabaseBlock;
 
 class TorBlockHooks {
 
