@@ -45,10 +45,9 @@ class TorBlockHooks {
 	 * @return bool
 	 */
 	private static function checkUserCan( User $user, $action = null ) {
-		global $wgTorAllowedActions, $wgRequest, $wgUser;
+		global $wgTorAllowedActions, $wgRequest;
 
 		if ( ( $action !== null && in_array( $action, $wgTorAllowedActions ) )
-			|| $user->getName() !== $wgUser->getName()
 			|| !TorExitNodes::isExitNode()
 		) {
 			return true;
