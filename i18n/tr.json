@@ -6,7 +6,7 @@
 		]
 	},
 	"torblock-desc": "Tor çıkış nodlarının bir vikiyi değiştirmesinin engellemesini sağlar",
-	"torblock-blocked": "IP adresiniz, <strong>$1</strong>, otomatik olarak bir tor çıkış nodu olarak algılandı.\nSuistimali önlemek için tor üzerinden değişiklik engellendi.",
+	"torblock-blocked": "IP adresiniz, <strong>$1</strong>, otomatik olarak bir Tor çıkış nodu olarak algılandı.\nSuistimali önlemek için Tor üzerinden değişiklik engellendi.",
 	"torblock-isexitnode": "IP adresi <strong>$1</strong> Tor çıkış nodu olarak engellenmiş.",
 	"action-torunblocked": "Tor çıkış düğümlerinin otomatik bloklarını atlama",
 	"right-torunblocked": "Tor çıkış nodlarının otomatik engelini atla",
