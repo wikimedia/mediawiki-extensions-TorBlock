@@ -29,6 +29,7 @@
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\CompositeBlock;
 use MediaWiki\Block\DatabaseBlock;
+use Wikimedia\IPUtils;
 
 class TorBlockHooks {
 
@@ -301,7 +302,7 @@ class TorBlockHooks {
 	public static function onOtherBlockLogLink( array &$msg, $ip ) {
 		// IP addresses can be blocked only
 		// Fast return if IP is not an exit node
-		if ( IP::isIPAddress( $ip ) && TorExitNodes::isExitNode( $ip ) ) {
+		if ( IPUtils::isIPAddress( $ip ) && TorExitNodes::isExitNode( $ip ) ) {
 			$msg[] = Html::rawElement(
 				'span',
 				[ 'class' => 'mw-torblock-isexitnode' ],

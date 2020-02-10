@@ -27,6 +27,7 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use Wikimedia\IPUtils;
 
 /**
  * Collection of functions maintaining the list of Tor exit nodes.
@@ -43,7 +44,7 @@ class TorExitNodes {
 			$ip = RequestContext::getMain()->getRequest()->getIP();
 		}
 
-		return in_array( IP::sanitizeIP( $ip ), self::getExitNodes() );
+		return in_array( IPUtils::sanitizeIP( $ip ), self::getExitNodes() );
 	}
 
 	/**
@@ -186,12 +187,12 @@ class TorExitNodes {
 					$ip = substr( $ip, 1, -1 );
 				}
 
-				if ( !IP::isValid( $ip ) ) {
+				if ( !IPUtils::isValid( $ip ) ) {
 					wfDebug( 'Invalid IP address in Onionoo response.' );
 					continue;
 				}
 
-				$nodes[IP::sanitizeIP( $ip )] = true;
+				$nodes[IPUtils::sanitizeIP( $ip )] = true;
 			}
 		}
 
