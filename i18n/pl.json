@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Beau",
-			"Sp5uhe",
+			"Rail",
 			"Railfail536",
-			"Rail"
+			"Sp5uhe"
 		]
 	},
 	"torblock-desc": "Blokuje możliwość edycji dla użytkowników anonimowych łączących się przez serwery wyjściowe sieci Tor",

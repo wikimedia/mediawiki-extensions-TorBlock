@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dalba",
 			"Huji",
-			"Wayiran",
-			"Dalba"
+			"Wayiran"
 		]
 	},
 	"torblock-desc": "قطع دسترسی خروجی‌های TOR از ویرایش در یک ویکی را ممکن می‌کند",

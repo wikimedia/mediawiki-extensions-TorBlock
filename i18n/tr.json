@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joseph",
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Joseph"
 		]
 	},
 	"torblock-desc": "Tor çıkış nodlarının bir vikiyi değiştirmesinin engellemesini sağlar",

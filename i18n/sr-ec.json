@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"BadDog",
 			"Millosh",
 			"Nikola Smolenski",
 			"Rancher",
-			"Сербијана",
-			"BadDog"
+			"Сербијана"
 		]
 	},
 	"torblock-desc": "Омогућава блокирање измена викија од стране излазних чворова Тора.",

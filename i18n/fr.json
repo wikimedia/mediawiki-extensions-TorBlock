@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Grondin",
 			"IAlex",
 			"PieRRoMaN",
 			"Sherbrooke",
 			"Urhixidur",
-			"Verdy p",
-			"Gomoko"
+			"Verdy p"
 		]
 	},
 	"torblock-desc": "Permet de bloquer les modifications d’un wiki depuis les nœuds de sortie Tor",

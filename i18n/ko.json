@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bluemersen",
 			"Ilovesabbath",
 			"Kwj2772",
-			"아라",
-			"Bluemersen"
+			"아라"
 		]
 	},
 	"torblock-desc": "토르 끝 노드로 위키를 편집하는 것을 차단합니다",

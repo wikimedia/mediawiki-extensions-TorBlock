@@ -4,8 +4,8 @@
 			"Aotake",
 			"Fryed-peach",
 			"Muttley",
-			"Shirayuki",
-			"ProxyMon"
+			"ProxyMon",
+			"Shirayuki"
 		]
 	},
 	"torblock-desc": "Tor の末端ノードからのウィキの編集をブロックできるようにする",

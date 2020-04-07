@@ -4,8 +4,8 @@
 			"El libre",
 			"Papapep",
 			"SMP",
-			"Vriullop",
-			"Ssola"
+			"Ssola",
+			"Vriullop"
 		]
 	},
 	"torblock-desc": "Permet que els nodes de sortida Tor siguin blocats des de l'edició d'un wiki",

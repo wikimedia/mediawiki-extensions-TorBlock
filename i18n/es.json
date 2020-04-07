@@ -3,11 +3,11 @@
 		"authors": [
 			"Crazymadlover",
 			"Dferg",
+			"Dgstranz",
+			"Macofe",
 			"MarcoAurelio",
 			"Remember the dot",
-			"Sanbec",
-			"Macofe",
-			"Dgstranz"
+			"Sanbec"
 		]
 	},
 	"torblock-desc": "Permite bloquear las ediciones realizadas a través de nodos de salida Tor",

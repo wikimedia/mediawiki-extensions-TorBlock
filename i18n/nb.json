@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Harald Khan",
+			"Jon Harald Søby",
 			"Nghtwlkr",
-			"Njardarlogar",
-			"Jon Harald Søby"
+			"Njardarlogar"
 		]
 	},
 	"torblock-desc": "Gjør det mulig å blokkere Tors utgangsnoder fra å redigere en wiki",

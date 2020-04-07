@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
+			"Metalhead64",
 			"Raimond Spekking",
-			"Umherirrender",
-			"Metalhead64"
+			"Umherirrender"
 		]
 	},
 	"torblock-desc": "Ermöglicht das Sperren des Schreibzugriffs über Tor-Ausgangsknoten",

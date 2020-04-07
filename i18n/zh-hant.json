@@ -2,14 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Alexsh",
-			"Gaoxuewei",
-			"Justincheng12345",
-			"Mark85296341",
-			"Shinjiman",
 			"Cwlin0416",
 			"EagerLin",
-			"WQL",
-			"Kly"
+			"Gaoxuewei",
+			"Justincheng12345",
+			"Kly",
+			"Mark85296341",
+			"Shinjiman",
+			"WQL"
 		]
 	},
 	"torblock-desc": "允許封鎖 Tor 出口節點編輯 Wiki",

@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eduardo Addad de Oliveira",
 			"Eduardo.mps",
-			"Jesielt",
-			"Tuliouel",
 			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Jesielt",
+			"Tuliouel"
 		]
 	},
 	"torblock-desc": "Permite que nós de saída Tor sejam bloqueados para editar um wiki",

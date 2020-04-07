@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Siebrand",
 			"Kippenvlees1",
-			"Mainframe98"
+			"Mainframe98",
+			"Siebrand"
 		]
 	},
 	"torblock-desc": "Maakt bewerken onmogelijk voor Tor-exitnodes",

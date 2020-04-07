@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Spiritia",
-			"Turin",
 			"StanProg",
-			"Ted Masters"
+			"Ted Masters",
+			"Turin"
 		]
 	},
 	"torblock-desc": "Позволява да се блокира редактирането от изходни възли на Tor-мрежа",
