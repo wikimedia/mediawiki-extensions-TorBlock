@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Giromin Cangiaxo"
+		]
+	},
+	"torblock-desc": "A permette de blocâ e modiffiche de 'na wiki da-i groppi de sciortia Tor",
+	"torblock-blocked": "O to adresso IP, <strong>$1</strong>, o l'è stæto aotomaticamente identificou comme groppo de sciortia Tor.\nPe prevegnî di abuxi e modiffiche da Tor son blocæ.",
+	"torblock-isexitnode": "L'adresso IP <strong>$1</strong> o l'è blocou in quanto groppo de sciortia Tor.",
+	"action-torunblocked": "ignorâ i blocchi aotomattichi di groppi de sciortia do Tor",
+	"right-torunblocked": "Ignora i blocchi aotomattichi di groppi de sciortia do Tor",
+	"tag-tor-description": "Se gh'è st'etichetta chie, voeu dî che l'è stæto fæto 'na modiffica da 'n groppo de sciortia do Tor.",
+	"tag-tor": "Fæto trammite Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si-a modiffica a l'è stæta fæta da 'n groppo de sciortia do TOR ò meno"
+}
