@@ -7,7 +7,7 @@
 			"Sp5uhe"
 		]
 	},
-	"torblock-desc": "Blokuje możliwość edycji dla użytkowników anonimowych łączących się przez serwery wyjściowe sieci Tor",
+	"torblock-desc": "Blokuje możliwość edycji dla anonimowych użytkowników łączących się przez serwery wyjściowe sieci Tor",
 	"torblock-blocked": "Twój adres IP <strong>$1</strong> został automatycznie zidentyfikowany jako serwer wyjściowy sieci Tor.\nMożliwość edycji z wykorzystaniem tej sieci jest zablokowana w celu zapobiegania nadużyciom.",
 	"torblock-isexitnode": "Adres IP <strong>$1</strong> jest zablokowany ponieważ jest wyjściowym węzłem sieci Tor.",
 	"action-torunblocked": "obchodzenia automatycznych blokad zakładanych na serwery wyjściowe sieci Tor",
