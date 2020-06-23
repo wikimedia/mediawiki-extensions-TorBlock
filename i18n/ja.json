@@ -5,12 +5,14 @@
 			"Fryed-peach",
 			"Muttley",
 			"ProxyMon",
-			"Shirayuki"
+			"Shirayuki",
+			"Siglite3"
 		]
 	},
 	"torblock-desc": "Tor の末端ノードからのウィキの編集をブロックできるようにする",
 	"torblock-blocked": "あなたの IP アドレス <strong>$1</strong> は、Tor の末端ノードであると自動的に認識されました。\n不正利用を防止するため、Tor を通じての編集はブロックされます。",
 	"torblock-isexitnode": "IP アドレス <strong>$1</strong> は Tor 末端ノードであるためブロックされています。",
+	"action-torunblocked": "Tor 末端ノードの自動ブロックの回避",
 	"right-torunblocked": "Tor 末端ノードの自動ブロックを回避",
 	"tag-tor-description": "このタグが設定されている場合、Tor 末端ノードを通じてなされた編集です。",
 	"tag-tor": "Tor を通じてなされた",
