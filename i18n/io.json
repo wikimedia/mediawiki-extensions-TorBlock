@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"torblock-blocked": "Vua IP-adreso, <strong>$1</strong>, automatale identifikesis kom ekiro-punto ''Tor'' (Tor exit node).\nRedakto uzanta Tor blokusesis, por preventar misuzo.",
+	"torblock-isexitnode": "La IP-adreso <strong>$1</strong> blokusesis, nam ol esas ekiro-punto Tor (''Tor exit node'')."
+}
