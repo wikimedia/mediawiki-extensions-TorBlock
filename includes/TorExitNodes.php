@@ -143,7 +143,7 @@ class TorExitNodes {
 
 		$nodes = [];
 		foreach ( $wgTorIPs as $ip ) {
-			$url = 'https://check.torproject.org/cgi-bin/TorBulkExitList.py?ip=' . $ip;
+			$url = 'https://check.torproject.org/torbulkexitlist?ip=' . $ip;
 			$data = Http::get( $url, $options, __METHOD__ );
 			$lines = explode( "\n", $data );
 
