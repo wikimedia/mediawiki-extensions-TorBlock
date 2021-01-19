@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Salvemm el lombard"
+		]
+	},
+	"torblock-desc": "El permet de blocà in scritura i grop de sortida tor in su una wiki",
+	"torblock-blocked": "El to adress IP, <strong>$1</strong>, a l'è stad reconossud in automatich come un grop de sortida tor.\nLa possibilità de fà di cambiament per mezz del tor l'è blocada per prevegnì i abus.",
+	"torblock-isexitnode": "L'adress IP <strong>$1</strong> l'è blocad perchè l'è un grop de sortida Tor",
+	"action-torunblocked": "el ghe gira intorna ai bloch automatich di grop de sortida Tor",
+	"right-torunblocked": "El ghe gira intorna ai bloch automatich di grop de sortida Tor",
+	"tag-tor-description": "Se'st'eticheta chì l'è impostada, la modifega l'è stada efetuada d'on grop de sortida de la red Tor.",
+	"tag-tor": "Fad per mezz de Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Indica se la modifica l'è stata fada o no d'un grop de sortida TOR"
+}
