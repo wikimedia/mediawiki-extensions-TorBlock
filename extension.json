@@ -9,7 +9,7 @@
 	"requires": {
 		"MediaWiki": ">= 1.35.0"
 	},
-	"callback": "TorBlockHooks::registerExtension",
+	"callback": "MediaWiki\\Extension\\TorBlock\\Hooks::registerExtension",
 	"GroupPermissions": {
 		"user": {
 			"torunblocked": true
@@ -28,46 +28,45 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"TorBlockHooks": "includes/TorBlockHooks.php",
-		"TorExitNodes": "includes/TorExitNodes.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\TorBlock\\": "includes/"
 	},
 	"Hooks": {
 		"getUserPermissionsErrorsExpensive": [
-			"TorBlockHooks::onGetUserPermissionsErrorsExpensive"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetUserPermissionsErrorsExpensive"
 		],
 		"AbortAutoblock": [
-			"TorBlockHooks::onAbortAutoblock"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbortAutoblock"
 		],
 		"GetAutoPromoteGroups": [
-			"TorBlockHooks::onGetAutoPromoteGroups"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetAutoPromoteGroups"
 		],
 		"GetUserBlock": [
-			"TorBlockHooks::onGetUserBlock"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetUserBlock"
 		],
 		"AutopromoteCondition": [
-			"TorBlockHooks::onAutopromoteCondition"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onAutopromoteCondition"
 		],
 		"RecentChange_save": [
-			"TorBlockHooks::onRecentChangeSave"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onRecentChangeSave"
 		],
 		"ListDefinedTags": [
-			"TorBlockHooks::onListDefinedTags"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onListDefinedTags"
 		],
 		"ChangeTagsListActive": [
-			"TorBlockHooks::onListDefinedTags"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onListDefinedTags"
 		],
 		"AbuseFilter-filterAction": [
-			"TorBlockHooks::onAbuseFilterFilterAction"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterFilterAction"
 		],
 		"AbuseFilter-builder": [
-			"TorBlockHooks::onAbuseFilterBuilder"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterBuilder"
 		],
 		"EmailUserPermissionsErrors": [
-			"TorBlockHooks::onEmailUserPermissionsErrors"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onEmailUserPermissionsErrors"
 		],
 		"OtherBlockLogLink": [
-			"TorBlockHooks::onOtherBlockLogLink"
+			"MediaWiki\\Extension\\TorBlock\\Hooks::onOtherBlockLogLink"
 		]
 	},
 	"config": {

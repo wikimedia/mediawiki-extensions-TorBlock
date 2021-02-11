@@ -26,16 +26,24 @@
  * @license GPL-2.0-or-later
  */
 
+namespace MediaWiki\Extension\TorBlock;
+
+use AbuseFilterVariableHolder;
+use Html;
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\CompositeBlock;
 use MediaWiki\Block\DatabaseBlock;
+use RecentChange;
+use Title;
+use User;
 use Wikimedia\IPUtils;
 
-class TorBlockHooks {
+class Hooks {
 
 	public static function registerExtension() {
 		// Define new autopromote condition
-		define( 'APCOND_TOR', 'tor' ); // Numbers won't work, we'll get collisions
+		// Numbers won't work, we'll get collisions
+		define( 'APCOND_TOR', 'tor' );
 	}
 
 	/**
@@ -98,7 +106,7 @@ class TorBlockHooks {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			\Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
 			$result = [ $blockedMsg, $wgRequest->getIP() ];
 
 			return false;
@@ -123,7 +131,7 @@ class TorBlockHooks {
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			\Hooks::run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
 			$hookError = [
 				'permissionserrors',
 				$blockedMsg,
