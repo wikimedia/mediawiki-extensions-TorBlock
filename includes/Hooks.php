@@ -74,7 +74,7 @@ class Hooks {
 		}
 
 		$ip = $wgRequest->getIP();
-		if ( DatabaseBlock::isWhitelistedFromAutoblocks( $ip ) ) {
+		if ( DatabaseBlock::isExemptedFromAutoblocks( $ip ) ) {
 			wfDebugLog( 'torblock', "IP is excluded from autoblocks. Exempting from Tor Blocks." );
 
 			return true;
