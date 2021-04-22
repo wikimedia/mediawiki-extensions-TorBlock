@@ -31,43 +31,48 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\TorBlock\\": "includes/"
 	},
+	"HookHandlers": {
+		"TorBlockHooks": {
+			"class": "MediaWiki\\Extension\\TorBlock\\Hooks"
+		}
+	},
 	"Hooks": {
-		"getUserPermissionsErrorsExpensive": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetUserPermissionsErrorsExpensive"
-		],
-		"AbortAutoblock": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbortAutoblock"
-		],
-		"GetAutoPromoteGroups": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetAutoPromoteGroups"
-		],
-		"GetUserBlock": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onGetUserBlock"
-		],
-		"AutopromoteCondition": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onAutopromoteCondition"
-		],
-		"RecentChange_save": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onRecentChangeSave"
-		],
-		"ListDefinedTags": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onListDefinedTags"
-		],
-		"ChangeTagsListActive": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onListDefinedTags"
-		],
+		"getUserPermissionsErrorsExpensive": {
+			"handler": "TorBlockHooks"
+		},
+		"AbortAutoblock": {
+			"handler": "TorBlockHooks"
+		},
+		"GetAutoPromoteGroups": {
+			"handler": "TorBlockHooks"
+		},
+		"GetUserBlock": {
+			"handler": "TorBlockHooks"
+		},
+		"AutopromoteCondition": {
+			"handler": "TorBlockHooks"
+		},
+		"RecentChange_save": {
+			"handler": "TorBlockHooks"
+		},
+		"ListDefinedTags": {
+			"handler": "TorBlockHooks"
+		},
+		"ChangeTagsListActive": {
+			"handler": "TorBlockHooks"
+		},
 		"AbuseFilter-filterAction": [
 			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterFilterAction"
 		],
 		"AbuseFilter-builder": [
 			"MediaWiki\\Extension\\TorBlock\\Hooks::onAbuseFilterBuilder"
 		],
-		"EmailUserPermissionsErrors": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onEmailUserPermissionsErrors"
-		],
-		"OtherBlockLogLink": [
-			"MediaWiki\\Extension\\TorBlock\\Hooks::onOtherBlockLogLink"
-		]
+		"EmailUserPermissionsErrors": {
+			"handler": "TorBlockHooks"
+		},
+		"OtherBlockLogLink": {
+			"handler": "TorBlockHooks"
+		}
 	},
 	"config": {
 		"TorBypassPermissions": {

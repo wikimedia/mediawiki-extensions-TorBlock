@@ -26,6 +26,9 @@
  * @license GPL-2.0-or-later
  */
 
+// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
+// Need to be able to define ::onRecentChange_Save
+
 namespace MediaWiki\Extension\TorBlock;
 
 use AbuseFilterVariableHolder;
@@ -33,12 +36,33 @@ use Html;
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\CompositeBlock;
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\Block\Hook\AbortAutoblockHook;
+use MediaWiki\Block\Hook\GetUserBlockHook;
+use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
+use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Hook\EmailUserPermissionsErrorsHook;
+use MediaWiki\Hook\OtherBlockLogLinkHook;
+use MediaWiki\Hook\RecentChange_saveHook;
+use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
+use MediaWiki\User\Hook\AutopromoteConditionHook;
+use MediaWiki\User\Hook\GetAutoPromoteGroupsHook;
 use RecentChange;
 use Title;
 use User;
 use Wikimedia\IPUtils;
 
-class Hooks {
+class Hooks implements
+	AbortAutoblockHook,
+	AutopromoteConditionHook,
+	GetUserPermissionsErrorsExpensiveHook,
+	GetAutoPromoteGroupsHook,
+	GetUserBlockHook,
+	RecentChange_saveHook,
+	ListDefinedTagsHook,
+	ChangeTagsListActiveHook,
+	EmailUserPermissionsErrorsHook,
+	OtherBlockLogLinkHook
+{
 
 	public static function registerExtension() {
 		// Define new autopromote condition
@@ -93,9 +117,9 @@ class Hooks {
 	 * @param array &$result Will be filled with block status if blocked
 	 * @return bool
 	 */
-	public static function onGetUserPermissionsErrorsExpensive(
-		Title $title,
-		User $user,
+	public function onGetUserPermissionsErrorsExpensive(
+		$title,
+		$user,
 		$action,
 		&$result
 	) {
@@ -124,7 +148,7 @@ class Hooks {
 	 * @param array &$hookError Will be filled with block information
 	 * @return bool
 	 */
-	public static function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
+	public function onEmailUserPermissionsErrors( $user, $editToken, &$hookError ) {
 		global $wgRequest;
 		if ( !self::checkUserCan( $user ) ) {
 			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
@@ -178,7 +202,7 @@ class Hooks {
 	 * @param AbstractBlock|null &$block
 	 * @return bool
 	 */
-	public static function onGetUserBlock( $user, $ip, &$block ) {
+	public function onGetUserBlock( $user, $ip, &$block ) {
 		global $wgTorDisableAdminBlocks;
 		if ( !$block || !$wgTorDisableAdminBlocks || !TorExitNodes::isExitNode() ) {
 			return true;
@@ -211,7 +235,7 @@ class Hooks {
 	 * @param DatabaseBlock $block Block being applied
 	 * @return bool
 	 */
-	public static function onAbortAutoblock( $autoblockip, DatabaseBlock $block ) {
+	public function onAbortAutoblock( $autoblockip, $block ) {
 		return !TorExitNodes::isExitNode( $autoblockip );
 	}
 
@@ -223,7 +247,7 @@ class Hooks {
 	 * @param array &$promote Groups being added
 	 * @return bool
 	 */
-	public static function onGetAutoPromoteGroups( User $user, array &$promote ) {
+	public function onGetAutoPromoteGroups( $user, &$promote ) {
 		global $wgTorAutoConfirmAge, $wgTorAutoConfirmCount;
 
 		// Check against stricter requirements for tor nodes.
@@ -255,13 +279,13 @@ class Hooks {
 	 * Check if a user is a Tor node if the wiki is configured
 	 * to autopromote on Tor status.
 	 *
-	 * @param int $type Condition being checked
+	 * @param string $type Condition being checked
 	 * @param array $args Arguments passed to the condition
 	 * @param User $user User being promoted
-	 * @param bool &$result Will be filled with result of condition
+	 * @param array &$result Will be filled with result of condition
 	 * @return bool
 	 */
-	public static function onAutopromoteCondition( $type, array $args, User $user, &$result ) {
+	public function onAutopromoteCondition( $type, $args, $user, &$result ) {
 		if ( $type == APCOND_TOR ) {
 			$result = TorExitNodes::isExitNode();
 		}
@@ -275,7 +299,7 @@ class Hooks {
 	 * @param RecentChange $recentChange The change being saved
 	 * @return bool true
 	 */
-	public static function onRecentChangeSave( RecentChange $recentChange ) {
+	public function onRecentChange_Save( $recentChange ) {
 		global $wgTorTagChanges;
 
 		if ( $wgTorTagChanges && TorExitNodes::isExitNode() ) {
@@ -291,7 +315,7 @@ class Hooks {
 	 * list of active tags (for ChangeTagsListActive hook)
 	 * @return bool true
 	 */
-	public static function onListDefinedTags( array &$emptyTags ) {
+	public function onListDefinedTags( &$emptyTags ) {
 		global $wgTorTagChanges;
 
 		if ( $wgTorTagChanges ) {
@@ -301,13 +325,22 @@ class Hooks {
 	}
 
 	/**
+	 * @param string[] &$tags
+	 *
+	 * @return bool
+	 */
+	public function onChangeTagsListActive( &$tags ) {
+		return $this->onListDefinedTags( $tags );
+	}
+
+	/**
 	 * Creates a message with the Tor blocking status if applicable.
 	 *
 	 * @param array &$msg Message with the status
 	 * @param string $ip The IP address to be checked
 	 * @return bool true
 	 */
-	public static function onOtherBlockLogLink( array &$msg, $ip ) {
+	public function onOtherBlockLogLink( &$msg, $ip ) {
 		// IP addresses can be blocked only
 		// Fast return if IP is not an exit node
 		if ( IPUtils::isIPAddress( $ip ) && TorExitNodes::isExitNode( $ip ) ) {
