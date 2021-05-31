@@ -6,7 +6,7 @@
 		]
 	},
 	"torblock-desc": "Omogoča blokiranje izhodnih vozlišč tor pred urejanjem wikija",
-	"torblock-blocked": "Vaš IP-naslov, <strong>$1</strong>, je bil samodejno prepoznan kot izhodno vozlišče tor.\nUrejanje preko tor je blokirano za preprečitev zlorab.",
+	"torblock-blocked": "Vaš IP-naslov, <strong>$1</strong>, je bil samodejno prepoznan kot Torovo izhodno vozlišče.\nUrejanje skozi Tor je zaradi preprečevanja zlorab blokirano.",
 	"torblock-isexitnode": "IP-naslov <strong>$1</strong> je blokiran kot izhodno vozlišče tor.",
 	"right-torunblocked": "Izogne se samodejnim blokadam izhodnih vozlišč tor",
 	"tag-tor-description": "Če je ta določena ta oznaka, je bilo urejanje opravljeno iz izhodnega vozlišča omrežja Tor.",
