@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Boivie",
+			"Dhallin",
 			"Lejonel"
 		]
 	},
 	"torblock-desc": "Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki",
 	"torblock-blocked": "Din IP-adress, <strong>$1</strong>, har automatiskt identifierats som en utgångsnod från Tor.\nRedigering via Tor är blockerad för att förhindra missbruk.",
 	"torblock-isexitnode": "IP-adressen <strong>$1</strong> är blockerad som en utgångsnod på Tor.",
+	"action-torunblocked": "kringgå automatiska block av Tor-utgångsnoder",
 	"right-torunblocked": "Får redigera från automatiskt blockerade Tor-noder",
 	"tag-tor-description": "Om denna taggen är på, så är en redigering gjord från en Tor-nod.",
 	"tag-tor": "Gjord genom tor",
