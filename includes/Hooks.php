@@ -31,7 +31,6 @@
 
 namespace MediaWiki\Extension\TorBlock;
 
-use AbuseFilterVariableHolder;
 use Html;
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\CompositeBlock;
@@ -40,6 +39,7 @@ use MediaWiki\Block\Hook\AbortAutoblockHook;
 use MediaWiki\Block\Hook\GetUserBlockHook;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Extension\AbuseFilter\Variables\VariableHolder;
 use MediaWiki\Hook\EmailUserPermissionsErrorsHook;
 use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
@@ -171,7 +171,7 @@ class Hooks implements
 	 * Set a variable for Extension:AbuseFilter indicating whether the
 	 * user is operating from a tor exit node or not.
 	 *
-	 * @param AbuseFilterVariableHolder &$vars Variable holder for AbuseFilter
+	 * @param VariableHolder &$vars Variable holder for AbuseFilter
 	 * @param Title $title Title being viewed
 	 * @return bool
 	 */
