@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Artsiom91"
+			"Artsiom91",
+			"Tomato Cream"
 		]
 	},
+	"torblock-desc": "Дазваляе блакаваць магчымасць праўкі з выхадных вузлоў сеткі Tor",
+	"torblock-blocked": "Ваш ІР-адрас <strong>$1</strong> быў аўтаматычна ідэнтыфікаваны як выхадны вузел сеткі Tor.\nПраўка праз Тor заблакаваная для прадухілення злоўжыванняў.",
+	"torblock-isexitnode": "IP-адрас <strong>$1</strong> заблакаваны, бо адносіцца да сеткі Tor.",
+	"action-torunblocked": "абыходзіць аўтаматычныя блакаванні выхадных вузлоў сеткі Tor",
+	"right-torunblocked": "Абыход аўтаматычных блакаванняў выхадных вузлоў сеткі Tor",
 	"tag-tor-description": "Калі гэтая бірка ўсталявана, то праўка была зроблена праз выхадны вузел Tor.",
 	"tag-tor": "Зроблена праз Tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Ці была праўка здзейснена праз вузел Tor"
