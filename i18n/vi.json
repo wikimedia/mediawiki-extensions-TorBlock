@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Minh Nguyen",
+			"Thingofme",
 			"Vinhtantran"
 		]
 	},
 	"torblock-desc": "Cho phép cấm các nút thoát tor sửa đổi wiki",
 	"torblock-blocked": "Địa chỉ IP của bạn, <strong>$1</strong>, đã bị xác định là một nút thoát tor.\nSửa đổi thông qua tor đã bị cấm để tránh sai phạm.",
 	"torblock-isexitnode": "Địa chỉ IP <strong>$1</strong> bị cấm vì là nốt đi ra của Tor.",
+	"action-torunblocked": "Bỏ qua các tác vụ cấm tự động của các nút thoát Tor",
 	"right-torunblocked": "Bỏ qua các tác vụ cấm tự động các nút thoát Tor",
 	"tag-tor-description": "Nếu thẻ này được thiết lập, sửa đổi do một nút thoát Tor thực hiện.",
 	"tag-tor": "Thực hiện nhờ tor",
