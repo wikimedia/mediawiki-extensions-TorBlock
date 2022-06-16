@@ -10,15 +10,17 @@
 			"WQL",
 			"Wmr89502270",
 			"Xiaomingyan",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Diskdance",
+			"Lakejason0"
 		]
 	},
-	"torblock-desc": "允许封禁通过Tor节点来编辑wiki",
-	"torblock-blocked": "您的IP地址 <strong>$1</strong> 已被自动识别为Tor节点。\n通过Tor做出的编辑已被封禁以防止滥用。",
-	"torblock-isexitnode": "IP地址 <strong>$1</strong> 因是Tor出口节点已被封禁。",
+	"torblock-desc": "允许封禁Tor节点以阻止经由其编辑wiki",
+	"torblock-blocked": "您的IP地址<strong>$1</strong>已被自动识别为Tor节点。\n已禁止经由Tor作出的编辑以防止滥用。",
+	"torblock-isexitnode": "IP地址<strong>$1</strong>由于为Tor出口节点已被封禁。",
 	"action-torunblocked": "绕过对Tor出口节点的自动封禁",
 	"right-torunblocked": "绕过对Tor出口节点的自动封禁",
-	"tag-tor-description": "经由Tor出口节点做出的编辑会设定此标签。",
-	"tag-tor": "通过Tor做出",
-	"abusefilter-edit-builder-vars-tor-exit-node": "此更改是否经由Tor出口节点做出"
+	"tag-tor-description": "经由Tor出口节点作出的编辑会设定此标签。",
+	"tag-tor": "通过Tor编辑",
+	"abusefilter-edit-builder-vars-tor-exit-node": "此更改是否经由Tor出口节点作出"
 }
