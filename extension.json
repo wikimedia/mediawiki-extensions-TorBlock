@@ -23,9 +23,15 @@
 	"AvailableRights": [
 		"torunblocked"
 	],
+	"APIModules": {
+		"torblock": {
+			"class": "MediaWiki\\Extension\\TorBlock\\ApiTorBlock"
+		}
+	},
 	"MessagesDirs": {
 		"TorBlock": [
-			"i18n"
+			"i18n",
+			"i18n/api"
 		]
 	},
 	"AutoloadNamespaces": {

@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xiplus"
+		]
+	},
+	"apihelp-torblock-summary": "{{doc-apihelp-summary|torblock}}",
+	"apihelp-torblock-param-ip": "{{doc-apihelp-param|torblock|ip}}",
+	"apihelp-torblock-example-1": "{{doc-apihelp-example|torblock}}",
+	"apierror-torblock-badip": "{{doc-apierror}}\n\nParameters:\n* $1 - IP address that is not valid"
+}
