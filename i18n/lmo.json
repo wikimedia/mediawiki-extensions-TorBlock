@@ -10,6 +10,6 @@
 	"action-torunblocked": "el ghe gira intorna ai bloch automatich di grop de sortida Tor",
 	"right-torunblocked": "El ghe gira intorna ai bloch automatich di grop de sortida Tor",
 	"tag-tor-description": "Se'st'eticheta chì l'è impostada, la modifega l'è stada efetuada d'on grop de sortida de la red Tor.",
-	"tag-tor": "Fad per mezz de Tor",
+	"tag-tor": "Fad per via del Tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Indica se la modifica l'è stata fada o no d'un grop de sortida TOR"
 }
