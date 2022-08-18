@@ -194,7 +194,7 @@ class Hooks implements
 
 		if ( $removeBlock ) {
 			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was " .
-				"probably targetted at the Tor node." );
+				"probably targeted at the Tor node." );
 			// Node is probably blocked for being a Tor node. Remove block.
 			$block = null;
 		}
