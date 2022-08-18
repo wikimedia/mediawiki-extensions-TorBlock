@@ -35,6 +35,8 @@ require_once getenv( 'MW_INSTALL_PATH' ) !== false
  *
  * @ingroup Maintenance
  * @ingroup Extensions
+ *
+ * @codeCoverageIgnore
  */
 class LoadExitNodes extends Maintenance {
 	public function __construct() {
