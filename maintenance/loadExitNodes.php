@@ -22,7 +22,9 @@
  * @ingroup Extensions
  */
 
-use MediaWiki\Extension\TorBlock\TorExitNodes;
+namespace MediaWiki\Extension\TorBlock;
+
+use Maintenance;
 
 require_once getenv( 'MW_INSTALL_PATH' ) !== false
 	? getenv( 'MW_INSTALL_PATH' ) . "/maintenance/Maintenance.php"
