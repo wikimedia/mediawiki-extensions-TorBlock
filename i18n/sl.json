@@ -10,6 +10,6 @@
 	"torblock-isexitnode": "IP-naslov <strong>$1</strong> je blokiran kot izhodno vozlišče tor.",
 	"right-torunblocked": "Izogne se samodejnim blokadam izhodnih vozlišč tor",
 	"tag-tor-description": "Če je ta določena ta oznaka, je bilo urejanje opravljeno iz izhodnega vozlišča omrežja Tor.",
-	"tag-tor": "opravljeno prek tora",
+	"tag-tor": "opravljeno prek Tora",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Ali je ali ni bila sprememba storjena skozi izhodno vozlišče tor"
 }
