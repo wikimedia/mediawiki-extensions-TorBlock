@@ -36,7 +36,7 @@ class Benchmark extends Benchmarker {
 		$this->defaultCount = 10;
 		parent::__construct();
 		$this->addDescription( 'Benchmark for TorBlock' );
-		$this->requireExtension( 'StopForumSpam' );
+		$this->requireExtension( 'TorBlock' );
 	}
 
 	public function execute() {
