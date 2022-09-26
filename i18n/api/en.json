@@ -4,8 +4,8 @@
 			"Xiplus"
 		]
 	},
-	"apihelp-torblock-summary": "Check if an IP is blocked by Tor.",
+	"apihelp-torblock-summary": "Check if an IP address is blocked by Tor.",
 	"apihelp-torblock-param-ip": "The IP address to check.",
-	"apihelp-torblock-example-1": "Check if IP 192.0.2.18 is blocked by Tor.",
+	"apihelp-torblock-example-1": "Check if the IP address 192.0.2.18 is blocked by Tor.",
 	"apierror-torblock-badip": "IP address $1 is not valid"
 }
