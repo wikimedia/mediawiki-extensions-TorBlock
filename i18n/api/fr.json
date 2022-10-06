@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"apihelp-torblock-summary": "Vérifier si une adresse IP est bloquée par Tor.",
+	"apihelp-torblock-param-ip": "L’adresse IP à vérifier.",
+	"apihelp-torblock-example-1": "Vérifier si l’adresse IP 192.0.2.18 est bloquée par Tor.",
+	"apierror-torblock-badip": "L’adresse IP $1 n’est pas valide."
+}

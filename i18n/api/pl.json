@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"apihelp-torblock-summary": "Sprawdź, czy adres IP jest blokowany przez Tora.",
+	"apihelp-torblock-param-ip": "Adres IP do sprawdzenia.",
+	"apihelp-torblock-example-1": "Sprawdź, czy adres IP 192.0.2.18 jest blokowany przez Tora.",
+	"apierror-torblock-badip": "Adres IP $1 jest nieprawidłowy"
+}

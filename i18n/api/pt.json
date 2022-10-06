@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"apihelp-torblock-summary": "Verificar se um endereço IP está bloqueado pelo Tor.",
+	"apihelp-torblock-param-ip": "O endereço IP a ser verificado.",
+	"apihelp-torblock-example-1": "Verificar se o endereço IP 192.0.2.18 está bloqueado pelo Tor.",
+	"apierror-torblock-badip": "O endereço IP $1 não é válido"
+}

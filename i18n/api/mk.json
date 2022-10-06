@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"apihelp-torblock-summary": "Проверете дали некоја IP-адреса е блокирана од Tor.",
+	"apihelp-torblock-param-ip": "Која IP-адреса да се провери.",
+	"apihelp-torblock-example-1": "Провери дали IP-адресата 192.0.2.18 е блокирана од Tor.",
+	"apierror-torblock-badip": "IP-адресата $1 е неважечка"
+}

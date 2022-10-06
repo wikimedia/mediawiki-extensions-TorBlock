@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"apihelp-torblock-summary": "בדיקה אם כתובת IP חסומה על־ידי Tor.",
+	"apihelp-torblock-param-ip": "כתובת ה־IP לבדיקה.",
+	"apihelp-torblock-example-1": "בדיקה אם כתובת ה־IP‏ 192.0.2.18 חסומה על־ידי Tor.",
+	"apierror-torblock-badip": "כתובת ה־IP‏‏ $1 אינה תקינה"
+}

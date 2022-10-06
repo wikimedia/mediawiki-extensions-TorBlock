@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apihelp-torblock-summary": "Überprüfen, ob eine IP-Adresse von Tor blockiert wird.",
+	"apihelp-torblock-param-ip": "Die zu überprüfende IP-Adresse.",
+	"apihelp-torblock-example-1": "Überprüfen, ob die IP-Adresse 192.0.2.18 von Tor blockiert wird.",
+	"apierror-torblock-badip": "Die IP-Adresse $1 ist ungültig"
+}
