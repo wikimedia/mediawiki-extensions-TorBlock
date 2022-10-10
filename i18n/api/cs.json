@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Matěj Suchánek"
+		]
+	},
+	"apierror-torblock-badip": "IP adresa $1 není platná"
+}
