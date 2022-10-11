@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-torblock-summary": "Verificar si un adresse IP es blocate per Tor.",
+	"apihelp-torblock-param-ip": "Le adresse IP a verificar.",
+	"apihelp-torblock-example-1": "Verificar si le adresse IP 192.0.2.18 es blocate per Tor.",
+	"apierror-torblock-badip": "Le adresse IP $1 non es valide"
+}
