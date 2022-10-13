@@ -4,5 +4,8 @@
 			"Ajiniyaz Nurniyazov"
 		]
 	},
-	"apihelp-torblock-param-ip": "Tekseriw ushın IP mánzil."
+	"apihelp-torblock-summary": "IP-mánzil Tor tárepinen bloklanǵanba tekseriń.",
+	"apihelp-torblock-param-ip": "Tekseriw ushın IP mánzil.",
+	"apihelp-torblock-example-1": "192.0.2.18 IP-mánzil Tor tárepinen bloklanǵanba tekseriń.",
+	"apierror-torblock-badip": "$1 IP adresi jaramsız"
 }
