@@ -6,5 +6,6 @@
 	},
 	"apihelp-torblock-summary": "Tor က IP လိပ်စာကိုပိတ်ထားလားဆိုစွာကိုစစ်ပါ။",
 	"apihelp-torblock-param-ip": "ဒေ IP လိပ်စာကိုစိုက်ဆီးပါ။",
-	"apihelp-torblock-example-1": "Tor က IP လိပ်စာ ၁၉၂:၀.၂.၁၈ ကိုပိတ်ထားလားဆိုစွာစစ်ပါ။"
+	"apihelp-torblock-example-1": "Tor က IP လိပ်စာ ၁၉၂:၀.၂.၁၈ ကိုပိတ်ထားလားဆိုစွာစစ်ပါ။",
+	"apierror-torblock-badip": "အိုင်ပီလိပ်စာ$1ကိုခွင့်မပြု"
 }
