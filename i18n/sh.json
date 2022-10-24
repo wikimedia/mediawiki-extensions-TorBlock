@@ -5,12 +5,12 @@
 			"Vlad5250"
 		]
 	},
-	"torblock-desc": "Omogućava blokiranje izmena wikija od strane izlaznih čvorova Tora.",
+	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja wikija",
 	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.\nUređivanje preko tora je blokirano da bi se spriječila zloupotreba.",
 	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
 	"action-torunblocked": "zaobilaženje automatskih blokada Tor izlaznih čvorova",
-	"right-torunblocked": "Zaobilaženje automatskih blokada tor izlaznih čvorova",
+	"right-torunblocked": "Zaobilaženje automatskih blokada Tor izlaznih čvorova",
 	"tag-tor-description": "Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.",
-	"tag-tor": "Napravljeno kroz tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmjena izvršena kroz tor izlazni čvor ili ne"
+	"tag-tor": "Napravljeno kroz Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmjena izvršena kroz Tor izlazni čvor ili ne"
 }
