@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"apihelp-torblock-summary": "IP 주소가 토르에 의해 차단되어 있는지 확인합니다."
+}
