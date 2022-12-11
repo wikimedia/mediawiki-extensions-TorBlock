@@ -30,7 +30,6 @@ namespace MediaWiki\Extension\TorBlock;
 
 use CachedBagOStuff;
 use FormatJson;
-use Http;
 use MediaWiki\MediaWikiServices;
 use RequestContext;
 use Wikimedia\IPUtils;
@@ -137,10 +136,11 @@ class TorExitNodes {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
 
+		$httpRequestFactory = MediaWikiServices::getInstance()->getHttpRequestFactory();
 		$nodes = [];
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/torbulkexitlist?ip=' . $ip;
-			$data = Http::get( $url, $options, __METHOD__ );
+			$data = $httpRequestFactory->get( $url, $options, __METHOD__ );
 			$lines = explode( "\n", $data );
 
 			foreach ( $lines as $line ) {
@@ -170,7 +170,7 @@ class TorExitNodes {
 		if ( $wgTorBlockProxy ) {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
-		$raw = Http::get( $url, $options, __METHOD__ );
+		$raw = MediaWikiServices::getInstance()->getHttpRequestFactory()->get( $url, $options, __METHOD__ );
 		$data = FormatJson::decode( $raw, true );
 
 		if ( !isset( $data['relays'] ) ) {
