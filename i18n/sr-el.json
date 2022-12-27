@@ -5,8 +5,8 @@
 			"Сербијана"
 		]
 	},
-	"torblock-desc": "Omogućava blokiranje izmena na vikiju od strane izlaznih nodova tora.",
-	"torblock-blocked": "Tvoja IP adresa, <strong>$1</strong>, je automatski identifikovana kao izlazni nod tora. Izmene putem tora su onemogućene zbog moguće zloupotrebe.",
-	"right-torunblocked": "Preskoči automatske blokove izlaznih nodova tora.",
+	"torblock-desc": "Omogućava blokiranje izmena vikija od strane izlaznih čvorova Tora.",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski prrpoznata kao izlazni nod tora. Izmene putem tora su onemogućene zbog moguće zloupotrebe.",
+	"right-torunblocked": "preskakanje samostalnih zabrana izlaznih nodova",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmena izvršena kroz tor izlazni čvor ili ne"
 }
