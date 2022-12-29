@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tomato Cream"
+		]
+	},
+	"apihelp-torblock-summary": "Праверыць, ці IP-адрас Tor заблакаваны.",
+	"apihelp-torblock-param-ip": "IP-адрас для праверкі.",
+	"apihelp-torblock-example-1": "Праверыць, ці IP-адрас Tor 192.0.2.18 заблакаваны.",
+	"apierror-torblock-badip": "IP-адрас $1 няслушны"
+}
