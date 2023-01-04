@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"apihelp-torblock-summary": "Gwirio a yw cyfeiriad IP wedi'i rwystro gan Tor.",
+	"apihelp-torblock-param-ip": "Y cyfeiriad IP i'w wirio.",
+	"apihelp-torblock-example-1": "Gwiriwch a yw'r cyfeiriad IP 192.0.2.18 wedi'i rwystro gan Tor.",
+	"apierror-torblock-badip": "Nid yw'r cyfeiriad IP $1 yn ddilys"
+}
