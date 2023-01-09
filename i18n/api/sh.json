@@ -4,5 +4,6 @@
 			"Vlad5250"
 		]
 	},
+	"apihelp-torblock-summary": "Provjerite je li Tor blokirao IP adresu.",
 	"apierror-torblock-badip": "IP adresa $1 nije važeća"
 }
