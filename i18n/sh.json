@@ -5,8 +5,8 @@
 			"Vlad5250"
 		]
 	},
-	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja wikija",
-	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.\nUređivanje preko tora je blokirano da bi se spriječila zloupotreba.",
+	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja vikija",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao Tor izlazni čvor.\nUređivanje preko Tora je blokirano da bi se spriječila zloupotreba.",
 	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
 	"action-torunblocked": "zaobilaženje automatskih blokada Tor izlaznih čvorova",
 	"right-torunblocked": "Zaobilaženje automatskih blokada Tor izlaznih čvorova",

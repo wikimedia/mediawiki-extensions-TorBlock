@@ -8,6 +8,7 @@
 	"torblock-desc": "Omogoča blokiranje izhodnih vozlišč tor pred urejanjem vikija",
 	"torblock-blocked": "Vaš IP-naslov, <strong>$1</strong>, je bil samodejno prepoznan kot Torovo izhodno vozlišče.\nUrejanje skozi Tor je zaradi preprečevanja zlorab blokirano.",
 	"torblock-isexitnode": "IP-naslov <strong>$1</strong> je blokiran kot izhodno vozlišče tor.",
+	"action-torunblocked": "obhod samodejnega blokiranja izhodnih vozlišč Tora",
 	"right-torunblocked": "Izognitev samodejnemu blokiranju izhodnih vozlišč tor",
 	"tag-tor-description": "Če je ta določena ta oznaka, je bilo urejanje opravljeno iz izhodnega vozlišča omrežja Tor.",
 	"tag-tor": "opravljeno prek Tora",
