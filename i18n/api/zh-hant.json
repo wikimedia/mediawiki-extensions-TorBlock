@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"apihelp-torblock-summary": "檢查 IP 位址是否被 Tor 封鎖。",
+	"apihelp-torblock-param-ip": "要檢查的 IP 位址。",
+	"apihelp-torblock-example-1": "檢查 IP 位址 192.0.2.18 是否被 Tor 封鎖。",
+	"apierror-torblock-badip": "IP 位址 $1 無效"
+}
