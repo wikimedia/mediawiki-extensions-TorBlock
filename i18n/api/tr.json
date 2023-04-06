@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joseph"
+		]
+	},
+	"apihelp-torblock-summary": "Bir IP adresinin Tor tarafından engellenip engellenmediğini kontrol edin.",
+	"apihelp-torblock-param-ip": "Kontrol edilecek IP adresi.",
+	"apihelp-torblock-example-1": "192.0.2.18 IP adresinin Tor tarafından engellenip engellenmediğini kontrol edin.",
+	"apierror-torblock-badip": "$1 IP adresi geçerli değil"
+}
