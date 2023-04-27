@@ -39,7 +39,10 @@
 	},
 	"HookHandlers": {
 		"TorBlockHooks": {
-			"class": "MediaWiki\\Extension\\TorBlock\\Hooks"
+			"class": "MediaWiki\\Extension\\TorBlock\\Hooks",
+			"services": [
+				"HookContainer"
+			]
 		},
 		"TorBlockAbuseFilterHooks": {
 			"class": "MediaWiki\\Extension\\TorBlock\\TorBlockAbuseFilterHooks"
