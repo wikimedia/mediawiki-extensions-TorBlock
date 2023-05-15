@@ -7,5 +7,5 @@
 	"apihelp-torblock-summary": "Periksa apakah alamat IP diblokir oleh Tor.",
 	"apihelp-torblock-param-ip": "Alamat IP yang akan diperiksa.",
 	"apihelp-torblock-example-1": "Periksa apakah alamat IP 192.0.2.18 diblokir oleh Tor.",
-	"apierror-torblock-badip": "Alamat IP $1 tidak sah"
+	"apierror-torblock-badip": "Alamat IP $1 tidak sah."
 }

@@ -4,8 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"apihelp-torblock-summary": "Preveri, ali IP-naslov blokira Tor.",
+	"apihelp-torblock-summary": "Preveri, ali je IP-naslov blokiran kot izhodno vozlišče Tor.",
 	"apihelp-torblock-param-ip": "IP-naslov za preverjanje.",
-	"apihelp-torblock-example-1": "Preveri, ali IP-naslov 192.0.2.18 blokira Tor.",
-	"apierror-torblock-badip": "IP-naslov $1 ni veljaven"
+	"apihelp-torblock-example-1": "Preveri, ali je IP-naslov 192.0.2.18 blokiran kot izhodno vozlišče Tor.",
+	"apierror-torblock-badip": "IP-naslov $1 ni veljaven."
 }

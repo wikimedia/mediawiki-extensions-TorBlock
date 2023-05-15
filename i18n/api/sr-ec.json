@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"apierror-torblock-badip": "IP адреса $1 није ваљана."
+}
