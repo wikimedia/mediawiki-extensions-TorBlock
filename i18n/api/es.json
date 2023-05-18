@@ -4,5 +4,6 @@
 			"MarcoAurelio"
 		]
 	},
+	"apihelp-torblock-param-ip": "La dirección IP a comprobar.",
 	"apierror-torblock-badip": "La dirección IP $1 no es válida"
 }
