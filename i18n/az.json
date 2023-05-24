@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"NMW03"
+		]
+	},
+	"torblock-desc": "Tor çıxış qovşaqlarının vikini redaktə etməsini bloklamağa imkan verir",
+	"torblock-blocked": "Sizin IP ünvanınız (<strong>$1</strong>) avtomatik olaraq Tor çıxış qovşağı kimi müəyyən edilib.\nSui-istifadənin qarşısını almaq üçün Tor vasitəsilə redaktə etmək bloklanıb."
+}
