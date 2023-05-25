@@ -4,5 +4,6 @@
 			"Ykhwong"
 		]
 	},
-	"apihelp-torblock-summary": "IP 주소가 토르에 의해 차단되어 있는지 확인합니다."
+	"apihelp-torblock-summary": "IP 주소가 토르에 의해 차단되어 있는지 확인합니다.",
+	"apierror-torblock-badip": "$1 IP 주소는 유효하지 않습니다."
 }
