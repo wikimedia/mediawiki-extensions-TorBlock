@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"apierror-torblock-badip": "D'IP-Adress $1 ass net gülteg."
+}
