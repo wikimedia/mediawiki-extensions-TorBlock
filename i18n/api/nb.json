@@ -4,8 +4,8 @@
 			"Jon Harald Søby"
 		]
 	},
-	"apihelp-torblock-summary": "Sjekk om en IP-adresse er blokkert av Tor.",
+	"apihelp-torblock-summary": "Sjekk om en IP-adresse er blokkert som Tor-utgangsnode.",
 	"apihelp-torblock-param-ip": "IP-adressen som skal sjekkes.",
-	"apihelp-torblock-example-1": "Sjekk om IP-adressen 192.0.2.18 er blokkert av Tor.",
-	"apierror-torblock-badip": "IP-adressen $1 er ikke gyldig"
+	"apihelp-torblock-example-1": "Sjekk om IP-adressen 192.0.2.18 er blokkert som en Tor-utgangsnode.",
+	"apierror-torblock-badip": "IP-adressen $1 er ikke gyldig."
 }
