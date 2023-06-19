@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"apihelp-torblock-summary": "Перевірте, чи не заблоковано IP-адресу як вихідний вузол Tor.",
+	"apihelp-torblock-param-ip": "IP-адреса для перевірки.",
+	"apihelp-torblock-example-1": "Перевірити, чи IP-адреса 192.0.2.18 заблокована як вузол виходу Tor.",
+	"apierror-torblock-badip": "IP-адреса $1 недійсна."
+}

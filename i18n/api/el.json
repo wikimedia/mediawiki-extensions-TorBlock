@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"DesVaMan"
+		]
+	},
+	"apihelp-torblock-summary": "Ελέγξτε εάν μια διεύθυνση IP είναι αποκλεισμένη ως κόμβος εξόδου Tor.",
+	"apihelp-torblock-param-ip": "Η διεύθυνση IP προς έλεγχο.",
+	"apihelp-torblock-example-1": "Ελέγξτε εάν η διεύθυνση IP 192.0.2.18 είναι αποκλεισμένη ως κόμβος εξόδου Tor.",
+	"apierror-torblock-badip": "Η διεύθυνση IP $1 δεν είναι έγκυρη."
+}
