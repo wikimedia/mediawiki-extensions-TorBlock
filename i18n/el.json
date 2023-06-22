@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Dead3y3",
-			"Glavkos"
+			"Glavkos",
+			"DesVaMan"
 		]
 	},
 	"torblock-desc": "Επιτρέπει να φραγούν κόμβοι εξόδου tor από το να επεξεργράζονται ένα wiki",
 	"torblock-blocked": "Η διεύθυνση IP σας, <strong>$1</strong>, ταυτοποιήθηκε αυτόματα ως ένας κόμβος εξόδου tor. Η επεξεργασία μέσω tor έχει φραγεί για την αποτροπή κατάχρησης.",
 	"torblock-isexitnode": "Η διεύθυνση IP <strong>$1</strong> είναι αποκλεισμένη ως κόμβος εξόδου Tor.",
+	"action-torunblocked": "Παράκαμψη αυτομάτων φραγών για κόμβους εξόδου Τor",
 	"right-torunblocked": "Παράκαμψη αυτομάτων φραγών για κόμβους εξόδου tor",
 	"tag-tor-description": "Αν αυτή η ετικέτα έχει τεθεί, μια επεξεργασία έγινε από έναν κόμβο εξόδου Tor.",
 	"tag-tor": "Έγινε μέσω Tor",
