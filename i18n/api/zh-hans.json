@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"U.T."
+		]
+	},
+	"apihelp-torblock-summary": "检查某个 IP 地址是否作为 Tor 出口节点被阻止。",
+	"apihelp-torblock-param-ip": "要检查的 IP 地址。",
+	"apihelp-torblock-example-1": "检查 IP 地址 192.0.2.18 是否作为 Tor 出口节点被阻止。",
+	"apierror-torblock-badip": "IP地址 $1 无效。"
+}
