@@ -1,9 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shinjiman",
-			"Yueman",
-			"捍粵者"
+			"Winston Sung"
 		]
 	},
 	"torblock-desc": "容許tor出口點封鎖響一個wiki嘅編輯",
