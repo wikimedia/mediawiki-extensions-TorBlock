@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"torblock-desc": "容許tor出口點封鎖響一個wiki嘅編輯",
+	"torblock-blocked": "您嘅IP地址<strong>$1</strong>已自動認定為tor出口點。毋俾用tor編輯以防濫用。",
+	"torblock-isexitnode": "IP地址 <strong>$1</strong> 已經鎖咗，因為佢係 Tor 出口節點。",
+	"right-torunblocked": "繞過tor出口點嘅自動封鎖",
+	"tag-tor-description": "如果呢個標籤設定咗，個編輯就會由Tor出口點完成。",
+	"tag-tor": "經tor編輯",
+	"abusefilter-edit-builder-vars-tor-exit-node": "睇個修改係咪經過一個tor出口點完成"
+}
