@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja vikija",
+	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao Tor izlazni čvor.\nUređivanje preko Tora je blokirano da bi se spriječila zloupotreba.",
+	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
+	"action-torunblocked": "zaobilaženje automatskih blokada Tor izlaznih čvorova",
+	"right-torunblocked": "Zaobilaženje automatskih blokada Tor izlaznih čvorova",
+	"tag-tor-description": "Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.",
+	"tag-tor": "Napravljeno kroz Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmjena izvršena kroz Tor izlazni čvor ili ne"
+}
