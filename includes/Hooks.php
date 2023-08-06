@@ -39,6 +39,7 @@ use MediaWiki\Block\Hook\AbortAutoblockHook;
 use MediaWiki\Block\Hook\GetUserBlockHook;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Extension\TorBlock\Hooks\HookRunner;
 use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\HookContainer\HookContainer;
@@ -64,7 +65,7 @@ class Hooks implements
 	OtherBlockLogLinkHook
 {
 
-	private HookContainer $hookContainer;
+	private HookRunner $hookRunner;
 
 	public static function registerExtension() {
 		// Define new autopromote condition
@@ -73,7 +74,7 @@ class Hooks implements
 	}
 
 	public function __construct( HookContainer $hookContainer ) {
-		$this->hookContainer = $hookContainer;
+		$this->hookRunner = new HookRunner( $hookContainer );
 	}
 
 	/**
@@ -136,7 +137,7 @@ class Hooks implements
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			$this->hookContainer->run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			$this->hookRunner->onTorBlockBlockedMsg( $blockedMsg );
 			$result = [ $blockedMsg, $wgRequest->getIP() ];
 
 			return false;
@@ -160,7 +161,7 @@ class Hooks implements
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
-			$this->hookContainer->run( 'TorBlockBlockedMsg', [ &$blockedMsg ] );
+			$this->hookRunner->onTorBlockBlockedMsg( $blockedMsg );
 			$hookErr = [
 				'permissionserrors',
 				$blockedMsg,
