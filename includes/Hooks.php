@@ -44,11 +44,11 @@ use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
+use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\AutopromoteConditionHook;
 use MediaWiki\User\Hook\GetAutoPromoteGroupsHook;
 use MediaWiki\User\Hook\UserCanSendEmailHook;
 use RecentChange;
-use Title;
 use User;
 use Wikimedia\IPUtils;
 
