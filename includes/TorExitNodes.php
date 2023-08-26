@@ -141,6 +141,12 @@ class TorExitNodes {
 		foreach ( $wgTorIPs as $ip ) {
 			$url = 'https://check.torproject.org/torbulkexitlist?ip=' . $ip;
 			$data = $httpRequestFactory->get( $url, $options, __METHOD__ );
+
+			if ( $data === null ) {
+				wfDebugLog( 'torblock', "Got no reply or an invalid reply from $url.\n" );
+				continue;
+			}
+
 			$lines = explode( "\n", $data );
 
 			foreach ( $lines as $line ) {
@@ -171,6 +177,12 @@ class TorExitNodes {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
 		$raw = MediaWikiServices::getInstance()->getHttpRequestFactory()->get( $url, $options, __METHOD__ );
+
+		if ( $raw === null ) {
+			wfDebugLog( 'torblock', "Got no reply or an invalid reply from $url.\n" );
+			return [];
+		}
+
 		$data = FormatJson::decode( $raw, true );
 
 		if ( !isset( $data['relays'] ) ) {
