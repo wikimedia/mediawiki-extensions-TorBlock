@@ -4,8 +4,8 @@
 			"MarcoAurelio"
 		]
 	},
-	"apihelp-torblock-summary": "Comprobar si una dirección IP está bloqueada como nodo Tor.",
+	"apihelp-torblock-summary": "Comprobar si una dirección IP está bloqueada como nodo de salida Tor.",
 	"apihelp-torblock-param-ip": "La dirección IP a comprobar.",
-	"apihelp-torblock-example-1": "Compruebe si la dirección IP 192.0.2.18 está bloqueada como nodo Tor.",
+	"apihelp-torblock-example-1": "Comprobar si la dirección IP 192.0.2.18 está bloqueada como nodo de salida Tor.",
 	"apierror-torblock-badip": "La dirección IP $1 no es válida."
 }
