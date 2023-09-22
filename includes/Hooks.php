@@ -33,7 +33,6 @@ namespace MediaWiki\Extension\TorBlock;
 
 use Html;
 use MediaWiki\Block\AbstractBlock;
-use MediaWiki\Block\CompositeBlock;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\Hook\AbortAutoblockHook;
 use MediaWiki\Block\Hook\GetUserBlockHook;
@@ -189,7 +188,7 @@ class Hooks implements
 			return true;
 		}
 
-		$blocks = $block instanceof CompositeBlock ? $block->getOriginalBlocks() : [ $block ];
+		$blocks = $block->toArray();
 
 		$removeBlock = true;
 		foreach ( $blocks as $singleBlock ) {
