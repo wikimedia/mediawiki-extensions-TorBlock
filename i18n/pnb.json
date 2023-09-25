@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Khalid Mahmood"
+			"Khalid Mahmood",
+			"Amire80"
 		]
 	},
 	"torblock-desc": "ٹار ایگزٹ نوڈز نوں اجازت دیو اک وکی نوں بدلن تے روکن نوں۔",
@@ -10,5 +11,5 @@
 	"right-torunblocked": "ٹار ایگزٹ نوڈ دیاں اپنے آپ روکاں نوں بائی پاس کرو۔",
 	"tag-tor-description": "اگر ایہ ٹیگ سیٹ اے، اک تبدیلی ٹار ایگزٹ نوڈ ولوں کیتی گئی اے۔",
 	"tag-tor": "ٹار وجوں بدیا۔",
-	"abusefilter-edit-builder-vars-tor-exit-node": "تبدیلی اک ٹار ايگزٹ نوڈ  ولوں بنائی گئی اے یا نئیں۔"
+	"abusefilter-edit-builder-vars-tor-exit-node": "تبدیلی اک ٹار ايگزٹ نوڈ ولوں بنائی گئی اے یا نئیں۔"
 }
