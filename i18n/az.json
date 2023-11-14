@@ -6,5 +6,10 @@
 	},
 	"torblock-desc": "Tor çıxış qovşaqlarının vikini redaktə etməsini bloklamağa imkan verir",
 	"torblock-blocked": "Sizin IP ünvanınız (<strong>$1</strong>) avtomatik olaraq Tor çıxış qovşağı kimi müəyyən edilib.\nSui-istifadənin qarşısını almaq üçün Tor vasitəsilə redaktə etmək bloklanıb.",
-	"torblock-isexitnode": "<strong>$1</strong> IP ünvanı Tor çıxış qovşağı kimi bloklanıb."
+	"torblock-isexitnode": "<strong>$1</strong> IP ünvanı Tor çıxış qovşağı kimi bloklanıb.",
+	"action-torunblocked": "Tor çıxış qovşaqlarının avtomatik bloklarından təsirlənməmək",
+	"right-torunblocked": "Tor çıxış qovşaqlarının avtomatik bloklarından təsirlənməmək",
+	"tag-tor-description": "Bu teq əlavə olunubsa, Tor çıxış qovşağından redaktə edilib.",
+	"tag-tor": "Tor vasitəsilə edilmişdir",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Dəyişikliyin Tor çıxış qovşağı vasitəsilə edilib-edilməməsi"
 }
