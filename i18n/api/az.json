@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"NMW03"
+		]
+	},
+	"apihelp-torblock-summary": "IP ünvanının Tor çıxış qovşağı olaraq bloklandığını yoxlayın.",
+	"apihelp-torblock-param-ip": "Yoxlanılacaq IP ünvanı.",
+	"apihelp-torblock-example-1": "192.0.2.18 IP ünvanının Tor çıxış qovşağı olaraq bloklandığını yoxlayın.",
+	"apierror-torblock-badip": "$1 IP ünvanı etibarlı deyil."
+}
