@@ -4,10 +4,10 @@
 			"Bangrapip"
 		]
 	},
-	"torblock-desc": "Ngijinin simpul kuar Tor bakal diblokir deri mermak wiki",
-	"action-torunblocked": "terabas blokir otomatis simpul kuar Tor",
-	"right-torunblocked": "terabas blokir otomatis simpul kuar Tor",
-	"tag-tor-description": "Kalo ni tenger disetèl, permakan dikeja deri simpul kuar Tor.",
+	"torblock-desc": "Ngijinin sumpé kuar Tor bakal diblokir deri mermak wiki",
+	"action-torunblocked": "terabas blokir otomatis sumpé kuar Tor",
+	"right-torunblocked": "terabas blokir otomatis sumpé kuar Tor",
+	"tag-tor-description": "Kalo ni tenger disetèl, permakan dikeja deri sumpé kuar Tor.",
 	"tag-tor": "Dikeja liwat Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Mao tu perobahan dikeja liwat simpul kuar Tor kè', kaga' kè'"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Mao tu perobahan dikeja liwat sumpé kuar Tor kè', kaga' kè'"
 }
