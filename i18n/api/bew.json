@@ -4,8 +4,8 @@
 			"Bangrapip"
 		]
 	},
-	"apihelp-torblock-summary": "Perèksa apa aderès IP diblokir sebagé simpul kuar Tor, apa kaga'.",
+	"apihelp-torblock-summary": "Perèksa apa aderès IP diblokir sebagé sumpé kuar Tor, apa kaga'.",
 	"apihelp-torblock-param-ip": "Aderès IP nyang bakal diperèksa.",
-	"apihelp-torblock-example-1": "Perèksa apa aderès IP 192.0.2.18 diblokir sebagé simpul kuar Tor, apa kaga'.",
+	"apihelp-torblock-example-1": "Perèksa apa aderès IP 192.0.2.18 diblokir sebagé sumpé kuar Tor, apa kaga'.",
 	"apierror-torblock-badip": "Aderès IP $1 kaga' aci."
 }
