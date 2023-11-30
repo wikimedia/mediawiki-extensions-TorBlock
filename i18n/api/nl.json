@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"apihelp-torblock-summary": "Controleert of een IP-adres is geblokkeerd als Tor-exitknooppunt.",
+	"apihelp-torblock-param-ip": "Het te controleren IP-adres.",
+	"apihelp-torblock-example-1": "Controleer of het IP-adres 192.0.2.18 is geblokkeerd als Tor-exitknooppunt.",
+	"apierror-torblock-badip": "Het IP-adres $1 is niet geldig."
+}
