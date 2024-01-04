@@ -31,7 +31,6 @@
 
 namespace MediaWiki\Extension\TorBlock;
 
-use Html;
 use MediaWiki\Block\AbstractBlock;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\Hook\AbortAutoblockHook;
@@ -42,13 +41,14 @@ use MediaWiki\Extension\TorBlock\Hooks\HookRunner;
 use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Html\Html;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\AutopromoteConditionHook;
 use MediaWiki\User\Hook\GetAutoPromoteGroupsHook;
 use MediaWiki\User\Hook\UserCanSendEmailHook;
+use MediaWiki\User\User;
 use RecentChange;
-use User;
 use Wikimedia\IPUtils;
 
 class Hooks implements

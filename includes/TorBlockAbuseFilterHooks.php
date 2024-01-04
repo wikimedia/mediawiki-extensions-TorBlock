@@ -28,7 +28,7 @@ use MediaWiki\Extension\AbuseFilter\Hooks\AbuseFilterAlterVariablesHook;
 use MediaWiki\Extension\AbuseFilter\Hooks\AbuseFilterBuilderHook;
 use MediaWiki\Extension\AbuseFilter\Variables\VariableHolder;
 use MediaWiki\Title\Title;
-use User;
+use MediaWiki\User\User;
 
 class TorBlockAbuseFilterHooks implements AbuseFilterAlterVariablesHook, AbuseFilterBuilderHook {
 	/**
