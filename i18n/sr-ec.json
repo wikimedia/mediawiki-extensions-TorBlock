@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Milicevic01",
 			"Millosh",
 			"Nikola Smolenski",
 			"Rancher",
@@ -10,6 +11,8 @@
 	},
 	"torblock-desc": "Омогућава блокирање измена викија од стране излазних чворова Тора.",
 	"torblock-blocked": "Ваша IP адреса, <strong>$1</strong>, је аутоматски пррпозната као излазни нод тора. Измене путем тора су онемогућене због могуће злоупотребе.",
+	"torblock-isexitnode": "IP адреса <strong>$1</strong> је блокирана зато што је Tor излазни чвор.",
+	"action-torunblocked": "заобилазите аутоматске блокаде Tor излазних чворова",
 	"right-torunblocked": "прескакање самосталних забрана излазних нодова",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Да ли је измена извршена кроз тор излазни чвор или не"
 }
