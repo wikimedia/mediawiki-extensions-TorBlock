@@ -3,13 +3,14 @@
 		"authors": [
 			"Beginneruser",
 			"Dalba",
+			"Ebraminio",
 			"Huji",
 			"Wayiran"
 		]
 	},
 	"torblock-desc": "قطع دسترسی خروجی‌های TOR از ویرایش در یک ویکی را ممکن می‌کند",
-	"torblock-blocked": "نشانی آی‌پی شما، <strong>$1</strong>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده‌است.\nویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.",
-	"torblock-isexitnode": "نشانی آی‌پی <strong>$1</strong> به عنوان گرهِ خروجی Tor بسته شده‌است.",
+	"torblock-blocked": "نشانی آی‌پی شما، <strong>$1</strong>، به طور خودکار به عنوان یک خروجی TOR شناسایی شده است.\nویرایش از طریق این نشانی برای جلوگیری از سوء استفاده ممکن نیست.",
+	"torblock-isexitnode": "نشانی آی‌پی <strong>$1</strong> به عنوان گرهِ خروجی Tor بسته شده است.",
 	"action-torunblocked": "گذر خودکار از گره‌های خروجی TOR",
 	"right-torunblocked": "گذر از قطع دسترسی خودکار خروجی‌های TOR",
 	"tag-tor-description": "اگر این برچسب تنظیم شده، ویرایشی توسط گرهٔ خروجی Tor صورت گرفته است.",
