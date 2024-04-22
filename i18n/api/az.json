@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"NMW03"
+			"NMW03",
+			"Nemoralis"
 		]
 	},
 	"apihelp-torblock-summary": "IP ünvanının Tor çıxış qovşağı olaraq bloklandığını yoxlayın.",

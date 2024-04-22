@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"NMW03"
+			"NMW03",
+			"Nemoralis"
 		]
 	},
 	"torblock-desc": "Tor çıxış qovşaqlarının vikini redaktə etməsini bloklamağa imkan verir",
