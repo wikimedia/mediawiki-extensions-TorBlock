@@ -8,7 +8,7 @@
 	},
 	"torblock-desc": "Omogućuje da se blokiraju tor izlazni čvorovi za uređivanje wikija",
 	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao tor izlazni čvor.\nUređivanje preko tora je blokirano da bi se spriječila zloupotreba.",
-	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
+	"torblock-isexitnode": "IP-adresa <strong>$1</strong> blokirana je kao izlazni čvor za Tor.",
 	"right-torunblocked": "Zaobilaženje automatskih blokada izlaznih čvorova Tora",
 	"tag-tor-description": "Ako je ova oznaka postavljenja, izmjena je načinjena od izlaznog Tor čvora.",
 	"tag-tor": "Napravljeno kroz tor",
