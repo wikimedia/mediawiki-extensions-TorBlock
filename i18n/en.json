@@ -11,5 +11,5 @@
 	"right-torunblocked": "Bypass automatic blocks of Tor exit nodes",
 	"tag-tor-description": "If this tag is set, an edit was made from a Tor exit node.",
 	"tag-tor": "Made through Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Whether or not the change was made through a Tor exit node"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Whether or not the change was made through a Tor exit node ($1)"
 }
