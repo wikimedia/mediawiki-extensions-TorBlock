@@ -17,5 +17,5 @@
 	"right-torunblocked": "{{doc-right|torunblocked}}\n\nUsers with this right are not affected by automatic blocking by [[mw:Extension:TorBlock|Extension:TorBlock]] (and can therefore edit using tor).",
 	"tag-tor-description": "Description of tag that appears e.g. in [[Special:Tags]]",
 	"tag-tor": "Shown on lists of changes (history, recentchanges, etc.) for each edit made through tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Abuse filter syntax option in a dropdown from the group {{msg-mw|Abusefilter-edit-builder-group-vars}}."
+	"abusefilter-edit-builder-vars-tor-exit-node": "Abuse filter syntax option in a dropdown from the group {{msg-mw|Abusefilter-edit-builder-group-vars}}. ($1 is the text that will be inserted into the filter code editor.)"
 }
