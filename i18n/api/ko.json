@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Suleiman the Magnificent Television",
 			"Ykhwong"
 		]
 	},
-	"apihelp-torblock-summary": "IP 주소가 토르에 의해 차단되어 있는지 확인합니다.",
+	"apihelp-torblock-summary": "Tor 출구 노드로서 IP 주소가 차단되었는지 확인합니다.",
 	"apihelp-torblock-param-ip": "검사할 IP 주소입니다.",
 	"apihelp-torblock-example-1": "IP 주소 192.0.2.18이 토르 종료 노드로 차단되어 있는지 확인합니다.",
 	"apierror-torblock-badip": "$1 IP 주소는 유효하지 않습니다."

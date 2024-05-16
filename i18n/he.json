@@ -15,5 +15,5 @@
 	"right-torunblocked": "עקיפת חסימות אוטומטיות של נקודות יציאה ברשת Tor",
 	"tag-tor-description": "אם התג הזה מוגדר, בוצעה עריכה מנקודת יציאה של רשת Tor.",
 	"tag-tor": "בוצעה דרך רשת Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "האם השינוי בוצע דרך נקודת יציאה של רשת Tor או לא"
+	"abusefilter-edit-builder-vars-tor-exit-node": "האם השינוי בוצע דרך נקודת יציאה של רשת Tor או לא ($1)"
 }
