@@ -11,5 +11,5 @@
 	"right-torunblocked": "Contornar le blocadas automatic de nodos de exito de Tor",
 	"tag-tor-description": "Si iste etiquetta es presente, un modification esseva facite ab un nodo de exito de Tor.",
 	"tag-tor": "Facite via tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Si le modification ha essite facite via un nodo de exito de Tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si le modification ha essite facite via un nodo de exito de Tor ($1)"
 }

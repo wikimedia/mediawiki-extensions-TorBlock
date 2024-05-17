@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beta16",
 			"BrokenArrow",
 			"Darth Kule",
 			"OrbiliusMagister"
@@ -12,5 +13,5 @@
 	"right-torunblocked": "Ignora i blocchi automatici degli exit node tor",
 	"tag-tor-description": "Se questo tag è impostato, la modifica è stata effettuata da un nodo di uscita della rete Tor.",
 	"tag-tor": "Effettuato tramite tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Indica se la modifica è stata fatta da un nodo di uscita TOR o meno"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Indica se la modifica è stata fatta da un nodo di uscita TOR o meno ($1)"
 }

@@ -14,5 +14,5 @@
 	"right-torunblocked": "Kan redigere fra automatisk blokkerte Tor-noder",
 	"tag-tor-description": "Om denne taggen er på, ble redigeringen gjort via en Tor-node.",
 	"tag-tor": "Gjort via Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Hvorvidt endringen ble gjort gjennom et Tor-utgangsknutepunkt"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Hvorvidt endringen ble gjort via et Tor-utgangsknutepunkt ($1)"
 }
