@@ -5,6 +5,7 @@
 			"Chenxiaoqino",
 			"Diskdance",
 			"Gaoxuewei",
+			"GuoPC",
 			"Lakejason0",
 			"Liuxinyu970226",
 			"PhiLiP",
@@ -22,5 +23,5 @@
 	"right-torunblocked": "绕过对Tor出口节点的自动封禁",
 	"tag-tor-description": "经由Tor出口节点作出的编辑会设定此标签。",
 	"tag-tor": "通过Tor编辑",
-	"abusefilter-edit-builder-vars-tor-exit-node": "此更改是否经由Tor出口节点作出"
+	"abusefilter-edit-builder-vars-tor-exit-node": "此更改是否通过Tor出口节点做出（$1）"
 }

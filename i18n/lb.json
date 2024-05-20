@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Les Meloures",
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"torblock-desc": "Erméiglecht et Ännerunge vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären",
@@ -11,5 +12,5 @@
 	"right-torunblocked": "Automatesch Spär fir Tor-Ausgangskniet z'ëmgoen",
 	"tag-tor-description": "Wann dës Markéierung gesat ass da gouf eng Ännerung vun engem Tor-Ausgangsknuet gemaach.",
 	"tag-tor": "Iwwer ''Tor'' gemaach",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Ob d'Ännerungen iwwer en Tor-Ausgangsknuet gemaach goufen"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Ob d'Ännerung iwwer en Tor-Ausgangsknuet gemaach gouf ($1)"
 }
