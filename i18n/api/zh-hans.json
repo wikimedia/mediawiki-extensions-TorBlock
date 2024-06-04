@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"U.T."
+			"U.T.",
+			"LittlePaw365"
 		]
 	},
-	"apihelp-torblock-param-ip": "要检查的 IP 地址。"
+	"apihelp-torblock-param-ip": "要检查的IP地址。"
 }
