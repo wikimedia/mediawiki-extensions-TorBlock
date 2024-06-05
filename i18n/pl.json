@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Beau",
+			"Msz2001",
 			"Rail",
 			"Railfail536",
 			"Sp5uhe"
@@ -14,5 +15,5 @@
 	"right-torunblocked": "Obejście automatycznych blokad zakładanych na serwery wyjściowe sieci Tor",
 	"tag-tor-description": "Jeżeli ten znacznik jest ustawiony, edycja została wykonana poprzez węzeł wyjściowy sieci Tor.",
 	"tag-tor": "wykonane poprzez sieć Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Czy zmiana została wprowadzona przez węzeł wyjściowy sieci Tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Czy zmiana została wprowadzona przez węzeł wyjściowy sieci Tor ($1)"
 }
