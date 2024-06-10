@@ -30,8 +30,8 @@ namespace MediaWiki\Extension\TorBlock;
 
 use CachedBagOStuff;
 use FormatJson;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 use Wikimedia\IPUtils;
 
 /**
