@@ -4,7 +4,8 @@
 			"Cesco",
 			"EugeneZelenko",
 			"Jim-by",
-			"Red Winged Duck"
+			"Red Winged Duck",
+			"Renessaince"
 		]
 	},
 	"torblock-desc": "Дазваляе блякаваць магчымасьць рэдагаваньняў для ананімных карыстальнікаў, якія карыстаюцца сеткай Tor",
@@ -13,5 +14,5 @@
 	"right-torunblocked": "абход аўтаматычнага блякаваньня вузлоў сеткі Tor",
 	"tag-tor-description": "Калі гэты тэг быў дададзены, рэдагаваньне было зроблена праз выходны вузел Tor.",
 	"tag-tor": "Зроблена праз Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Ці рэдагаваньне адбылася праз вузел Tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Ці рэдагаваньне адбылося праз вузел Tor ($1)"
 }
