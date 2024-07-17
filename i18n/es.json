@@ -6,6 +6,7 @@
 			"Dgstranz",
 			"Macofe",
 			"MarcoAurelio",
+			"Qwrop",
 			"Remember the dot",
 			"Sanbec"
 		]
@@ -17,5 +18,5 @@
 	"right-torunblocked": "Eludir bloqueos automáticos de nodos de salida ''tor''",
 	"tag-tor-description": "Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.",
 	"tag-tor": "Hecho por medio de tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Si el cambio fue hecho o no a través de un nodo de salida tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si el cambio fue hecho o no a través de un nodo de salida Tor ($1)"
 }
