@@ -11,5 +11,5 @@
 	"right-torunblocked": "Заобиколување на автоматски блокови на излезни Tor јазли",
 	"tag-tor-description": "Ако е поставена оваа ознака, тоа значи дека било направено уредување со Tor излезен јазол.",
 	"tag-tor": "Направено преку Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Дали промената била направена преку излезен Tor јазол"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Дали промената била направена преку излезен Tor-јазол ($1)"
 }
