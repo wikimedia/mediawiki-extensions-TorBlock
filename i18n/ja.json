@@ -6,7 +6,8 @@
 			"Muttley",
 			"ProxyMon",
 			"Shirayuki",
-			"Siglite3"
+			"Siglite3",
+			"春春眠眠"
 		]
 	},
 	"torblock-desc": "Tor の末端ノードからのウィキの編集をブロックできるようにする",
@@ -16,5 +17,5 @@
 	"right-torunblocked": "Tor 末端ノードの自動ブロックを回避",
 	"tag-tor-description": "このタグが設定されている場合、Tor 末端ノードを通じてなされた編集です。",
 	"tag-tor": "Tor を通じてなされた",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Tor 末端ノードを通じてなされた変更かどうか"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Tor 末端ノードを通じてなされた変更かどうか ($1)"
 }
