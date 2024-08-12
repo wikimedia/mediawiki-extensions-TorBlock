@@ -4,12 +4,14 @@
 			"Crt",
 			"Nike",
 			"Str4nd",
-			"ZeiP"
+			"ZeiP",
+			"Samoasambia"
 		]
 	},
 	"torblock-desc": "Mahdollistaa tor-poistumissolmujen estämisen.",
 	"torblock-blocked": "IP-osoitteesi <strong>$1</strong> on tunnistettu Tor-verkon poistumispisteeksi. Muokkaaminen Tor-verkon kautta on estetty väärinkäytösten välttämiseksi.",
 	"torblock-isexitnode": "IP-osoite <strong>$1</strong> on estetty Tor-päätepisteenä.",
+	"action-torunblocked": "ohittaa automaattiset Tor-poistumispisteiden estot",
 	"right-torunblocked": "Ohittaa automaattiset Tor-poistumispisteiden estot",
 	"tag-tor-description": "Jos tämä tägi on asetettu, muokkaus on tehty Tor exit noden kautta.",
 	"tag-tor": "Tehty torin kautta",
