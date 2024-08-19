@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Afalau"
+			"Afalau",
+			"Ceirios"
 		]
 	},
 	"apihelp-torblock-summary": "Gwirio a yw cyfeiriad IP wedi'i rwystro gan Tor.",
