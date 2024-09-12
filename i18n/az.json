@@ -12,5 +12,5 @@
 	"right-torunblocked": "Tor çıxış qovşaqlarının avtomatik bloklanmasından təsirlənməmək",
 	"tag-tor-description": "Bu teq əlavə olunubsa, Tor çıxış qovşağından redaktə edilib.",
 	"tag-tor": "Tor vasitəsilə edilmişdir",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Dəyişikliyin Tor çıxış qovşağı vasitəsilə edilib-edilməməsi"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Dəyişikliyin Tor çıxış qovşağı vasitəsilə edilib-edilməməsi ($1)"
 }
