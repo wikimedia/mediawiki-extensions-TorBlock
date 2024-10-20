@@ -19,8 +19,8 @@
 
 namespace MediaWiki\Extension\TorBlock;
 
-use ApiBase;
-use ApiResult;
+use MediaWiki\Api\ApiBase;
+use MediaWiki\Api\ApiResult;
 use Wikimedia\IPUtils;
 use Wikimedia\ParamValidator\ParamValidator;
 

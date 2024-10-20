@@ -28,11 +28,11 @@
 
 namespace MediaWiki\Extension\TorBlock;
 
-use CachedBagOStuff;
-use FormatJson;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\IPUtils;
+use Wikimedia\ObjectCache\CachedBagOStuff;
 
 /**
  * Collection of functions maintaining the list of Tor exit nodes.
