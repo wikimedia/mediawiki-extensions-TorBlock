@@ -3,7 +3,8 @@
 		"authors": [
 			"BrokenArrow",
 			"Darth Kule",
-			"OrbiliusMagister"
+			"OrbiliusMagister",
+			"Beta16"
 		]
 	},
 	"torblock-desc": "Permette di bloccare in scrittura exit node tor su una wiki",
