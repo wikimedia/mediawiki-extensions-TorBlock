@@ -12,5 +12,5 @@
 	"right-torunblocked": "تفادي عمليات المنع التلقائية لعقد خروج التور",
 	"tag-tor-description": "لو أن هذا الوسم مضبوط، فإن تعديلا قد حدث من عقدة خروج تور.",
 	"tag-tor": "معمولة من خلال تور",
-	"abusefilter-edit-builder-vars-tor-exit-node": "ما إذا كان التعديل قد تم عمله من خلال عقدة خروج تور"
+	"abusefilter-edit-builder-vars-tor-exit-node": "سواء تم إجراء التغيير من خلال عقدة خروج Tor ( $1 ) أم لا"
 }
