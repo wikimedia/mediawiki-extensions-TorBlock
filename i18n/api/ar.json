@@ -4,8 +4,8 @@
 			"Meno25"
 		]
 	},
-	"apihelp-torblock-summary": "تحقق مما إذا تم حظر عنوان IP بواسطة Tor.",
+	"apihelp-torblock-summary": "تحقق من إمكانية حظر عنوان IP كعقدة خروج Tor.",
 	"apihelp-torblock-param-ip": "عنوان IP المراد التحقق منه.",
-	"apihelp-torblock-example-1": "تحقق مما إذا كان عنوان IP 192.0.2.18 محجوبًا بواسطة Tor.",
-	"apierror-torblock-badip": "عنوان الآيبي $1 غير صالح"
+	"apihelp-torblock-example-1": "تحقق من أن عنوان IP 192.0.2.18 محاصر كعقدة خروج Tor.",
+	"apierror-torblock-badip": "عنوان IP $1 غير صالح."
 }
