@@ -42,6 +42,7 @@ use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
+use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\AutopromoteConditionHook;
@@ -104,7 +105,8 @@ class Hooks implements
 		}
 
 		$ip = $wgRequest->getIP();
-		if ( DatabaseBlock::isExemptedFromAutoblocks( $ip ) ) {
+
+		if ( MediaWikiServices::getInstance()->getAutoblockExemptionList()->isExempt( $ip ) ) {
 			wfDebugLog( 'torblock', "IP is excluded from autoblocks. Exempting from Tor Blocks." );
 
 			return true;
