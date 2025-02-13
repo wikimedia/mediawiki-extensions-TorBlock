@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"ReyLon Mrat"
+			"ReyLon Mrat",
+			"Tejoebāsa"
 		]
 	},
-	"apihelp-torblock-summary": "Tor က IP လိပ်စာကိုပိတ်ထားလားဆိုစွာကိုစစ်ပါ။",
+	"apihelp-torblock-summary": "IP လပ်စာတစ်ခုက ‌Tor exit node အနီနန့်  ပိတ်ထာကေ စစ်ဆေးပါ။",
 	"apihelp-torblock-param-ip": "ဒေ IP လိပ်စာကိုစိုက်ဆီးပါ။",
-	"apihelp-torblock-example-1": "Tor က IP လိပ်စာ ၁၉၂:၀.၂.၁၈ ကိုပိတ်ထားလားဆိုစွာစစ်ပါ။",
-	"apierror-torblock-badip": "အိုင်ပီလိပ်စာ$1ကိုခွင့်မပြု"
+	"apihelp-torblock-example-1": "IP လိပ်စာ 192.0.2.18 က Tor exit node အနီနန့်ပိတ်ထားကေ စစ်ဆေးပါ။",
+	"apierror-torblock-badip": "အိုင်ပီလိပ်စာ $1 ကို ခွင့်မပြုပါ"
 }
