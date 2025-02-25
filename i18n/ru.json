@@ -3,7 +3,8 @@
 		"authors": [
 			"Movses",
 			"Vlad5250",
-			"Александр Сигачёв"
+			"Александр Сигачёв",
+			"Yurina Tatiana"
 		]
 	},
 	"torblock-desc": "Позволяет запретить редактирование с помощью выходных узлов сети Tor",
@@ -13,5 +14,5 @@
 	"right-torunblocked": "Обход автоматической блокировки узлов сети Tor",
 	"tag-tor-description": "Если данная метка установлена, значит правка была сделана с выходного узла сети Tor.",
 	"tag-tor": "Выполнено через Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Была ли правка сделана через выходной узел сети Tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Была ли правка сделана через выходной узел сети Tor ($1)"
 }
