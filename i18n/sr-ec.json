@@ -14,5 +14,5 @@
 	"torblock-isexitnode": "IP адреса <strong>$1</strong> је блокирана зато што је Tor излазни чвор.",
 	"action-torunblocked": "заобилазите аутоматске блокаде Tor излазних чворова",
 	"right-torunblocked": "прескакање самосталних забрана излазних нодова",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Да ли је измена извршена кроз тор излазни чвор или не ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Да ли је измена извршена кроз Tor излазни чвор ($1)"
 }
