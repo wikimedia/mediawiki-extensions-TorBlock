@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"apihelp-torblock-summary": "Comprobar se un enderezo IP está bloqueado como un nodo de saída de Tor.",
+	"apihelp-torblock-param-ip": "O enderezo IP a comprobar.",
+	"apihelp-torblock-example-1": "Comprobar se o enderezo IP 192.0.2.18 está bloqueado como un nodo de saída de Tor.",
+	"apierror-torblock-badip": "O enderezo IP $1 non é válido."
+}
