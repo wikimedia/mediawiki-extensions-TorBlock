@@ -168,15 +168,20 @@ class TorExitNodes {
 	private static function fetchExitNodesFromOnionooServer() {
 		global $wgTorOnionooServer, $wgTorOnionooCA, $wgTorBlockProxy;
 
-		$url = wfExpandUrl( "$wgTorOnionooServer/details?type=relay&running=true&flag=Exit",
-			PROTO_HTTPS );
+		$services = MediaWikiServices::getInstance();
+
+		$url = $services->getUrlUtils()->expand(
+			"$wgTorOnionooServer/details?type=relay&running=true&flag=Exit",
+			PROTO_HTTPS
+		);
+
 		$options = [
 			'caInfo' => is_readable( $wgTorOnionooCA ) ? $wgTorOnionooCA : null
 		];
 		if ( $wgTorBlockProxy ) {
 			$options['proxy'] = $wgTorBlockProxy;
 		}
-		$raw = MediaWikiServices::getInstance()->getHttpRequestFactory()->get( $url, $options, __METHOD__ );
+		$raw = $services->getHttpRequestFactory()->get( (string)$url, $options, __METHOD__ );
 
 		if ( $raw === null ) {
 			wfDebugLog( 'torblock', "Got no reply or an invalid reply from $url.\n" );
