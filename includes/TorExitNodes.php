@@ -113,7 +113,8 @@ class TorExitNodes {
 	private static function fetchExitNodes() {
 		wfDebugLog( 'torblock', "Loading Tor exit node list cold." );
 
-		if ( defined( 'MW_PHPUNIT_TEST' ) ) {
+		if ( defined( 'MW_PHPUNIT_TEST' ) || defined( 'MW_QUIBBLE_CI' ) ) {
+			// Avoid HTTP requests, see T265628 & T390865
 			// TEST-NET-1, RFC 5737
 			return [ '192.0.2.111', '192.0.2.222' ];
 		}
