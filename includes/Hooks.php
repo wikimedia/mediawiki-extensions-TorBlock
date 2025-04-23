@@ -44,12 +44,12 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
+use MediaWiki\RecentChanges\RecentChange;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\AutopromoteConditionHook;
 use MediaWiki\User\Hook\GetAutoPromoteGroupsHook;
 use MediaWiki\User\Hook\UserCanSendEmailHook;
 use MediaWiki\User\User;
-use RecentChange;
 use Wikimedia\IPUtils;
 
 class Hooks implements
