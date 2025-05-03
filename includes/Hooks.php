@@ -264,7 +264,7 @@ class Hooks implements
 	 * @param string $type Condition being checked
 	 * @param array $args Arguments passed to the condition
 	 * @param User $user User being promoted
-	 * @param array &$result Will be filled with result of condition
+	 * @param null|bool &$result Will be filled with result of condition
 	 * @return bool
 	 */
 	public function onAutopromoteCondition( $type, $args, $user, &$result ) {
