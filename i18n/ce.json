@@ -11,5 +11,5 @@
 	"right-torunblocked": "Tor олучу зӀен шедан автоматически блоктохаран чекхбовлар",
 	"tag-tor-description": "ХӀара билгало хӀоттина йелахь нисдарш дина Tor гӀоьнца.",
 	"tag-tor": "Кхочушдина Tor гӀоьнца",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Нисдар Tor тӀера дина дуй"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Нисдар Tor ($1) тӀера дина дуй"
 }
