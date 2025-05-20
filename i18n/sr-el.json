@@ -7,6 +7,8 @@
 	},
 	"torblock-desc": "Omogućava blokiranje izmena vikija od strane izlaznih čvorova Tora.",
 	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski prrpoznata kao izlazni nod tora. Izmene putem tora su onemogućene zbog moguće zloupotrebe.",
+	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana zato što je Tor izlazni čvor.",
+	"action-torunblocked": "zaobilazite automatske blokade Tor izlaznih čvorova",
 	"right-torunblocked": "preskakanje samostalnih zabrana izlaznih nodova",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmena izvršena kroz tor izlazni čvor ili ne"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Da li je izmena izvršena kroz Tor izlazni čvor ($1)"
 }
