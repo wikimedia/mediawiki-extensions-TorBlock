@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"apierror-torblock-badip": "IP adresa $1 nije valjana."
+}
