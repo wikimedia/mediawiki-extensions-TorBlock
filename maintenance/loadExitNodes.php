@@ -26,9 +26,11 @@ namespace MediaWiki\Extension\TorBlock;
 
 use MediaWiki\Maintenance\Maintenance;
 
+// @codeCoverageIgnoreStart
 require_once getenv( 'MW_INSTALL_PATH' ) !== false
 	? getenv( 'MW_INSTALL_PATH' ) . "/maintenance/Maintenance.php"
 	: __DIR__ . '/../../../maintenance/Maintenance.php';
+// @codeCoverageIgnoreEnd
 
 /**
  * Maintenance script to load/reload the list of Tor exit nodes.
@@ -65,5 +67,7 @@ class LoadExitNodes extends Maintenance {
 	}
 }
 
+// @codeCoverageIgnoreStart
 $maintClass = LoadExitNodes::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
+// @codeCoverageIgnoreEnd
