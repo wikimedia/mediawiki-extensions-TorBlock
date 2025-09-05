@@ -65,7 +65,7 @@ class Hooks implements
 	OtherBlockLogLinkHook
 {
 
-	private HookRunner $hookRunner;
+	private readonly HookRunner $hookRunner;
 
 	public static function registerExtension() {
 		// Define new autopromote condition
