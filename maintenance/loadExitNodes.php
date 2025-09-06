@@ -22,8 +22,9 @@
  * @ingroup Extensions
  */
 
-namespace MediaWiki\Extension\TorBlock;
+namespace MediaWiki\Extension\TorBlock\Maintenance;
 
+use MediaWiki\Extension\TorBlock\TorExitNodes;
 use MediaWiki\Maintenance\Maintenance;
 
 // @codeCoverageIgnoreStart
