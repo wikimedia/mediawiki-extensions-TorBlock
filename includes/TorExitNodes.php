@@ -172,7 +172,7 @@ class TorExitNodes {
 		$services = MediaWikiServices::getInstance();
 
 		$url = $services->getUrlUtils()->expand(
-			"$wgTorOnionooServer/details?type=relay&running=true&flag=Exit",
+			"$wgTorOnionooServer/details?type=relay&running=true&flag=Exit&fields=or_addresses,exit_addresses",
 			PROTO_HTTPS
 		);
 
