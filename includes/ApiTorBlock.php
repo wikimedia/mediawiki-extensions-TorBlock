@@ -59,10 +59,7 @@ class ApiTorBlock extends ApiBase {
 		];
 	}
 
-	/**
-	 * @see ApiBase::getExamplesMessages()
-	 * @return array
-	 */
+	/** @inheritDoc */
 	protected function getExamplesMessages() {
 		return [
 			'action=torblock&ip=192.0.2.18'
