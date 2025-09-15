@@ -32,6 +32,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\IPUtils;
+use Wikimedia\LightweightObjectStore\ExpirationAwareness;
 use Wikimedia\ObjectCache\CachedBagOStuff;
 
 /**
@@ -39,6 +40,7 @@ use Wikimedia\ObjectCache\CachedBagOStuff;
  */
 class TorExitNodes {
 	private const CACHE_KEY = 'tor-exit-nodes';
+	private const CACHE_TTL = ExpirationAwareness::TTL_DAY;
 
 	/**
 	 * Determine if a given IP is a Tor exit node
@@ -75,14 +77,14 @@ class TorExitNodes {
 
 				return $wanCache->getWithSetCallback(
 					$wanCache->makeGlobalKey( self::CACHE_KEY ),
-					$wanCache::TTL_DAY,
+					self::CACHE_TTL,
 					function () {
 						return self::fetchExitNodes();
 					},
 					[
 						// Avoid stampedes on TOR list servers due to cache expiration
-						'lockTSE' => $wanCache::TTL_DAY,
-						'staleTTL' => $wanCache::TTL_DAY,
+						'lockTSE' => self::CACHE_TTL,
+						'staleTTL' => self::CACHE_TTL,
 						// Avoid stampedes on TOR list servers due to cache eviction
 						'busyValue' => []
 					]
@@ -102,7 +104,7 @@ class TorExitNodes {
 		$nodes = self::fetchExitNodes();
 
 		$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$wanCache->set( $wanCache->makeGlobalKey( self::CACHE_KEY ), $nodes, $wanCache::TTL_DAY );
+		$wanCache->set( $wanCache->makeGlobalKey( self::CACHE_KEY ), $nodes, self::CACHE_TTL );
 
 		return $nodes;
 	}
