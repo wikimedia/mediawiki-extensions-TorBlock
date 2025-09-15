@@ -38,6 +38,8 @@ use Wikimedia\ObjectCache\CachedBagOStuff;
  * Collection of functions maintaining the list of Tor exit nodes.
  */
 class TorExitNodes {
+	private const CACHE_KEY = 'tor-exit-nodes';
+
 	/**
 	 * Determine if a given IP is a Tor exit node
 	 *
@@ -66,13 +68,13 @@ class TorExitNodes {
 		}
 
 		return $srvCache->getWithSetCallback(
-			$srvCache->makeGlobalKey( 'tor-exit-nodes' ),
+			$srvCache->makeGlobalKey( self::CACHE_KEY ),
 			$srvCache::TTL_HOUR,
 			function () {
 				$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 
 				return $wanCache->getWithSetCallback(
-					$wanCache->makeGlobalKey( 'tor-exit-nodes' ),
+					$wanCache->makeGlobalKey( self::CACHE_KEY ),
 					$wanCache::TTL_DAY,
 					function () {
 						return self::fetchExitNodes();
@@ -100,7 +102,7 @@ class TorExitNodes {
 		$nodes = self::fetchExitNodes();
 
 		$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$wanCache->set( $wanCache->makeGlobalKey( 'tor-exit-nodes' ), $nodes, $wanCache::TTL_DAY );
+		$wanCache->set( $wanCache->makeGlobalKey( self::CACHE_KEY ), $nodes, $wanCache::TTL_DAY );
 
 		return $nodes;
 	}
