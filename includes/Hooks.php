@@ -26,9 +26,6 @@
  * @license GPL-2.0-or-later
  */
 
-// phpcs:disable MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName
-// Need to be able to define ::onRecentChange_Save
-
 namespace MediaWiki\Extension\TorBlock;
 
 use MediaWiki\Block\AbstractBlock;
@@ -281,7 +278,7 @@ class Hooks implements
 	 * @param RecentChange $recentChange The change being saved
 	 * @return bool true
 	 */
-	public function onRecentChange_Save( $recentChange ) {
+	public function onRecentChange_save( $recentChange ) {
 		global $wgTorTagChanges;
 
 		if ( $wgTorTagChanges && TorExitNodes::isExitNode() ) {
