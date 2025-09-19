@@ -1,8 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"MichaelFrey"
-		]
-	},
-	"torblock-blocked": "Ihre IP-Adresse <strong>$1</strong> wurde automatisch als Tor-Ausgangsknoten identifiziert. Die Seitenbearbeitung in Verbindung mit dem Tor-Netzwerk ist unerwünscht, da die Missbrauchsgefahr sehr hoch ist."
-}
