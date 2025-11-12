@@ -43,15 +43,16 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\RecentChanges\RecentChange;
 use MediaWiki\Title\Title;
-use MediaWiki\User\Hook\AutopromoteConditionHook;
 use MediaWiki\User\Hook\GetAutoPromoteGroupsHook;
 use MediaWiki\User\Hook\UserCanSendEmailHook;
+use MediaWiki\User\Hook\UserRequirementsConditionHook;
 use MediaWiki\User\User;
+use MediaWiki\User\UserIdentity;
 use Wikimedia\IPUtils;
 
 class Hooks implements
 	AbortAutoblockHook,
-	AutopromoteConditionHook,
+	UserRequirementsConditionHook,
 	GetUserPermissionsErrorsExpensiveHook,
 	GetAutoPromoteGroupsHook,
 	GetUserBlockHook,
@@ -255,21 +256,18 @@ class Hooks implements
 	}
 
 	/**
-	 * Check if a user is a Tor node if the wiki is configured
-	 * to autopromote on Tor status.
-	 *
-	 * @param string $type Condition being checked
-	 * @param array $args Arguments passed to the condition
-	 * @param User $user User being promoted
-	 * @param null|bool &$result Will be filled with result of condition
-	 * @return bool
+	 * @inheritDoc
 	 */
-	public function onAutopromoteCondition( $type, $args, $user, &$result ) {
+	public function onUserRequirementsCondition(
+		$type,
+		array $args,
+		UserIdentity $user,
+		bool $isPerformingRequest,
+		?bool &$result
+	): void {
 		if ( $type == APCOND_TOR ) {
 			$result = TorExitNodes::isExitNode();
 		}
-
-		return true;
 	}
 
 	/**

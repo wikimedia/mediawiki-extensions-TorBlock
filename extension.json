@@ -61,7 +61,7 @@
 		"GetUserBlock": {
 			"handler": "TorBlockHooks"
 		},
-		"AutopromoteCondition": {
+		"UserRequirementsCondition": {
 			"handler": "TorBlockHooks"
 		},
 		"RecentChange_save": {
