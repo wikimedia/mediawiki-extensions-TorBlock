@@ -265,6 +265,12 @@ class Hooks implements
 		bool $isPerformingRequest,
 		?bool &$result
 	): void {
+		if (
+			$user->getWikiId() !== UserIdentity::LOCAL ||
+			!$isPerformingRequest
+		) {
+			$result = false;
+		}
 		if ( $type == APCOND_TOR ) {
 			$result = TorExitNodes::isExitNode();
 		}
