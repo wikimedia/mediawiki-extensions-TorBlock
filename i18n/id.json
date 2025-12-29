@@ -5,6 +5,7 @@
 			"Daud I.F. Argana",
 			"Farras",
 			"IvanLanin",
+			"Penyuwangi",
 			"Rex"
 		]
 	},
@@ -13,7 +14,7 @@
 	"torblock-isexitnode": "Alamat IP <strong>$1</strong> diblokir sebagai suatu simpul akhir Tor.",
 	"action-torunblocked": "Mengabaikan pemblokiran otomatis terhadap \"exit nodes\" Tor",
 	"right-torunblocked": "Mengabaikan pemblokiran otomatis terhadap \"exit nodes\" tor",
-	"tag-tor-description": "Jika tag ini dipasang, sebuah suntingan dibuat dari sebuah \"exit node\" Tor.",
+	"tag-tor-description": "Jika tanda ini diatur, sebuah suntingan dibuat dari sebuah simpul keluar Tor.",
 	"tag-tor": "Dibuat melalui tor",
 	"abusefilter-edit-builder-vars-tor-exit-node": "Menampilkan apakah suatu perubahan dibuat melalui \"exit node\" tor atau tidak"
 }
