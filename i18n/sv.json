@@ -3,7 +3,8 @@
 		"authors": [
 			"Boivie",
 			"Dhallin",
-			"Lejonel"
+			"Lejonel",
+			"Stefan2255"
 		]
 	},
 	"torblock-desc": "Gör det möjligt att blockera Tors utgångsnoder från att redigera en wiki",
@@ -13,5 +14,5 @@
 	"right-torunblocked": "Får redigera från automatiskt blockerade Tor-noder",
 	"tag-tor-description": "Om denna taggen är på, så är en redigering gjord från en Tor-nod.",
 	"tag-tor": "Gjord genom tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Huruvida ändringen gjordes genom en tor utgångsnod"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Huruvida ändringen gjordes via en Tor-utgångsnod ($1)"
 }
