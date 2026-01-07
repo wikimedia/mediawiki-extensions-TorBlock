@@ -1,9 +1,11 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Ayaat123"
+		]
 	},
-	"apihelp-torblock-summary": "جانچ کٕریٚو اگر IP پتاہ چُھ ٹارَن بند کوٚرمُت.",
+	"apihelp-torblock-summary": "جانچ کٕریٚو اگر IP پتاہ چھُ ٹارَن بَنٛد کوٚرمُت.",
 	"apihelp-torblock-param-ip": "IP پتاہ چَک کرُن.",
-	"apihelp-torblock-example-1": "جانچ کٕریٚو اگر IP پتاہ 192.0.2.18 چُھ ٹارَن بند کوٚرمُت.",
+	"apihelp-torblock-example-1": "جانٛچ کٕرِیٛو اگر IP پتاہ 192.0.2.18 چھُ ٹارَن بَنٛد کوٚرمُت.",
 	"apierror-torblock-badip": "IP پتاہ $1 چُھنہٕ ٹھیٖک"
 }
