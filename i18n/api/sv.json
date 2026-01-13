@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"apihelp-torblock-summary": "Kontrollera om en IP-adress är blockerad som en Tor-utgångsnod.",
+	"apihelp-torblock-param-ip": "IP-adressen som ska kontrolleras.",
+	"apihelp-torblock-example-1": "Kontrollera om IP-adressen 192.0.2.18 är blockerad som en Tor-utgångsnod.",
+	"apierror-torblock-badip": "IP-adressen $1 är inte giltig."
+}
