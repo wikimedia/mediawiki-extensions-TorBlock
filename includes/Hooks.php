@@ -29,6 +29,7 @@
 namespace MediaWiki\Extension\TorBlock;
 
 use MediaWiki\Block\AbstractBlock;
+use MediaWiki\Block\AutoblockExemptionList;
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\Hook\AbortAutoblockHook;
 use MediaWiki\Block\Hook\GetUserBlockHook;
@@ -39,7 +40,6 @@ use MediaWiki\Hook\OtherBlockLogLinkHook;
 use MediaWiki\Hook\RecentChange_saveHook;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\RecentChanges\RecentChange;
 use MediaWiki\Title\Title;
@@ -71,7 +71,10 @@ class Hooks implements
 		define( 'APCOND_TOR', 'tor' );
 	}
 
-	public function __construct( HookContainer $hookContainer ) {
+	public function __construct(
+		private readonly AutoblockExemptionList $autoblockExemptionList,
+		HookContainer $hookContainer,
+	) {
 		$this->hookRunner = new HookRunner( $hookContainer );
 	}
 
@@ -82,7 +85,7 @@ class Hooks implements
 	 * @param string|null $action
 	 * @return bool
 	 */
-	private static function checkUserCan( User $user, $action = null ) {
+	private function checkUserCan( User $user, $action = null ) {
 		global $wgTorAllowedActions, $wgRequest;
 
 		if ( ( $action !== null && in_array( $action, $wgTorAllowedActions ) )
@@ -104,7 +107,7 @@ class Hooks implements
 
 		$ip = $wgRequest->getIP();
 
-		if ( MediaWikiServices::getInstance()->getAutoblockExemptionList()->isExempt( $ip ) ) {
+		if ( $this->autoblockExemptionList->isExempt( $ip ) ) {
 			wfDebugLog( 'torblock', "IP is excluded from autoblocks. Exempting from Tor Blocks." );
 
 			return true;
@@ -130,7 +133,7 @@ class Hooks implements
 		&$result
 	) {
 		global $wgRequest;
-		if ( !self::checkUserCan( $user, $action ) ) {
+		if ( !$this->checkUserCan( $user, $action ) ) {
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. " .
 				"Adding Tor block to permissions errors." );
 
@@ -155,7 +158,7 @@ class Hooks implements
 	 */
 	public function onUserCanSendEmail( $user, &$hookErr ) {
 		global $wgRequest;
-		if ( !self::checkUserCan( $user ) ) {
+		if ( !$this->checkUserCan( $user ) ) {
 			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
 
 			// Allow site customization of blocked message.

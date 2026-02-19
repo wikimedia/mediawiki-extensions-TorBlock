@@ -41,6 +41,7 @@
 		"TorBlockHooks": {
 			"class": "MediaWiki\\Extension\\TorBlock\\Hooks",
 			"services": [
+				"AutoblockExemptionList",
 				"HookContainer"
 			]
 		},
