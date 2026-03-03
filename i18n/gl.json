@@ -11,5 +11,6 @@
 	"right-torunblocked": "Evitar os bloqueos automáticos dos nodos de saída Tor",
 	"tag-tor-description": "Se a etiqueta está presente, é que unha edición se realizou desde un nodo de saída Tor.",
 	"tag-tor": "Feito a través de Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Se o cambio se realizou a través dun nodo de saída Tor ou non ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Se o cambio se realizou a través dun nodo de saída Tor ou non ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "O usuario conéctase a través dun nodo de saída Tor"
 }
