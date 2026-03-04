@@ -14,5 +14,6 @@
 	"right-torunblocked": "Automatische blokkades van Tor-exitnodes omzeilen",
 	"tag-tor-description": "Als dit label is ingesteld, is de bewerking gemaakt via een Tor-exitnode.",
 	"tag-tor": "Gemaakt via Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Of de wijziging al dan niet is doorgevoerd via een Tor-exitknooppunt ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Of de wijziging al dan niet is doorgevoerd via een Tor-exitknooppunt ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "De gebruiker maakt verbinding via een Tor-uitgangsknooppunt"
 }
