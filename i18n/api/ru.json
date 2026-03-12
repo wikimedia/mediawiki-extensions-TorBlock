@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Daisy40"
+		]
+	},
+	"apihelp-torblock-summary": "Проверить, заблокирован ли IP-адрес как выходной узел Tor.",
+	"apihelp-torblock-param-ip": "IP-адрес для проверки.",
+	"apihelp-torblock-example-1": "Проверить, заблокирован ли IP-адрес 192.0.2.18 как выходной узел Tor.",
+	"apierror-torblock-badip": "IP-адрес $1 недействителен."
+}
