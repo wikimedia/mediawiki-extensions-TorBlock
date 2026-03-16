@@ -6,6 +6,7 @@
 			"IAlex",
 			"PieRRoMaN",
 			"Sherbrooke",
+			"Sik666",
 			"SleaY",
 			"Urhixidur",
 			"Verdy p"
@@ -18,5 +19,6 @@
 	"right-torunblocked": "Contourner le blocage automatique des nœuds de sortie Tor",
 	"tag-tor-description": "Si cette balise est activée, une modification a été effectuée depuis un nœud de sortie Tor.",
 	"tag-tor": "Effectué via Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Si la modification a été faite via un nœud de sortie de Tor ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si la modification a été faite via un nœud de sortie de Tor ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "L’utilisateur se connecte via un nœud de sortie Tor"
 }
