@@ -35,6 +35,7 @@ use MediaWiki\Block\Hook\AbortAutoblockHook;
 use MediaWiki\Block\Hook\GetUserBlockHook;
 use MediaWiki\ChangeTags\Hook\ChangeTagsListActiveHook;
 use MediaWiki\ChangeTags\Hook\ListDefinedTagsHook;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\TorBlock\Hooks\HookRunner;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
@@ -86,7 +87,7 @@ class Hooks implements
 	 * @return bool
 	 */
 	private function checkUserCan( User $user, $action = null ) {
-		global $wgTorAllowedActions, $wgRequest;
+		global $wgTorAllowedActions;
 
 		if ( ( $action !== null && in_array( $action, $wgTorAllowedActions ) )
 			|| !TorExitNodes::isExitNode()
@@ -105,7 +106,7 @@ class Hooks implements
 			}
 		}
 
-		$ip = $wgRequest->getIP();
+		$ip = RequestContext::getMain()->getRequest()->getIP();
 
 		if ( $this->autoblockExemptionList->isExempt( $ip ) ) {
 			wfDebugLog( 'torblock', "IP is excluded from autoblocks. Exempting from Tor Blocks." );
@@ -132,7 +133,6 @@ class Hooks implements
 		$action,
 		&$result
 	) {
-		global $wgRequest;
 		if ( !$this->checkUserCan( $user, $action ) ) {
 			wfDebugLog( 'torblock', "User detected as editing from Tor node. " .
 				"Adding Tor block to permissions errors." );
@@ -140,7 +140,7 @@ class Hooks implements
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
 			$this->hookRunner->onTorBlockBlockedMsg( $blockedMsg );
-			$result = [ $blockedMsg, $wgRequest->getIP() ];
+			$result = [ $blockedMsg, RequestContext::getMain()->getRequest()->getIP() ];
 
 			return false;
 		}
@@ -157,7 +157,6 @@ class Hooks implements
 	 * @return bool
 	 */
 	public function onUserCanSendEmail( $user, &$hookErr ) {
-		global $wgRequest;
 		if ( !$this->checkUserCan( $user ) ) {
 			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
 
@@ -167,7 +166,7 @@ class Hooks implements
 			$hookErr = [
 				'permissionserrors',
 				$blockedMsg,
-				[ $wgRequest->getIP() ],
+				[ RequestContext::getMain()->getRequest()->getIP() ],
 			];
 			return false;
 		}
