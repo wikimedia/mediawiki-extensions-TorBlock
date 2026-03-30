@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Winston Sung"
 		]
 	},
-	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja vikija",
+	"torblock-desc": "Omogućava blokiranje Tor izlaznih čvorova od uređivanja wikija",
 	"torblock-blocked": "Vaša IP adresa, <strong>$1</strong>, je automatski otkrivena i označena kao Tor izlazni čvor.\nUređivanje preko Tora je blokirano da bi se spriječila zloupotreba.",
 	"torblock-isexitnode": "IP adresa <strong>$1</strong> je blokirana kao Tor izlazni čvor.",
 	"action-torunblocked": "zaobilaženje automatskih blokada Tor izlaznih čvorova",
