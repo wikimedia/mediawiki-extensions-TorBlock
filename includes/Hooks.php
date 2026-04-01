@@ -262,7 +262,7 @@ class Hooks implements
 	 * @inheritDoc
 	 */
 	public function onUserRequirementsCondition(
-		$type,
+		string|int $type,
 		array $args,
 		UserIdentity $user,
 		bool $isPerformingRequest,
