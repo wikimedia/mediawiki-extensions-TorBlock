@@ -4,6 +4,7 @@
 			"Crazymadlover",
 			"Dferg",
 			"Dgstranz",
+			"Luigi Nakano",
 			"Macofe",
 			"MarcoAurelio",
 			"Qwrop",
@@ -18,5 +19,6 @@
 	"right-torunblocked": "Eludir bloqueos automáticos de nodos de salida ''tor''",
 	"tag-tor-description": "Si esta marca está presente, una edición ha sido realizada por un nodo de salida Tor.",
 	"tag-tor": "Hecho por medio de tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Si el cambio fue hecho o no a través de un nodo de salida Tor ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Si el cambio fue hecho o no a través de un nodo de salida Tor ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "El usuario se contecta por medio de un nodo de salida de Tor"
 }
