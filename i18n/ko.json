@@ -4,6 +4,7 @@
 			"Bluemersen",
 			"Ilovesabbath",
 			"Kwj2772",
+			"Tensama0415",
 			"Ykhwong",
 			"아라"
 		]
@@ -15,5 +16,6 @@
 	"right-torunblocked": "토르 끝 노드의 자동 차단을 적용하지 않음",
 	"tag-tor-description": "이 태그가 설정되어 있으면 토르 끝 노드를 통해 편집한 것입니다.",
 	"tag-tor": "토르 사용",
-	"abusefilter-edit-builder-vars-tor-exit-node": "편집이 토르 끝 노드를 통해 바뀌었는지의 여부 ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "편집이 토르 끝 노드를 통해 바뀌었는지의 여부 ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "Tor 종료 노드를 통해 연결한 사용자"
 }
