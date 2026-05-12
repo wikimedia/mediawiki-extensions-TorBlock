@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"NMW03",
-			"Nemoralis"
+			"Nemoralis",
+			"Əkrəm"
 		]
 	},
 	"torblock-desc": "Tor çıxış qovşaqlarının vikini redaktə etməsini bloklamağa imkan verir",
@@ -12,5 +13,6 @@
 	"right-torunblocked": "Tor çıxış qovşaqlarının avtomatik bloklanmasından təsirlənməmək",
 	"tag-tor-description": "Bu teq əlavə olunubsa, Tor çıxış qovşağından redaktə edilib.",
 	"tag-tor": "Tor vasitəsilə edilmişdir",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Dəyişikliyin Tor çıxış qovşağı vasitəsilə edilib-edilməməsi ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Dəyişikliyin Tor çıxış qovşağı vasitəsilə edilib-edilməməsi ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "İstifadəçi Tor çıxış qovşağı vasitəsilə qoşulur"
 }
