@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"apihelp-torblock-summary": "Hubi in cinwaanka IP-ga uu xanniban yahay maadaama uu yahay noodh bixitaan Tor.",
+	"apihelp-torblock-param-ip": "Cinwaanka IP-ga ee la hubinayo.",
+	"apihelp-torblock-example-1": "Hubi in cinwaanka IP-ga 192.0.2.18 uu xanniban yahay maadaama uu yahay noodh bixitaan Tor.",
+	"apierror-torblock-badip": "Cinwaanka IP-ga $1 ma aha mid sax ah."
+}
