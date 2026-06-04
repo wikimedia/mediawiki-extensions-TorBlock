@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"torblock-desc": "Waxay u oggolaanaysaa in laga xannibo noodhadhka bixitaanka Tor inay wax ka beddelaan wiki-ga",
+	"torblock-blocked": "Cinwaankaaga IP-ga, <strong>$1</strong>, si toos ah ayaa loo aqoonsaday inuu yahay noodh bixitaan Tor.\nWax ka beddelka iyadoo la adeegsanayo Tor waa la xannibay si looga hortago xadgudub.",
+	"torblock-isexitnode": "Cinwaanka IP-ga <strong>$1</strong> waa la xannibay maadaama uu yahay noodh bixitaan Tor.",
+	"action-torunblocked": "Ka gudub xannibaadaha otomaatiga ah ee noodhadhka bixitaanka Tor",
+	"right-torunblocked": "Ka gudub xannibaadaha otomaatiga ah ee noodhadhka bixitaanka Tor",
+	"tag-tor-description": "Haddii calaamaddan la dejiyo, wax ka beddel ayaa laga sameeyay noodh bixitaan Tor.",
+	"tag-tor": "Waxaa lagu sameeyay Tor",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Haddii isbeddelka lagu sameeyay ama aan lagu samayn noodh bixitaan Tor ($1)"
+}
