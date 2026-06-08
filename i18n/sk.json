@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"Luky001"
+			"Luky001",
+			"Wizzard"
 		]
 	},
 	"torblock-desc": "Umožňuje blokovať úpravy pochádzajúce z výstupných uzlov siete TOR.",
@@ -11,5 +12,5 @@
 	"right-torunblocked": "Obísť automatické blokovanie výstupných uzlov siete TOR",
 	"tag-tor-description": "Ak je táto značka nastavená, úprava bola vykonaná z výstupného uzla Tor.",
 	"tag-tor": "Prostredníctvom Tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Či bola alebo nebola úprava vykonaná z koncového uzla TOR"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Či bola alebo nebola úprava vykonaná cez výstupný uzol Tor ($1)"
 }
