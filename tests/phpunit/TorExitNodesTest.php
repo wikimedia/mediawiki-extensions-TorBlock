@@ -104,4 +104,68 @@ class TorExitNodesTest extends MediaWikiIntegrationTestCase {
 		$this->assertContains( '1.2.3.4', $result );
 		$this->assertNotContains( '999.999.0.1', $result );
 	}
+
+	public function testFetchExitNodesFromTorProjectParsesIpsAndSkipsComments(): void {
+		// torbulkexitlist format: one IP per line; comment lines contain '#'.
+		$this->installMockHttp( "1.2.3.4\n5.6.7.8\n# this is a comment" );
+
+		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
+		$result = $torExitNodes->fetchExitNodesFromTorProject();
+
+		$this->assertContains( '1.2.3.4', $result );
+		$this->assertContains( '5.6.7.8', $result );
+		$this->assertNotContains( '# this is a comment', $result );
+	}
+
+	public function testFetchExitNodesFromTorProjectReturnsEmptyOnNullReply(): void {
+		$this->installMockHttp( $this->makeFakeHttpRequest( '', 0 ) );
+
+		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
+
+		$this->assertSame( [], $torExitNodes->fetchExitNodesFromTorProject() );
+	}
+
+	public function testFetchExitNodesFromOnionooServerReturnsEmptyOnNullReply(): void {
+		$this->installMockHttp( $this->makeFakeHttpRequest( '', 0 ) );
+
+		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
+
+		$this->assertSame( [], $torExitNodes->fetchExitNodesFromOnionooServer() );
+	}
+
+	public function testFetchExitNodesFromOnionooServerReturnsEmptyWhenRelaysKeyMissing(): void {
+		$this->installMockHttp( '{}' );
+
+		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
+
+		$this->assertSame( [], $torExitNodes->fetchExitNodesFromOnionooServer() );
+	}
+
+	public function testGetExitNodesReturnsStubbedListUnderTest(): void {
+		$this->assertSame(
+			[ '192.0.2.111', '192.0.2.222' ],
+			TorExitNodes::getExitNodes()
+		);
+	}
+
+	public function testLoadExitNodesReturnsStubbedListUnderTest(): void {
+		$this->assertSame(
+			[ '192.0.2.111', '192.0.2.222' ],
+			TorExitNodes::loadExitNodes()
+		);
+	}
+
+	public function testFetchExitNodesReturnsStubbedListUnderTest(): void {
+		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
+
+		$this->assertSame(
+			[ '192.0.2.111', '192.0.2.222' ],
+			$torExitNodes->fetchExitNodes()
+		);
+	}
+
+	public function testIsExitNodeUsesRequestIpWhenNullGiven(): void {
+		// null → reads the request IP (127.0.0.1 in tests), which is not a Tor node.
+		$this->assertFalse( TorExitNodes::isExitNode() );
+	}
 }
