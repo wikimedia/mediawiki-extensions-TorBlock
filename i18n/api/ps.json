@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"apihelp-torblock-param-ip": "هغه وېب پته چې بايد سم‌کتنه يې وشي.",
+	"apierror-torblock-badip": "$1 وېب پته سمه نه ده."
+}
