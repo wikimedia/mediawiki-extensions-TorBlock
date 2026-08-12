@@ -39,6 +39,7 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\Extension\TorBlock\Hooks\HookRunner;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Html\Html;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\Permissions\Hook\GetUserPermissionsErrorsExpensiveHook;
 use MediaWiki\RecentChanges\Hook\RecentChange_saveHook;
 use MediaWiki\RecentChanges\RecentChange;
@@ -49,6 +50,7 @@ use MediaWiki\User\Hook\UserCanSendEmailHook;
 use MediaWiki\User\Hook\UserRequirementsConditionHook;
 use MediaWiki\User\User;
 use MediaWiki\User\UserIdentity;
+use Psr\Log\LoggerInterface;
 use Wikimedia\IPUtils;
 
 class Hooks implements
@@ -65,6 +67,7 @@ class Hooks implements
 {
 
 	private readonly HookRunner $hookRunner;
+	private readonly LoggerInterface $logger;
 
 	public static function registerExtension() {
 		// Define new autopromote condition
@@ -77,6 +80,7 @@ class Hooks implements
 		HookContainer $hookContainer,
 	) {
 		$this->hookRunner = new HookRunner( $hookContainer );
+		$this->logger = LoggerFactory::getInstance( 'torblock' );
 	}
 
 	/**
@@ -95,12 +99,23 @@ class Hooks implements
 			return true;
 		}
 
-		wfDebugLog( 'torblock', "User detected as editing through tor." );
+		$this->logger->debug(
+			'{username} detected as editing through Tor',
+			[
+				'username' => $user->getName(),
+			]
+		);
 
 		global $wgTorBypassPermissions;
 		foreach ( $wgTorBypassPermissions as $perm ) {
 			if ( $user->isAllowed( $perm ) ) {
-				wfDebugLog( 'torblock', "User has $perm permission. Exempting from Tor Blocks." );
+				$this->logger->debug(
+					'{username} has {perm} permission, exempting from Tor blocks',
+					[
+						'username' => $user->getName(),
+						'perm' => $perm,
+					]
+				);
 
 				return true;
 			}
@@ -109,7 +124,12 @@ class Hooks implements
 		$ip = RequestContext::getMain()->getRequest()->getIP();
 
 		if ( $this->autoblockExemptionList->isExempt( $ip ) ) {
-			wfDebugLog( 'torblock', "IP is excluded from autoblocks. Exempting from Tor Blocks." );
+			$this->logger->debug(
+				'IP {ip} is excluded from autoblocks, exempting from Tor blocks',
+				[
+					'ip' => $ip,
+				]
+			);
 
 			return true;
 		}
@@ -134,8 +154,13 @@ class Hooks implements
 		&$result
 	) {
 		if ( !$this->checkUserCan( $user, $action ) ) {
-			wfDebugLog( 'torblock', "User detected as editing from Tor node. " .
-				"Adding Tor block to permissions errors." );
+			$this->logger->debug(
+				'Adding Tor block to permissions errors for {username} performing {action}',
+				[
+					'username' => $user->getName(),
+					'action' => $action,
+				]
+			);
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
@@ -158,7 +183,12 @@ class Hooks implements
 	 */
 	public function onUserCanSendEmail( $user, &$hookErr ) {
 		if ( !$this->checkUserCan( $user ) ) {
-			wfDebugLog( 'torblock', "User detected as trying to send an email from Tor node. Preventing." );
+			$this->logger->debug(
+				'Preventing {username} from sending email from a Tor node',
+				[
+					'username' => $user->getName(),
+				]
+			);
 
 			// Allow site customization of blocked message.
 			$blockedMsg = 'torblock-blocked';
@@ -201,8 +231,12 @@ class Hooks implements
 		}
 
 		if ( $removeBlock ) {
-			wfDebugLog( 'torblock', "User using Tor node. Disabling IP block as it was " .
-				"probably targeted at the Tor node." );
+			$this->logger->debug(
+				'Disabling IP block for {ip} as it was probably targeted at the Tor node',
+				[
+					'ip' => $ip,
+				]
+			);
 			// Node is probably blocked for being a Tor node. Remove block.
 			$block = null;
 		}

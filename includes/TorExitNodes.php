@@ -30,7 +30,9 @@ namespace MediaWiki\Extension\TorBlock;
 
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Json\FormatJson;
+use MediaWiki\Logger\LoggerFactory;
 use MediaWiki\MediaWikiServices;
+use Psr\Log\LoggerInterface;
 use Wikimedia\IPUtils;
 use Wikimedia\LightweightObjectStore\ExpirationAwareness;
 use Wikimedia\ObjectCache\CachedBagOStuff;
@@ -41,6 +43,10 @@ use Wikimedia\ObjectCache\CachedBagOStuff;
 class TorExitNodes {
 	private const CACHE_KEY = 'tor-exit-nodes';
 	private const CACHE_TTL = ExpirationAwareness::TTL_DAY;
+
+	private static function getLogger(): LoggerInterface {
+		return LoggerFactory::getInstance( 'torblock' );
+	}
 
 	/**
 	 * Determine if a given IP is a Tor exit node
@@ -115,7 +121,7 @@ class TorExitNodes {
 	 * @return string[] List of Tor exit node addresses
 	 */
 	private static function fetchExitNodes() {
-		wfDebugLog( 'torblock', "Loading Tor exit node list cold." );
+		self::getLogger()->debug( 'Loading Tor exit node list cold.' );
 
 		if ( defined( 'MW_PHPUNIT_TEST' ) || defined( 'MW_QUIBBLE_CI' ) ) {
 			// Avoid HTTP requests, see T265628 & T390865
@@ -148,7 +154,12 @@ class TorExitNodes {
 			$data = $httpRequestFactory->get( $url, $options, __METHOD__ );
 
 			if ( $data === null ) {
-				wfDebugLog( 'torblock', "Got no reply or an invalid reply from $url.\n" );
+				self::getLogger()->debug(
+					'Got no reply or an invalid reply from {url}',
+					[
+						'url' => $url,
+					]
+				);
 				continue;
 			}
 
@@ -189,14 +200,19 @@ class TorExitNodes {
 		$raw = $services->getHttpRequestFactory()->get( (string)$url, $options, __METHOD__ );
 
 		if ( $raw === null ) {
-			wfDebugLog( 'torblock', "Got no reply or an invalid reply from $url.\n" );
+			self::getLogger()->debug(
+				'Got no reply or an invalid reply from {url}',
+				[
+					'url' => $url,
+				]
+			);
 			return [];
 		}
 
 		$data = FormatJson::decode( $raw, true );
 
 		if ( !isset( $data['relays'] ) ) {
-			wfDebugLog( 'torblock', "Got no reply or an invalid reply from Onionoo.\n" );
+			self::getLogger()->debug( 'Got no reply or an invalid reply from Onionoo.' );
 			return [];
 		}
 
@@ -221,7 +237,12 @@ class TorExitNodes {
 				}
 
 				if ( !IPUtils::isValid( $ip ) ) {
-					wfDebug( 'Invalid IP address in Onionoo response.' );
+					self::getLogger()->debug(
+						'Invalid IP address in Onionoo response: {ip}',
+						[
+							'ip' => $ip,
+						]
+					);
 					continue;
 				}
 
