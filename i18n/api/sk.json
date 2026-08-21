@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"apihelp-torblock-summary": "Skontrolovať, či je IP adresa zablokovaná ako výstupný uzol siete Tor.",
+	"apihelp-torblock-param-ip": "IP adresa, ktorá sa má skontrolovať.",
+	"apihelp-torblock-example-1": "Skontrolovať, či je IP adresa 192.0.2.18 zablokovaná ako výstupný uzol siete Tor.",
+	"apierror-torblock-badip": "IP adresa $1 nie je platná."
+}
