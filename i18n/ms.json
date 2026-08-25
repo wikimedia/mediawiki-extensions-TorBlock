@@ -3,7 +3,8 @@
 		"authors": [
 			"Anakmalaysia",
 			"Aviator",
-			"Izzudin"
+			"Izzudin",
+			"Hakimi97"
 		]
 	},
 	"torblock-desc": "Membolehkan sekatan terhadap nod keluar Tor",
@@ -12,5 +13,5 @@
 	"right-torunblocked": "Melepasi sekatan nod keluar Tor",
 	"tag-tor-description": "Label ini menandakan sebuah suntingan dibuat melalui nod keluar Tor.",
 	"tag-tor": "Dibuat melalui tor",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Sama ada atau tidak perubahan dibuat melalui buku keluar tor"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Sama ada perubahan itu dibuat melalui nod keluar Tor ($1) atau tidak"
 }
