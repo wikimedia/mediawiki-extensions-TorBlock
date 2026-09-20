@@ -90,7 +90,6 @@ class TorExitNodes {
 					[
 						// Avoid stampedes on TOR list servers due to cache expiration
 						'lockTSE' => self::CACHE_TTL,
-						'staleTTL' => self::CACHE_TTL,
 						// Avoid stampedes on TOR list servers due to cache eviction
 						'busyValue' => []
 					]
