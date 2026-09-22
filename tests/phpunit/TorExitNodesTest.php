@@ -148,19 +148,10 @@ class TorExitNodesTest extends MediaWikiIntegrationTestCase {
 		);
 	}
 
-	public function testLoadExitNodesReturnsStubbedListUnderTest(): void {
-		$this->assertSame(
-			[ '192.0.2.111', '192.0.2.222' ],
-			TorExitNodes::loadExitNodes()
-		);
-	}
-
 	public function testFetchExitNodesReturnsStubbedListUnderTest(): void {
-		$torExitNodes = TestingAccessWrapper::newFromClass( TorExitNodes::class );
-
 		$this->assertSame(
 			[ '192.0.2.111', '192.0.2.222' ],
-			$torExitNodes->fetchExitNodes()
+			TorExitNodes::fetchExitNodes()
 		);
 	}
 

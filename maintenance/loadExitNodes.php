@@ -34,8 +34,6 @@ require_once getenv( 'MW_INSTALL_PATH' ) !== false
 // @codeCoverageIgnoreEnd
 
 /**
- * Maintenance script to load/reload the list of Tor exit nodes.
- *
  * @ingroup Maintenance
  * @ingroup Extensions
  *
@@ -44,23 +42,18 @@ require_once getenv( 'MW_INSTALL_PATH' ) !== false
 class LoadExitNodes extends Maintenance {
 	public function __construct() {
 		parent::__construct();
-		$this->addDescription( "Load the list of Tor exit nodes." );
-		$this->addOption( 'force', 'Force loading of exit nodes from the server rather than cache.' );
+		$this->addDescription( "Download the list of Tor exit nodes." );
 		$this->addOption( 'show', 'Print the list of exist nodes' );
 		$this->requireExtension( "TorBlock" );
 	}
 
 	public function execute() {
-		if ( $this->hasOption( 'force' ) ) {
-			$nodes = TorExitNodes::loadExitNodes();
-		} else {
-			$nodes = TorExitNodes::getExitNodes();
-		}
+		$nodes = TorExitNodes::fetchExitNodes();
 		if ( !$nodes ) {
 			$this->fatalError( "Could not load exit nodes." );
 		}
 
-		$this->output( 'Successfully loaded ' . count( $nodes ) . " exit nodes.\n" );
+		$this->output( 'Found ' . count( $nodes ) . " exit nodes.\n" );
 
 		if ( $this->hasOption( 'show' ) ) {
 			$this->output( implode( "\n", $nodes ) . "\n" );

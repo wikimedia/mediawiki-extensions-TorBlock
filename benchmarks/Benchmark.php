@@ -42,7 +42,7 @@ class Benchmark extends Benchmarker {
 	}
 
 	public function execute() {
-		$nodes = TorExitNodes::loadExitNodes();
+		$nodes = TorExitNodes::fetchExitNodes();
 
 		$stat = new RunningStat();
 		$t = microtime( true );
