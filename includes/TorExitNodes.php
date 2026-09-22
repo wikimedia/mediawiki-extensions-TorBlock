@@ -99,27 +99,11 @@ class TorExitNodes {
 	}
 
 	/**
-	 * Load the list of Tor exit nodes from the source and cache it for future use
-	 *
-	 * Do not call this method during HTTP GET/HEAD requests
-	 *
-	 * @return string[] List of Tor exit node addresses
-	 */
-	public static function loadExitNodes() {
-		$nodes = self::fetchExitNodes();
-
-		$wanCache = MediaWikiServices::getInstance()->getMainWANObjectCache();
-		$wanCache->set( $wanCache->makeGlobalKey( self::CACHE_KEY ), $nodes, self::CACHE_TTL );
-
-		return $nodes;
-	}
-
-	/**
 	 * Get the list of Tor exit nodes from the configured source
 	 *
 	 * @return string[] List of Tor exit node addresses
 	 */
-	private static function fetchExitNodes() {
+	public static function fetchExitNodes() {
 		self::getLogger()->debug( 'Loading Tor exit node list cold.' );
 
 		if ( defined( 'MW_PHPUNIT_TEST' ) || defined( 'MW_QUIBBLE_CI' ) ) {
