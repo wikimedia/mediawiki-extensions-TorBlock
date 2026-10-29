@@ -7,6 +7,7 @@
 			"ProxyMon",
 			"Shirayuki",
 			"Siglite3",
+			"Waki285",
 			"春春眠眠"
 		]
 	},
@@ -17,5 +18,6 @@
 	"right-torunblocked": "Tor 末端ノードの自動ブロックを回避",
 	"tag-tor-description": "このタグが設定されている場合、Tor 末端ノードを通じてなされた編集です。",
 	"tag-tor": "Tor を通じてなされた",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Tor 末端ノードを通じてなされた変更かどうか ($1)"
+	"abusefilter-edit-builder-vars-tor-exit-node": "Tor 末端ノードを通じてなされた変更かどうか ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "Tor出口ノードから接続している"
 }
