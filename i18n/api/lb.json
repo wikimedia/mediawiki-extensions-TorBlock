@@ -4,5 +4,8 @@
 			"Volvox"
 		]
 	},
-	"apierror-torblock-badip": "D'IP-Adress $1 ass net gülteg."
+	"apihelp-torblock-summary": "Iwwerpréift, ob eng IP-Adress als Tor-Ausgangsknuet gespaart ass.",
+	"apihelp-torblock-param-ip": "D'IP-Adress fir z'iwwerpréiwen.",
+	"apihelp-torblock-example-1": "Iwwerpréiwen, ob d'IP-Adress 192.0.2.18 als Tor-Ausgangsknuet gespaart ass.",
+	"apierror-torblock-badip": "D'IP-Adress $1 ass ongülteg."
 }
