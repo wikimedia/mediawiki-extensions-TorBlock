@@ -6,12 +6,13 @@
 			"Volvox"
 		]
 	},
-	"torblock-desc": "Erméiglecht et Ännerunge vun enger Wiki iwwer Tor-Ausgangskniet (tor exit nodes) ze spären",
-	"torblock-blocked": "Är IP-Adress,  <strong>$1</strong>, gouf automatesch als Tor-ausgangsknuet erkannt.\nÄnnerungen iwwer Tor si gespaart fir Mëssbrauch ze verhënneren.",
-	"torblock-isexitnode": "D'IP-Adress <strong>$1</strong> ass als Ausgangspunkt vun engem Tor gespaart.",
-	"action-torunblocked": "automatesch Späre vun Tor-Ausgangskniet ëmgoen",
-	"right-torunblocked": "Automatesch Spär fir Tor-Ausgangskniet z'ëmgoen",
+	"torblock-desc": "Erméiglecht et Ännerunge vun enger Wiki iwwer Tor-Ausgangskniet ze spären",
+	"torblock-blocked": "Är IP-Adress,  <strong>$1</strong>, gouf automatesch als Tor-Ausgangsknuet erkannt.\nÄnnerungen iwwer Tor si gespaart, fir Mëssbrauch ze verhënneren.",
+	"torblock-isexitnode": "D'IP-Adress <strong>$1</strong> ass als Tor-Ausgangsknuet gespaart.",
+	"action-torunblocked": "automatesch Späre vun Tor-Ausgangskniet z'ëmgoen",
+	"right-torunblocked": "Automatesch Späre fir Tor-Ausgangskniet ëmgoen",
 	"tag-tor-description": "Wann dës Markéierung gesat ass, da gouf eng Ännerung vun engem Tor-Ausgangsknuet gemaach.",
-	"tag-tor": "Iwwer ''Tor'' gemaach",
-	"abusefilter-edit-builder-vars-tor-exit-node": "Ob d'Ännerung iwwer en Tor-Ausgangsknuet gemaach gouf ($1)"
+	"tag-tor": "Iwwer Tor gemaach",
+	"abusefilter-edit-builder-vars-tor-exit-node": "Ob d'Ännerung iwwer en Tor-Ausgangsknuet gemaach gouf ($1)",
+	"listgrouprights-restrictedgroups-cond-tor": "De Benotzer verbënnt sech iwwer en Tor-Ausgangsknuet"
 }

@@ -5,7 +5,11 @@
 		]
 	},
 	"torblock-desc": "په يو ويکي کې د TOR بهروتنې د سمون څخه راگرځوي.",
+	"torblock-blocked": "ستاسو وېب‌پته، <strong>$1</strong>، په خپلکاري ډول د تور د بهروتنې په توگه پېژندل شوې ده.\nد ناوړه‌گټه‌اخيستنې مخنيوي لپاره د تور له لارې سمون باندې بنديز لگېدلی دی.",
+	"torblock-isexitnode": "<strong>$1</strong>، وېب‌پته باندې د تور د بهروتنې په توگه بنديز لگېدلی دی.",
+	"action-torunblocked": "د Tor خپلکاره بنديزونو له بهروتنو تېرېدل",
 	"right-torunblocked": "د Tor خپلکاره بنديزونو له بهروتنو تېرېدل",
+	"tag-tor-description": "دا نښلن ټاکل شوی وی؛ نو د تور بهروتنې څخه سمون شوی دی.",
 	"tag-tor": "د تور له لارې جوړ شوی",
 	"abusefilter-edit-builder-vars-tor-exit-node": "ايا بدلون د تور د وتلو غوټې له لارې شوی يا نه ($1)",
 	"listgrouprights-restrictedgroups-cond-tor": "کارن د تور د وتلو غوټې له لارې نښلېږي"
